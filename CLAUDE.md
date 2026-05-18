@@ -2,15 +2,18 @@
 
 ## Project Overview
 
-A Flutter app for training chord recognition. Displays random chord symbols drawn from a cumulative difficulty pool, synchronized to a 4-beat metronome. No backend — all data is local.
+A Flutter app for training chord recognition. Displays random chord symbols; the user plays the root note on their instrument and the app detects it via microphone pitch detection. No backend — all data is local.
 
 ## Tech Stack
 
 - **Flutter** (Dart 3.8+)
 - **Riverpod 3.x** — state management (`NotifierProvider`, `Provider`)
-- **shared_preferences** — persisting last-used level and interval
-- **audioplayers** — metronome MP3 playback via `AudioPool`
+- **shared_preferences** — persisting level, interval, cumulative mode, and theme
+- **pitch_detector_dart** — real-time Hz-to-note conversion from mic input
+- **record** — microphone audio capture
+- **audioplayers** — success sound playback
 - **flutter_localizations + intl** — built-in ARB-based i18n
+- **wakelock_plus** — keeps screen on during training sessions
 
 ## Project Structure
 
@@ -28,34 +31,42 @@ lib/
       home_screen.dart             # Level + interval selection, Start button
       widgets/
         level_selector.dart        # Horizontal scrollable chip list (1–12)
-        interval_selector.dart     # Row of 6 time buttons
+        interval_selector.dart     # Row of time buttons
+    settings/
+      presentation/
+        settings_screen.dart       # Theme + cumulative mode + time limit settings
+        theme_picker_screen.dart   # Color theme selection UI
     trainer/
       domain/
         chord_type.dart            # Enum with 12 types (major → augMaj7)
-        chord.dart                 # Chord value object; soundAssetPath/diagramAssetPath reserved
+        chord.dart                 # Chord value object; rootNote/altRootNote for pitch matching
         training_session_state.dart
       data/
-        chord_data.dart            # All 204 chords; buildChordPool(level) for cumulative pool
-        settings_repository.dart   # SharedPreferences wrapper (pref_level, pref_interval)
+        chord_data.dart            # All chords; buildChordPool(level) and buildChordPoolSingle(level)
+        settings_repository.dart   # SharedPreferences wrapper
         providers.dart             # sharedPreferencesProvider, settingsRepositoryProvider,
                                    # selectedLevelProvider, selectedIntervalProvider
       presentation/
-        training_provider.dart     # TrainingNotifier (Notifier); drives metronome + chord cycling
-        training_screen.dart       # Full-screen; immersive mode; shows ChordDisplay + BeatIndicator
+        training_provider.dart     # TrainingNotifier (Notifier); drives pitch detection + chord cycling
+        training_screen.dart       # Full-screen; immersive mode; shows ChordDisplay + progress
         widgets/
           chord_display.dart       # ≥40% screen height box; AnimatedSwitcher on chord change
-          beat_indicator.dart      # 4 animated dots showing beat position
+          beat_indicator.dart      # Beat position indicator
     audio/
-      audio_service.dart           # AudioPool wrapper; playBeat(); playChord() stub
+      audio_service.dart           # audioplayers wrapper; plays success sound
+      pitch_detection_service.dart # record + pitch_detector_dart; emits detected notes as a stream
 ```
 
 ## Key Behaviors
 
-- **Levels are cumulative**: Level 3 pool = Major + Minor + Augmented chords (228 chords at level 12)
-- **Metronome**: always 4 beats per interval (tempo = `intervalSeconds / 4` per beat)
-- **Get Ready phase**: first interval plays metronome with "Get Ready" text; chord appears on second interval
+- **Pitch detection**: user plays the chord's root note on their instrument; mic detects the Hz, converts to a chromatic note (C, C#, D, …), and advances when it matches `chord.rootNote` or `chord.altRootNote`
+- **Levels are cumulative**: Level 3 pool = Major + Minor + Augmented chords; `buildChordPool(level)` or `buildChordPoolSingle(level)` for single-level mode
+- **Get Ready phase**: 2-second countdown before the first chord appears
+- **Success flow**: matched note → success overlay + sound → 800 ms delay → next chord
+- **Note-off debounce**: 500 ms silence window (`_waitingForNoteOff`) prevents a sustained note from re-triggering
+- **Optional time limit**: `_timeLimitTimer` auto-advances to next chord if the user doesn't play in time
 - **No consecutive repeats**: `_pickNextChord` loops until a different chord is selected
-- **Settings persist**: level and interval are saved to SharedPreferences on every change
+- **Settings persist**: level, interval, cumulative mode, and theme saved to SharedPreferences on every change
 
 ## Chord Levels (12 total)
 
@@ -82,12 +93,10 @@ lib/
 
 ## Planned Future Features (hooks already in place)
 
-- **Chord audio**: add asset path to `Chord.soundAssetPath`; `AudioService.playChord()` is already wired
 - **Chord diagrams**: add asset path to `Chord.diagramAssetPath`; `_DiagramPlaceholder` in `ChordDisplay` guards this
 
 ## Assets
 
-- `assets/metronome_downbeat.mp3` — downbeat click sound
 - `pubspec.yaml` declares `assets/` folder (all files included automatically)
 
 ## Common Commands
@@ -102,4 +111,4 @@ flutter pub upgrade      # upgrade packages within constraints
 
 ## Riverpod Pattern
 
-`TrainingNotifier` uses `Notifier<TrainingSessionState>`. The `AudioService` is provided via a private `_audioServiceProvider` inside `training_provider.dart`. `SharedPreferences` is injected at app startup via `ProviderScope` override — do not call `SharedPreferences.getInstance()` inside providers.
+`TrainingNotifier` uses `Notifier<TrainingSessionState>`. `PitchDetectionService` and `AudioService` are provided via private providers inside `training_provider.dart`. `SharedPreferences` is injected at app startup via `ProviderScope` override — do not call `SharedPreferences.getInstance()` inside providers.
