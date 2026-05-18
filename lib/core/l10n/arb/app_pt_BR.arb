@@ -1,0 +1,50 @@
+{
+  "@@locale": "pt_BR",
+  "appTitle": "Treinador de Acordes",
+  "getReady": "Prepare-se",
+  "start": "Iniciar",
+  "stop": "Parar",
+  "next": "Próximo",
+  "correct": "Correto!",
+  "level": "Nível",
+  "timeLimit": "Limite de Tempo",
+  "noTimeLimit": "∞",
+  "seconds": "{n}s",
+  "@seconds": {
+    "placeholders": {
+      "n": { "type": "int" }
+    }
+  },
+  "levelMajor": "Maior",
+  "levelMinor": "Menor",
+  "levelAug": "Aumentado",
+  "levelDim": "Diminuto",
+  "levelSus": "Suspenso",
+  "levelSeventh": "7ª",
+  "levelMaj7": "Maior 7ª",
+  "levelM7": "Menor 7ª",
+  "levelDim7": "Diminuto 7ª",
+  "levelHalfDim7": "Meio-Diminuto 7ª",
+  "levelMMaj7": "Menor-Maior 7ª",
+  "levelAugMaj7": "Aumentado-Maior 7ª",
+  "levelLabel": "Nível {number}: {name}",
+  "@levelLabel": {
+    "placeholders": {
+      "number": { "type": "int" },
+      "name": { "type": "String" }
+    }
+  },
+  "chordPool": "Pool de Acordes",
+  "chordsCount": "{count} acordes",
+  "@chordsCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "cumulativePool": "Pool cumulativo",
+  "cumulativePoolHelpTitle": "Pool Cumulativo",
+  "cumulativePoolHelpBody": "Quando ativado, o pool de acordes inclui todos os tipos do nível 1 até o nível selecionado. Quando desativado, apenas o tipo de acorde do nível selecionado é utilizado.",
+  "ok": "OK",
+  "settings": "Configurações",
+  "theme": "Tema"
+}

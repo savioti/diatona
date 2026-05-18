@@ -1,0 +1,78 @@
+{
+  "@@locale": "en",
+  "appTitle": "Chord Trainer",
+  "@appTitle": {},
+  "getReady": "Get Ready",
+  "@getReady": {},
+  "start": "Start",
+  "@start": {},
+  "stop": "Stop",
+  "@stop": {},
+  "next": "Next",
+  "@next": {},
+  "correct": "Correct!",
+  "@correct": {},
+  "level": "Level",
+  "@level": {},
+  "timeLimit": "Time Limit",
+  "@timeLimit": {},
+  "noTimeLimit": "∞",
+  "@noTimeLimit": {},
+  "seconds": "{n}s",
+  "@seconds": {
+    "placeholders": {
+      "n": { "type": "int" }
+    }
+  },
+  "levelMajor": "Major",
+  "@levelMajor": {},
+  "levelMinor": "Minor",
+  "@levelMinor": {},
+  "levelAug": "Augmented",
+  "@levelAug": {},
+  "levelDim": "Diminished",
+  "@levelDim": {},
+  "levelSus": "Suspended",
+  "@levelSus": {},
+  "levelSeventh": "7th",
+  "@levelSeventh": {},
+  "levelMaj7": "Major 7th",
+  "@levelMaj7": {},
+  "levelM7": "Minor 7th",
+  "@levelM7": {},
+  "levelDim7": "Diminished 7th",
+  "@levelDim7": {},
+  "levelHalfDim7": "Half-Diminished 7th",
+  "@levelHalfDim7": {},
+  "levelMMaj7": "Minor-Major 7th",
+  "@levelMMaj7": {},
+  "levelAugMaj7": "Augmented-Major 7th",
+  "@levelAugMaj7": {},
+  "levelLabel": "Level {number}: {name}",
+  "@levelLabel": {
+    "placeholders": {
+      "number": { "type": "int" },
+      "name": { "type": "String" }
+    }
+  },
+  "chordPool": "Chord Pool",
+  "@chordPool": {},
+  "chordsCount": "{count} chords",
+  "@chordsCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "cumulativePool": "Cumulative pool",
+  "@cumulativePool": {},
+  "cumulativePoolHelpTitle": "Cumulative Pool",
+  "@cumulativePoolHelpTitle": {},
+  "cumulativePoolHelpBody": "When enabled, the chord pool includes all types from level 1 up to the selected level. When disabled, only the chord type of the selected level is used.",
+  "@cumulativePoolHelpBody": {},
+  "ok": "OK",
+  "@ok": {},
+  "settings": "Settings",
+  "@settings": {},
+  "theme": "Theme",
+  "@theme": {}
+}
