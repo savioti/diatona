@@ -9,7 +9,7 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get appTitle => 'Treinador de Acordes';
+  String get appTitle => 'Diatona';
 
   @override
   String get getReady => 'Prepare-se';
@@ -107,6 +107,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get theme => 'Tema';
+
+  @override
+  String get menuNoteTrainer => 'Treinador de Notas';
+
+  @override
+  String get menuChordTraining => 'Treino de Acordes';
+
+  @override
+  String get menuDonate => 'Doar';
+
+  @override
+  String get menuAbout => 'Sobre';
+
+  @override
+  String get comingSoon => 'Em Breve';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -114,7 +129,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   AppLocalizationsPtBr() : super('pt_BR');
 
   @override
-  String get appTitle => 'Treinador de Acordes';
+  String get appTitle => 'Diatona';
 
   @override
   String get getReady => 'Prepare-se';
@@ -212,4 +227,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get theme => 'Tema';
+
+  @override
+  String get menuNoteTrainer => 'Treinador de Notas';
+
+  @override
+  String get menuChordTraining => 'Treino de Acordes';
+
+  @override
+  String get menuDonate => 'Doar';
+
+  @override
+  String get menuAbout => 'Sobre';
+
+  @override
+  String get comingSoon => 'Em Breve';
 }

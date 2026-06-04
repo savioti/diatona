@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/l10n/generated/app_localizations.dart';
 import 'core/theme/app_theme.dart';
-import 'features/home/presentation/home_screen.dart';
+import 'features/splash/presentation/splash_screen.dart';
 import 'features/trainer/data/providers.dart';
 
 class App extends ConsumerWidget {
@@ -14,7 +14,7 @@ class App extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final variant = ref.watch(selectedThemeProvider);
     return MaterialApp(
-      title: 'Chord Trainer',
+      title: 'Diatona',
       theme: AppTheme.build(variant),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
@@ -24,7 +24,7 @@ class App extends ConsumerWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

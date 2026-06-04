@@ -1,4 +1,4 @@
-# Chord Trainer — Claude Code Context
+# Diatona — Claude Code Context
 
 ## Project Overview
 

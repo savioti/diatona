@@ -1,0 +1,7559 @@
+[
+  {
+    "id": "chord_c_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "C"
+    ],
+    "aliases": [
+      "Cmaj"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "E4",
+            "G4"
+          ],
+          "bassClef": [
+            "C3",
+            "E3",
+            "G3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_c_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cm"
+    ],
+    "aliases": [
+      "Cmin"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "G4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "G3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_c_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Caug"
+    ],
+    "aliases": [
+      "Caug"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "E",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "E4",
+            "G#4"
+          ],
+          "bassClef": [
+            "C3",
+            "E3",
+            "G#3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_c_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cdim"
+    ],
+    "aliases": [
+      "Cdim"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "Gb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "Gb4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "Gb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_c_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Csus4"
+    ],
+    "aliases": [
+      "Csus4"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "F",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "F4",
+            "G4"
+          ],
+          "bassClef": [
+            "C3",
+            "F3",
+            "G3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_c_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "C7"
+    ],
+    "aliases": [
+      "C7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "E",
+          "G",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "E4",
+            "G4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "C3",
+            "E3",
+            "G3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_c_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cmaj7"
+    ],
+    "aliases": [
+      "Cmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "E",
+          "G",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "E4",
+            "G4",
+            "B4"
+          ],
+          "bassClef": [
+            "C3",
+            "E3",
+            "G3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_c_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cm7"
+    ],
+    "aliases": [
+      "Cm7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "G",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "G4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "G3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_c_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cdim7"
+    ],
+    "aliases": [
+      "Cdim7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "Gb",
+          "Bbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "Gb4",
+            "Bbb4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "Gb3",
+            "Bbb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_c_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "Cm7b5"
+    ],
+    "aliases": [
+      "Cm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "Gb",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "Gb4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "Gb3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_c_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "CmMaj7"
+    ],
+    "aliases": [
+      "CmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "Eb",
+          "G",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "Eb4",
+            "G4",
+            "B4"
+          ],
+          "bassClef": [
+            "C3",
+            "Eb3",
+            "G3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_c_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_c",
+    "displayNames": [
+      "CaugMaj7"
+    ],
+    "aliases": [
+      "CaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C",
+        "root": "C",
+        "notes": [
+          "C",
+          "E",
+          "G#",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C4",
+            "E4",
+            "G#4",
+            "B4"
+          ],
+          "bassClef": [
+            "C3",
+            "E3",
+            "G#3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_csharp_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#",
+      "Db"
+    ],
+    "aliases": [
+      "C#maj",
+      "Dbmaj"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E#",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E#4",
+            "G#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E#3",
+            "G#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "F",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "F4",
+            "Ab4"
+          ],
+          "bassClef": [
+            "Db3",
+            "F3",
+            "Ab3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#m",
+      "Dbm"
+    ],
+    "aliases": [
+      "C#min",
+      "Dbmin"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Ab4"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Ab3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#aug",
+      "Dbaug"
+    ],
+    "aliases": [
+      "C#aug",
+      "Dbaug"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E#",
+          "G##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E#4",
+            "G##4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E#3",
+            "G##3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "F",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "F4",
+            "A4"
+          ],
+          "bassClef": [
+            "Db3",
+            "F3",
+            "A3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#dim",
+      "Dbdim"
+    ],
+    "aliases": [
+      "C#dim",
+      "Dbdim"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Abb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Abb4"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Abb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#sus4",
+      "Dbsus4"
+    ],
+    "aliases": [
+      "C#sus4",
+      "Dbsus4"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "F#",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "F#4",
+            "G#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "F#3",
+            "G#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Gb",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Gb4",
+            "Ab4"
+          ],
+          "bassClef": [
+            "Db3",
+            "Gb3",
+            "Ab3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#7",
+      "Db7"
+    ],
+    "aliases": [
+      "C#7",
+      "Db7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E#",
+          "G#",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E#4",
+            "G#4",
+            "B4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E#3",
+            "G#3",
+            "B3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "F",
+          "Ab",
+          "Cb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "F4",
+            "Ab4",
+            "Cb5"
+          ],
+          "bassClef": [
+            "Db3",
+            "F3",
+            "Ab3",
+            "Cb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#maj7",
+      "Dbmaj7"
+    ],
+    "aliases": [
+      "C#maj7",
+      "Dbmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E#",
+          "G#",
+          "B#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E#4",
+            "G#4",
+            "B#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E#3",
+            "G#3",
+            "B#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "F",
+          "Ab",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "F4",
+            "Ab4",
+            "C5"
+          ],
+          "bassClef": [
+            "Db3",
+            "F3",
+            "Ab3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#m7",
+      "Dbm7"
+    ],
+    "aliases": [
+      "C#m7",
+      "Dbm7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G#",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G#4",
+            "B4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G#3",
+            "B3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Ab",
+          "Cb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Ab4",
+            "Cb5"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Ab3",
+            "Cb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#dim7",
+      "Dbdim7"
+    ],
+    "aliases": [
+      "C#dim7",
+      "Dbdim7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G3",
+            "Bb3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Abb",
+          "Cbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Abb4",
+            "Cbb5"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Abb3",
+            "Cbb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#m7b5",
+      "Dbm7b5"
+    ],
+    "aliases": [
+      "C#m7b5",
+      "Dbm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G4",
+            "B4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G3",
+            "B3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Abb",
+          "Cb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Abb4",
+            "Cb5"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Abb3",
+            "Cb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#mMaj7",
+      "DbmMaj7"
+    ],
+    "aliases": [
+      "C#mMaj7",
+      "DbmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E",
+          "G#",
+          "B#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E4",
+            "G#4",
+            "B#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E3",
+            "G#3",
+            "B#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "Fb",
+          "Ab",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "Fb4",
+            "Ab4",
+            "C5"
+          ],
+          "bassClef": [
+            "Db3",
+            "Fb3",
+            "Ab3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_csharp_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_csharp",
+    "displayNames": [
+      "C#augMaj7",
+      "DbaugMaj7"
+    ],
+    "aliases": [
+      "C#augMaj7",
+      "DbaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "C#",
+        "root": "C#",
+        "notes": [
+          "C#",
+          "E#",
+          "G##",
+          "B#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "C#4",
+            "E#4",
+            "G##4",
+            "B#4"
+          ],
+          "bassClef": [
+            "C#3",
+            "E#3",
+            "G##3",
+            "B#3"
+          ]
+        }
+      },
+      {
+        "name": "Db",
+        "root": "Db",
+        "notes": [
+          "Db",
+          "F",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Db4",
+            "F4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "Db3",
+            "F3",
+            "A3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_d_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "D"
+    ],
+    "aliases": [
+      "Dmaj"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F#4",
+            "A4"
+          ],
+          "bassClef": [
+            "D3",
+            "F#3",
+            "A3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_d_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Dm"
+    ],
+    "aliases": [
+      "Dmin"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "A4"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "A3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_d_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Daug"
+    ],
+    "aliases": [
+      "Daug"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F#4",
+            "A#4"
+          ],
+          "bassClef": [
+            "D3",
+            "F#3",
+            "A#3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_d_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Ddim"
+    ],
+    "aliases": [
+      "Ddim"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "Ab4"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "Ab3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_d_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Dsus4"
+    ],
+    "aliases": [
+      "Dsus4"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "G",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "G4",
+            "A4"
+          ],
+          "bassClef": [
+            "D3",
+            "G3",
+            "A3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_d_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "D7"
+    ],
+    "aliases": [
+      "D7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F#4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "D3",
+            "F#3",
+            "A3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_d_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Dmaj7"
+    ],
+    "aliases": [
+      "Dmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F#4",
+            "A4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D3",
+            "F#3",
+            "A3",
+            "C#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_d_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Dm7"
+    ],
+    "aliases": [
+      "Dm7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "A3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_d_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Ddim7"
+    ],
+    "aliases": [
+      "Ddim7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "Ab",
+          "Cb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "Ab4",
+            "Cb5"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "Ab3",
+            "Cb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_d_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "Dm7b5"
+    ],
+    "aliases": [
+      "Dm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "Ab",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "Ab4",
+            "C5"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "Ab3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_d_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "DmMaj7"
+    ],
+    "aliases": [
+      "DmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F",
+          "A",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F4",
+            "A4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D3",
+            "F3",
+            "A3",
+            "C#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_d_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_d",
+    "displayNames": [
+      "DaugMaj7"
+    ],
+    "aliases": [
+      "DaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D",
+        "root": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A#",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D4",
+            "F#4",
+            "A#4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D3",
+            "F#3",
+            "A#3",
+            "C#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_dsharp_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#",
+      "Eb"
+    ],
+    "aliases": [
+      "D#maj",
+      "Ebmaj"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F##",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F##4",
+            "A#4"
+          ],
+          "bassClef": [
+            "D#3",
+            "F##3",
+            "A#3"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "G",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "G4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "Eb3",
+            "G3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#m",
+      "Ebm"
+    ],
+    "aliases": [
+      "D#min",
+      "Ebmin"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A#4"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A#3"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#aug",
+      "Ebaug"
+    ],
+    "aliases": [
+      "D#aug",
+      "Ebaug"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F##",
+          "A##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F##4",
+            "A##4"
+          ],
+          "bassClef": [
+            "D#3",
+            "F##3",
+            "A##3"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "G",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "G4",
+            "B4"
+          ],
+          "bassClef": [
+            "Eb3",
+            "G3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#dim",
+      "Ebdim"
+    ],
+    "aliases": [
+      "D#dim",
+      "Ebdim"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A4"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A3"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bbb4"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bbb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#sus4",
+      "Ebsus4"
+    ],
+    "aliases": [
+      "D#sus4",
+      "Ebsus4"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "G#",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "G#4",
+            "A#4"
+          ],
+          "bassClef": [
+            "D#3",
+            "G#3",
+            "A#3"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Ab",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Ab4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Ab3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#7",
+      "Eb7"
+    ],
+    "aliases": [
+      "D#7",
+      "Eb7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F##",
+          "A#",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F##4",
+            "A#4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F##3",
+            "A#3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "G",
+          "Bb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "G4",
+            "Bb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "G3",
+            "Bb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#maj7",
+      "Ebmaj7"
+    ],
+    "aliases": [
+      "D#maj7",
+      "Ebmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F##",
+          "A#",
+          "C##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F##4",
+            "A#4",
+            "C##5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F##3",
+            "A#3",
+            "C##4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "G",
+          "Bb",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "G4",
+            "Bb4",
+            "D5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "G3",
+            "Bb3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#m7",
+      "Ebm7"
+    ],
+    "aliases": [
+      "D#m7",
+      "Ebm7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A#",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A#4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A#3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#dim7",
+      "Ebdim7"
+    ],
+    "aliases": [
+      "D#dim7",
+      "Ebdim7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A3",
+            "C4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bbb",
+          "Dbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bbb4",
+            "Dbb5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bbb3",
+            "Dbb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#m7b5",
+      "Ebm7b5"
+    ],
+    "aliases": [
+      "D#m7b5",
+      "Ebm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A4",
+            "C#5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bbb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bbb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bbb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#mMaj7",
+      "EbmMaj7"
+    ],
+    "aliases": [
+      "D#mMaj7",
+      "EbmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F#",
+          "A#",
+          "C##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F#4",
+            "A#4",
+            "C##5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F#3",
+            "A#3",
+            "C##4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "Gb",
+          "Bb",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "Gb4",
+            "Bb4",
+            "D5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "Gb3",
+            "Bb3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_dsharp_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_dsharp",
+    "displayNames": [
+      "D#augMaj7",
+      "EbaugMaj7"
+    ],
+    "aliases": [
+      "D#augMaj7",
+      "EbaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "D#",
+        "root": "D#",
+        "notes": [
+          "D#",
+          "F##",
+          "A##",
+          "C##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "D#4",
+            "F##4",
+            "A##4",
+            "C##5"
+          ],
+          "bassClef": [
+            "D#3",
+            "F##3",
+            "A##3",
+            "C##4"
+          ]
+        }
+      },
+      {
+        "name": "Eb",
+        "root": "Eb",
+        "notes": [
+          "Eb",
+          "G",
+          "B",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Eb4",
+            "G4",
+            "B4",
+            "D5"
+          ],
+          "bassClef": [
+            "Eb3",
+            "G3",
+            "B3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_e_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "E"
+    ],
+    "aliases": [
+      "Emaj"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G#",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G#4",
+            "B4"
+          ],
+          "bassClef": [
+            "E3",
+            "G#3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_e_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Em"
+    ],
+    "aliases": [
+      "Emin"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "B4"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_e_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Eaug"
+    ],
+    "aliases": [
+      "Eaug"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G#",
+          "B#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G#4",
+            "B#4"
+          ],
+          "bassClef": [
+            "E3",
+            "G#3",
+            "B#3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_e_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Edim"
+    ],
+    "aliases": [
+      "Edim"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "Bb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "Bb4"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "Bb3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_e_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Esus4"
+    ],
+    "aliases": [
+      "Esus4"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "A",
+          "B"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "A4",
+            "B4"
+          ],
+          "bassClef": [
+            "E3",
+            "A3",
+            "B3"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_e_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "E7"
+    ],
+    "aliases": [
+      "E7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G#",
+          "B",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G#4",
+            "B4",
+            "D5"
+          ],
+          "bassClef": [
+            "E3",
+            "G#3",
+            "B3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_e_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Emaj7"
+    ],
+    "aliases": [
+      "Emaj7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G#",
+          "B",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G#4",
+            "B4",
+            "D#5"
+          ],
+          "bassClef": [
+            "E3",
+            "G#3",
+            "B3",
+            "D#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_e_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Em7"
+    ],
+    "aliases": [
+      "Em7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "B",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "B4",
+            "D5"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "B3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_e_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Edim7"
+    ],
+    "aliases": [
+      "Edim7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "Bb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "Bb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "Bb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_e_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "Em7b5"
+    ],
+    "aliases": [
+      "Em7b5"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "Bb",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "Bb4",
+            "D5"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "Bb3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_e_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "EmMaj7"
+    ],
+    "aliases": [
+      "EmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G",
+          "B",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G4",
+            "B4",
+            "D#5"
+          ],
+          "bassClef": [
+            "E3",
+            "G3",
+            "B3",
+            "D#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_e_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_e",
+    "displayNames": [
+      "EaugMaj7"
+    ],
+    "aliases": [
+      "EaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "E",
+        "root": "E",
+        "notes": [
+          "E",
+          "G#",
+          "B#",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "E4",
+            "G#4",
+            "B#4",
+            "D#5"
+          ],
+          "bassClef": [
+            "E3",
+            "G#3",
+            "B#3",
+            "D#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_f_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "F"
+    ],
+    "aliases": [
+      "Fmaj"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "F3",
+            "A3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_f_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fm"
+    ],
+    "aliases": [
+      "Fmin"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "C5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_f_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Faug"
+    ],
+    "aliases": [
+      "Faug"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "A",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "A4",
+            "C#5"
+          ],
+          "bassClef": [
+            "F3",
+            "A3",
+            "C#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_f_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fdim"
+    ],
+    "aliases": [
+      "Fdim"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "Cb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "Cb5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "Cb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_f_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fsus4"
+    ],
+    "aliases": [
+      "Fsus4"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Bb",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Bb4",
+            "C5"
+          ],
+          "bassClef": [
+            "F3",
+            "Bb3",
+            "C4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_f_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "F7"
+    ],
+    "aliases": [
+      "F7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "A",
+          "C",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "A4",
+            "C5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "F3",
+            "A3",
+            "C4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_f_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fmaj7"
+    ],
+    "aliases": [
+      "Fmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "A",
+          "C",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "A4",
+            "C5",
+            "E5"
+          ],
+          "bassClef": [
+            "F3",
+            "A3",
+            "C4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_f_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fm7"
+    ],
+    "aliases": [
+      "Fm7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "C",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "C5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "C4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_f_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fdim7"
+    ],
+    "aliases": [
+      "Fdim7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "Cb",
+          "Ebb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "Cb5",
+            "Ebb5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "Cb4",
+            "Ebb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_f_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "Fm7b5"
+    ],
+    "aliases": [
+      "Fm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "Cb",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "Cb5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "Cb4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_f_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "FmMaj7"
+    ],
+    "aliases": [
+      "FmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "Ab",
+          "C",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "Ab4",
+            "C5",
+            "E5"
+          ],
+          "bassClef": [
+            "F3",
+            "Ab3",
+            "C4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_f_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_f",
+    "displayNames": [
+      "FaugMaj7"
+    ],
+    "aliases": [
+      "FaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F",
+        "root": "F",
+        "notes": [
+          "F",
+          "A",
+          "C#",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F4",
+            "A4",
+            "C#5",
+            "E5"
+          ],
+          "bassClef": [
+            "F3",
+            "A3",
+            "C#4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_fsharp_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#",
+      "Gb"
+    ],
+    "aliases": [
+      "F#maj",
+      "Gbmaj"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A#",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A#4",
+            "C#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A#3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#m",
+      "Gbm"
+    ],
+    "aliases": [
+      "F#min",
+      "Gbmin"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#aug",
+      "Gbaug"
+    ],
+    "aliases": [
+      "F#aug",
+      "Gbaug"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A#",
+          "C##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A#4",
+            "C##5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A#3",
+            "C##4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bb",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bb4",
+            "D5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bb3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#dim",
+      "Gbdim"
+    ],
+    "aliases": [
+      "F#dim",
+      "Gbdim"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Dbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Dbb5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Dbb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#sus4",
+      "Gbsus4"
+    ],
+    "aliases": [
+      "F#sus4",
+      "Gbsus4"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "B",
+          "C#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "B4",
+            "C#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "B3",
+            "C#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Cb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Cb5",
+            "Db5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Cb4",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#7",
+      "Gb7"
+    ],
+    "aliases": [
+      "F#7",
+      "Gb7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A#",
+          "C#",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A#4",
+            "C#5",
+            "E5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A#3",
+            "C#4",
+            "E4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bb",
+          "Db",
+          "Fb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bb4",
+            "Db5",
+            "Fb5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bb3",
+            "Db4",
+            "Fb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#maj7",
+      "Gbmaj7"
+    ],
+    "aliases": [
+      "F#maj7",
+      "Gbmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A#",
+          "C#",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A#4",
+            "C#5",
+            "E#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A#3",
+            "C#4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bb",
+          "Db",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bb4",
+            "Db5",
+            "F5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bb3",
+            "Db4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#m7",
+      "Gbm7"
+    ],
+    "aliases": [
+      "F#m7",
+      "Gbm7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C#",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C#5",
+            "E5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C#4",
+            "E4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Db",
+          "Fb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Db5",
+            "Fb5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Db4",
+            "Fb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#dim7",
+      "Gbdim7"
+    ],
+    "aliases": [
+      "F#dim7",
+      "Gbdim7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C4",
+            "Eb4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Dbb",
+          "Fbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Dbb5",
+            "Fbb5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Dbb4",
+            "Fbb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#m7b5",
+      "Gbm7b5"
+    ],
+    "aliases": [
+      "F#m7b5",
+      "Gbm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C5",
+            "E5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C4",
+            "E4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Dbb",
+          "Fb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Dbb5",
+            "Fb5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Dbb4",
+            "Fb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#mMaj7",
+      "GbmMaj7"
+    ],
+    "aliases": [
+      "F#mMaj7",
+      "GbmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A",
+          "C#",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A4",
+            "C#5",
+            "E#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A3",
+            "C#4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bbb",
+          "Db",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bbb4",
+            "Db5",
+            "F5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bbb3",
+            "Db4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_fsharp_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_fsharp",
+    "displayNames": [
+      "F#augMaj7",
+      "GbaugMaj7"
+    ],
+    "aliases": [
+      "F#augMaj7",
+      "GbaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "F#",
+        "root": "F#",
+        "notes": [
+          "F#",
+          "A#",
+          "C##",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "F#4",
+            "A#4",
+            "C##5",
+            "E#5"
+          ],
+          "bassClef": [
+            "F#3",
+            "A#3",
+            "C##4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Gb",
+        "root": "Gb",
+        "notes": [
+          "Gb",
+          "Bb",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Gb4",
+            "Bb4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "Gb3",
+            "Bb3",
+            "D4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_g_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "G"
+    ],
+    "aliases": [
+      "Gmaj"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "B4",
+            "D5"
+          ],
+          "bassClef": [
+            "G3",
+            "B3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_g_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gm"
+    ],
+    "aliases": [
+      "Gmin"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "D5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_g_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gaug"
+    ],
+    "aliases": [
+      "Gaug"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "B",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "B4",
+            "D#5"
+          ],
+          "bassClef": [
+            "G3",
+            "B3",
+            "D#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_g_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gdim"
+    ],
+    "aliases": [
+      "Gdim"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "Db"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "Db5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "Db4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_g_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gsus4"
+    ],
+    "aliases": [
+      "Gsus4"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "C",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "C5",
+            "D5"
+          ],
+          "bassClef": [
+            "G3",
+            "C4",
+            "D4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_g_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "G7"
+    ],
+    "aliases": [
+      "G7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "B",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "B4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "G3",
+            "B3",
+            "D4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_g_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gmaj7"
+    ],
+    "aliases": [
+      "Gmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "B",
+          "D",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "B4",
+            "D5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G3",
+            "B3",
+            "D4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_g_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gm7"
+    ],
+    "aliases": [
+      "Gm7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "D4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_g_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gdim7"
+    ],
+    "aliases": [
+      "Gdim7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "Db",
+          "Fb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "Db5",
+            "Fb5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "Db4",
+            "Fb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_g_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "Gm7b5"
+    ],
+    "aliases": [
+      "Gm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "Db",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "Db5",
+            "F5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "Db4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_g_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "GmMaj7"
+    ],
+    "aliases": [
+      "GmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "Bb",
+          "D",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "Bb4",
+            "D5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G3",
+            "Bb3",
+            "D4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_g_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_g",
+    "displayNames": [
+      "GaugMaj7"
+    ],
+    "aliases": [
+      "GaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G",
+        "root": "G",
+        "notes": [
+          "G",
+          "B",
+          "D#",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G4",
+            "B4",
+            "D#5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G3",
+            "B3",
+            "D#4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_gsharp_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#",
+      "Ab"
+    ],
+    "aliases": [
+      "G#maj",
+      "Abmaj"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B#",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B#4",
+            "D#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B#3",
+            "D#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "C",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "C5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "C4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#m",
+      "Abm"
+    ],
+    "aliases": [
+      "G#min",
+      "Abmin"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#aug",
+      "Abaug"
+    ],
+    "aliases": [
+      "G#aug",
+      "Abaug"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B#",
+          "D##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B#4",
+            "D##5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B#3",
+            "D##4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "C",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "C5",
+            "E5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "C4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#dim",
+      "Abdim"
+    ],
+    "aliases": [
+      "G#dim",
+      "Abdim"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Ebb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Ebb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Ebb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#sus4",
+      "Absus4"
+    ],
+    "aliases": [
+      "G#sus4",
+      "Absus4"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "C#",
+          "D#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "C#5",
+            "D#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "C#4",
+            "D#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Db",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Db5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Db4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#7",
+      "Ab7"
+    ],
+    "aliases": [
+      "G#7",
+      "Ab7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B#",
+          "D#",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B#4",
+            "D#5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B#3",
+            "D#4",
+            "F#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "C",
+          "Eb",
+          "Gb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "C5",
+            "Eb5",
+            "Gb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "C4",
+            "Eb4",
+            "Gb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#maj7",
+      "Abmaj7"
+    ],
+    "aliases": [
+      "G#maj7",
+      "Abmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B#",
+          "D#",
+          "F##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B#4",
+            "D#5",
+            "F##5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B#3",
+            "D#4",
+            "F##4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "C",
+          "Eb",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "C5",
+            "Eb5",
+            "G5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "C4",
+            "Eb4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#m7",
+      "Abm7"
+    ],
+    "aliases": [
+      "G#m7",
+      "Abm7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D#",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D#5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D#4",
+            "F#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Eb",
+          "Gb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Eb5",
+            "Gb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Eb4",
+            "Gb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#dim7",
+      "Abdim7"
+    ],
+    "aliases": [
+      "G#dim7",
+      "Abdim7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D4",
+            "F4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Ebb",
+          "Gbb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Ebb5",
+            "Gbb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Ebb4",
+            "Gbb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#m7b5",
+      "Abm7b5"
+    ],
+    "aliases": [
+      "G#m7b5",
+      "Abm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D5",
+            "F#5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D4",
+            "F#4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Ebb",
+          "Gb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Ebb5",
+            "Gb5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Ebb4",
+            "Gb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#mMaj7",
+      "AbmMaj7"
+    ],
+    "aliases": [
+      "G#mMaj7",
+      "AbmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B",
+          "D#",
+          "F##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B4",
+            "D#5",
+            "F##5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B3",
+            "D#4",
+            "F##4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "Cb",
+          "Eb",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "Cb5",
+            "Eb5",
+            "G5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "Cb4",
+            "Eb4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_gsharp_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_gsharp",
+    "displayNames": [
+      "G#augMaj7",
+      "AbaugMaj7"
+    ],
+    "aliases": [
+      "G#augMaj7",
+      "AbaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "G#",
+        "root": "G#",
+        "notes": [
+          "G#",
+          "B#",
+          "D##",
+          "F##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "G#4",
+            "B#4",
+            "D##5",
+            "F##5"
+          ],
+          "bassClef": [
+            "G#3",
+            "B#3",
+            "D##4",
+            "F##4"
+          ]
+        }
+      },
+      {
+        "name": "Ab",
+        "root": "Ab",
+        "notes": [
+          "Ab",
+          "C",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Ab4",
+            "C5",
+            "E5",
+            "G5"
+          ],
+          "bassClef": [
+            "Ab3",
+            "C4",
+            "E4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_a_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "A"
+    ],
+    "aliases": [
+      "Amaj"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C#",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C#5",
+            "E5"
+          ],
+          "bassClef": [
+            "A3",
+            "C#4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_a_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Am"
+    ],
+    "aliases": [
+      "Amin"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "E5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_a_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Aaug"
+    ],
+    "aliases": [
+      "Aaug"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C#",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C#5",
+            "E#5"
+          ],
+          "bassClef": [
+            "A3",
+            "C#4",
+            "E#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_a_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Adim"
+    ],
+    "aliases": [
+      "Adim"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "Eb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "Eb5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "Eb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_a_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Asus4"
+    ],
+    "aliases": [
+      "Asus4"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "D",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "D5",
+            "E5"
+          ],
+          "bassClef": [
+            "A3",
+            "D4",
+            "E4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_a_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "A7"
+    ],
+    "aliases": [
+      "A7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C#",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C#5",
+            "E5",
+            "G5"
+          ],
+          "bassClef": [
+            "A3",
+            "C#4",
+            "E4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_a_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Amaj7"
+    ],
+    "aliases": [
+      "Amaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C#",
+          "E",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C#5",
+            "E5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A3",
+            "C#4",
+            "E4",
+            "G#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_a_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Am7"
+    ],
+    "aliases": [
+      "Am7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "E5",
+            "G5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "E4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_a_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Adim7"
+    ],
+    "aliases": [
+      "Adim7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "Eb",
+          "Gb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "Eb5",
+            "Gb5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "Eb4",
+            "Gb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_a_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "Am7b5"
+    ],
+    "aliases": [
+      "Am7b5"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "Eb",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "Eb5",
+            "G5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "Eb4",
+            "G4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_a_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "AmMaj7"
+    ],
+    "aliases": [
+      "AmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C",
+          "E",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C5",
+            "E5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A3",
+            "C4",
+            "E4",
+            "G#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_a_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_a",
+    "displayNames": [
+      "AaugMaj7"
+    ],
+    "aliases": [
+      "AaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A",
+        "root": "A",
+        "notes": [
+          "A",
+          "C#",
+          "E#",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A4",
+            "C#5",
+            "E#5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A3",
+            "C#4",
+            "E#4",
+            "G#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_asharp_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#",
+      "Bb"
+    ],
+    "aliases": [
+      "A#maj",
+      "Bbmaj"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C##",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C##5",
+            "E#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C##4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "D4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#m",
+      "Bbm"
+    ],
+    "aliases": [
+      "A#min",
+      "Bbmin"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "F5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#aug",
+      "Bbaug"
+    ],
+    "aliases": [
+      "A#aug",
+      "Bbaug"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C##",
+          "E##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C##5",
+            "E##5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C##4",
+            "E##4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "D",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "D5",
+            "F#5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "D4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#dim",
+      "Bbdim"
+    ],
+    "aliases": [
+      "A#dim",
+      "Bbdim"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "Fb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "Fb5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "Fb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#sus4",
+      "Bbsus4"
+    ],
+    "aliases": [
+      "A#sus4",
+      "Bbsus4"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "D#",
+          "E#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "D#5",
+            "E#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "D#4",
+            "E#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Eb",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Eb5",
+            "F5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Eb4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#7",
+      "Bb7"
+    ],
+    "aliases": [
+      "A#7",
+      "Bb7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C##",
+          "E#",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C##5",
+            "E#5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C##4",
+            "E#4",
+            "G#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "D",
+          "F",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "D5",
+            "F5",
+            "Ab5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "D4",
+            "F4",
+            "Ab4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#maj7",
+      "Bbmaj7"
+    ],
+    "aliases": [
+      "A#maj7",
+      "Bbmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C##",
+          "E#",
+          "G##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C##5",
+            "E#5",
+            "G##5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C##4",
+            "E#4",
+            "G##4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "D",
+          "F",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "D5",
+            "F5",
+            "A5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "D4",
+            "F4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#m7",
+      "Bbm7"
+    ],
+    "aliases": [
+      "A#m7",
+      "Bbm7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E#",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E#5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E#4",
+            "G#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "F",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "F5",
+            "Ab5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "F4",
+            "Ab4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#dim7",
+      "Bbdim7"
+    ],
+    "aliases": [
+      "A#dim7",
+      "Bbdim7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E",
+          "G"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E5",
+            "G5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E4",
+            "G4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "Fb",
+          "Abb"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "Fb5",
+            "Abb5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "Fb4",
+            "Abb4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#m7b5",
+      "Bbm7b5"
+    ],
+    "aliases": [
+      "A#m7b5",
+      "Bbm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E",
+          "G#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E5",
+            "G#5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E4",
+            "G#4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "Fb",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "Fb5",
+            "Ab5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "Fb4",
+            "Ab4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#mMaj7",
+      "BbmMaj7"
+    ],
+    "aliases": [
+      "A#mMaj7",
+      "BbmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C#",
+          "E#",
+          "G##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C#5",
+            "E#5",
+            "G##5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C#4",
+            "E#4",
+            "G##4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "Db",
+          "F",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "Db5",
+            "F5",
+            "A5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "Db4",
+            "F4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_asharp_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_asharp",
+    "displayNames": [
+      "A#augMaj7",
+      "BbaugMaj7"
+    ],
+    "aliases": [
+      "A#augMaj7",
+      "BbaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "A#",
+        "root": "A#",
+        "notes": [
+          "A#",
+          "C##",
+          "E##",
+          "G##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "A#4",
+            "C##5",
+            "E##5",
+            "G##5"
+          ],
+          "bassClef": [
+            "A#3",
+            "C##4",
+            "E##4",
+            "G##4"
+          ]
+        }
+      },
+      {
+        "name": "Bb",
+        "root": "Bb",
+        "notes": [
+          "Bb",
+          "D",
+          "F#",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "Bb4",
+            "D5",
+            "F#5",
+            "A5"
+          ],
+          "bassClef": [
+            "Bb3",
+            "D4",
+            "F#4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented",
+      "enharmonic"
+    ]
+  },
+  {
+    "id": "chord_b_major",
+    "qualityId": "quality_major",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "B"
+    ],
+    "aliases": [
+      "Bmaj"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D#",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D#5",
+            "F#5"
+          ],
+          "bassClef": [
+            "B3",
+            "D#4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_b_minor",
+    "qualityId": "quality_minor",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bm"
+    ],
+    "aliases": [
+      "Bmin"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F#5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_b_aug",
+    "qualityId": "quality_aug",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Baug"
+    ],
+    "aliases": [
+      "Baug"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D#",
+          "F##"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D#5",
+            "F##5"
+          ],
+          "bassClef": [
+            "B3",
+            "D#4",
+            "F##4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "augmented"
+    ]
+  },
+  {
+    "id": "chord_b_dim",
+    "qualityId": "quality_dim",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bdim"
+    ],
+    "aliases": [
+      "Bdim"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "triad",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_b_sus4",
+    "qualityId": "quality_sus4",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bsus4"
+    ],
+    "aliases": [
+      "Bsus4"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "E",
+          "F#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "E5",
+            "F#5"
+          ],
+          "bassClef": [
+            "B3",
+            "E4",
+            "F#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "sus",
+      "suspended"
+    ]
+  },
+  {
+    "id": "chord_b_seventh",
+    "qualityId": "quality_seventh",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "B7"
+    ],
+    "aliases": [
+      "B7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D#",
+          "F#",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D#5",
+            "F#5",
+            "A5"
+          ],
+          "bassClef": [
+            "B3",
+            "D#4",
+            "F#4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "dominant"
+    ]
+  },
+  {
+    "id": "chord_b_maj7",
+    "qualityId": "quality_maj7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bmaj7"
+    ],
+    "aliases": [
+      "Bmaj7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D#",
+          "F#",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D#5",
+            "F#5",
+            "A#5"
+          ],
+          "bassClef": [
+            "B3",
+            "D#4",
+            "F#4",
+            "A#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "major"
+    ]
+  },
+  {
+    "id": "chord_b_m7",
+    "qualityId": "quality_m7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bm7"
+    ],
+    "aliases": [
+      "Bm7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F#",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F#5",
+            "A5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F#4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_b_dim7",
+    "qualityId": "quality_dim7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bdim7"
+    ],
+    "aliases": [
+      "Bdim7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F",
+          "Ab"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F5",
+            "Ab5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F4",
+            "Ab4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_b_halfdim7",
+    "qualityId": "quality_halfdim7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "Bm7b5"
+    ],
+    "aliases": [
+      "Bm7b5"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F",
+          "A"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F5",
+            "A5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F4",
+            "A4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "diminished"
+    ]
+  },
+  {
+    "id": "chord_b_mmaj7",
+    "qualityId": "quality_mmaj7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "BmMaj7"
+    ],
+    "aliases": [
+      "BmMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D",
+          "F#",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D5",
+            "F#5",
+            "A#5"
+          ],
+          "bassClef": [
+            "B3",
+            "D4",
+            "F#4",
+            "A#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "minor"
+    ]
+  },
+  {
+    "id": "chord_b_augmaj7",
+    "qualityId": "quality_augmaj7",
+    "rootNoteId": "note_b",
+    "displayNames": [
+      "BaugMaj7"
+    ],
+    "aliases": [
+      "BaugMaj7"
+    ],
+    "spellings": [
+      {
+        "name": "B",
+        "root": "B",
+        "notes": [
+          "B",
+          "D#",
+          "F##",
+          "A#"
+        ],
+        "staff": {
+          "trebleClef": [
+            "B4",
+            "D#5",
+            "F##5",
+            "A#5"
+          ],
+          "bassClef": [
+            "B3",
+            "D#4",
+            "F##4",
+            "A#4"
+          ]
+        }
+      }
+    ],
+    "harmonicFunctions": [],
+    "commonProgressions": [],
+    "tags": [
+      "seventh",
+      "augmented"
+    ]
+  }
+]

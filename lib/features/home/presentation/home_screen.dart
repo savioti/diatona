@@ -29,6 +29,12 @@ class HomeScreen extends ConsumerWidget {
             children: [
               Row(
                 children: [
+                  Image.asset(
+                    'assets/logo/logo.png',
+                    height: 36,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: Text(
                       l10n.appTitle,

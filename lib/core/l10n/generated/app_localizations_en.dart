@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Chord Trainer';
+  String get appTitle => 'Diatona';
 
   @override
   String get getReady => 'Get Ready';
@@ -107,4 +107,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get theme => 'Theme';
+
+  @override
+  String get menuNoteTrainer => 'Note Trainer';
+
+  @override
+  String get menuChordTraining => 'Chord Training';
+
+  @override
+  String get menuDonate => 'Donate';
+
+  @override
+  String get menuAbout => 'About';
+
+  @override
+  String get comingSoon => 'Coming Soon';
 }

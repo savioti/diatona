@@ -1,5 +1,5 @@
-import 'package:chord_trainer/app.dart';
-import 'package:chord_trainer/features/trainer/data/providers.dart';
+import 'package:diatona/app.dart';
+import 'package:diatona/features/trainer/data/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';

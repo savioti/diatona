@@ -9,7 +9,7 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get appTitle => 'Entrenador de Acordes';
+  String get appTitle => 'Diatona';
 
   @override
   String get getReady => 'Prepárate';
@@ -107,4 +107,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get theme => 'Tema';
+
+  @override
+  String get menuNoteTrainer => 'Entrenador de Notas';
+
+  @override
+  String get menuChordTraining => 'Entrenamiento de Acordes';
+
+  @override
+  String get menuDonate => 'Donar';
+
+  @override
+  String get menuAbout => 'Acerca de';
+
+  @override
+  String get comingSoon => 'Próximamente';
 }

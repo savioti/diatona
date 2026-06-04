@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/chord_trainer.iml" filepath="$PROJECT_DIR$/chord_trainer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/chord_trainer_android.iml" filepath="$PROJECT_DIR$/android/chord_trainer_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diatona.iml" filepath="$PROJECT_DIR$/diatona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/diatona_android.iml" filepath="$PROJECT_DIR$/android/diatona_android.iml" />
     </modules>
   </component>
 </project>

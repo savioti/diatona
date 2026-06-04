@@ -104,7 +104,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Chord Trainer'**
+  /// **'Diatona'**
   String get appTitle;
 
   /// No description provided for @getReady.
@@ -286,6 +286,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Theme'**
   String get theme;
+
+  /// No description provided for @menuNoteTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Note Trainer'**
+  String get menuNoteTrainer;
+
+  /// No description provided for @menuChordTraining.
+  ///
+  /// In en, this message translates to:
+  /// **'Chord Training'**
+  String get menuChordTraining;
+
+  /// No description provided for @menuDonate.
+  ///
+  /// In en, this message translates to:
+  /// **'Donate'**
+  String get menuDonate;
+
+  /// No description provided for @menuAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get menuAbout;
+
+  /// No description provided for @comingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming Soon'**
+  String get comingSoon;
 }
 
 class _AppLocalizationsDelegate

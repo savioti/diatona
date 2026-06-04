@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-const List<int> kIntervalOptions = [0, 1, 3, 5, 10];
-
-class IntervalSelector extends StatelessWidget {
+class IntervalSelector extends StatefulWidget {
   const IntervalSelector({
     super.key,
     required this.selectedInterval,
@@ -13,41 +11,96 @@ class IntervalSelector extends StatelessWidget {
   final ValueChanged<int> onIntervalChanged;
 
   @override
+  State<IntervalSelector> createState() => _IntervalSelectorState();
+}
+
+class _IntervalSelectorState extends State<IntervalSelector> {
+  late int _seconds;
+
+  @override
+  void initState() {
+    super.initState();
+    _seconds = widget.selectedInterval == 0 ? 5 : widget.selectedInterval;
+  }
+
+  bool get _noLimit => widget.selectedInterval == 0;
+
+  void _decrement() {
+    final next = (_seconds - 1).clamp(1, 60);
+    setState(() => _seconds = next);
+    widget.onIntervalChanged(next);
+  }
+
+  void _increment() {
+    final next = (_seconds + 1).clamp(1, 60);
+    setState(() => _seconds = next);
+    widget.onIntervalChanged(next);
+  }
+
+  void _toggleNoLimit() {
+    if (_noLimit) {
+      widget.onIntervalChanged(_seconds);
+    } else {
+      widget.onIntervalChanged(0);
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
 
     return Row(
-      children: kIntervalOptions.indexed.map((entry) {
-        final (i, value) = entry;
-        final isSelected = value == selectedInterval;
-        return Expanded(
-          child: Padding(
-            padding: EdgeInsets.only(left: i == 0 ? 0 : 8),
-            child: GestureDetector(
-              onTap: () => onIntervalChanged(value),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                height: 48,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: isSelected
-                      ? colorScheme.primary
-                      : colorScheme.surfaceContainerHighest,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  value == 0 ? '∞' : '${value}s',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                    fontSize: 15,
-                  ),
-                ),
-              ),
+      children: [
+        _StepperButton(
+          icon: Icons.remove,
+          onPressed: _noLimit ? null : _decrement,
+        ),
+        const SizedBox(width: 12),
+        SizedBox(
+          width: 52,
+          child: Text(
+            '${_seconds}s',
+            textAlign: TextAlign.center,
+            style: textTheme.titleLarge?.copyWith(
+              color: _noLimit
+                  ? colorScheme.onSurface.withValues(alpha: 0.38)
+                  : colorScheme.onSurface,
             ),
           ),
-        );
-      }).toList(),
+        ),
+        const SizedBox(width: 12),
+        _StepperButton(
+          icon: Icons.add,
+          onPressed: _noLimit ? null : _increment,
+        ),
+        const SizedBox(width: 16),
+        FilterChip(
+          label: Text(
+            'No limit',
+            style: TextStyle(
+              color: _noLimit ? colorScheme.onPrimary : colorScheme.onSurface,
+            ),
+          ),
+          selected: _noLimit,
+          onSelected: (_) => _toggleNoLimit(),
+        ),
+      ],
+    );
+  }
+}
+
+class _StepperButton extends StatelessWidget {
+  const _StepperButton({required this.icon, this.onPressed});
+
+  final IconData icon;
+  final VoidCallback? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton.outlined(
+      icon: Icon(icon),
+      onPressed: onPressed,
     );
   }
 }

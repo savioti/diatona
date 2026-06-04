@@ -1,0 +1,715 @@
+[
+  {
+    "id": "scale_major",
+    "name": "Major",
+    "formula": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "M3",
+      "P4",
+      "P5",
+      "M6",
+      "M7"
+    ],
+    "semitones": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      9,
+      11
+    ],
+    "tags": [
+      "diatonic",
+      "major"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "I",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "iii",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "IV",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "V",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "vi",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii°",
+        "qualityId": "quality_dim",
+        "function": "dominant"
+      }
+    ],
+    "alias": "Ionian"
+  },
+  {
+    "id": "scale_natural_minor",
+    "name": "Natural Minor",
+    "formula": [
+      "1",
+      "2",
+      "b3",
+      "4",
+      "5",
+      "b6",
+      "b7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "m3",
+      "P4",
+      "P5",
+      "m6",
+      "m7"
+    ],
+    "semitones": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "tags": [
+      "diatonic",
+      "minor"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii°",
+        "qualityId": "quality_dim",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "III",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "iv",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "v",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "VI",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "VII",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      }
+    ],
+    "alias": "Aeolian"
+  },
+  {
+    "id": "scale_harmonic_minor",
+    "name": "Harmonic Minor",
+    "formula": [
+      "1",
+      "2",
+      "b3",
+      "4",
+      "5",
+      "b6",
+      "7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "m3",
+      "P4",
+      "P5",
+      "m6",
+      "M7"
+    ],
+    "semitones": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      11
+    ],
+    "tags": [
+      "minor",
+      "harmonic"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii°",
+        "qualityId": "quality_dim",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "III+",
+        "qualityId": "quality_aug",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "iv",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "V",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "VI",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii°",
+        "qualityId": "quality_dim",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_melodic_minor",
+    "name": "Melodic Minor",
+    "formula": [
+      "1",
+      "2",
+      "b3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "m3",
+      "P4",
+      "P5",
+      "M6",
+      "M7"
+    ],
+    "semitones": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "tags": [
+      "minor",
+      "melodic"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "III+",
+        "qualityId": "quality_aug",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "IV",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "V",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "vi°",
+        "qualityId": "quality_dim",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii°",
+        "qualityId": "quality_dim",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_dorian",
+    "name": "Dorian",
+    "formula": [
+      "1",
+      "2",
+      "b3",
+      "4",
+      "5",
+      "6",
+      "b7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "m3",
+      "P4",
+      "P5",
+      "M6",
+      "m7"
+    ],
+    "semitones": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      9,
+      10
+    ],
+    "tags": [
+      "diatonic",
+      "mode"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "III",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "IV",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "v",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "vi°",
+        "qualityId": "quality_dim",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "VII",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_phrygian",
+    "name": "Phrygian",
+    "formula": [
+      "1",
+      "b2",
+      "b3",
+      "4",
+      "5",
+      "b6",
+      "b7"
+    ],
+    "intervals": [
+      "P1",
+      "m2",
+      "m3",
+      "P4",
+      "P5",
+      "m6",
+      "m7"
+    ],
+    "semitones": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "tags": [
+      "diatonic",
+      "mode"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "II",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "III",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "iv",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "v°",
+        "qualityId": "quality_dim",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "VI",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_lydian",
+    "name": "Lydian",
+    "formula": [
+      "1",
+      "2",
+      "3",
+      "#4",
+      "5",
+      "6",
+      "7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "M3",
+      "A4",
+      "P5",
+      "M6",
+      "M7"
+    ],
+    "semitones": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9,
+      11
+    ],
+    "tags": [
+      "diatonic",
+      "mode"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "I",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "II",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "iii",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "iv°",
+        "qualityId": "quality_dim",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "V",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "vi",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_mixolydian",
+    "name": "Mixolydian",
+    "formula": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "b7"
+    ],
+    "intervals": [
+      "P1",
+      "M2",
+      "M3",
+      "P4",
+      "P5",
+      "M6",
+      "m7"
+    ],
+    "semitones": [
+      0,
+      2,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "tags": [
+      "diatonic",
+      "mode"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "I",
+        "qualityId": "quality_major",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "ii",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "iii°",
+        "qualityId": "quality_dim",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "IV",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "v",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "vi",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "VII",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      }
+    ]
+  },
+  {
+    "id": "scale_locrian",
+    "name": "Locrian",
+    "formula": [
+      "1",
+      "b2",
+      "b3",
+      "4",
+      "b5",
+      "b6",
+      "b7"
+    ],
+    "intervals": [
+      "P1",
+      "m2",
+      "m3",
+      "P4",
+      "d5",
+      "m6",
+      "m7"
+    ],
+    "semitones": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      8,
+      10
+    ],
+    "tags": [
+      "diatonic",
+      "mode"
+    ],
+    "degrees": [
+      {
+        "degree": 1,
+        "romanNumeral": "i°",
+        "qualityId": "quality_dim",
+        "function": "tonic"
+      },
+      {
+        "degree": 2,
+        "romanNumeral": "II",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 3,
+        "romanNumeral": "iii",
+        "qualityId": "quality_minor",
+        "function": "tonic"
+      },
+      {
+        "degree": 4,
+        "romanNumeral": "iv",
+        "qualityId": "quality_minor",
+        "function": "subdominant"
+      },
+      {
+        "degree": 5,
+        "romanNumeral": "V",
+        "qualityId": "quality_major",
+        "function": "dominant"
+      },
+      {
+        "degree": 6,
+        "romanNumeral": "VI",
+        "qualityId": "quality_major",
+        "function": "subdominant"
+      },
+      {
+        "degree": 7,
+        "romanNumeral": "vii",
+        "qualityId": "quality_minor",
+        "function": "dominant"
+      }
+    ]
+  }
+]

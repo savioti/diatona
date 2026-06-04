@@ -29,6 +29,7 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
   Timer? _silenceTimer;
   StreamSubscription<String>? _pitchSub;
   List<Chord> _pool = [];
+  Map<Chord, int> _successCounts = {};
   bool _advancing = false;
   bool _waitingForNoteOff = false;
   String? _lastSuccessNote;
@@ -46,6 +47,7 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     _cleanup();
     await _audio.init();
     _pool = cumulative ? buildChordPool(level) : buildChordPoolSingle(level);
+    _successCounts = {for (final c in _pool) c: 0};
     _advancing = false;
 
     final pitchService = ref.read(_pitchServiceProvider);
@@ -104,6 +106,8 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     _advancing = true;
     _waitingForNoteOff = true;
     _lastSuccessNote = triggeredNote;
+    final chord = state.currentChord;
+    if (chord != null) _successCounts[chord] = (_successCounts[chord] ?? 0) + 1;
     _silenceTimer?.cancel();
     _timeLimitTimer?.cancel();
     _successTimer?.cancel();
@@ -161,11 +165,15 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
 
   Chord _pickNextChord(Chord? excluded) {
     if (_pool.length == 1) return _pool.first;
-    Chord picked;
-    do {
-      picked = _pool[_random.nextInt(_pool.length)];
-    } while (picked == excluded);
-    return picked;
+    final candidates = excluded != null
+        ? _pool.where((c) => c != excluded).toList()
+        : List.of(_pool);
+    final minCount = candidates
+        .map((c) => _successCounts[c] ?? 0)
+        .reduce(min);
+    final leastPlayed =
+        candidates.where((c) => (_successCounts[c] ?? 0) == minCount).toList();
+    return leastPlayed[_random.nextInt(leastPlayed.length)];
   }
 
   void _cleanup() {

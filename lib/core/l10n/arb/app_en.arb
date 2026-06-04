@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "Chord Trainer",
+  "appTitle": "Diatona",
   "@appTitle": {},
   "getReady": "Get Ready",
   "@getReady": {},
@@ -74,5 +74,15 @@
   "settings": "Settings",
   "@settings": {},
   "theme": "Theme",
-  "@theme": {}
+  "@theme": {},
+"menuNoteTrainer": "Note Trainer",
+  "@menuNoteTrainer": {},
+  "menuChordTraining": "Chord Training",
+  "@menuChordTraining": {},
+  "menuDonate": "Donate",
+  "@menuDonate": {},
+  "menuAbout": "About",
+  "@menuAbout": {},
+  "comingSoon": "Coming Soon",
+  "@comingSoon": {}
 }
