@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../settings/presentation/settings_screen.dart';
 import '../../trainer/data/providers.dart';
 import '../../trainer/domain/chord_type.dart';
 import '../../trainer/presentation/training_screen.dart';
+import 'widgets/display_mode_selector.dart';
 import 'widgets/interval_selector.dart';
 import 'widgets/level_selector.dart';
 
@@ -18,6 +18,7 @@ class HomeScreen extends ConsumerWidget {
     final level = ref.watch(selectedLevelProvider);
     final interval = ref.watch(selectedIntervalProvider);
     final cumulative = ref.watch(selectedCumulativeProvider);
+    final displayMode = ref.watch(selectedDisplayModeProvider);
     final repo = ref.read(settingsRepositoryProvider);
 
     return Scaffold(
@@ -29,37 +30,19 @@ class HomeScreen extends ConsumerWidget {
             children: [
               Row(
                 children: [
-                  Image.asset(
-                    'assets/logo/logo.png',
-                    height: 36,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      l10n.appTitle,
+                      l10n.homeTitle,
                       style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                            fontSize: 32,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                    ),
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.settings_outlined),
-                    tooltip: l10n.settings,
-                    onPressed: () => Navigator.of(context).push(
-                      MaterialPageRoute<void>(
-                        builder: (_) => const SettingsScreen(),
+                        fontSize: 32,
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                     ),
                   ),
                 ],
               ),
               const SizedBox(height: 48),
-              Text(
-                l10n.level,
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
+              Text(l10n.level, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 8),
               Text(
                 l10n.levelLabel(level, _levelName(level, l10n)),
@@ -119,8 +102,23 @@ class HomeScreen extends ConsumerWidget {
               IntervalSelector(
                 selectedInterval: interval,
                 onIntervalChanged: (newInterval) {
-                  ref.read(selectedIntervalProvider.notifier).update(newInterval);
+                  ref
+                      .read(selectedIntervalProvider.notifier)
+                      .update(newInterval);
                   repo.saveInterval(newInterval);
+                },
+              ),
+              const SizedBox(height: 24),
+              Text(
+                l10n.chordDisplay,
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+              const SizedBox(height: 12),
+              DisplayModeSelector(
+                selectedMode: displayMode,
+                onModeChanged: (mode) {
+                  ref.read(selectedDisplayModeProvider.notifier).update(mode);
+                  repo.saveDisplayMode(mode.index);
                 },
               ),
               const Spacer(),
@@ -146,7 +144,8 @@ class HomeScreen extends ConsumerWidget {
   }
 
   String _levelName(int level, AppLocalizations l10n) {
-    final type = ChordType.values[(level - 1).clamp(0, ChordType.values.length - 1)];
+    final type =
+        ChordType.values[(level - 1).clamp(0, ChordType.values.length - 1)];
     return switch (type) {
       ChordType.major => l10n.levelMajor,
       ChordType.minor => l10n.levelMinor,

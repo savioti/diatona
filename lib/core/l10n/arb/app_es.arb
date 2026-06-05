@@ -1,6 +1,7 @@
 {
   "@@locale": "es",
   "appTitle": "Diatona",
+  "homeTitle": "Entrenamiento de Acordes",
   "getReady": "Prepárate",
   "start": "Iniciar",
   "stop": "Detener",
@@ -47,9 +48,18 @@
   "ok": "OK",
   "settings": "Ajustes",
   "theme": "Tema",
-"menuNoteTrainer": "Entrenador de Notas",
+"menuNoteTrainer": "Entrenamiento de Notas",
   "menuChordTraining": "Entrenamiento de Acordes",
   "menuDonate": "Donar",
   "menuAbout": "Acerca de",
-  "comingSoon": "Próximamente"
+  "comingSoon": "Próximamente",
+  "noteTrainerClefLabel": "Clave",
+  "noteLevelStandard": "Estándar",
+  "noteLevelAccidentals": "Accidentales",
+  "chordDisplay": "Visualización de Acorde",
+  "displayModeSymbol": "Símbolo",
+  "displayModeTrebleClef": "Clave de Sol",
+  "displayModeBassClef": "Clave de Fa",
+  "displayModeGuitar": "Guitarra",
+  "displayModeUkulele": "Ukulele"
 }

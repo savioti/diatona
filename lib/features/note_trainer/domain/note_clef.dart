@@ -1,0 +1,4 @@
+enum NoteClef {
+  trebleClef,
+  bassClef,
+}
