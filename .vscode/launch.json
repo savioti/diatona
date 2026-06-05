@@ -2,18 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "chord_trainer (debug)",
+      "name": "Diatona (debug)",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "chord_trainer (profile)",
+      "name": "Diatona (profile)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "chord_trainer (release)",
+      "name": "Diatona (release)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
