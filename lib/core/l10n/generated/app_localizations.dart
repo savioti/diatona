@@ -143,6 +143,12 @@ abstract class AppLocalizations {
   /// **'Correct!'**
   String get correct;
 
+  /// No description provided for @skipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Skipped'**
+  String get skipped;
+
   /// No description provided for @level.
   ///
   /// In en, this message translates to:

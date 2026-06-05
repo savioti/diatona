@@ -30,6 +30,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get correct => 'Correto!';
 
   @override
+  String get skipped => 'Pulado';
+
+  @override
   String get level => 'Nível';
 
   @override
@@ -178,6 +181,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get correct => 'Correto!';
+
+  @override
+  String get skipped => 'Pulado';
 
   @override
   String get level => 'Nível';

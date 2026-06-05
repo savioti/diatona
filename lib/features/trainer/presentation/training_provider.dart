@@ -132,16 +132,19 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     _advancing = true;
     _timeLimitTimer?.cancel();
     _successTimer?.cancel();
-    _advanceChord();
-    _successTimer = Timer(
-      const Duration(milliseconds: 300),
-      () => _advancing = false,
-    );
+    state = state.copyWith(showSkip: true);
+    _successTimer = Timer(const Duration(milliseconds: 600), () {
+      _advanceChord();
+      _successTimer = Timer(
+        const Duration(milliseconds: 300),
+        () => _advancing = false,
+      );
+    });
   }
 
   void _advanceChord() {
     final next = _pickNextChord(state.currentChord);
-    state = state.copyWith(currentChord: next, showSuccess: false);
+    state = state.copyWith(currentChord: next, showSuccess: false, showSkip: false);
     _startTimeLimitTimer();
   }
 

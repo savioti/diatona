@@ -140,16 +140,19 @@ class NoteTrainingNotifier extends Notifier<NoteSessionState> {
     _advancing = true;
     _timeLimitTimer?.cancel();
     _successTimer?.cancel();
-    _advanceNote();
-    _successTimer = Timer(
-      const Duration(milliseconds: 300),
-      () => _advancing = false,
-    );
+    state = state.copyWith(showSkip: true);
+    _successTimer = Timer(const Duration(milliseconds: 600), () {
+      _advanceNote();
+      _successTimer = Timer(
+        const Duration(milliseconds: 300),
+        () => _advancing = false,
+      );
+    });
   }
 
   void _advanceNote() {
     final next = _pickNextNote(state.currentNote);
-    state = state.copyWith(currentNote: next, showSuccess: false);
+    state = state.copyWith(currentNote: next, showSuccess: false, showSkip: false);
     _startTimeLimitTimer();
   }
 

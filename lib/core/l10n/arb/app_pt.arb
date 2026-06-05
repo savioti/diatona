@@ -7,6 +7,7 @@
   "stop": "Parar",
   "next": "Próximo",
   "correct": "Correto!",
+  "skipped": "Pulado",
   "level": "Nível",
   "timeLimit": "Limite de Tempo",
   "noTimeLimit": "∞",

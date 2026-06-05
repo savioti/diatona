@@ -30,6 +30,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get correct => 'Correct!';
 
   @override
+  String get skipped => 'Skipped';
+
+  @override
   String get level => 'Level';
 
   @override

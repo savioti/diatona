@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/widgets/training_overlay.dart';
 import '../domain/note_clef.dart';
 import '../domain/note_session_state.dart';
 import 'note_training_provider.dart';
@@ -76,7 +77,7 @@ class _NoteTrainingScreenState extends ConsumerState<NoteTrainingScreen>
     final colorScheme = Theme.of(context).colorScheme;
 
     ref.listen<NoteSessionState>(noteTrainingProvider, (prev, next) {
-      if (next.showSuccess || !next.isActive) {
+      if (next.showSuccess || next.showSkip || !next.isActive) {
         _progressController?.stop();
         return;
       }
@@ -146,39 +147,19 @@ class _NoteTrainingScreenState extends ConsumerState<NoteTrainingScreen>
                       isGetReady: session.isGetReady || !session.isActive,
                       getReadyText: l10n.getReady,
                     ),
-                    Positioned.fill(
-                      child: IgnorePointer(
-                        ignoring: !session.showSuccess,
-                        child: AnimatedOpacity(
-                          opacity: session.showSuccess ? 1.0 : 0.0,
-                          duration: const Duration(milliseconds: 150),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(24),
-                            child: ColoredBox(
-                              color: Colors.green.withValues(alpha: 0.92),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Icon(
-                                    Icons.check_circle_rounded,
-                                    color: Colors.white,
-                                    size: 72,
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Text(
-                                    l10n.correct,
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 36,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                    TrainingOverlay(
+                      show: session.showSuccess,
+                      color: Colors.green.withValues(alpha: 0.92),
+                      icon: Icons.check_circle_rounded,
+                      title: l10n.correct,
+                      label: session.currentNote?.name,
+                    ),
+                    TrainingOverlay(
+                      show: session.showSkip,
+                      color: Colors.orange.withValues(alpha: 0.92),
+                      icon: Icons.skip_next_rounded,
+                      title: l10n.skipped,
+                      label: session.currentNote?.name,
                     ),
                   ],
                 ),

@@ -13,6 +13,7 @@ class NoteSessionState {
     required this.clef,
     this.currentNote,
     this.showSuccess = false,
+    this.showSkip = false,
   });
 
   const NoteSessionState.idle()
@@ -22,7 +23,8 @@ class NoteSessionState {
         timeLimitSeconds = 3,
         clef = NoteClef.trebleClef,
         currentNote = null,
-        showSuccess = false;
+        showSuccess = false,
+        showSkip = false;
 
   final bool isActive;
   final bool isGetReady;
@@ -32,6 +34,9 @@ class NoteSessionState {
   final NoteItem? currentNote;
   final bool showSuccess;
 
+  /// True for ~600 ms after the user skips a note, triggering the skip overlay.
+  final bool showSkip;
+
   NoteSessionState copyWith({
     bool? isActive,
     bool? isGetReady,
@@ -40,6 +45,7 @@ class NoteSessionState {
     NoteClef? clef,
     NoteItem? currentNote,
     bool? showSuccess,
+    bool? showSkip,
     bool clearNote = false,
   }) {
     return NoteSessionState(
@@ -50,6 +56,7 @@ class NoteSessionState {
       clef: clef ?? this.clef,
       currentNote: clearNote ? null : (currentNote ?? this.currentNote),
       showSuccess: showSuccess ?? this.showSuccess,
+      showSkip: showSkip ?? this.showSkip,
     );
   }
 }
