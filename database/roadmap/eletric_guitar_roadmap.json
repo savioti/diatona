@@ -1,0 +1,3481 @@
+{
+    "id": "rm-egt",
+    "title": "Electric Guitar Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn electric guitar from absolute beginner to advanced.",
+    "longDescription": "This roadmap covers everything specific to electric guitar: equipment (amplifiers, cables, effects pedals, signal chain), power chords, palm muting, picking techniques (alternate, hybrid, sweep, economy), lead techniques (legato, bends, vibrato, tapping, pinch harmonics, whammy bar), rhythm playing across genres (blues, rock, metal, funk), scales for lead playing (pentatonic, blues, modes, three-note-per-string), improvisation and soloing, and deep dives into the major electric guitar genres. Ear training and performance run as parallel skills. Free resources draw on JustinGuitar, which has stable free content for electric guitar going back two decades.",
+    "sections": [
+        {
+            "id": "egt-sctn-001",
+            "roadmapId": "rm-egt",
+            "title": "Getting Started",
+            "shortDescription": "Anatomy, posture, tuning, and using your guitar's controls.",
+            "longDescription": "Before plugging in to an amp, get comfortable with your electric guitar's physical and electrical layout. This section covers the parts of the guitar, sitting and standing posture, tuning, and using the pickup selector and tone controls.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "egt-sctn-002",
+                "egt-sctn-003",
+                "egt-sctn-008"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-001",
+                    "sectionId": "egt-sctn-001",
+                    "roadmapId": "rm-egt",
+                    "title": "Parts of the Electric Guitar",
+                    "shortDescription": "Anatomy of the electric guitar: body, neck, pickups, controls, hardware.",
+                    "longDescription": "An electric guitar has parts not present on an acoustic: pickups (the magnetic transducers that convert string vibration to electrical signal), a pickup selector switch, volume and tone knobs, and an output jack. The body is solid (or semi-hollow), and the bridge may have a tremolo (whammy bar) system.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name all major parts of the electric guitar (headstock, neck, body, pickups, controls, bridge)",
+                        "Distinguish between single-coil and humbucker pickups visually",
+                        "Understand the function of volume, tone, and pickup selector controls"
+                    ],
+                    "commonMistakes": [
+                        "Confusing pickups with frets",
+                        "Cranking the tone knob without understanding what it does (it cuts high frequencies)"
+                    ],
+                    "practiceTips": [
+                        "Familiarize yourself with your specific guitar's controls — different models have different layouts"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-001",
+                            "type": "quiz",
+                            "title": "Parts of the Electric Guitar Quiz",
+                            "description": "Quick check on guitar anatomy.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-001",
+                                    "questionText": "Pickups on an electric guitar do what?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-001",
+                                            "optionText": "Hold the strings in place"
+                                        },
+                                        {
+                                            "id": "egt-opt-002",
+                                            "optionText": "Convert string vibration into an electrical signal"
+                                        },
+                                        {
+                                            "id": "egt-opt-003",
+                                            "optionText": "Adjust the volume"
+                                        },
+                                        {
+                                            "id": "egt-opt-004",
+                                            "optionText": "Tune the guitar"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-002"
+                                    ],
+                                    "explanation": "Pickups are magnetic transducers that sense the vibration of the (steel) strings and convert it into an electrical signal sent to the amplifier."
+                                },
+                                {
+                                    "id": "egt-qstn-002",
+                                    "questionText": "Which pickup type typically sounds 'fatter' and has less hum?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-005",
+                                            "optionText": "Single-coil"
+                                        },
+                                        {
+                                            "id": "egt-opt-006",
+                                            "optionText": "Humbucker"
+                                        },
+                                        {
+                                            "id": "egt-opt-007",
+                                            "optionText": "Piezo"
+                                        },
+                                        {
+                                            "id": "egt-opt-008",
+                                            "optionText": "Active EMG-style"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-006"
+                                    ],
+                                    "explanation": "Humbuckers use two coils wired to cancel hum (hence the name), and their dual-coil design produces a fatter, thicker tone than single-coils."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-002",
+                    "sectionId": "egt-sctn-001",
+                    "roadmapId": "rm-egt",
+                    "title": "Posture and Holding the Electric Guitar",
+                    "shortDescription": "Sitting and standing positions, plus strap height considerations.",
+                    "longDescription": "Most electric guitarists play standing (with a strap) or seated with the guitar resting on the leg. Strap height significantly affects technique: too low looks cool but limits reach and adds wrist strain; too high constrains the picking arm. A 'classical-ish' seated position works well for practice.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sit with the guitar stable and arms relaxed",
+                        "Stand with a strap adjusted to a reasonable height",
+                        "Keep wrists neutral — not heavily bent in either hand"
+                    ],
+                    "commonMistakes": [
+                        "Strap way too low (causes wrist problems despite the rock-star look)",
+                        "Slouching to see the fretboard"
+                    ],
+                    "practiceTips": [
+                        "Adjust the strap so the guitar is in roughly the same position seated and standing — switching between positions shouldn't change your technique"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-003",
+                    "sectionId": "egt-sctn-001",
+                    "roadmapId": "rm-egt",
+                    "title": "Tuning the Electric Guitar",
+                    "shortDescription": "Standard tuning (E-A-D-G-B-E), and a brief look at drop tunings.",
+                    "longDescription": "Standard electric guitar tuning is the same as acoustic: E-A-D-G-B-E from low to high. An electronic tuner (clip-on or pedal) is the most reliable tool. Many rock and metal styles use drop tunings (Drop D, Drop C, etc.) which lower one or more strings for power chord ease and a heavier sound.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tune to standard E-A-D-G-B-E using a tuner",
+                        "Tune relatively if a tuner isn't available",
+                        "Understand the concept of drop tunings (Drop D = lower 6th string from E to D)"
+                    ],
+                    "commonMistakes": [
+                        "Tuning a string downward past the target — always come up to pitch from below for stable tuning"
+                    ],
+                    "practiceTips": [
+                        "Use a clip-on tuner with the guitar — even with the amp off, it works fine via headstock vibration",
+                        "Tune every time you play — electric guitars drift especially after string bends"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "tuning"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-002",
+                            "type": "quiz",
+                            "title": "Tuning Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-003",
+                                    "questionText": "In Drop D tuning, which string is changed from standard tuning?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-009",
+                                            "optionText": "The 1st string (high E) is lowered to D"
+                                        },
+                                        {
+                                            "id": "egt-opt-010",
+                                            "optionText": "The 6th string (low E) is lowered to D"
+                                        },
+                                        {
+                                            "id": "egt-opt-011",
+                                            "optionText": "The 4th string (D) is raised to E"
+                                        },
+                                        {
+                                            "id": "egt-opt-012",
+                                            "optionText": "All strings are tuned down a whole step"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-010"
+                                    ],
+                                    "explanation": "Drop D tuning lowers the 6th string from E down to D, while the rest of the strings remain in standard tuning."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-004",
+                    "sectionId": "egt-sctn-001",
+                    "roadmapId": "rm-egt",
+                    "title": "The Pickup Selector and Tone Controls",
+                    "shortDescription": "Switch between pickups, and use volume and tone knobs musically.",
+                    "longDescription": "Most electric guitars have 2-3 pickups and a selector switch to choose between them or blend pairs. The neck pickup sounds warmer; the bridge pickup sounds brighter and cuts through. The tone knob is a low-pass filter (rolling it down cuts highs). The volume knob is more than 'loud/quiet' — rolling it back also slightly cleans up an overdriven tone.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Switch between pickup positions and listen to the tonal differences",
+                        "Use the tone knob to vary brightness",
+                        "Use the volume knob to clean up an overdriven tone"
+                    ],
+                    "commonMistakes": [
+                        "Leaving every knob on 10 always — the controls are tools, use them",
+                        "Ignoring pickup selection — it's free tone variety with zero setup"
+                    ],
+                    "practiceTips": [
+                        "Spend 10 minutes just exploring your pickup combinations through your amp — learn what each setting offers"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "tone"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-003",
+                            "type": "quiz",
+                            "title": "Pickup Selector Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-004",
+                                    "questionText": "Compared to the bridge pickup, the neck pickup typically sounds:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-013",
+                                            "optionText": "Brighter and thinner"
+                                        },
+                                        {
+                                            "id": "egt-opt-014",
+                                            "optionText": "Warmer and rounder"
+                                        },
+                                        {
+                                            "id": "egt-opt-015",
+                                            "optionText": "Louder always"
+                                        },
+                                        {
+                                            "id": "egt-opt-016",
+                                            "optionText": "Identical"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-014"
+                                    ],
+                                    "explanation": "The neck pickup sits over a part of the string that vibrates with more low-frequency content, giving it a warmer, rounder, mellower tone than the bridge pickup."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-002",
+            "roadmapId": "rm-egt",
+            "title": "Equipment and Signal Chain",
+            "shortDescription": "Amplifiers, cables, pedals, and how to chain them together.",
+            "longDescription": "Electric guitar tone is a system: guitar, amp, and effects combine to produce the final sound. This section covers amplifier basics, the signal chain, an overview of effects pedals, and how to order pedals on a board.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-001"
+            ],
+            "unlocks": [
+                "egt-sctn-011"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 3,
+                "max": 6,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "equipment",
+                "tone",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-005",
+                    "sectionId": "egt-sctn-002",
+                    "roadmapId": "rm-egt",
+                    "title": "Amplifier Basics",
+                    "shortDescription": "Tube vs solid state, combo vs head-and-cab, gain stages, and tone controls.",
+                    "longDescription": "An electric guitar's sound is largely shaped by the amplifier. Tube amps (valve amps) use vacuum tubes for amplification, prized for warm overdrive and dynamic response. Solid-state amps use transistors and are more reliable and affordable. Combo amps integrate amp and speaker; head-and-cabinet setups separate them. Most amps have gain (preamp drive), EQ (bass, mid, treble), and master volume.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Distinguish tube and solid-state amps by sound and feel",
+                        "Set basic amp controls (gain, EQ, master volume) to shape a usable tone",
+                        "Understand the difference between gain and volume (gain = preamp distortion, volume = output level)"
+                    ],
+                    "commonMistakes": [
+                        "Cranking gain to maximum on every setting — most useful tones are at moderate gain",
+                        "Confusing 'volume' and 'gain' (they're different controls with different effects)"
+                    ],
+                    "practiceTips": [
+                        "Start every practice session with all knobs at 5, then adjust from there — gives you a neutral reference"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "amplifier",
+                        "tone"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-004",
+                            "type": "quiz",
+                            "title": "Amplifier Basics Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-005",
+                                    "questionText": "On a typical amp, the 'gain' knob primarily controls:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-017",
+                                            "optionText": "The overall output volume"
+                                        },
+                                        {
+                                            "id": "egt-opt-018",
+                                            "optionText": "The amount of preamp distortion / overdrive"
+                                        },
+                                        {
+                                            "id": "egt-opt-019",
+                                            "optionText": "The bass response"
+                                        },
+                                        {
+                                            "id": "egt-opt-020",
+                                            "optionText": "The reverb"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-018"
+                                    ],
+                                    "explanation": "Gain controls how hard the preamp section is driven, which determines the amount of distortion/overdrive. Master volume controls the overall output level after the preamp."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-006",
+                    "sectionId": "egt-sctn-002",
+                    "roadmapId": "rm-egt",
+                    "title": "Cables and Signal Chain",
+                    "shortDescription": "How the guitar signal travels: instrument cable, pedals, and amp input.",
+                    "longDescription": "The signal flows from guitar → cable → (pedals) → amp. The quality of cables matters less than people think above a basic threshold, but length and noise rejection do matter. Pedals sit in this chain in a specific order (covered later). Patch cables connect pedals to each other.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Connect a guitar to an amp via a single cable",
+                        "Add a single pedal to the chain",
+                        "Understand which cable goes where (instrument cable vs patch cable vs speaker cable — they are not interchangeable)"
+                    ],
+                    "commonMistakes": [
+                        "Using a speaker cable as an instrument cable (or vice versa) — they're different and using the wrong one can damage equipment",
+                        "Curling cables in a way that introduces noise"
+                    ],
+                    "practiceTips": [
+                        "Roll cables in figure-8 (over-under) patterns to avoid kinking — your cables last much longer"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "signal-chain"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-007",
+                    "sectionId": "egt-sctn-002",
+                    "roadmapId": "rm-egt",
+                    "title": "Introduction to Effects Pedals",
+                    "shortDescription": "The major categories of pedals: gain, modulation, time-based, filter.",
+                    "longDescription": "Pedals are signal processors that shape the guitar's tone. The main categories are gain (overdrive, distortion, fuzz), modulation (chorus, phaser, flanger, tremolo), time-based (delay, reverb), and filter (wah, EQ, envelope). Each has typical uses and a typical position in the chain.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify common pedals by category",
+                        "Understand what each pedal type does to the signal",
+                        "Recognize famous pedals: Tube Screamer (overdrive), Big Muff (fuzz), DD-3 (delay), etc."
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "You don't need many pedals — a single overdrive and a reverb covers a huge amount of ground"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "pedals",
+                        "effects"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-005",
+                            "type": "quiz",
+                            "title": "Pedals Intro Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-006",
+                                    "questionText": "Which pedal category includes overdrive, distortion, and fuzz?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-021",
+                                            "optionText": "Time-based"
+                                        },
+                                        {
+                                            "id": "egt-opt-022",
+                                            "optionText": "Modulation"
+                                        },
+                                        {
+                                            "id": "egt-opt-023",
+                                            "optionText": "Gain"
+                                        },
+                                        {
+                                            "id": "egt-opt-024",
+                                            "optionText": "Filter"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-023"
+                                    ],
+                                    "explanation": "Overdrive, distortion, and fuzz all add gain (clipping the signal), so they're collectively called gain or drive pedals."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-008",
+                    "sectionId": "egt-sctn-002",
+                    "roadmapId": "rm-egt",
+                    "title": "Building a Signal Chain",
+                    "shortDescription": "The conventional order of pedals and why it matters.",
+                    "longDescription": "The order of pedals in the signal chain affects the result significantly. A typical chain is: guitar → tuner → wah → compressor → overdrive/distortion → modulation → delay → reverb → amp. Some modulations and time-based effects can also go in the amp's 'effects loop' between preamp and power amp.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-007"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Order pedals correctly in a basic signal chain",
+                        "Understand why distortion before delay sounds different from delay before distortion",
+                        "Use an effects loop when appropriate"
+                    ],
+                    "commonMistakes": [
+                        "Putting reverb or delay BEFORE distortion (typically muddy and undesirable)",
+                        "Ignoring the effects loop — some amps benefit greatly from putting time-based effects there"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "signal-chain",
+                        "effects"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-006",
+                            "type": "quiz",
+                            "title": "Signal Chain Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-007",
+                                    "questionText": "In a typical pedalboard signal chain, where does reverb usually go?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-025",
+                                            "optionText": "First, right after the guitar"
+                                        },
+                                        {
+                                            "id": "egt-opt-026",
+                                            "optionText": "Before any distortion"
+                                        },
+                                        {
+                                            "id": "egt-opt-027",
+                                            "optionText": "After all other effects, just before the amp"
+                                        },
+                                        {
+                                            "id": "egt-opt-028",
+                                            "optionText": "It doesn't matter where reverb goes"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-027"
+                                    ],
+                                    "explanation": "Reverb typically sits at the end of the chain (just before the amp, or in the amp's effects loop) so it operates on the fully processed signal."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-003",
+            "roadmapId": "rm-egt",
+            "title": "Reading and Counting",
+            "shortDescription": "Chord diagrams, TAB, and rhythmic counting.",
+            "longDescription": "TAB is the dominant electric guitar notation, but rhythm is just as important to read. This section covers chord diagrams, TAB reading, and rhythmic counting with a metronome.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-001"
+            ],
+            "unlocks": [
+                "egt-sctn-004",
+                "egt-sctn-008"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 3,
+                "max": 6,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-009",
+                    "sectionId": "egt-sctn-003",
+                    "roadmapId": "rm-egt",
+                    "title": "Reading Chord Diagrams",
+                    "shortDescription": "The grid notation for chord shapes.",
+                    "longDescription": "Chord diagrams represent the fretboard with vertical lines (strings) and horizontal lines (frets). Dots show finger placement, numbers show fingering, 'x' means don't play, 'o' means open string. The conventions are identical to acoustic guitar.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read standard chord diagrams fluently",
+                        "Identify muted and open strings"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "egt-res-001",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/how-to-read-chord-charts-bc-160",
+                            "title": "How to Read Chord Charts (JustinGuitar, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-010",
+                    "sectionId": "egt-sctn-003",
+                    "roadmapId": "rm-egt",
+                    "title": "Reading TAB",
+                    "shortDescription": "Guitar tablature is the dominant notation format for electric guitar music.",
+                    "longDescription": "TAB shows six lines representing the six strings (top = highest pitch). Numbers indicate which fret to press. TAB also has symbols for bends (b), pull-offs (p), hammer-ons (h), slides (/), and other techniques specific to electric guitar.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read TAB fluently for single notes and chords",
+                        "Recognize TAB symbols for bends, hammer-ons, pull-offs, slides, and vibrato",
+                        "Combine TAB with standard notation when both are provided"
+                    ],
+                    "commonMistakes": [
+                        "Relying only on TAB and never developing standard notation reading"
+                    ],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "egt-res-002",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/how-to-read-tabs-bc-159",
+                            "title": "How to Read TAB (JustinGuitar, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "tab",
+                        "notation"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-011",
+                    "sectionId": "egt-sctn-003",
+                    "roadmapId": "rm-egt",
+                    "title": "Counting Rhythm at the Guitar",
+                    "shortDescription": "Steady pulse, subdivisions, and counting with a metronome.",
+                    "longDescription": "Rhythm is half of music, and on electric guitar, sloppy rhythm gets exposed mercilessly — especially under distortion. Practice counting basic rhythms aloud while playing, always with a metronome.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count quarter, eighth, and sixteenth notes aloud while playing",
+                        "Use a metronome consistently",
+                        "Identify the downbeats and upbeats"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the metronome — distortion masks pitch problems but exposes rhythm problems"
+                    ],
+                    "practiceTips": [
+                        "Practice difficult passages with the metronome at half the target tempo before working up"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-004",
+            "roadmapId": "rm-egt",
+            "title": "Power Chords and First Chords",
+            "shortDescription": "Open chords and the all-important power chord — the bedrock of electric guitar.",
+            "longDescription": "This section covers the chord foundation: essential open chords plus the power chord, which is the single most important shape for rock, punk, and metal. You'll learn movable forms and basic progressions.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-003"
+            ],
+            "unlocks": [
+                "egt-sctn-005",
+                "egt-sctn-006",
+                "egt-sctn-007",
+                "egt-sctn-017"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 6,
+                "max": 12,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "power-chords",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-012",
+                    "sectionId": "egt-sctn-004",
+                    "roadmapId": "rm-egt",
+                    "title": "Essential Open Chords",
+                    "shortDescription": "The core open chords used across all guitar genres.",
+                    "longDescription": "Open chords (E, Em, A, Am, D, Dm, C, G) appear in countless songs across all electric guitar genres, from soft rock to heavy metal intros. They're the same shapes as on acoustic and worth mastering early.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play E, Em, A, Am, D, Dm, C, G cleanly",
+                        "Switch between common chord pairs smoothly",
+                        "Play your first songs using these chords"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard (causes finger pain and bad intonation)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-013",
+                    "sectionId": "egt-sctn-004",
+                    "roadmapId": "rm-egt",
+                    "title": "Power Chords (5 Chords)",
+                    "shortDescription": "Two- or three-note chords that are the backbone of rock and metal.",
+                    "longDescription": "Power chords are not technically chords in the traditional sense — they contain only the root and the fifth (sometimes plus the octave), with no third. This makes them harmonically ambiguous (neither major nor minor) and ideal for use with distortion, which would otherwise create harsh dissonance from full chords.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a power chord with index finger on the root and ring finger on the 5th, two frets up on the next string",
+                        "Recognize the power chord shape on the 6th and 5th string roots",
+                        "Mute unused strings cleanly"
+                    ],
+                    "commonMistakes": [
+                        "Letting unused strings ring (especially with distortion — produces noise)",
+                        "Confusing power chords with full barre chords"
+                    ],
+                    "practiceTips": [
+                        "Use the side of the index finger or the heel of the picking hand to mute the strings you're not playing"
+                    ],
+                    "resources": [
+                        {
+                            "id": "egt-res-003",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/power-chords-bc-1106",
+                            "title": "Power Chords (JustinGuitar, free)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "chords",
+                        "power-chords",
+                        "rock",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-007",
+                            "type": "quiz",
+                            "title": "Power Chord Basics Quiz",
+                            "description": "Test your understanding.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-008",
+                                    "questionText": "A power chord contains:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-029",
+                                            "optionText": "The root, third, and fifth"
+                                        },
+                                        {
+                                            "id": "egt-opt-030",
+                                            "optionText": "Just the root and the fifth (sometimes plus the octave)"
+                                        },
+                                        {
+                                            "id": "egt-opt-031",
+                                            "optionText": "The root, third, fifth, and seventh"
+                                        },
+                                        {
+                                            "id": "egt-opt-032",
+                                            "optionText": "Only the root note"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-030"
+                                    ],
+                                    "explanation": "Power chords contain the root and the 5th (and sometimes the octave above the root). The absence of the 3rd makes them neither major nor minor."
+                                },
+                                {
+                                    "id": "egt-qstn-009",
+                                    "questionText": "Why are power chords especially useful with distortion?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-033",
+                                            "optionText": "They're louder"
+                                        },
+                                        {
+                                            "id": "egt-opt-034",
+                                            "optionText": "Without a third, they avoid the harsh dissonance that full chords create when distorted"
+                                        },
+                                        {
+                                            "id": "egt-opt-035",
+                                            "optionText": "They're easier to play fast"
+                                        },
+                                        {
+                                            "id": "egt-opt-036",
+                                            "optionText": "They use more strings"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-034"
+                                    ],
+                                    "explanation": "Distortion adds harmonics that clash with the third of a chord, making full chords sound muddy or dissonant. Power chords avoid this by omitting the third entirely."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-014",
+                    "sectionId": "egt-sctn-004",
+                    "roadmapId": "rm-egt",
+                    "title": "Movable Power Chord Shapes",
+                    "shortDescription": "Slide power chords up and down the neck to play any 5 chord.",
+                    "longDescription": "Power chords use no open strings, so the same shape works anywhere on the neck. There are two main forms: 6th-string-root and 5th-string-root. Knowing the notes on the 6th and 5th strings lets you play any power chord instantly.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play 6th-string-root power chords across the neck",
+                        "Play 5th-string-root power chords across the neck",
+                        "Move smoothly between adjacent power chord positions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Memorize the notes on the 6th and 5th strings — it unlocks all power chord positions"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "power-chords",
+                        "rock"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-015",
+                    "sectionId": "egt-sctn-004",
+                    "roadmapId": "rm-egt",
+                    "title": "Power Chord Progressions",
+                    "shortDescription": "Combine power chords into riffs and progressions used in rock and metal.",
+                    "longDescription": "Power chord progressions form the backbone of most rock, punk, and metal songs. Common progressions include I-IV-V, I-bVII-IV, and the chromatic patterns common in metal. Many famous riffs are essentially power-chord sequences.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play common power-chord progressions in keys like E, A, and D",
+                        "Apply palm muting (covered later) for a tighter sound",
+                        "Learn 2-3 famous power-chord-based riffs"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "power-chords",
+                        "progressions",
+                        "rock"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-005",
+            "roadmapId": "rm-egt",
+            "title": "Pick Technique",
+            "shortDescription": "Holding the pick, downstrokes, alternate picking, and palm muting.",
+            "longDescription": "Picking technique is the engine of electric guitar playing. This section covers grip, downstrokes (the foundation of rhythm playing), alternate picking (the foundation of lead playing), and palm muting (the foundation of metal and many other styles).",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-004"
+            ],
+            "unlocks": [
+                "egt-sctn-006",
+                "egt-sctn-010",
+                "egt-sctn-013"
+            ],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 6,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "picking",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-016",
+                    "sectionId": "egt-sctn-005",
+                    "roadmapId": "rm-egt",
+                    "title": "Holding the Pick",
+                    "shortDescription": "Grip the pick correctly for control and speed.",
+                    "longDescription": "Hold the pick between the side of the thumb and the side of the index finger. The pick should protrude only slightly past the thumb — about 5-10mm. Grip firmly enough that it doesn't slip, but loose enough to stay relaxed.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Grip the pick correctly (thumb-index, minimal protrusion)",
+                        "Maintain a relaxed hand and forearm",
+                        "Choose a pick thickness appropriate for your playing style"
+                    ],
+                    "commonMistakes": [
+                        "Holding the pick too tightly (causes tension)",
+                        "Letting too much pick protrude (loses control and adds drag)"
+                    ],
+                    "practiceTips": [
+                        "If the pick keeps slipping, try a slightly heavier gauge or one with a grip texture"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-008",
+                            "type": "quiz",
+                            "title": "Holding the Pick Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-010",
+                                    "questionText": "How much of the pick should protrude past the thumb?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-037",
+                                            "optionText": "The entire pick"
+                                        },
+                                        {
+                                            "id": "egt-opt-038",
+                                            "optionText": "Half the pick"
+                                        },
+                                        {
+                                            "id": "egt-opt-039",
+                                            "optionText": "About 5-10mm (just enough to reach the strings)"
+                                        },
+                                        {
+                                            "id": "egt-opt-040",
+                                            "optionText": "It doesn't matter"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-039"
+                                    ],
+                                    "explanation": "Minimal pick protrusion (around 5-10mm) gives the best control and reduces drag through the strings."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-017",
+                    "sectionId": "egt-sctn-005",
+                    "roadmapId": "rm-egt",
+                    "title": "Downstrokes",
+                    "shortDescription": "Pure downstroke picking — the foundation of punk, metal rhythm, and many other styles.",
+                    "longDescription": "Downstroke-only picking is more demanding than alternate picking at high tempos but produces a more aggressive, consistent attack. Metal rhythm players often pick rapidly with downstrokes alone (think early Metallica). The motion comes from the wrist, not the elbow.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pick consistent downstrokes at a moderate tempo",
+                        "Maintain wrist relaxation through repeated downstrokes",
+                        "Apply to power chord riffs"
+                    ],
+                    "commonMistakes": [
+                        "Picking from the elbow (slower and more fatiguing)"
+                    ],
+                    "practiceTips": [
+                        "Build downstroke speed gradually — pure downstrokes at high tempo are a major endurance challenge"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-018",
+                    "sectionId": "egt-sctn-005",
+                    "roadmapId": "rm-egt",
+                    "title": "Alternate Picking",
+                    "shortDescription": "Strict down-up-down-up picking — the basis for fast single-note playing.",
+                    "longDescription": "Alternate picking strictly alternates downstrokes and upstrokes. It's the foundation for most lead playing because it efficiently produces a stream of notes. The motion is small and comes from the wrist, with the forearm gently rotating.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pick strict down-up-down-up at moderate tempos",
+                        "Maintain alternation through string changes",
+                        "Apply to scales and exercises"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the upstroke when it 'feels weird' — strict alternation must become automatic",
+                        "Large pick motions — keep them small"
+                    ],
+                    "practiceTips": [
+                        "Practice with a metronome every day — alternate picking speed comes from consistent practice over months",
+                        "Start at painfully slow tempos. Speed is built from precision."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking",
+                        "lead"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-009",
+                            "type": "quiz",
+                            "title": "Alternate Picking Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-011",
+                                    "questionText": "Strict alternate picking means:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-041",
+                                            "optionText": "Down, down, down, up"
+                                        },
+                                        {
+                                            "id": "egt-opt-042",
+                                            "optionText": "Strict alternation: down-up-down-up regardless of string"
+                                        },
+                                        {
+                                            "id": "egt-opt-043",
+                                            "optionText": "Whatever direction feels natural"
+                                        },
+                                        {
+                                            "id": "egt-opt-044",
+                                            "optionText": "Only downstrokes for fast passages"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-042"
+                                    ],
+                                    "explanation": "Strict alternate picking alternates downstrokes and upstrokes consistently, regardless of which string the next note is on."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-019",
+                    "sectionId": "egt-sctn-005",
+                    "roadmapId": "rm-egt",
+                    "title": "Palm Muting",
+                    "shortDescription": "Rest the picking-hand palm against the strings near the bridge for a damped, percussive tone.",
+                    "longDescription": "Palm muting is essential to the rock, metal, and many other electric guitar styles. The heel of the picking hand rests gently against the strings just in front of the bridge. The amount of palm contact controls how muted the sound is — from slightly damped to almost completely choked.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply palm muting to power chords",
+                        "Vary the amount of muting for different intensity",
+                        "Combine palm muting with downstroke and alternate picking"
+                    ],
+                    "commonMistakes": [
+                        "Resting the palm too far from the bridge (kills the note entirely)",
+                        "Tense wrist when palm muting (the palm should rest, not press)"
+                    ],
+                    "practiceTips": [
+                        "Listen to Metallica's 'Master of Puppets' for textbook palm muting"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking",
+                        "rock",
+                        "metal"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-010",
+                            "type": "quiz",
+                            "title": "Palm Muting Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-012",
+                                    "questionText": "Where does the palm of the picking hand contact the strings for palm muting?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-045",
+                                            "optionText": "Over the neck"
+                                        },
+                                        {
+                                            "id": "egt-opt-046",
+                                            "optionText": "Just in front of the bridge"
+                                        },
+                                        {
+                                            "id": "egt-opt-047",
+                                            "optionText": "Near the soundhole"
+                                        },
+                                        {
+                                            "id": "egt-opt-048",
+                                            "optionText": "It doesn't touch the strings"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-046"
+                                    ],
+                                    "explanation": "Palm muting places the heel of the picking hand against the strings just in front of (toward the neck of) the bridge."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-006",
+            "roadmapId": "rm-egt",
+            "title": "Rhythm Playing",
+            "shortDescription": "Strumming patterns, 16th note feels, and muted strums.",
+            "longDescription": "Rhythm guitar is at least half of what most electric guitarists do. This section covers common rhythm patterns, 16th note feels for funk and modern rock, and muted percussive strums.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-004",
+                "egt-sctn-005"
+            ],
+            "unlocks": [
+                "egt-sctn-013"
+            ],
+            "difficulty": "beginner",
+            "order": 6,
+            "estimatedTime": {
+                "min": 5,
+                "max": 12,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "rhythm",
+                "strumming",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-020",
+                    "sectionId": "egt-sctn-006",
+                    "roadmapId": "rm-egt",
+                    "title": "Common Rhythm Patterns",
+                    "shortDescription": "Strumming patterns and rhythmic figures used across rock, blues, and pop.",
+                    "longDescription": "Beyond steady quarter notes, electric guitar rhythm uses syncopation, ties, and characteristic patterns specific to genres. You'll work through common 8th and 16th note patterns, learning to play them cleanly with chord changes.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play several common rhythm patterns with chord changes",
+                        "Match a rhythm pattern to a song's feel",
+                        "Use a metronome consistently"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "strumming"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-021",
+                    "sectionId": "egt-sctn-006",
+                    "roadmapId": "rm-egt",
+                    "title": "Sixteenth Note Rhythms",
+                    "shortDescription": "Fast, syncopated rhythms common in funk, modern rock, and metal.",
+                    "longDescription": "Sixteenth-note based rhythms divide each beat into four equal parts. They're the basis of funk strumming, modern rock, and many metal rhythms. You'll learn to count and play them with a steady 16th-note picking hand.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count 16th notes accurately while playing",
+                        "Maintain steady 16th-note picking hand motion even when not striking every subdivision",
+                        "Apply to rhythm patterns"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Keep the picking hand moving in continuous 16ths even on rests — strikes happen at the notes you want to hit"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "strumming",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-022",
+                    "sectionId": "egt-sctn-006",
+                    "roadmapId": "rm-egt",
+                    "title": "Muted Strums and the 'Chuck'",
+                    "shortDescription": "Percussive muted strums add groove and texture.",
+                    "longDescription": "Muted strums (sometimes called 'chucks' or 'chicken scratch') play a string-deadened percussive sound instead of a clear chord. This is essential in funk, reggae, and rhythmic rock playing. You'll learn to mute with the fretting hand and integrate muted strums into patterns.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a clean muted strum (fretting fingers lift slightly to dampen)",
+                        "Combine muted strums with chord strums in a single pattern",
+                        "Apply to funk and rhythmic styles"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "strumming",
+                        "funk"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-007",
+            "roadmapId": "rm-egt",
+            "title": "Barre Chords",
+            "shortDescription": "Full movable chord shapes — F, E-shape, A-shape.",
+            "longDescription": "Barre chords use the index finger to fret multiple strings, creating movable shapes. This section covers F major (the first barre chord), then extends to E-shape and A-shape barres for major and minor chords.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-004"
+            ],
+            "unlocks": [
+                "egt-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 7,
+            "estimatedTime": {
+                "min": 8,
+                "max": 20,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "barre-chords",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-023",
+                    "sectionId": "egt-sctn-007",
+                    "roadmapId": "rm-egt",
+                    "title": "The F Chord",
+                    "shortDescription": "The first full barre chord every guitarist struggles with.",
+                    "longDescription": "F major is famously difficult because it requires barring the first two strings (or all six) with the index finger while the other fingers form an E-major shape. The key is index finger angle, not pressure.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a full F barre chord cleanly",
+                        "Use the bony edge of the index finger for the barre",
+                        "Position the thumb behind the neck for leverage"
+                    ],
+                    "commonMistakes": [
+                        "Pressing harder instead of adjusting angle — the bony edge of the index finger does the work"
+                    ],
+                    "practiceTips": [
+                        "Roll the index finger slightly so the side (bony edge) contacts the strings",
+                        "Build up the barre over weeks — don't expect it in one session"
+                    ],
+                    "resources": [
+                        {
+                            "id": "egt-res-004",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/the-f-chord-bc-167",
+                            "title": "The F Chord (JustinGuitar, free)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-024",
+                    "sectionId": "egt-sctn-007",
+                    "roadmapId": "rm-egt",
+                    "title": "E-Shape and A-Shape Barre Chords",
+                    "shortDescription": "Two movable shapes that cover all major and minor chords.",
+                    "longDescription": "The E-shape barre (root on the 6th string) and the A-shape barre (root on the 5th string) together let you play any major or minor chord on the neck. Combined with power chords, they form the rhythm guitarist's essential vocabulary.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play E-shape major and minor barre chords across the neck",
+                        "Play A-shape major and minor barre chords across the neck",
+                        "Identify the root note for each shape"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-008",
+            "roadmapId": "rm-egt",
+            "title": "The Fretboard",
+            "shortDescription": "Notes, octaves, and the CAGED system.",
+            "longDescription": "Fretboard knowledge separates intermediate players from beginners. This section covers note names, octave shapes for fast navigation, and the CAGED system that unifies chord and scale knowledge across the neck.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-001",
+                "egt-sctn-003"
+            ],
+            "unlocks": [
+                "egt-sctn-009"
+            ],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fretboard",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-025",
+                    "sectionId": "egt-sctn-008",
+                    "roadmapId": "rm-egt",
+                    "title": "Notes on the Fretboard",
+                    "shortDescription": "Memorize the natural notes on each string.",
+                    "longDescription": "Fretboard knowledge is essential for moving beyond pattern-based playing. Focus on the 6th and 5th strings first (root strings for power chords and barre chords), then extend to other strings.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-003"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify any natural note on the 6th and 5th strings within 2 seconds",
+                        "Extend to all six strings",
+                        "Use the fretboard knowledge to find specific chords and scales"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Drill notes on a specific string daily for a week, then rotate to a different string"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-026",
+                    "sectionId": "egt-sctn-008",
+                    "roadmapId": "rm-egt",
+                    "title": "Octave Shapes",
+                    "shortDescription": "Find the same note in different octaves using consistent shapes.",
+                    "longDescription": "An octave shape pattern produces the same note an octave apart at predictable fretboard distances. The most common is the '2 frets up and 2 strings up' shape. Knowing octave shapes accelerates fretboard mapping and is widely used in lead playing (Wes Montgomery style octave melodies).",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify octave shapes between strings",
+                        "Use octaves to find notes quickly",
+                        "Apply octave shapes in melodic playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-027",
+                    "sectionId": "egt-sctn-008",
+                    "roadmapId": "rm-egt",
+                    "title": "The CAGED System",
+                    "shortDescription": "A framework that connects chord shapes and scale patterns across the neck.",
+                    "longDescription": "The CAGED system observes that the five basic chord shapes — C, A, G, E, D — can be moved around the neck as barre forms, and that they connect adjacent positions of the major scale. Understanding CAGED transforms fragmented neck knowledge into a unified map.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-024"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify the five CAGED chord shapes",
+                        "Connect adjacent shapes on the neck",
+                        "Use CAGED to find any chord at multiple positions"
+                    ],
+                    "commonMistakes": [
+                        "Treating CAGED as just chord shapes — it's a system for connecting chords, scales, and arpeggios"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "system",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-009",
+            "roadmapId": "rm-egt",
+            "title": "Scales",
+            "shortDescription": "Pentatonic, blues, modes, and three-note-per-string fingerings.",
+            "longDescription": "Scales are the vocabulary of lead playing. This section progresses from minor pentatonic (the most important scale for rock and blues) through the blues scale, modes of the major scale, and the three-note-per-string fingerings used in fast modern rock and fusion.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-008"
+            ],
+            "unlocks": [
+                "egt-sctn-010",
+                "egt-sctn-015"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "scales",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-028",
+                    "sectionId": "egt-sctn-009",
+                    "roadmapId": "rm-egt",
+                    "title": "Minor Pentatonic Scale (5 Positions)",
+                    "shortDescription": "The single most-used scale in rock and blues lead playing.",
+                    "longDescription": "The minor pentatonic scale (1, ♭3, 4, 5, ♭7) is the foundation of rock and blues soloing. It's played in five 'box' positions across the neck. Position 1 (root on the 6th string with the index finger) is where most players start.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play position 1 of the minor pentatonic in any key",
+                        "Learn positions 2-5 and the transitions between them",
+                        "Apply the scale to simple soloing"
+                    ],
+                    "commonMistakes": [
+                        "Practicing the scale only as a mechanical pattern — apply it to music immediately"
+                    ],
+                    "practiceTips": [
+                        "Sing or hum melodies while playing the scale — train the ear, not just the fingers"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "pentatonic",
+                        "rock",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-011",
+                            "type": "quiz",
+                            "title": "Minor Pentatonic Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-013",
+                                    "questionText": "The minor pentatonic scale contains which scale degrees?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-049",
+                                            "optionText": "1, 2, 3, 5, 6"
+                                        },
+                                        {
+                                            "id": "egt-opt-050",
+                                            "optionText": "1, b3, 4, 5, b7"
+                                        },
+                                        {
+                                            "id": "egt-opt-051",
+                                            "optionText": "1, 2, b3, 5, 6"
+                                        },
+                                        {
+                                            "id": "egt-opt-052",
+                                            "optionText": "1, 3, 5, 7, 9"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-050"
+                                    ],
+                                    "explanation": "Minor pentatonic = root, minor 3rd, perfect 4th, perfect 5th, minor 7th — five notes per octave."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-029",
+                    "sectionId": "egt-sctn-009",
+                    "roadmapId": "rm-egt",
+                    "title": "The Blues Scale",
+                    "shortDescription": "Minor pentatonic plus the ♭5 ('blue note').",
+                    "longDescription": "The blues scale adds the ♭5 (the 'blue note') to the minor pentatonic. This single added note transforms the sound and is the heart of blues phrasing. Use it as a passing tone rather than a sustained note.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Add the ♭5 to minor pentatonic positions",
+                        "Use the blue note tastefully (typically as a passing tone)",
+                        "Apply to blues solos"
+                    ],
+                    "commonMistakes": [
+                        "Overusing the ♭5 — it works because it's special, not because it's everywhere"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-030",
+                    "sectionId": "egt-sctn-009",
+                    "roadmapId": "rm-egt",
+                    "title": "Major Scale and Modes",
+                    "shortDescription": "The seven diatonic modes for jazz, rock, and fusion contexts.",
+                    "longDescription": "Beyond pentatonics, the seven diatonic modes (Ionian/major, Dorian, Phrygian, Lydian, Mixolydian, Aeolian/natural minor, Locrian) provide a wider melodic vocabulary. Each mode pairs naturally with certain chord types: Mixolydian over dominant 7ths, Dorian over minor 7ths, Lydian over major 7ths.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play all seven modes from any root",
+                        "Pair modes with appropriate chord types",
+                        "Apply modally in improvisation"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "modes",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-031",
+                    "sectionId": "egt-sctn-009",
+                    "roadmapId": "rm-egt",
+                    "title": "Three-Note-Per-String Scales",
+                    "shortDescription": "A scale fingering system designed for fast, fluid playing.",
+                    "longDescription": "Three-note-per-string (3NPS) fingerings put exactly three notes on each string, simplifying alternate picking and legato runs across the neck. Common in rock, fusion, and shred genres. Each scale has multiple 3NPS shapes; learn one to start, add more as you grow.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play 3NPS major scale across the neck",
+                        "Apply to alternate picking and legato runs",
+                        "Use 3NPS for fluid descending and ascending phrases"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "advanced",
+                        "rock"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-010",
+            "roadmapId": "rm-egt",
+            "title": "Lead Guitar Basics",
+            "shortDescription": "Single-note runs, legato, bends, vibrato, and slides.",
+            "longDescription": "Lead guitar focuses on melodic single-note playing. This section covers the foundational techniques: single-note runs, hammer-ons and pull-offs (legato), the all-important string bend, controlled vibrato, and slides.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-005",
+                "egt-sctn-009"
+            ],
+            "unlocks": [
+                "egt-sctn-012",
+                "egt-sctn-015"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "lead",
+                "technique",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-032",
+                    "sectionId": "egt-sctn-010",
+                    "roadmapId": "rm-egt",
+                    "title": "Single-Note Runs",
+                    "shortDescription": "Play melodic lines across the neck rather than chords.",
+                    "longDescription": "Single-note runs are the basis of lead playing. Start with simple melodies in one position, then extend to passages that move across the neck. Apply alternate picking and good fretting-hand technique.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play melodic phrases in single positions",
+                        "Move smoothly between positions",
+                        "Maintain rhythmic precision"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "technique",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-033",
+                    "sectionId": "egt-sctn-010",
+                    "roadmapId": "rm-egt",
+                    "title": "Hammer-Ons and Pull-Offs (Legato)",
+                    "shortDescription": "Sound notes by tapping or pulling the fretting finger, not picking.",
+                    "longDescription": "Hammer-ons strike a fret with the fretting hand to sound a higher note; pull-offs flick the fretting finger away to sound a lower note. Together they create legato phrasing common in rock and blues solos. With distortion, they sound especially smooth.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean hammer-ons across the neck",
+                        "Execute clean pull-offs (with a slight outward flick)",
+                        "Combine them into legato phrases"
+                    ],
+                    "commonMistakes": [
+                        "Weak hammer-ons that don't sound clearly — hammer firmly and quickly",
+                        "Pull-offs straight down (need a slight sideways pull to sound)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "legato",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-034",
+                    "sectionId": "egt-sctn-010",
+                    "roadmapId": "rm-egt",
+                    "title": "String Bending",
+                    "shortDescription": "Bend a string to raise its pitch — central to blues and rock lead playing.",
+                    "longDescription": "Bending pushes a string sideways across the fretboard, raising its pitch. Half-step, whole-step, and 1.5-step bends are most common. With distortion and sustain, bends are deeply expressive — arguably the defining electric guitar technique.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Bend accurately to a target pitch (not just a distance)",
+                        "Support the bend with multiple fingers behind the bending finger",
+                        "Master half-step and whole-step bends across the neck"
+                    ],
+                    "commonMistakes": [
+                        "Bending blindly to a distance instead of a pitch — always hear your target",
+                        "Bending with only the bending finger — use multiple fingers for leverage"
+                    ],
+                    "practiceTips": [
+                        "Use the wrist and forearm for bends, not just the finger",
+                        "Always check pitch against a reference note (a fretted note at the same pitch)"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "blues",
+                        "rock",
+                        "technique"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-012",
+                            "type": "quiz",
+                            "title": "String Bending Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-014",
+                                    "questionText": "When bending, the goal is to:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-053",
+                                            "optionText": "Push the string as far as possible"
+                                        },
+                                        {
+                                            "id": "egt-opt-054",
+                                            "optionText": "Bend to a specific target pitch"
+                                        },
+                                        {
+                                            "id": "egt-opt-055",
+                                            "optionText": "Make the string flat"
+                                        },
+                                        {
+                                            "id": "egt-opt-056",
+                                            "optionText": "Bend faster than the song"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-054"
+                                    ],
+                                    "explanation": "Bends are about pitch, not distance. Always have a target pitch in mind and bend until you reach it — this is what makes bends sound musical rather than out of tune."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-035",
+                    "sectionId": "egt-sctn-010",
+                    "roadmapId": "rm-egt",
+                    "title": "Vibrato",
+                    "shortDescription": "Controlled pitch oscillation that adds expression to sustained notes.",
+                    "longDescription": "Electric guitar vibrato is typically wider and more pronounced than acoustic. Styles vary from B.B. King's slow wide vibrato to faster, narrower classical-style vibrato. Control over speed, width, and timing is what separates expressive vibrato from nervous shaking.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce controlled vibrato with consistent speed and width",
+                        "Vary vibrato style for different musical contexts",
+                        "Apply vibrato to sustained notes and the ends of bends"
+                    ],
+                    "commonMistakes": [
+                        "Nervous, uncontrolled vibrato — slow down and gain control before adding speed",
+                        "Inconsistent vibrato speed within a single sustained note"
+                    ],
+                    "practiceTips": [
+                        "Practice vibrato on a single sustained note with the metronome — control speed deliberately"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "expression",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-036",
+                    "sectionId": "egt-sctn-010",
+                    "roadmapId": "rm-egt",
+                    "title": "Slides",
+                    "shortDescription": "Move from one note to another while maintaining contact with the string.",
+                    "longDescription": "Slides are a fundamental expressive technique. A connecting slide travels from one note to another, both audible. A shift slide is silent except for the destination. Slides add motion and connect phrases that would otherwise sound abrupt.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "egt-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean connecting slides between two notes",
+                        "Use shift slides for position changes",
+                        "Apply slides musically rather than mechanically"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-011",
+            "roadmapId": "rm-egt",
+            "title": "Effects and Tone",
+            "shortDescription": "Drive pedals, delay, reverb, modulation, wah, and the whammy bar.",
+            "longDescription": "Electric guitar tone is largely about effects. This section covers the four main pedal categories — drive (overdrive, distortion, fuzz), time-based (delay, reverb), modulation (chorus, flanger, phaser, tremolo), and filter (wah) — plus the use of the whammy bar.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-002"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 11,
+            "estimatedTime": {
+                "min": 5,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "effects",
+                "tone",
+                "pedals",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-037",
+                    "sectionId": "egt-sctn-011",
+                    "roadmapId": "rm-egt",
+                    "title": "Overdrive, Distortion, and Fuzz",
+                    "shortDescription": "Three types of gain pedals, each with a distinct character.",
+                    "longDescription": "Overdrive pedals (e.g., Tube Screamer) emulate the sound of a tube amp pushed into mild breakup — smooth, dynamic, responsive. Distortion pedals (e.g., DS-1) produce a heavier, more saturated tone, often used for hard rock and metal. Fuzz pedals (e.g., Fuzz Face, Big Muff) produce a wild, saturated, sometimes chaotic sound used in psychedelic rock and stoner rock.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Distinguish overdrive, distortion, and fuzz by sound",
+                        "Use overdrive to push a clean amp into breakup",
+                        "Stack drive pedals for layered tones"
+                    ],
+                    "commonMistakes": [
+                        "Maxing all gain knobs — most usable tones are at moderate settings",
+                        "Using fuzz like overdrive (or vice versa) — they have very different roles"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "effects",
+                        "tone",
+                        "pedals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-013",
+                            "type": "quiz",
+                            "title": "Drive Pedals Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-015",
+                                    "questionText": "Which order, from least to most gain, is generally correct?",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-057",
+                                            "optionText": "Distortion → Overdrive → Fuzz"
+                                        },
+                                        {
+                                            "id": "egt-opt-058",
+                                            "optionText": "Overdrive → Distortion → Fuzz"
+                                        },
+                                        {
+                                            "id": "egt-opt-059",
+                                            "optionText": "Fuzz → Distortion → Overdrive"
+                                        },
+                                        {
+                                            "id": "egt-opt-060",
+                                            "optionText": "They all have the same gain"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-058"
+                                    ],
+                                    "explanation": "Generally: overdrive provides milder, more dynamic breakup; distortion is heavier and more compressed; fuzz is the most saturated and aggressive."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-038",
+                    "sectionId": "egt-sctn-011",
+                    "roadmapId": "rm-egt",
+                    "title": "Delay and Reverb",
+                    "shortDescription": "Time-based effects that add space and depth.",
+                    "longDescription": "Reverb simulates the sound of a room or hall, adding spatial depth. Delay creates repeats of the original signal at adjustable times, used for everything from subtle thickening to U2-style rhythmic patterns. Both are typically at the end of the signal chain.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Set up reverb tastefully (subtle is usually better)",
+                        "Use short delay (slap-back) for rockabilly and country tones",
+                        "Use longer delay rhythmically (in time with the song's tempo)"
+                    ],
+                    "commonMistakes": [
+                        "Drowning the signal in reverb (makes mixes mushy)",
+                        "Setting delay times that fight the song's tempo"
+                    ],
+                    "practiceTips": [
+                        "If your delay has a tap tempo, use it — sync delay to song tempo for musical results"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "effects",
+                        "tone",
+                        "pedals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-039",
+                    "sectionId": "egt-sctn-011",
+                    "roadmapId": "rm-egt",
+                    "title": "Modulation Effects",
+                    "shortDescription": "Chorus, flanger, phaser, and tremolo — pedals that modulate the signal.",
+                    "longDescription": "Modulation effects produce a swirling, moving sound by manipulating the signal over time. Chorus creates a thicker, ensemble-like sound. Flanger sweeps a deeper, jet-like character. Phaser sweeps in a smoother, watery way. Tremolo modulates volume (not pitch) for a pulsing effect.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify each modulation effect by sound",
+                        "Use them sparingly and tastefully",
+                        "Recognize famous uses (chorus on '80s pop, flanger on Van Halen, etc.)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "effects",
+                        "tone",
+                        "pedals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-040",
+                    "sectionId": "egt-sctn-011",
+                    "roadmapId": "rm-egt",
+                    "title": "Wah Pedal",
+                    "shortDescription": "A foot-controlled filter that sweeps a resonant peak across the frequency spectrum.",
+                    "longDescription": "The wah pedal creates the iconic 'wah-wah' or 'cry' sound by sweeping a resonant peak through the EQ. Used by Jimi Hendrix, Eric Clapton, Kirk Hammett, and countless others. Timing the wah to the rhythm or to specific notes is what makes it musical.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply wah in rhythm with the song's pulse",
+                        "Use a parked wah (held in one position) as a tone shaper",
+                        "Combine wah with distortion for classic lead tones"
+                    ],
+                    "commonMistakes": [
+                        "Random foot rocking — wah should be intentional and rhythmic"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "effects",
+                        "tone",
+                        "pedals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-041",
+                    "sectionId": "egt-sctn-011",
+                    "roadmapId": "rm-egt",
+                    "title": "Whammy Bar Techniques",
+                    "shortDescription": "The tremolo arm (whammy bar) bends the bridge to change string tension and pitch.",
+                    "longDescription": "On guitars with a tremolo system (Stratocasters, Floyd Rose-equipped guitars, etc.), the whammy bar lets you dive bombs, flutter, and subtle vibrato through bridge motion. Floyd Rose systems can dive deep and return to pitch reliably; standard Strat tremolos are more limited.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "egt-tpc-035"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Perform subtle vibrato with the bar",
+                        "Execute dive bombs (drastic pitch drop)",
+                        "Use the bar without throwing the guitar out of tune (on non-locking tremolo systems)"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard on non-locking tremolos — they often don't return to pitch reliably under heavy use"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "effects"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-012",
+            "roadmapId": "rm-egt",
+            "title": "Intermediate Lead Techniques",
+            "shortDescription": "Alternate picking development, hybrid picking, tapping, and pinch harmonics.",
+            "longDescription": "Beyond basic lead playing, these techniques expand the electric guitarist's vocabulary: developed alternate picking, hybrid picking (pick plus fingers), two-handed tapping, and pinch harmonics.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-010"
+            ],
+            "unlocks": [
+                "egt-sctn-014"
+            ],
+            "difficulty": "advanced",
+            "order": 12,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "lead",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-042",
+                    "sectionId": "egt-sctn-012",
+                    "roadmapId": "rm-egt",
+                    "title": "Alternate Picking Development",
+                    "shortDescription": "Refine alternate picking for speed and accuracy.",
+                    "longDescription": "Past basic alternate picking, you work on synchronization between hands, smaller picking motion, and handling string changes cleanly. Outside picking (picking outward when crossing strings) and inside picking (picking inward) each have their own challenges.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pick consistent 16th notes at 120 BPM with control",
+                        "Handle inside and outside string changes cleanly",
+                        "Apply alternate picking to scale and arpeggio passages"
+                    ],
+                    "commonMistakes": [
+                        "Practicing fast and sloppy — slow practice with precision is the only way to build real speed"
+                    ],
+                    "practiceTips": [
+                        "Practice with the metronome 5 BPM at a time, only moving up when you can play cleanly at the current tempo"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-043",
+                    "sectionId": "egt-sctn-012",
+                    "roadmapId": "rm-egt",
+                    "title": "Hybrid Picking",
+                    "shortDescription": "Combine the pick with the middle, ring, and pinky fingers of the picking hand.",
+                    "longDescription": "Hybrid picking uses the pick (held by thumb and index) plus the m and a fingers (and sometimes the pinky) to pluck strings. It allows for wider-interval skips, chord-melody playing, and faster passages than the pick alone can manage. Used heavily in country, fusion, and modern rock.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pluck strings using m and a fingers in coordination with the pick",
+                        "Apply to chord-melody style playing",
+                        "Apply to fast wide-interval passages"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "picking",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-044",
+                    "sectionId": "egt-sctn-012",
+                    "roadmapId": "rm-egt",
+                    "title": "Two-Handed Tapping",
+                    "shortDescription": "Tap notes with the picking hand to extend the range of legato lines.",
+                    "longDescription": "Tapping uses fingers of the picking hand (typically the index or middle finger) to hammer notes onto the fretboard, combined with hammer-ons and pull-offs from the fretting hand. It enables fast, wide-interval lines impossible with conventional technique. Eddie Van Halen popularized the modern tapping technique.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute basic two-hand tapping patterns (e.g., the 'Eruption' triplet pattern)",
+                        "Mute unused strings to prevent open-string noise (a common tapping problem)",
+                        "Combine tapping with the existing fretting-hand techniques"
+                    ],
+                    "commonMistakes": [
+                        "Open strings ringing because of failure to mute (especially when distortion is heavy)"
+                    ],
+                    "practiceTips": [
+                        "Mute the strings with the heel of the picking hand or fretting-hand fingers — clean tapping requires clean muting"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "lead",
+                        "advanced",
+                        "rock"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-045",
+                    "sectionId": "egt-sctn-012",
+                    "roadmapId": "rm-egt",
+                    "title": "Pinch Harmonics",
+                    "shortDescription": "Touch the string with the picking thumb just after picking to produce a screaming harmonic.",
+                    "longDescription": "Pinch (or 'squeal') harmonics produce a high, piercing artificial harmonic by lightly touching the string with the picking-hand thumb at the moment of picking. They're a staple of hard rock and metal lead playing (think Zakk Wylde or Dimebag Darrell).",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce pinch harmonics consistently",
+                        "Find the spots along a string where pinch harmonics are easiest",
+                        "Combine with bends and vibrato for expressive lead lines"
+                    ],
+                    "commonMistakes": [
+                        "Trying to force pinch harmonics with a 'flat' picking motion — the thumb must lightly contact the string just after the pick"
+                    ],
+                    "practiceTips": [
+                        "Pinch harmonic intensity varies with where along the string you pick — experiment to find the 'sweet spots'"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "lead",
+                        "rock",
+                        "metal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-013",
+            "roadmapId": "rm-egt",
+            "title": "Rhythm Styles",
+            "shortDescription": "Blues, rock, metal, and funk rhythm playing.",
+            "longDescription": "Rhythm guitar varies dramatically by genre. This section covers the rhythmic approaches that define each major electric guitar style: blues (shuffle), rock (power chords with feel), metal (palm-muted chugging), and funk (16th-note syncopation).",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-005",
+                "egt-sctn-006",
+                "egt-sctn-007"
+            ],
+            "unlocks": [
+                "egt-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 13,
+            "estimatedTime": {
+                "min": 20,
+                "max": 60,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "rhythm",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-046",
+                    "sectionId": "egt-sctn-013",
+                    "roadmapId": "rm-egt",
+                    "title": "Blues Rhythm",
+                    "shortDescription": "12-bar blues, the shuffle feel, and classic blues rhythm figures.",
+                    "longDescription": "Blues rhythm centers on the 12-bar form (I7-IV7-V7 in standardized progressions) and the shuffle feel (eighth notes played in a long-short pattern, almost like triplets with the middle note missing). Classic blues rhythm figures use power chord forms with the 6th and 7th added.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a 12-bar blues progression",
+                        "Apply the shuffle feel reliably",
+                        "Use classic blues comping patterns (the 5-6 and 5-6-b7 shapes)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-047",
+                    "sectionId": "egt-sctn-013",
+                    "roadmapId": "rm-egt",
+                    "title": "Rock Rhythm",
+                    "shortDescription": "Power chords, syncopation, and the rhythm patterns that define rock styles.",
+                    "longDescription": "Rock rhythm playing centers on power chords, palm muting, and rhythmically driving patterns. Classic rock (Led Zeppelin), hard rock (AC/DC), punk (Ramones), and modern rock (Foo Fighters) each have characteristic rhythm approaches.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-015",
+                        "egt-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play classic rock rhythm patterns",
+                        "Apply palm muting tastefully",
+                        "Learn at least 2-3 iconic rock rhythm parts"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "rock",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-048",
+                    "sectionId": "egt-sctn-013",
+                    "roadmapId": "rm-egt",
+                    "title": "Metal Rhythm",
+                    "shortDescription": "Palm-muted chugging, gallops, and the rhythmic intensity of metal subgenres.",
+                    "longDescription": "Metal rhythm playing builds on rock rhythm with heavy palm muting, sustained 'chugging' on the low strings, gallop patterns (eighth-note plus two sixteenths), and other rhythmic intensifiers. Subgenres vary: thrash (Metallica), death (Cannibal Corpse), djent (Meshuggah) each have characteristic approaches.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play sustained palm-muted 8th and 16th note patterns",
+                        "Execute gallop rhythms cleanly",
+                        "Tighten timing — metal rhythm is unforgiving"
+                    ],
+                    "commonMistakes": [
+                        "Speeding up under fatigue (almost universal — the metronome is your friend)",
+                        "Inconsistent palm pressure causing tonal variation"
+                    ],
+                    "practiceTips": [
+                        "Build up endurance gradually — metal rhythm at fast tempo is a real physical challenge"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "metal",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "egt-assess-014",
+                            "type": "quiz",
+                            "title": "Metal Rhythm Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "egt-qstn-016",
+                                    "questionText": "A 'gallop' rhythm typically consists of:",
+                                    "options": [
+                                        {
+                                            "id": "egt-opt-061",
+                                            "optionText": "Four equal eighth notes"
+                                        },
+                                        {
+                                            "id": "egt-opt-062",
+                                            "optionText": "An eighth note followed by two sixteenth notes"
+                                        },
+                                        {
+                                            "id": "egt-opt-063",
+                                            "optionText": "Three triplet eighth notes"
+                                        },
+                                        {
+                                            "id": "egt-opt-064",
+                                            "optionText": "Two quarter notes"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "egt-opt-062"
+                                    ],
+                                    "explanation": "The classic gallop figure is one eighth note plus two sixteenth notes (often palm-muted), evoking the rhythm of a galloping horse — popularized by Iron Maiden and used widely in metal."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "egt-tpc-049",
+                    "sectionId": "egt-sctn-013",
+                    "roadmapId": "rm-egt",
+                    "title": "Funk Rhythm",
+                    "shortDescription": "16th-note syncopation, muted strums, and the lock-in with the rhythm section.",
+                    "longDescription": "Funk rhythm guitar is rhythmically dense and harmonically restrained — often just one or two chords with intricate 16th-note patterns combining strummed and muted strokes. The picking hand stays in constant 16th-note motion, striking only the desired subdivisions. Examples: Nile Rodgers (Chic), Jimmy Nolen (James Brown).",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-021",
+                        "egt-tpc-022"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Maintain steady 16th-note picking hand motion",
+                        "Strike specific subdivisions while muting others",
+                        "Lock in tightly with a backing track or band"
+                    ],
+                    "commonMistakes": [
+                        "Letting the picking hand stop on rests — keep it moving in steady 16ths"
+                    ],
+                    "practiceTips": [
+                        "Practice with a drum loop — funk is fundamentally about groove with the rhythm section"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-014",
+            "roadmapId": "rm-egt",
+            "title": "Advanced Lead Techniques",
+            "shortDescription": "Sweep picking, economy picking, legato, and speed building.",
+            "longDescription": "Advanced lead techniques unlock the virtuosic vocabulary of rock, metal, and fusion. This section covers sweep picking (for fast arpeggios), economy picking (a hybrid approach), advanced legato (fretting-hand-driven runs), and methodical speed building.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-012"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 14,
+            "estimatedTime": {
+                "min": 50,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "lead",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-050",
+                    "sectionId": "egt-sctn-014",
+                    "roadmapId": "rm-egt",
+                    "title": "Sweep Picking",
+                    "shortDescription": "A single picking motion 'sweeps' across multiple strings for fast arpeggios.",
+                    "longDescription": "Sweep picking uses a single continuous downstroke (or upstroke) across multiple strings, with the fretting hand timing the notes so they sound one at a time. Combined with hammer-ons and pull-offs, it produces fast arpeggios characteristic of neoclassical metal (Yngwie Malmsteen) and progressive rock.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 120,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute three-string sweeps in major and minor arpeggios",
+                        "Extend to five and six-string sweeps",
+                        "Synchronize fretting and picking hands precisely"
+                    ],
+                    "commonMistakes": [
+                        "Strumming through the strings (sweep should sound like individual notes, not a chord)",
+                        "Skipping the synchronization work — sloppy sweeps sound like sloppy sweeps"
+                    ],
+                    "practiceTips": [
+                        "Practice with a metronome at very slow tempo (e.g., 40 BPM) — sweep picking demands extreme precision",
+                        "Mute the strings you're not currently playing — clean sweeps require active muting"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "lead",
+                        "advanced",
+                        "rock",
+                        "metal"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-051",
+                    "sectionId": "egt-sctn-014",
+                    "roadmapId": "rm-egt",
+                    "title": "Economy Picking",
+                    "shortDescription": "A hybrid approach: alternate picking within a string, sweep direction across strings.",
+                    "longDescription": "Economy picking combines alternate picking (within a single string) with sweep-style picking (when crossing strings). The pick continues in the direction it's already going when moving to the next string, minimizing motion. Used by Frank Gambale and many fusion players.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply economy picking to scale runs that cross strings",
+                        "Compare with strict alternate picking — choose based on the passage",
+                        "Recognize when economy picking is more efficient than alternate"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "lead",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-052",
+                    "sectionId": "egt-sctn-014",
+                    "roadmapId": "rm-egt",
+                    "title": "Advanced Legato",
+                    "shortDescription": "Fast, smooth runs played mostly with hammer-ons and pull-offs.",
+                    "longDescription": "Advanced legato uses minimal picking — most notes are sounded by the fretting hand alone via hammer-ons and pull-offs. Players like Allan Holdsworth, Joe Satriani, and Steve Vai have built entire styles around legato fluency. It rewards strong fretting-hand technique.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play extended legato passages with consistent volume",
+                        "Coordinate string changes cleanly with picking when needed",
+                        "Build endurance for long legato runs"
+                    ],
+                    "commonMistakes": [
+                        "Quiet hammer-ons that fade out — strike firmly",
+                        "Inconsistent volume across notes"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "lead",
+                        "advanced",
+                        "fusion"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-053",
+                    "sectionId": "egt-sctn-014",
+                    "roadmapId": "rm-egt",
+                    "title": "Building Speed",
+                    "shortDescription": "Methodical approaches to playing fast cleanly.",
+                    "longDescription": "Speed is a byproduct of precision, not the goal itself. Effective speed-building methods include: very slow practice for muscle memory, gradual metronome increase (5 BPM at a time), bursts (short fast bursts within slower playing), and identifying exact bottleneck moments and isolating them.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use the metronome to systematically build speed",
+                        "Identify and fix specific technical bottlenecks",
+                        "Maintain relaxation at increasing tempos"
+                    ],
+                    "commonMistakes": [
+                        "Practicing fast and sloppy — you're learning sloppiness",
+                        "Practicing the entire passage instead of isolating the hard parts"
+                    ],
+                    "practiceTips": [
+                        "Drop to half tempo when you fail at a target tempo — building back is faster than struggling"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced",
+                        "practice-method"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-015",
+            "roadmapId": "rm-egt",
+            "title": "Improvisation and Soloing",
+            "shortDescription": "Blues soloing, motivic phrasing, playing over changes, and modal improvisation.",
+            "longDescription": "Soloing is where lead guitar becomes personal expression. This section progresses from blues soloing through phrasing and motif development, then to playing over chord changes and modal improvisation for jazz and fusion contexts.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-010",
+                "egt-sctn-009"
+            ],
+            "unlocks": [
+                "egt-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 15,
+            "estimatedTime": {
+                "min": 30,
+                "max": 150,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "improvisation",
+                "lead",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-054",
+                    "sectionId": "egt-sctn-015",
+                    "roadmapId": "rm-egt",
+                    "title": "Blues Soloing",
+                    "shortDescription": "Improvise over a 12-bar blues using the minor pentatonic and blues scale.",
+                    "longDescription": "Blues soloing is the entry point for most lead guitarists. Over a 12-bar blues in a given key, the minor pentatonic and blues scale of that key supply the main vocabulary. Phrasing — using bends, vibrato, and space — matters more than the notes themselves.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-028",
+                        "egt-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Improvise melodic phrases over a 12-bar blues",
+                        "Use bends and vibrato expressively",
+                        "Build phrases with call-and-response structure"
+                    ],
+                    "commonMistakes": [
+                        "Playing the scale up and down without phrasing — focus on melodic shapes",
+                        "Failing to leave space — silence is part of phrasing"
+                    ],
+                    "practiceTips": [
+                        "Listen to B.B. King, Albert King, and Stevie Ray Vaughan — phrasing schools you can't get from a method book"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-055",
+                    "sectionId": "egt-sctn-015",
+                    "roadmapId": "rm-egt",
+                    "title": "Phrasing and Motif Development",
+                    "shortDescription": "Build solos from short ideas (motifs) developed and varied over time.",
+                    "longDescription": "Great solos aren't random fast runs — they have shape, development, and structure. A motif is a short musical idea that gets repeated, varied, and extended. Develop motifs through repetition, transposition, rhythmic variation, and melodic extension.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-054"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Compose solos that develop a small number of motifs",
+                        "Recognize phrasing patterns in great solos",
+                        "Apply call-and-response within your own solos"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Transcribe a great solo (Hendrix, Gilmour, Slash) and analyze its motivic structure"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "phrasing",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-056",
+                    "sectionId": "egt-sctn-015",
+                    "roadmapId": "rm-egt",
+                    "title": "Soloing Over Chord Changes",
+                    "shortDescription": "Adjust the scale or note choice as the underlying chord changes.",
+                    "longDescription": "Beyond static-scale soloing, advanced players adjust their note choices as the harmony changes. Target chord tones on strong beats; use chromatic approach notes to lead into chord tones. This 'playing the changes' approach is essential in jazz and elevated forms of rock and blues.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 300,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify chord tones for each chord in a progression",
+                        "Target chord tones on strong beats during improvisation",
+                        "Use chromatic approach notes effectively"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice over slow changes first (e.g., 4 bars per chord) before tackling faster harmonic rhythm"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-057",
+                    "sectionId": "egt-sctn-015",
+                    "roadmapId": "rm-egt",
+                    "title": "Modal Improvisation",
+                    "shortDescription": "Use the seven diatonic modes to color solos with different characters.",
+                    "longDescription": "Each diatonic mode has a distinct character: Mixolydian (bluesy, dominant), Dorian (jazzy minor), Lydian (bright, floating), Phrygian (Spanish/dark). Improvise modally by emphasizing the mode's characteristic tones over an appropriate pedal or vamp.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Improvise convincingly in Mixolydian, Dorian, and Lydian modes",
+                        "Recognize the characteristic note of each mode",
+                        "Choose modes appropriate to chord types"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "modal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-016",
+            "roadmapId": "rm-egt",
+            "title": "Genre Mastery",
+            "shortDescription": "Deep dives into blues, rock, metal, jazz/fusion, and funk.",
+            "longDescription": "Each major electric guitar genre has its own techniques, vocabulary, and history. This section covers in-depth study of blues, rock, metal, jazz/fusion, and funk — choose your priorities based on what you want to play.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-013",
+                "egt-sctn-015"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 16,
+            "estimatedTime": {
+                "min": 100,
+                "max": 1000,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-058",
+                    "sectionId": "egt-sctn-016",
+                    "roadmapId": "rm-egt",
+                    "title": "Blues Guitar in Depth",
+                    "shortDescription": "From Delta acoustic to electric Chicago blues to Texas blues — the genre's evolution.",
+                    "longDescription": "Electric blues developed through B.B. King, Albert King, Freddie King, Muddy Waters, Stevie Ray Vaughan, and others. Each player and era has stylistic markers worth studying: B.B.'s economy and tone, Albert's heavy bends, SRV's strength and intensity.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-054"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify multiple blues subgenres and key players",
+                        "Develop a personal blues vocabulary",
+                        "Apply blues phrasing across the neck in any key"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen extensively — blues guitar is impossible to learn from method books alone"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "blues",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-059",
+                    "sectionId": "egt-sctn-016",
+                    "roadmapId": "rm-egt",
+                    "title": "Rock Guitar in Depth",
+                    "shortDescription": "Classic rock, hard rock, and the players who defined the sound.",
+                    "longDescription": "Rock guitar encompasses many sub-styles: classic rock (Page, Clapton, Hendrix), hard rock (Van Halen, AC/DC), progressive (Gilmour, Fripp), and many more. Each player has distinct vocabulary, tone, and approach.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-047",
+                        "egt-tpc-054"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recognize stylistic markers of major rock players",
+                        "Develop a personal rock vocabulary",
+                        "Cover at least 2-3 iconic rock solos accurately"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "rock",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-060",
+                    "sectionId": "egt-sctn-016",
+                    "roadmapId": "rm-egt",
+                    "title": "Metal Guitar in Depth",
+                    "shortDescription": "Thrash, death, doom, prog, djent, and more — metal's many faces.",
+                    "longDescription": "Metal subgenres each demand specific techniques and approaches: thrash (Metallica, Megadeth, Slayer) emphasizes downstroke speed and gallop rhythms; death metal pushes palm muting and brutality; doom focuses on heavy slow riffs; progressive metal (Dream Theater, Tool) emphasizes complex time signatures; djent (Meshuggah, Periphery) emphasizes polyrhythm and extended-range guitars.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-048",
+                        "egt-tpc-050"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify stylistic markers of major metal subgenres",
+                        "Develop rhythm playing endurance and precision",
+                        "Cover at least 2-3 iconic metal songs"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "metal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-061",
+                    "sectionId": "egt-sctn-016",
+                    "roadmapId": "rm-egt",
+                    "title": "Jazz and Fusion",
+                    "shortDescription": "Jazz comping, soloing over changes, and the fusion-era guitar masters.",
+                    "longDescription": "Jazz guitar requires deep harmonic knowledge: extended chords, ii-V-I, comping, soloing over fast-moving changes. Fusion (Pat Metheny, John Scofield, Allan Holdsworth, Frank Gambale) extends jazz vocabulary with rock energy and modern techniques.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-056"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn 5-10 jazz standards (Autumn Leaves, All the Things You Are, etc.)",
+                        "Comp through changes with appropriate voicings",
+                        "Improvise convincingly over jazz changes"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Transcription is the path forward in jazz — pick a player you love and transcribe extensively"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "fusion",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-062",
+                    "sectionId": "egt-sctn-016",
+                    "roadmapId": "rm-egt",
+                    "title": "Funk Guitar in Depth",
+                    "shortDescription": "The art of the groove: rhythm-focused, chord-fragment based, locked to the band.",
+                    "longDescription": "Funk guitar prioritizes rhythm over melody. Chord choices are typically simple (often just 9th or 13th chord fragments), but rhythmic complexity is high. Listen to Nile Rodgers (Chic), Jimmy Nolen (James Brown), and Cory Wong for the modern textbook.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "egt-tpc-049"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play funk grooves locked tightly with a backing track",
+                        "Use 9th and 13th chord fragments",
+                        "Develop the rhythm-first mindset of funk playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "egt-sctn-017",
+            "roadmapId": "rm-egt",
+            "title": "Ear Training and Performance",
+            "shortDescription": "Playing by ear, solo transcription, live performance, and memorization.",
+            "longDescription": "This section covers parallel skills that distinguish working guitarists from bedroom players: playing by ear, transcription of solos, live performance considerations, and reliable memorization.",
+            "instrumentId": "inst-electric-guitar",
+            "genreId": null,
+            "dependencies": [
+                "egt-sctn-004"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 17,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "ear-training",
+                "performance",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "egt-tpc-063",
+                    "sectionId": "egt-sctn-017",
+                    "roadmapId": "rm-egt",
+                    "title": "Playing by Ear",
+                    "shortDescription": "Reproduce riffs, melodies, and chord progressions without sheet music.",
+                    "longDescription": "Playing by ear is fundamental for electric guitar, where TAB and sheet music are often unreliable, incomplete, or simply absent. Build the skill incrementally: melodies first, then chord progressions, then full songs.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "egt-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work out riffs and short melodies by ear",
+                        "Identify chord progressions by ear",
+                        "Build a repertoire of songs learned from records, not tabs"
+                    ],
+                    "commonMistakes": [
+                        "Searching randomly — listen first, then play"
+                    ],
+                    "practiceTips": [
+                        "Use software that slows recordings without changing pitch (Anytune, Transcribe!, YouTube playback speed)",
+                        "Start with songs you know extremely well — easier to hear when the song is already in memory"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "playing-by-ear"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-064",
+                    "sectionId": "egt-sctn-017",
+                    "roadmapId": "rm-egt",
+                    "title": "Solo Transcription",
+                    "shortDescription": "Learn solos by ear, note by note, from recordings.",
+                    "longDescription": "Transcribing solos is the deepest form of guitar study. Pick a solo slightly above your level, learn it phrase by phrase from the recording (slowed if needed), and absorb the player's vocabulary into your own playing. This is the single most effective way to develop personal style.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "egt-tpc-063"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 480,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe at least one full solo by a player you admire",
+                        "Notate the result in TAB or standard notation",
+                        "Internalize phrases for use in your own improvisation"
+                    ],
+                    "commonMistakes": [
+                        "Reading existing tabs instead of working it out by ear (defeats the purpose)"
+                    ],
+                    "practiceTips": [
+                        "Pick solos slightly above your level — too easy is unchallenging, too hard is discouraging"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-065",
+                    "sectionId": "egt-sctn-017",
+                    "roadmapId": "rm-egt",
+                    "title": "Live Performance Considerations",
+                    "shortDescription": "Stage presence, gear setup, monitoring, and dealing with nerves.",
+                    "longDescription": "Playing live is a separate skill from practicing. Stage presence, tone consistency across venues, monitoring (hearing yourself on stage), and dealing with performance nerves all matter. Most are learned through experience, but a few principles help from day one.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "egt-tpc-054"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Set up your gear quickly and reliably",
+                        "Manage nerves through preparation and routine",
+                        "Adapt to different room acoustics and monitoring conditions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Play live as often as possible — the gap between bedroom playing and live playing closes only with stage time"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "egt-tpc-066",
+                    "sectionId": "egt-sctn-017",
+                    "roadmapId": "rm-egt",
+                    "title": "Memorization for Performance",
+                    "shortDescription": "Reliable memorization for solos, riffs, and full songs.",
+                    "longDescription": "Memorize using multiple memory systems: muscle memory (fingers know where to go), aural memory (you can hear it in your head), and analytical memory (you understand the harmony and structure). Test memory by starting from different points in the piece, not just the beginning.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "egt-tpc-065"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Memorize parts using multiple memory modes",
+                        "Test memory by starting from arbitrary points",
+                        "Maintain memorized repertoire over time"
+                    ],
+                    "commonMistakes": [
+                        "Relying only on muscle memory — it breaks under performance pressure"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "memorization",
+                        "performance"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3564 @@
+{
+    "id": "rm-vlo",
+    "title": "Guitar (Violão) Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn classical and acoustic guitar from beginner to advanced.",
+    "longDescription": "This roadmap covers both the classical/erudito and popular Brazilian traditions of the violão, plus folk/popular fingerstyle and lead playing. It starts with absolute basics (parts of the guitar, posture, tuning), progresses through open chords, strumming, fingerstyle, barre chords, scales, and lead playing, then specializes into Brazilian styles (bossa, samba, MPB, choro), classical technique and repertoire (Carcassi, Sor, Tárrega, Bach, Villa-Lobos, Barrios), advanced techniques (tremolo, rasgueado), and improvisation. Ear training, sight-reading, and memorization run as parallel tracks. Free online resources draw on JustinGuitar (universally praised beginner resource), IMSLP (public-domain classical sheet music), and musictheory.net.",
+    "sections": [
+        {
+            "id": "vlo-sctn-001",
+            "roadmapId": "rm-vlo",
+            "title": "Getting Started",
+            "shortDescription": "Anatomy, posture, hand position, and tuning.",
+            "longDescription": "Before you make any music, your physical relationship to the guitar matters. This section establishes the foundations: parts of the instrument, sitting and holding positions, hand basics, and how to tune.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "vlo-sctn-002",
+                "vlo-sctn-008"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-001",
+                    "sectionId": "vlo-sctn-001",
+                    "roadmapId": "rm-vlo",
+                    "title": "Parts of the Guitar",
+                    "shortDescription": "The anatomy of nylon-string and steel-string acoustic guitars.",
+                    "longDescription": "Knowing the parts of your instrument is the first step. You'll learn the names of the headstock, tuning pegs, nut, neck, fretboard, frets, soundhole, bridge, saddle, and strings, and understand the basic differences between nylon-string (classical/violão) and steel-string acoustic guitars.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name all major parts of the guitar",
+                        "Understand the differences between nylon-string and steel-string guitars",
+                        "Identify string numbering (1 = thinnest/highest, 6 = thickest/lowest)"
+                    ],
+                    "commonMistakes": [
+                        "Confusing string numbering — string 1 is the thinnest (highest pitched), not the thickest",
+                        "Assuming all acoustic guitars are the same: nylon vs steel makes a big difference in technique and sound"
+                    ],
+                    "practiceTips": [
+                        "Spend a few minutes physically pointing to each part as you name it"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-001",
+                            "type": "quiz",
+                            "title": "Parts of the Guitar Quiz",
+                            "description": "Quick check on guitar anatomy.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-001",
+                                    "questionText": "On a guitar, string 1 is:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-001",
+                                            "optionText": "The thickest, lowest-pitched string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-002",
+                                            "optionText": "The thinnest, highest-pitched string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-003",
+                                            "optionText": "The middle string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-004",
+                                            "optionText": "The string closest to your face"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-002"
+                                    ],
+                                    "explanation": "Conventionally, string 1 is the thinnest and highest-pitched (typically tuned to E)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-002",
+                    "sectionId": "vlo-sctn-001",
+                    "roadmapId": "rm-vlo",
+                    "title": "Posture and Holding the Guitar",
+                    "shortDescription": "Classical and popular sitting positions, plus standing with a strap.",
+                    "longDescription": "There are two main sitting positions: the classical position (guitar on the left leg, often with a footstool, neck angled upward) and the popular position (guitar on the right leg, more casual). Each has implications for technique. Standing requires a properly adjusted strap.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sit in classical position with the guitar stable and the neck at the correct angle",
+                        "Sit in popular position comfortably",
+                        "Adjust a strap for standing play"
+                    ],
+                    "commonMistakes": [
+                        "Slouching over the guitar to see the fretboard — keep the back straight and tilt the guitar slightly toward you",
+                        "Resting the picking hand wrist heavily on the guitar (introduces tension)"
+                    ],
+                    "practiceTips": [
+                        "Take a tension scan every few minutes — shoulders, neck, wrists, back"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-002",
+                            "type": "quiz",
+                            "title": "Posture Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-002",
+                                    "questionText": "In classical guitar position, the guitar is typically held on which leg?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-005",
+                                            "optionText": "The right leg"
+                                        },
+                                        {
+                                            "id": "vlo-opt-006",
+                                            "optionText": "The left leg, often with a footstool"
+                                        },
+                                        {
+                                            "id": "vlo-opt-007",
+                                            "optionText": "Across the lap horizontally"
+                                        },
+                                        {
+                                            "id": "vlo-opt-008",
+                                            "optionText": "On the floor"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-006"
+                                    ],
+                                    "explanation": "Classical position places the guitar on the left leg (for right-handed players), often with a footstool raising the leg, so the neck angles upward."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-003",
+                    "sectionId": "vlo-sctn-001",
+                    "roadmapId": "rm-vlo",
+                    "title": "Right and Left Hand Basics",
+                    "shortDescription": "Initial hand position, finger naming, and the role of each hand.",
+                    "longDescription": "The left hand frets notes; the right hand plucks or strums the strings. (For left-handed players, the roles are reversed.) Left-hand fingers are numbered 1 (index) through 4 (pinky). Right-hand fingers use Spanish letters: p (thumb), i (index), m (middle), a (ring).",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify left-hand finger numbers (1-4)",
+                        "Identify right-hand finger letters (p-i-m-a)",
+                        "Position both hands correctly at the guitar"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard on the strings (causes pain and bad tone)",
+                        "Letting the left thumb wrap too far around the neck for early chord work"
+                    ],
+                    "practiceTips": [
+                        "The left thumb should stay roughly behind the neck — not gripping like a baseball bat"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "technique"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-003",
+                            "type": "quiz",
+                            "title": "Hand Basics Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-003",
+                                    "questionText": "In right-hand notation for classical and fingerstyle guitar, the letter 'p' refers to:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-009",
+                                            "optionText": "The pinky"
+                                        },
+                                        {
+                                            "id": "vlo-opt-010",
+                                            "optionText": "The thumb"
+                                        },
+                                        {
+                                            "id": "vlo-opt-011",
+                                            "optionText": "The index finger"
+                                        },
+                                        {
+                                            "id": "vlo-opt-012",
+                                            "optionText": "The middle finger"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-010"
+                                    ],
+                                    "explanation": "The right-hand fingers are labeled in Spanish/Latin: p (pulgar = thumb), i (índice = index), m (medio = middle), a (anular = ring)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-004",
+                    "sectionId": "vlo-sctn-001",
+                    "roadmapId": "rm-vlo",
+                    "title": "Tuning the Guitar",
+                    "shortDescription": "Standard tuning (E-A-D-G-B-E) and how to tune by ear, with an app, or with a tuner.",
+                    "longDescription": "Standard guitar tuning from low (6th string) to high (1st string) is E-A-D-G-B-E. You'll learn to use an electronic tuner or app, and also to tune relatively (matching each string to the one above it).",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tune the guitar to standard tuning using an electronic tuner or app",
+                        "Tune relatively by matching the 5th fret of one string to the open string below",
+                        "Recognize the names of the open strings (E-A-D-G-B-E)"
+                    ],
+                    "commonMistakes": [
+                        "Tuning a string upward past the target — always come up to pitch from below",
+                        "Forgetting that the 3rd string (G) to 2nd string (B) interval is a major 3rd (matched at the 4th fret, not 5th)"
+                    ],
+                    "practiceTips": [
+                        "Tune every time you play — even good guitars drift",
+                        "An old mnemonic for the strings: 'Eddie Ate Dynamite, Good Bye Eddie'"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "tuning",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-004",
+                            "type": "quiz",
+                            "title": "Tuning Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-004",
+                                    "questionText": "Standard guitar tuning from the 6th string (lowest) to the 1st string (highest) is:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-013",
+                                            "optionText": "E-A-D-G-B-E"
+                                        },
+                                        {
+                                            "id": "vlo-opt-014",
+                                            "optionText": "D-A-D-G-A-D"
+                                        },
+                                        {
+                                            "id": "vlo-opt-015",
+                                            "optionText": "E-B-G-D-A-E"
+                                        },
+                                        {
+                                            "id": "vlo-opt-016",
+                                            "optionText": "G-D-A-E-B-G"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-013"
+                                    ],
+                                    "explanation": "Standard tuning is E-A-D-G-B-E, low to high."
+                                },
+                                {
+                                    "id": "vlo-qstn-005",
+                                    "questionText": "Which pair of strings is a major 3rd apart (not a perfect 4th like the others)?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-017",
+                                            "optionText": "6th and 5th (E to A)"
+                                        },
+                                        {
+                                            "id": "vlo-opt-018",
+                                            "optionText": "5th and 4th (A to D)"
+                                        },
+                                        {
+                                            "id": "vlo-opt-019",
+                                            "optionText": "3rd and 2nd (G to B)"
+                                        },
+                                        {
+                                            "id": "vlo-opt-020",
+                                            "optionText": "2nd and 1st (B to E)"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-019"
+                                    ],
+                                    "explanation": "All adjacent string pairs are a perfect 4th apart except G to B, which is a major 3rd. That's why the 3rd string tunes to the 4th fret of the 2nd string, not the 5th."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-002",
+            "roadmapId": "rm-vlo",
+            "title": "Reading and Counting at the Guitar",
+            "shortDescription": "Chord diagrams, TAB, standard notation, and rhythmic counting.",
+            "longDescription": "Before you can learn songs efficiently, you need to read the formats that guitar music uses: chord diagrams, TAB, and standard notation. This section covers all three plus the rhythmic counting foundation.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-001"
+            ],
+            "unlocks": [
+                "vlo-sctn-003",
+                "vlo-sctn-008"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 4,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-005",
+                    "sectionId": "vlo-sctn-002",
+                    "roadmapId": "rm-vlo",
+                    "title": "Reading Chord Diagrams",
+                    "shortDescription": "The grid-style chord chart used throughout guitar music.",
+                    "longDescription": "Chord diagrams represent the neck of the guitar with vertical lines (strings) and horizontal lines (frets). Dots indicate where to press; numbers show fingering; 'x' means don't play that string; 'o' means play it open.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read a standard chord diagram",
+                        "Identify open strings, muted strings, and fretted positions",
+                        "Recognize finger numbers in chord diagrams"
+                    ],
+                    "commonMistakes": [
+                        "Reading the diagram upside down (the thick string is on the left when held in the standard orientation)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "vlo-res-001",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/how-to-read-chord-charts-bc-160",
+                            "title": "How to Read Chord Charts (JustinGuitar, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "fundamentals",
+                        "notation"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-005",
+                            "type": "quiz",
+                            "title": "Chord Diagrams Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-006",
+                                    "questionText": "On a chord diagram, an 'x' above a string means:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-021",
+                                            "optionText": "Play that string open"
+                                        },
+                                        {
+                                            "id": "vlo-opt-022",
+                                            "optionText": "Mute or don't play that string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-023",
+                                            "optionText": "Play that string with the thumb"
+                                        },
+                                        {
+                                            "id": "vlo-opt-024",
+                                            "optionText": "Play that string twice"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-022"
+                                    ],
+                                    "explanation": "An 'x' above a string in a chord diagram means that string should not be played (muted or skipped)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-006",
+                    "sectionId": "vlo-sctn-002",
+                    "roadmapId": "rm-vlo",
+                    "title": "Reading TAB",
+                    "shortDescription": "Guitar tablature: six horizontal lines representing strings, numbers representing frets.",
+                    "longDescription": "TAB (tablature) is the most common guitar-specific notation. Six horizontal lines represent the six strings (the top line is the 1st/highest string). Numbers on the lines indicate which fret to press. Numbers stacked vertically mean play those notes simultaneously.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read single-note TAB lines",
+                        "Read chord shapes in TAB",
+                        "Understand that TAB does not typically convey rhythm without additional rhythmic notation"
+                    ],
+                    "commonMistakes": [
+                        "Reading TAB as if the bottom line is the highest string (it's actually the lowest, 6th string)",
+                        "Relying only on TAB and never learning standard notation — TAB is convenient but limited"
+                    ],
+                    "practiceTips": [
+                        "Compare TAB and standard notation for the same passage to see the difference"
+                    ],
+                    "resources": [
+                        {
+                            "id": "vlo-res-002",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/how-to-read-tabs-bc-159",
+                            "title": "How to Read TAB (JustinGuitar, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "tab",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-006",
+                            "type": "quiz",
+                            "title": "TAB Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-007",
+                                    "questionText": "In standard guitar TAB, the top line represents:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-025",
+                                            "optionText": "The lowest string (6th, low E)"
+                                        },
+                                        {
+                                            "id": "vlo-opt-026",
+                                            "optionText": "The highest string (1st, high E)"
+                                        },
+                                        {
+                                            "id": "vlo-opt-027",
+                                            "optionText": "The middle string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-028",
+                                            "optionText": "Either depending on the song"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-026"
+                                    ],
+                                    "explanation": "Conventionally, the top line of TAB is the 1st string (highest pitch), and the bottom line is the 6th string (lowest pitch)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-007",
+                    "sectionId": "vlo-sctn-002",
+                    "roadmapId": "rm-vlo",
+                    "title": "Standard Notation for Guitar",
+                    "shortDescription": "Reading staff notation as written for guitar (treble clef, sounding an octave below).",
+                    "longDescription": "Guitar music in standard notation uses the treble clef, but sounds one octave lower than written. You'll learn the natural notes on each string in first position and how to read simple single-line passages.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read natural notes in first position on all six strings",
+                        "Understand that guitar sounds an octave below written pitch",
+                        "Combine standard notation with TAB when both are provided"
+                    ],
+                    "commonMistakes": [
+                        "Avoiding standard notation entirely — it limits the repertoire you can access"
+                    ],
+                    "practiceTips": [
+                        "Start with just one string at a time — master each string's first-position notes before combining"
+                    ],
+                    "resources": [
+                        {
+                            "id": "vlo-res-003",
+                            "type": "article",
+                            "url": "https://www.musictheory.net/lessons/10",
+                            "title": "The Staff, Clefs, and Ledger Lines (musictheory.net)",
+                            "durationInMinutes": 5,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-007",
+                            "type": "quiz",
+                            "title": "Standard Notation Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-008",
+                                    "questionText": "Guitar music in standard notation is written in:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-029",
+                                            "optionText": "Bass clef, sounding as written"
+                                        },
+                                        {
+                                            "id": "vlo-opt-030",
+                                            "optionText": "Treble clef, sounding as written"
+                                        },
+                                        {
+                                            "id": "vlo-opt-031",
+                                            "optionText": "Treble clef, sounding an octave below written"
+                                        },
+                                        {
+                                            "id": "vlo-opt-032",
+                                            "optionText": "Alto clef"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-031"
+                                    ],
+                                    "explanation": "Guitar uses treble clef but sounds one octave lower than the written pitch — this is why a sometimes-seen '8' below the clef indicates the actual sounding pitch."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-008",
+                    "sectionId": "vlo-sctn-002",
+                    "roadmapId": "rm-vlo",
+                    "title": "Counting Rhythm at the Guitar",
+                    "shortDescription": "Maintain a steady pulse and count subdivisions while playing.",
+                    "longDescription": "Rhythm is half of music. You'll practice counting basic rhythms aloud while strumming or picking, using a metronome from the start. Quarter notes, eighth notes, and basic rests are the foundation.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count rhythms aloud while playing simple patterns",
+                        "Use a metronome consistently",
+                        "Maintain a steady pulse through chord changes"
+                    ],
+                    "commonMistakes": [
+                        "Speeding up when something feels easy and slowing for hard sections — the metronome reveals this immediately"
+                    ],
+                    "practiceTips": [
+                        "Tap your foot in time with the beat — physical engagement reinforces internal pulse"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-008",
+                            "type": "quiz",
+                            "title": "Counting Rhythm Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-009",
+                                    "questionText": "Why use a metronome from the start?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-033",
+                                            "optionText": "It plays the chords for you"
+                                        },
+                                        {
+                                            "id": "vlo-opt-034",
+                                            "optionText": "It enforces a steady pulse and reveals timing problems"
+                                        },
+                                        {
+                                            "id": "vlo-opt-035",
+                                            "optionText": "It's only useful for advanced players"
+                                        },
+                                        {
+                                            "id": "vlo-opt-036",
+                                            "optionText": "It teaches dynamics"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-034"
+                                    ],
+                                    "explanation": "A metronome provides an objective steady reference. Without it, players unknowingly speed up at easy parts and slow at hard parts."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-003",
+            "roadmapId": "rm-vlo",
+            "title": "First Open Chords",
+            "shortDescription": "The first chords every guitarist learns — the gateway to hundreds of songs.",
+            "longDescription": "Open chords use one or more open (unfretted) strings and are played in the first few frets. This section covers the most common open chords (E, A, D, C, G in major and minor forms) and combines them into your first chord progressions.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-002"
+            ],
+            "unlocks": [
+                "vlo-sctn-004",
+                "vlo-sctn-005",
+                "vlo-sctn-006",
+                "vlo-sctn-007",
+                "vlo-sctn-017"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 8,
+                "max": 16,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "open-chords",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-009",
+                    "sectionId": "vlo-sctn-003",
+                    "roadmapId": "rm-vlo",
+                    "title": "E minor and E major",
+                    "shortDescription": "The two easiest beginner chords — only two fingers each.",
+                    "longDescription": "E minor uses just two fingers on the 5th and 4th strings (2nd fret). E major adds one more finger on the 3rd string (1st fret). Both ring through all six strings, making them powerful and easy.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play E minor cleanly with all six strings ringing",
+                        "Play E major cleanly",
+                        "Switch between E minor and E major smoothly"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too far from the fret (causes buzzing) or on top of the fret (mutes the note)",
+                        "Curling the fingers so a finger touches an adjacent string and mutes it"
+                    ],
+                    "practiceTips": [
+                        "Press the string just behind the fret, not in the middle of the fret space",
+                        "Check each string individually after forming the chord — pick each one to verify it rings clearly"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-009",
+                            "type": "quiz",
+                            "title": "E minor and E major Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-010",
+                                    "questionText": "Which is true about E minor and E major chords?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-037",
+                                            "optionText": "They use the same fingering"
+                                        },
+                                        {
+                                            "id": "vlo-opt-038",
+                                            "optionText": "E major has one more fretted note than E minor"
+                                        },
+                                        {
+                                            "id": "vlo-opt-039",
+                                            "optionText": "Both use four fingers"
+                                        },
+                                        {
+                                            "id": "vlo-opt-040",
+                                            "optionText": "E minor uses more frets than E major"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-038"
+                                    ],
+                                    "explanation": "E minor uses 2 fingers (5th and 4th strings, 2nd fret). E major adds a 3rd finger on the 3rd string (1st fret) — that's the only difference."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-010",
+                    "sectionId": "vlo-sctn-003",
+                    "roadmapId": "rm-vlo",
+                    "title": "A minor and A major",
+                    "shortDescription": "Two more essential open chords using three fingers each.",
+                    "longDescription": "A minor and A major are foundational chords. They share the same first finger placement, with the difference being on the 3rd string. Mute the 6th string when playing these chords (don't strum it).",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play A minor and A major cleanly",
+                        "Mute the 6th string while strumming",
+                        "Switch between A minor and A major"
+                    ],
+                    "commonMistakes": [
+                        "Strumming the 6th string by accident — it makes the chord sound muddy",
+                        "Cramming three fingers into one fret (they do all fit; relax the hand)"
+                    ],
+                    "practiceTips": [
+                        "Use the thumb gently touching the 6th string to mute it, or just avoid strumming it"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-011",
+                    "sectionId": "vlo-sctn-003",
+                    "roadmapId": "rm-vlo",
+                    "title": "D major and D minor",
+                    "shortDescription": "Two open chords played on only the top 4 strings.",
+                    "longDescription": "D chords use only the 1st through 4th strings. The 5th and 6th strings should not be played. The fingerings are similar between D major and D minor — only the position of finger 2 differs.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play D major and D minor cleanly",
+                        "Strum only the top 4 strings",
+                        "Switch between D major and D minor"
+                    ],
+                    "commonMistakes": [
+                        "Strumming the 5th and 6th strings (they don't belong in the chord)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-012",
+                    "sectionId": "vlo-sctn-003",
+                    "roadmapId": "rm-vlo",
+                    "title": "C major and G major",
+                    "shortDescription": "Two more cornerstones of the open-chord vocabulary.",
+                    "longDescription": "C major uses three fingers and rings on the top 5 strings. G major uses three fingers (sometimes four) and rings on all six strings. Both are essential for hundreds of songs.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play C major cleanly with five strings ringing",
+                        "Play G major cleanly with all six strings ringing",
+                        "Switch between C and G (a very common change)"
+                    ],
+                    "commonMistakes": [
+                        "Failing to mute the 6th string in C major",
+                        "Buzzing on the high E in G major — usually a finger touching the 1st string"
+                    ],
+                    "practiceTips": [
+                        "Practice the G-to-C change slowly and often — it appears in countless songs"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-013",
+                    "sectionId": "vlo-sctn-003",
+                    "roadmapId": "rm-vlo",
+                    "title": "First Chord Progressions",
+                    "shortDescription": "Combine open chords into short, song-like progressions.",
+                    "longDescription": "Real music is chord progressions. You'll combine the open chords you've learned into common progressions: G-C-D, Em-Am-D, C-G-Am-F (with a simplified F if needed), and others that map to thousands of songs.",
+                    "difficulty": "beginner",
+                    "order": 5,
+                    "prerequisites": [
+                        "vlo-tpc-009",
+                        "vlo-tpc-010",
+                        "vlo-tpc-011",
+                        "vlo-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play I-IV-V progressions in G (G-C-D) and C (C-F-G)",
+                        "Play simple minor progressions (Em-Am-D)",
+                        "Play one or two complete songs using only open chords"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Choose a song you love that uses 3-4 open chords and learn to play it through — motivation matters"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "progressions",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-004",
+            "roadmapId": "rm-vlo",
+            "title": "Strumming Basics",
+            "shortDescription": "Downstrokes, common patterns, muting, and accents.",
+            "longDescription": "Strumming brings chords to life rhythmically. This section starts with downstrokes, progresses to up-down patterns, common strumming patterns, and adds muting and accents.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-003"
+            ],
+            "unlocks": [
+                "vlo-sctn-005",
+                "vlo-sctn-007"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 4,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "strumming",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-014",
+                    "sectionId": "vlo-sctn-004",
+                    "roadmapId": "rm-vlo",
+                    "title": "Downstrokes and Up-Down Patterns",
+                    "shortDescription": "The most basic strumming motion: downward across the strings.",
+                    "longDescription": "Start with downstrokes alone, then alternate with upstrokes for eighth-note strumming. The motion should come from the wrist, not the arm. Keep the wrist relaxed and the pick (or thumb/fingers) grazing the strings rather than hitting them hard.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strum even quarter notes with downstrokes",
+                        "Alternate down-up for eighth-note strumming",
+                        "Keep the wrist relaxed and the motion fluid"
+                    ],
+                    "commonMistakes": [
+                        "Strumming from the elbow (too stiff)",
+                        "Gripping the pick too tightly"
+                    ],
+                    "practiceTips": [
+                        "Set a metronome at 60 BPM and strum a single chord for 1 minute — focus on relaxation"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "rhythm",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-015",
+                    "sectionId": "vlo-sctn-004",
+                    "roadmapId": "rm-vlo",
+                    "title": "Common Strumming Patterns",
+                    "shortDescription": "Down-up-down-up variations that create groove and feel.",
+                    "longDescription": "Beyond steady eighth notes, strumming patterns introduce skips, ties, and accents that give a song its feel. Common patterns include D-D-U-U-D-U (the 'ultimate strumming pattern'), folk rock patterns, and ballad patterns.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play D-D-U-U-D-U fluently with chord changes",
+                        "Play 2-3 other common strumming patterns",
+                        "Match a strumming pattern to a song's feel"
+                    ],
+                    "commonMistakes": [
+                        "Stopping the strumming hand during chord changes (creates an unmusical pause)"
+                    ],
+                    "practiceTips": [
+                        "Keep the strumming hand moving in steady up-down even when not striking — strikes happen on the beats you want"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "rhythm"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-016",
+                    "sectionId": "vlo-sctn-004",
+                    "roadmapId": "rm-vlo",
+                    "title": "Muting and Accents",
+                    "shortDescription": "Damp the strings for percussive effect, and emphasize specific beats.",
+                    "longDescription": "Palm muting (steel-string) or right-hand muting (classical) reduces sustain and adds rhythmic punch. Accents emphasize specific strums to create a stronger groove. Both techniques add texture to plain strumming.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply palm muting on steel-string acoustic",
+                        "Accent specific beats consistently",
+                        "Combine muting and accents in a strumming pattern"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "rhythm",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-005",
+            "roadmapId": "rm-vlo",
+            "title": "Smooth Chord Changes",
+            "shortDescription": "Techniques to change chords quickly and cleanly.",
+            "longDescription": "Smooth chord changes separate frustrating playing from musical playing. This section covers anchor fingers and effective practice methods for speeding up transitions.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-003",
+                "vlo-sctn-004"
+            ],
+            "unlocks": [],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 3,
+                "max": 6,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "technique",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-017",
+                    "sectionId": "vlo-sctn-005",
+                    "roadmapId": "rm-vlo",
+                    "title": "Anchor Finger Technique",
+                    "shortDescription": "When two chords share a finger position, keep that finger anchored during the change.",
+                    "longDescription": "Many common chord changes share notes. For example, the change from C to Am keeps fingers 1 and 2 in the same positions. Recognizing and using these anchor fingers makes changes faster and cleaner.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify common anchor fingers between chord pairs",
+                        "Keep anchor fingers down during chord changes",
+                        "Apply to the most common changes (G-Em, C-Am, etc.)"
+                    ],
+                    "commonMistakes": [
+                        "Lifting all fingers between every chord (slow and inefficient)"
+                    ],
+                    "practiceTips": [
+                        "Look at your fingers — see what's already in the right place before the change"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "technique"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-010",
+                            "type": "quiz",
+                            "title": "Anchor Fingers Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-011",
+                                    "questionText": "What is an anchor finger?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-041",
+                                            "optionText": "A finger that always plays the same string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-042",
+                                            "optionText": "A finger that stays in place during a chord change because both chords use it"
+                                        },
+                                        {
+                                            "id": "vlo-opt-043",
+                                            "optionText": "The strongest finger"
+                                        },
+                                        {
+                                            "id": "vlo-opt-044",
+                                            "optionText": "The thumb"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-042"
+                                    ],
+                                    "explanation": "An anchor finger stays put during a chord change because it's already in the correct position for the next chord."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-018",
+                    "sectionId": "vlo-sctn-005",
+                    "roadmapId": "rm-vlo",
+                    "title": "Practicing Chord Transitions",
+                    "shortDescription": "Methods for speeding up chord changes: 1-minute changes, ghost changes, slow practice.",
+                    "longDescription": "Smooth chord changes are mostly about brain training, not finger strength. Effective methods include the 1-minute change exercise (count how many clean changes between two chords you can do in 60 seconds), ghost changes (form the chord shape without strumming), and slow strumming with focus on the transition.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply the 1-minute change exercise to your weakest chord changes",
+                        "Practice ghost changes (forming chords in the air)",
+                        "Strum slowly enough that no transition gap exists"
+                    ],
+                    "commonMistakes": [
+                        "Practicing fast and sloppy — you reinforce the sloppiness"
+                    ],
+                    "practiceTips": [
+                        "Five minutes of focused 1-minute changes daily beats an hour of mindless strumming"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "technique",
+                        "practice-method"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-006",
+            "roadmapId": "rm-vlo",
+            "title": "Fingerstyle Fundamentals",
+            "shortDescription": "Right-hand fingerpicking technique — the basis of classical, fingerstyle, and Brazilian playing.",
+            "longDescription": "Fingerstyle technique uses individual fingers rather than a pick. This section covers the p-i-m-a finger system, free and rest strokes, basic arpeggios, and Travis picking — the foundation for classical, fingerstyle folk, and Brazilian violão playing.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-003"
+            ],
+            "unlocks": [
+                "vlo-sctn-011",
+                "vlo-sctn-012"
+            ],
+            "difficulty": "beginner",
+            "order": 6,
+            "estimatedTime": {
+                "min": 8,
+                "max": 16,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fingerstyle",
+                "technique",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-019",
+                    "sectionId": "vlo-sctn-006",
+                    "roadmapId": "rm-vlo",
+                    "title": "Right Hand Finger Naming (p-i-m-a)",
+                    "shortDescription": "The Spanish letter system used in fingerstyle and classical music.",
+                    "longDescription": "In fingerstyle and classical guitar, right-hand fingers are labeled p (thumb), i (index), m (middle), a (ring). The pinky is generally not used. Each finger usually has a default string responsibility: p plays the bass strings (4, 5, 6), i plays string 3, m plays string 2, a plays string 1.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-003"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify and use p, i, m, a in fingerpicking patterns",
+                        "Understand the default string-finger assignments"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "technique",
+                        "classical"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-011",
+                            "type": "quiz",
+                            "title": "Finger Naming Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-012",
+                                    "questionText": "In standard fingerstyle, the index finger (i) typically plays which string?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-045",
+                                            "optionText": "String 1"
+                                        },
+                                        {
+                                            "id": "vlo-opt-046",
+                                            "optionText": "String 2"
+                                        },
+                                        {
+                                            "id": "vlo-opt-047",
+                                            "optionText": "String 3"
+                                        },
+                                        {
+                                            "id": "vlo-opt-048",
+                                            "optionText": "String 4"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-047"
+                                    ],
+                                    "explanation": "The default assignment is: p (thumb) plays bass strings 4-6, i plays string 3, m plays string 2, a plays string 1."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-020",
+                    "sectionId": "vlo-sctn-006",
+                    "roadmapId": "rm-vlo",
+                    "title": "Free Stroke and Rest Stroke",
+                    "shortDescription": "Two fundamental right-hand techniques used in classical and fingerstyle playing.",
+                    "longDescription": "Free stroke (tirando) plucks a string and lets the finger move freely into the air without touching the adjacent string. Rest stroke (apoyando) plucks the string and lands the finger on the next string, producing a fuller tone. Each has its uses: free stroke for arpeggios and chords, rest stroke for melodic emphasis and scales.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a clear free stroke",
+                        "Produce a clear rest stroke",
+                        "Choose between them based on musical context"
+                    ],
+                    "commonMistakes": [
+                        "Plucking upward (catching the string and letting it twang) rather than pulling through smoothly",
+                        "Tense fingers that bounce away from the strings"
+                    ],
+                    "practiceTips": [
+                        "Practice both strokes on every string — they each feel different on different strings"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "technique",
+                        "classical"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-012",
+                            "type": "quiz",
+                            "title": "Rest and Free Stroke Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-013",
+                                    "questionText": "In a rest stroke (apoyando), the finger:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-049",
+                                            "optionText": "Lifts away into the air after plucking"
+                                        },
+                                        {
+                                            "id": "vlo-opt-050",
+                                            "optionText": "Lands on the adjacent string after plucking"
+                                        },
+                                        {
+                                            "id": "vlo-opt-051",
+                                            "optionText": "Crosses over to the next string"
+                                        },
+                                        {
+                                            "id": "vlo-opt-052",
+                                            "optionText": "Mutes the played string"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-050"
+                                    ],
+                                    "explanation": "Rest stroke (apoyando) plucks the string and rests on the adjacent (typically lower) string, producing a fuller, projecting tone."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-021",
+                    "sectionId": "vlo-sctn-006",
+                    "roadmapId": "rm-vlo",
+                    "title": "Basic Arpeggio Patterns",
+                    "shortDescription": "Pluck the notes of a chord in sequence using p-i-m-a.",
+                    "longDescription": "Arpeggio patterns are the foundation of fingerstyle. Start with simple p-i-m-a (thumb plays a bass note, then i-m-a play the top three strings). Then add variations: p-i-m-a-m-i, p-a-m-i, etc. Practice each pattern slowly and evenly.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-020",
+                        "vlo-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play p-i-m-a smoothly over a held chord",
+                        "Apply the pattern to chord progressions",
+                        "Practice variations like p-i-m-a-m-i"
+                    ],
+                    "commonMistakes": [
+                        "Letting one finger be louder than the others",
+                        "Looking at the picking hand constantly — your fingers can learn their positions by feel"
+                    ],
+                    "practiceTips": [
+                        "Anchor your thumb position relative to the strings so it doesn't wander",
+                        "Practice slowly — speed comes from accurate slow practice"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "arpeggios",
+                        "classical"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-022",
+                    "sectionId": "vlo-sctn-006",
+                    "roadmapId": "rm-vlo",
+                    "title": "Travis Picking Basics",
+                    "shortDescription": "Alternating bass thumb pattern under a melody played by the fingers.",
+                    "longDescription": "Named after Merle Travis, this pattern uses the thumb to play a steady alternating bass (e.g., 6th string, 4th string, 5th string, 4th string) while the i, m, and a fingers play higher strings. It's the foundation of much country, folk, and fingerstyle playing.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play steady alternating bass with the thumb alone",
+                        "Add finger notes between thumb strikes",
+                        "Apply Travis picking to a simple chord progression"
+                    ],
+                    "commonMistakes": [
+                        "Losing the bass pattern when adding finger notes — the thumb must stay metronomic"
+                    ],
+                    "practiceTips": [
+                        "Master thumb alone first. Then add fingers gradually."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "folk",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-007",
+            "roadmapId": "rm-vlo",
+            "title": "Barre Chords",
+            "shortDescription": "Unlock the whole neck with movable barre chord shapes.",
+            "longDescription": "Barre chords use the index finger to fret multiple strings, creating movable shapes that can play any major or minor chord at any position on the neck. This section conquers F, then extends to full E-shape and A-shape barre chords and the principle of movable shapes.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-003",
+                "vlo-sctn-004"
+            ],
+            "unlocks": [
+                "vlo-sctn-011"
+            ],
+            "difficulty": "intermediate",
+            "order": 7,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "barre-chords",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-023",
+                    "sectionId": "vlo-sctn-007",
+                    "roadmapId": "rm-vlo",
+                    "title": "The F Major Chord",
+                    "shortDescription": "The first barre chord every guitarist struggles with — and how to conquer it.",
+                    "longDescription": "F major is famously difficult because it requires barring the first two strings with the index finger while the other fingers form an E-major shape. You'll learn proper hand position, finger angle, and pressure to make F ring clearly.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a full barre F major with all six strings ringing",
+                        "Use proper thumb position behind the neck for leverage",
+                        "Recognize the F shape as a movable pattern"
+                    ],
+                    "commonMistakes": [
+                        "Pressing harder instead of adjusting angle — most clean barres come from angle, not force",
+                        "Letting the barre finger flatten across all strings symmetrically — use the edge of the finger"
+                    ],
+                    "practiceTips": [
+                        "Start with a 'mini-F' (only 4 strings) before attempting the full 6-string barre",
+                        "Roll the index finger slightly so the bony edge contacts the strings, not the soft flat",
+                        "Build up the barre over weeks — don't expect it in one session"
+                    ],
+                    "resources": [
+                        {
+                            "id": "vlo-res-004",
+                            "type": "article",
+                            "url": "https://www.justinguitar.com/guitar-lessons/the-f-chord-bc-167",
+                            "title": "The F Chord (JustinGuitar, free)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-013",
+                            "type": "quiz",
+                            "title": "F Major Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-014",
+                                    "questionText": "The best way to develop a clean F barre chord is:",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-053",
+                                            "optionText": "Press harder"
+                                        },
+                                        {
+                                            "id": "vlo-opt-054",
+                                            "optionText": "Adjust the angle of the index finger and use the bony edge"
+                                        },
+                                        {
+                                            "id": "vlo-opt-055",
+                                            "optionText": "Use a thicker pick"
+                                        },
+                                        {
+                                            "id": "vlo-opt-056",
+                                            "optionText": "Tune down a half step"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-054"
+                                    ],
+                                    "explanation": "Angle matters more than pressure. The bony side of the index finger contacts the strings more firmly than the flat pad, making the barre cleaner with less force."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-024",
+                    "sectionId": "vlo-sctn-007",
+                    "roadmapId": "rm-vlo",
+                    "title": "E-Shape Barre Chords",
+                    "shortDescription": "Move the E major shape up the neck to play any major chord.",
+                    "longDescription": "The E major chord (open) can be 'translated' up the neck by barring with the index finger and shaping the rest of the hand as if playing E. The chord name comes from the note on the 6th string at the barre.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play E-shape barre chords at multiple frets (e.g., F at fret 1, G at fret 3, A at fret 5)",
+                        "Identify the root note on the 6th string",
+                        "Use the same shape for minor chords (E-minor shape)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Memorize the notes on the 6th string up to fret 12 — it unlocks all E-shape barre chords"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-025",
+                    "sectionId": "vlo-sctn-007",
+                    "roadmapId": "rm-vlo",
+                    "title": "A-Shape Barre Chords",
+                    "shortDescription": "Move the A major shape up the neck for another set of barre chords.",
+                    "longDescription": "The A major chord (open) translates up the neck similarly, with the root on the 5th string. A-shape barres often substitute the ring finger as a partial barre for the three middle strings, since fitting three separate fingers into one fret is tight.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play A-shape barre chords (with full or partial barre)",
+                        "Identify the root note on the 5th string",
+                        "Use both major and minor A-shape forms"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-026",
+                    "sectionId": "vlo-sctn-007",
+                    "roadmapId": "rm-vlo",
+                    "title": "Movable Chord Shapes",
+                    "shortDescription": "Once a shape has no open strings, you can move it anywhere on the neck.",
+                    "longDescription": "Barre chords are the most common movable shapes, but other shapes (jazz voicings, chord fragments) can also be moved. Knowing which fret-position equals which chord requires knowing the notes on the neck — the bridge between chord knowledge and fretboard knowledge.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-024",
+                        "vlo-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recognize when a chord shape is movable",
+                        "Use the root-note string to identify the chord name",
+                        "Play any major or minor chord on the neck using E-shape or A-shape"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-008",
+            "roadmapId": "rm-vlo",
+            "title": "The Fretboard",
+            "shortDescription": "Memorize the names of notes across the neck.",
+            "longDescription": "Fretboard knowledge separates beginners from intermediate players. This section covers the open string names, the natural notes up each string, and octave patterns for navigation.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-001",
+                "vlo-sctn-002"
+            ],
+            "unlocks": [
+                "vlo-sctn-009"
+            ],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fretboard",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-027",
+                    "sectionId": "vlo-sctn-008",
+                    "roadmapId": "rm-vlo",
+                    "title": "Notes on the Open Strings",
+                    "shortDescription": "Memorize the names of the six open strings.",
+                    "longDescription": "Knowing the open strings is the entry point for fretboard knowledge: E-A-D-G-B-E from low to high. From there you can derive every other note.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-004"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 10,
+                        "max": 20,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recite the open string names from low to high and high to low",
+                        "Recall the notes immediately without counting"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Use a memorable phrase like 'Eddie Ate Dynamite, Good Bye Eddie'"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-028",
+                    "sectionId": "vlo-sctn-008",
+                    "roadmapId": "rm-vlo",
+                    "title": "Notes Up the Fretboard",
+                    "shortDescription": "Learn the natural notes on each string up to fret 12.",
+                    "longDescription": "Each fret raises the pitch by one half step. Memorizing the natural notes (no sharps/flats) up each string is a major undertaking but transformative. Focus on the 6th and 5th strings first — they are the root strings for most barre chords.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recall any natural note on strings 6 and 5 within 2 seconds",
+                        "Extend to all six strings",
+                        "Recognize that fret 12 returns to the open-string note one octave higher"
+                    ],
+                    "commonMistakes": [
+                        "Trying to memorize all six strings at once — focus on one or two strings per week"
+                    ],
+                    "practiceTips": [
+                        "Drill notes on the 6th string daily for a week, then 5th the next week, etc.",
+                        "Test yourself before going to sleep — sleep consolidates memory"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-014",
+                            "type": "quiz",
+                            "title": "Notes Up the Fretboard Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-015",
+                                    "questionText": "What note is on the 5th fret of the 6th (low E) string?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-057",
+                                            "optionText": "E"
+                                        },
+                                        {
+                                            "id": "vlo-opt-058",
+                                            "optionText": "G"
+                                        },
+                                        {
+                                            "id": "vlo-opt-059",
+                                            "optionText": "A"
+                                        },
+                                        {
+                                            "id": "vlo-opt-060",
+                                            "optionText": "B"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-059"
+                                    ],
+                                    "explanation": "The 6th string open is E. Going up by half steps: F (fret 1), F♯ (2), G (3), G♯ (4), A (5). Five frets up from E is A."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-029",
+                    "sectionId": "vlo-sctn-008",
+                    "roadmapId": "rm-vlo",
+                    "title": "Octaves and Patterns",
+                    "shortDescription": "Use octave shapes to find the same note in multiple places.",
+                    "longDescription": "An octave shape is a fingering pattern that produces the same note an octave apart. The most common is: a note on the 6th string and a note two frets up on the 4th string. Octave shapes are powerful for fretboard navigation and improvisation.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify and play octave shapes between adjacent string pairs",
+                        "Use octaves to find notes quickly across the neck",
+                        "Apply octave shapes in melodic playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-009",
+            "roadmapId": "rm-vlo",
+            "title": "Scales on Guitar",
+            "shortDescription": "Pentatonic and full scales across the neck.",
+            "longDescription": "Scales unlock lead playing and improvisation. This section covers the minor and major pentatonic scales, full major and minor scales, and the CAGED-style position system that maps scales across the entire neck.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-008"
+            ],
+            "unlocks": [
+                "vlo-sctn-010",
+                "vlo-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "scales",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-030",
+                    "sectionId": "vlo-sctn-009",
+                    "roadmapId": "rm-vlo",
+                    "title": "Minor Pentatonic Scale",
+                    "shortDescription": "The five-note scale at the heart of rock, blues, and many pop solos.",
+                    "longDescription": "The minor pentatonic scale has five notes per octave (root, ♭3, 4, 5, ♭7). It's typically learned in five 'positions' across the neck. Position 1 (around the root on the 6th string) is the most common starting point.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play position 1 of the minor pentatonic in any key",
+                        "Recognize the scale pattern visually on the neck",
+                        "Apply the scale to simple melodic phrases"
+                    ],
+                    "commonMistakes": [
+                        "Playing the scale endlessly up and down — practice in musical phrases instead"
+                    ],
+                    "practiceTips": [
+                        "Hum a melody while playing the scale — make sure you can hear the notes as music, not as a mechanical pattern"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "pentatonic",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-015",
+                            "type": "quiz",
+                            "title": "Minor Pentatonic Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-016",
+                                    "questionText": "How many distinct notes are in a pentatonic scale per octave?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-061",
+                                            "optionText": "3"
+                                        },
+                                        {
+                                            "id": "vlo-opt-062",
+                                            "optionText": "5"
+                                        },
+                                        {
+                                            "id": "vlo-opt-063",
+                                            "optionText": "7"
+                                        },
+                                        {
+                                            "id": "vlo-opt-064",
+                                            "optionText": "12"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-062"
+                                    ],
+                                    "explanation": "'Penta' = five. A pentatonic scale has five distinct notes per octave."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-031",
+                    "sectionId": "vlo-sctn-009",
+                    "roadmapId": "rm-vlo",
+                    "title": "Major Pentatonic Scale",
+                    "shortDescription": "The major-sounding cousin of the minor pentatonic.",
+                    "longDescription": "The major pentatonic uses notes 1, 2, 3, 5, 6 of the major scale. It has the same fingering shape as the minor pentatonic — just played starting on a different note (three frets lower for the major form).",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play position 1 of the major pentatonic in any key",
+                        "Understand the relationship to the minor pentatonic (same notes, different root)",
+                        "Apply to country, folk, and bright-sounding genres"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "pentatonic",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-032",
+                    "sectionId": "vlo-sctn-009",
+                    "roadmapId": "rm-vlo",
+                    "title": "Natural Minor and Major Scales",
+                    "shortDescription": "The seven-note scales that underlie most Western music.",
+                    "longDescription": "Beyond pentatonics, the full major and minor scales add two more notes per octave. Each scale has multiple positions on the neck. Begin with the most common positions and gradually connect them.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play one position of the major scale in any key",
+                        "Play one position of the natural minor scale in any key",
+                        "Begin connecting adjacent positions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice scales in a musical context — over a chord progression in the same key — not as isolated drills"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-033",
+                    "sectionId": "vlo-sctn-009",
+                    "roadmapId": "rm-vlo",
+                    "title": "Scale Positions and Connecting Them",
+                    "shortDescription": "Five positions per scale, played across the neck and connected smoothly.",
+                    "longDescription": "Each scale has five (CAGED) positions across the neck. Mastering all five and the transitions between them is the basis for fluent lead playing across the whole fretboard. This is a long-term project.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-030",
+                        "vlo-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play all five positions of the minor pentatonic across the neck",
+                        "Slide between adjacent positions",
+                        "Improvise using multiple positions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Take one position per week — patient, deliberate practice beats trying to learn everything at once"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-010",
+            "roadmapId": "rm-vlo",
+            "title": "Lead Playing Basics",
+            "shortDescription": "Single-note melodies, hammer-ons, pull-offs, bends, and vibrato.",
+            "longDescription": "Lead playing emphasizes single-note melodic and improvisational playing. This section covers single-note melodies, the legato techniques of hammer-ons and pull-offs, and the expressive techniques of bending and vibrato.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-009"
+            ],
+            "unlocks": [
+                "vlo-sctn-014",
+                "vlo-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "lead",
+                "technique",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-034",
+                    "sectionId": "vlo-sctn-010",
+                    "roadmapId": "rm-vlo",
+                    "title": "Single-Note Melodies",
+                    "shortDescription": "Play melodies one note at a time rather than as chords.",
+                    "longDescription": "Melodies on guitar can be played on a single string, across strings within a position, or moving up and down the neck. Start with simple, well-known melodies (folk songs, nursery rhymes) and apply correct fingering.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-007"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play simple melodies in first position",
+                        "Use alternating finger or pick technique for fluency",
+                        "Maintain a steady pulse"
+                    ],
+                    "commonMistakes": [
+                        "Using only one finger for melodies (slow and inefficient)"
+                    ],
+                    "practiceTips": [
+                        "Sing the melody while you play it — confirms your ear is engaged"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "melody",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-035",
+                    "sectionId": "vlo-sctn-010",
+                    "roadmapId": "rm-vlo",
+                    "title": "Hammer-Ons and Pull-Offs",
+                    "shortDescription": "Sound a note by tapping or pulling the fretting finger rather than picking.",
+                    "longDescription": "A hammer-on sounds a higher note by hammering a fretting finger onto the string after a previously picked note. A pull-off sounds a lower note by pulling the fretting finger off. Together they create the legato sound common in rock, blues, and Celtic music.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean hammer-ons across the neck",
+                        "Execute clean pull-offs",
+                        "Combine them in melodic phrases"
+                    ],
+                    "commonMistakes": [
+                        "Weak hammer-ons that don't sound clearly — hammer firmly and quickly",
+                        "Pulling off straight down instead of slightly outward — the pull-off needs a small sideways flick"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "technique",
+                        "ornaments"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-036",
+                    "sectionId": "vlo-sctn-010",
+                    "roadmapId": "rm-vlo",
+                    "title": "String Bending",
+                    "shortDescription": "Bend a string upward to raise the pitch.",
+                    "longDescription": "Bending pushes a string sideways across the fretboard, raising its pitch. Common bends are a half step, whole step, or one and a half steps. It's a staple of blues, rock, and country lead playing — more typical on steel-string acoustic and electric than on nylon-string classical.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Bend a string accurately to a specific target pitch",
+                        "Support the bend with multiple fingers for control",
+                        "Recognize and execute notated bends in TAB"
+                    ],
+                    "commonMistakes": [
+                        "Bending without listening — bend to a pitch, not just a distance",
+                        "Using one finger alone — multiple fingers behind the bending finger provide leverage"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "technique",
+                        "blues"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-037",
+                    "sectionId": "vlo-sctn-010",
+                    "roadmapId": "rm-vlo",
+                    "title": "Vibrato",
+                    "shortDescription": "Add expressive pitch variation to a sustained note.",
+                    "longDescription": "Vibrato is small, controlled pitch oscillation that adds expression to a note. It's produced by repeatedly bending the string slightly up and back. Different styles call for different vibrato speeds and widths.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-036"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce controlled vibrato on any string",
+                        "Match vibrato style to the musical context",
+                        "Vary speed and width consciously"
+                    ],
+                    "commonMistakes": [
+                        "Uncontrolled, nervous vibrato — relax and slow down"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "lead",
+                        "technique",
+                        "expression"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-011",
+            "roadmapId": "rm-vlo",
+            "title": "Brazilian Styles",
+            "shortDescription": "Bossa nova, samba, MPB, and choro — the heart of the Brazilian violão tradition.",
+            "longDescription": "Brazilian popular music has a deep tradition centered on the violão. This section introduces bossa nova accompaniment, samba on guitar, MPB harmonic vocabulary, and the foundations of choro — Brazil's first urban popular genre.",
+            "instrumentId": "inst-guitar",
+            "genreId": "gen-brazilian",
+            "dependencies": [
+                "vlo-sctn-006",
+                "vlo-sctn-007"
+            ],
+            "unlocks": [
+                "vlo-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 11,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "brazilian",
+                "bossa-nova",
+                "samba",
+                "mpb",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-038",
+                    "sectionId": "vlo-sctn-011",
+                    "roadmapId": "rm-vlo",
+                    "title": "Bossa Nova Accompaniment",
+                    "shortDescription": "The understated, syncopated style created by João Gilberto and contemporaries.",
+                    "longDescription": "Bossa nova accompaniment combines a steady bass played by the thumb with syncopated chord stabs played by the fingers. The classic bossa pattern (\"batida de bossa\") creates the genre's iconic feel. Chord vocabulary includes 7ths, 9ths, and other extended harmonies.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-021",
+                        "vlo-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the basic bossa nova rhythmic pattern with thumb bass and finger chords",
+                        "Apply extended chords (m7, maj7, 7) to bossa nova",
+                        "Accompany a simple bossa tune like 'Garota de Ipanema' or 'Águas de Março'"
+                    ],
+                    "commonMistakes": [
+                        "Playing the bass too loud — bossa is intimate; the bass should be present but understated",
+                        "Rushing the syncopated finger pattern"
+                    ],
+                    "practiceTips": [
+                        "Listen extensively to João Gilberto — his recordings define the style"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "brazilian",
+                        "bossa-nova",
+                        "fingerstyle",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "vlo-assess-016",
+                            "type": "quiz",
+                            "title": "Bossa Nova Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "vlo-qstn-017",
+                                    "questionText": "What characterizes the bossa nova guitar accompaniment style?",
+                                    "options": [
+                                        {
+                                            "id": "vlo-opt-065",
+                                            "optionText": "Loud strumming with a pick"
+                                        },
+                                        {
+                                            "id": "vlo-opt-066",
+                                            "optionText": "Syncopated chord stabs played by the fingers over a steady thumb bass"
+                                        },
+                                        {
+                                            "id": "vlo-opt-067",
+                                            "optionText": "Heavy use of distortion"
+                                        },
+                                        {
+                                            "id": "vlo-opt-068",
+                                            "optionText": "Rapid arpeggios only"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "vlo-opt-066"
+                                    ],
+                                    "explanation": "Bossa nova's accompaniment style uses the thumb on bass strings (often steady) with the fingers playing syncopated chord stabs on the upper strings."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "vlo-tpc-039",
+                    "sectionId": "vlo-sctn-011",
+                    "roadmapId": "rm-vlo",
+                    "title": "Samba Rhythms on Guitar",
+                    "shortDescription": "Translate samba's percussive groove to the guitar.",
+                    "longDescription": "Samba on guitar uses techniques similar to bossa nova but with a more energetic, accented feel. The right hand may employ partial strumming, palm muting, and percussive techniques to evoke the rhythm section.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a basic samba accompaniment pattern",
+                        "Add percussive elements (muted strums, chucks)",
+                        "Distinguish samba feel from bossa nova feel"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "brazilian",
+                        "samba",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-040",
+                    "sectionId": "vlo-sctn-011",
+                    "roadmapId": "rm-vlo",
+                    "title": "MPB Accompaniment",
+                    "shortDescription": "Música Popular Brasileira covers many styles — what they share is harmonic richness.",
+                    "longDescription": "MPB (Música Popular Brasileira) encompasses a range of styles from Chico Buarque to Gilberto Gil to Caetano Veloso. The common thread on guitar is rich harmony (extended chords, voice leading), syncopated rhythms, and intimate accompaniment of song.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply extended chords (7, 9, 11) to MPB tunes",
+                        "Use smooth voice leading between chords",
+                        "Accompany a sung melody with sensitivity"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "brazilian",
+                        "mpb",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-041",
+                    "sectionId": "vlo-sctn-011",
+                    "roadmapId": "rm-vlo",
+                    "title": "Introduction to Choro",
+                    "shortDescription": "Brazil's first urban popular music, predating samba.",
+                    "longDescription": "Choro emerged in 19th-century Rio de Janeiro, blending European dance forms with African rhythmic influence. The guitar (violão) plays a key role, often providing bass lines (baixaria) that connect chord changes. Choro is technically demanding and harmonically sophisticated.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-040"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Understand the role of the violão in a choro ensemble",
+                        "Play basic baixaria (bass line) between chords",
+                        "Recognize key choro composers: Pixinguinha, Jacob do Bandolim, Garoto"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to recordings of Pixinguinha, Jacob do Bandolim, and other choro masters"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "brazilian",
+                        "choro",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-012",
+            "roadmapId": "rm-vlo",
+            "title": "Classical Guitar Technique",
+            "shortDescription": "Right-hand tone production, Giuliani arpeggios, and left-hand independence.",
+            "longDescription": "Classical guitar technique demands precise tone production and independent control of both hands. This section covers right-hand position and nail care, refined rest and free strokes, Giuliani's foundational arpeggio studies, and left-hand independence.",
+            "instrumentId": "inst-guitar",
+            "genreId": "gen-classical",
+            "dependencies": [
+                "vlo-sctn-006"
+            ],
+            "unlocks": [
+                "vlo-sctn-013",
+                "vlo-sctn-014"
+            ],
+            "difficulty": "intermediate",
+            "order": 12,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "classical",
+                "technique",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-042",
+                    "sectionId": "vlo-sctn-012",
+                    "roadmapId": "rm-vlo",
+                    "title": "Right Hand Position and Nail Care",
+                    "shortDescription": "Position the right hand for clear tone, and care for the nails that shape that tone.",
+                    "longDescription": "Classical guitar tone comes largely from the right hand. The hand position relative to the strings, the angle of finger contact, and the shape and condition of the nails all matter. You'll learn the standard position and basic nail filing.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-020"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Position the right hand correctly relative to the soundhole",
+                        "File nails to a smooth, slightly curved shape",
+                        "Use the nail and flesh together for warm yet clear tone"
+                    ],
+                    "commonMistakes": [
+                        "Cracked or rough nails that produce a scratchy sound",
+                        "Hand position too far from or too close to the bridge — affects tone color"
+                    ],
+                    "practiceTips": [
+                        "Use fine-grit sandpaper or a glass file for nail finishing — the smoother the nail edge, the smoother the tone"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-043",
+                    "sectionId": "vlo-sctn-012",
+                    "roadmapId": "rm-vlo",
+                    "title": "Detailed Rest Stroke (Apoyando)",
+                    "shortDescription": "Refine rest stroke for melodic projection and scale playing.",
+                    "longDescription": "Refined rest stroke produces a full, projecting tone, especially valuable for melodic lines. The finger moves through the string from the joint, lands solidly on the adjacent string, and the hand stays relaxed throughout.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a strong, even rest stroke on every string",
+                        "Apply rest stroke in scale passages",
+                        "Alternate between i-m fingers with even tone"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-044",
+                    "sectionId": "vlo-sctn-012",
+                    "roadmapId": "rm-vlo",
+                    "title": "Detailed Free Stroke (Tirando)",
+                    "shortDescription": "Refine free stroke for arpeggios, chords, and polyphonic playing.",
+                    "longDescription": "Free stroke leaves the finger free after plucking, allowing multiple fingers to play different strings without interference. Essential for arpeggios and polyphonic textures where rest stroke would damp adjacent strings.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a clear free stroke that doesn't lift away unnecessarily",
+                        "Apply to arpeggio patterns",
+                        "Maintain even tone across i, m, a fingers"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "technique",
+                        "arpeggios"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-045",
+                    "sectionId": "vlo-sctn-012",
+                    "roadmapId": "rm-vlo",
+                    "title": "Giuliani 120 Right Hand Studies",
+                    "shortDescription": "The foundational right-hand arpeggio studies of classical guitar.",
+                    "longDescription": "Mauro Giuliani's Op. 1 contains 120 arpeggio patterns over a simple two-chord progression (C-G7-C). Working through them systematically builds right-hand fluency unmatched by any other exercise.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-044"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work through Giuliani's 120 patterns systematically",
+                        "Maintain even tone and tempo across all patterns",
+                        "Use these as warm-ups indefinitely"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Pick 3-5 patterns per session — not all 120 at once"
+                    ],
+                    "resources": [
+                        {
+                            "id": "vlo-res-005",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Studio_per_la_Chitarra%2C_Op.1_(Giuliani%2C_Mauro)",
+                            "title": "Giuliani - Op. 1 Studio per la Chitarra (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "classical",
+                        "technique",
+                        "arpeggios",
+                        "exercises"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-046",
+                    "sectionId": "vlo-sctn-012",
+                    "roadmapId": "rm-vlo",
+                    "title": "Left Hand Independence and Fingerings",
+                    "shortDescription": "Refine left-hand technique for classical demands: polyphony, planted fingers, slurs.",
+                    "longDescription": "Classical guitar often requires multiple voices played simultaneously, meaning left-hand fingers must operate independently. Planting fingers in advance (anticipation), using minimal motion, and accurate slur execution (hammer-ons, pull-offs) are core skills.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "vlo-tpc-045"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Plant fingers in advance to prepare upcoming notes",
+                        "Use minimal finger motion (raised fingers waste energy and time)",
+                        "Execute clean slurs (legato) within classical repertoire"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-013",
+            "roadmapId": "rm-vlo",
+            "title": "Intermediate Repertoire",
+            "shortDescription": "Carcassi, Sor, Tárrega, Brazilian standards, and fingerstyle arrangements.",
+            "longDescription": "This section brings the techniques together in actual repertoire: 19th-century classical studies (Carcassi, Sor), short Tárrega pieces, Brazilian bossa nova and choro, and popular fingerstyle arrangements.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-011",
+                "vlo-sctn-012"
+            ],
+            "unlocks": [
+                "vlo-sctn-015"
+            ],
+            "difficulty": "intermediate",
+            "order": 13,
+            "estimatedTime": {
+                "min": 50,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "repertoire",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-047",
+                    "sectionId": "vlo-sctn-013",
+                    "roadmapId": "rm-vlo",
+                    "title": "Carcassi and Sor Studies",
+                    "shortDescription": "19th-century classical guitar studies that remain core intermediate repertoire.",
+                    "longDescription": "Matteo Carcassi's 25 Études Mélodiques Op. 60 and Fernando Sor's various études (Op. 6, Op. 31, Op. 35) are the bread and butter of intermediate classical guitar repertoire. They develop technique within musical contexts.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-046"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 300,
+                        "max": 600,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 3 Carcassi études from Op. 60",
+                        "Learn at least 3 Sor études",
+                        "Apply classical technique (rest stroke, free stroke, accurate fingerings)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "vlo-res-006",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/25_M%C3%A9lodiques_%C3%89tudes_Progressives%2C_Op.60_(Carcassi%2C_Matteo)",
+                            "title": "Carcassi - 25 Études Op. 60 (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        },
+                        {
+                            "id": "vlo-res-007",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Category:Sor%2C_Fernando",
+                            "title": "Fernando Sor works on IMSLP (free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-048",
+                    "sectionId": "vlo-sctn-013",
+                    "roadmapId": "rm-vlo",
+                    "title": "Tárrega Pieces",
+                    "shortDescription": "Francisco Tárrega's accessible classical guitar miniatures.",
+                    "longDescription": "Francisco Tárrega (1852-1909) wrote some of the most beloved classical guitar pieces, including 'Lágrima', 'Adelita', and the famous 'Recuerdos de la Alhambra' (which is more advanced because of its tremolo technique). His shorter pieces are excellent intermediate repertoire.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 300,
+                        "max": 600,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn 'Lágrima' and 'Adelita'",
+                        "Work on 'Estudio en Mi Menor' and other short pieces",
+                        "Begin preparation for 'Recuerdos de la Alhambra' (requires tremolo, covered later)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "vlo-res-008",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Category:T%C3%A1rrega%2C_Francisco",
+                            "title": "Francisco Tárrega works on IMSLP (free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-049",
+                    "sectionId": "vlo-sctn-013",
+                    "roadmapId": "rm-vlo",
+                    "title": "Intermediate Brazilian Repertoire",
+                    "shortDescription": "Bossa nova standards and accessible choros.",
+                    "longDescription": "Intermediate Brazilian repertoire includes accessible bossa nova standards ('Garota de Ipanema', 'Corcovado', 'Wave'), simpler choros, and MPB arrangements. Most of this repertoire is under copyright, so resources are typically commercial.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Accompany 2-3 bossa nova standards confidently",
+                        "Play through 1-2 simpler choros",
+                        "Arrange a popular MPB song for solo guitar"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Recordings are the primary teaching resource — listen extensively"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "brazilian",
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-050",
+                    "sectionId": "vlo-sctn-013",
+                    "roadmapId": "rm-vlo",
+                    "title": "Popular and Fingerstyle Arrangements",
+                    "shortDescription": "Solo guitar arrangements of popular songs, plus fingerstyle originals.",
+                    "longDescription": "Solo fingerstyle arrangements combine melody, harmony, and bass on the guitar alone — the same approach used in classical playing applied to popular tunes. Many arrangements of folk, pop, and film music are accessible at the intermediate level.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-022",
+                        "vlo-tpc-046"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn 2-3 fingerstyle arrangements of songs you enjoy",
+                        "Apply classical technique to popular repertoire",
+                        "Develop arranging instincts: where to place melody, when to add bass, what to omit"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "popular",
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-014",
+            "roadmapId": "rm-vlo",
+            "title": "Advanced Technique",
+            "shortDescription": "Tremolo, rasgueado, tapping, and modern fingerstyle techniques.",
+            "longDescription": "This section covers advanced techniques specific to various styles: classical tremolo, flamenco rasgueado, two-hand tapping, and modern fingerstyle integrations of percussion and harmonics.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-012",
+                "vlo-sctn-010"
+            ],
+            "unlocks": [
+                "vlo-sctn-015"
+            ],
+            "difficulty": "advanced",
+            "order": 14,
+            "estimatedTime": {
+                "min": 40,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-051",
+                    "sectionId": "vlo-sctn-014",
+                    "roadmapId": "rm-vlo",
+                    "title": "Tremolo",
+                    "shortDescription": "Rapid alternation of fingers on a single string creating a sustained, vocal effect.",
+                    "longDescription": "Classical guitar tremolo uses the pattern p-a-m-i (thumb on a bass note, then ring-middle-index in rapid succession on a melody string). The goal is evenness — every note should sound the same in volume and timing. Tárrega's 'Recuerdos de la Alhambra' is the iconic example.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-045"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce even tremolo at slow tempo",
+                        "Gradually increase speed while maintaining evenness",
+                        "Apply to 'Recuerdos de la Alhambra' or other tremolo studies"
+                    ],
+                    "commonMistakes": [
+                        "Uneven fingers — one finger louder or faster than the others",
+                        "Speeding up before evenness is established"
+                    ],
+                    "practiceTips": [
+                        "Practice with a metronome at slow tempo for weeks",
+                        "Each finger should sound identical to the others — record yourself to verify"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-052",
+                    "sectionId": "vlo-sctn-014",
+                    "roadmapId": "rm-vlo",
+                    "title": "Rasgueado",
+                    "shortDescription": "The flamenco strumming technique using rolling fingers.",
+                    "longDescription": "Rasgueado strums the strings by flicking individual fingers outward from a closed fist position. It produces a powerful, rolling sound characteristic of flamenco. Many variations exist (e and a, four-finger, five-finger rolls).",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-046"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute basic four-finger and five-finger rasgueado",
+                        "Apply to flamenco-inspired rhythms",
+                        "Maintain hand and arm relaxation during fast rasgueado"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "flamenco",
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-053",
+                    "sectionId": "vlo-sctn-014",
+                    "roadmapId": "rm-vlo",
+                    "title": "Tapping",
+                    "shortDescription": "Use the picking hand to tap notes on the fretboard for fast, wide-interval passages.",
+                    "longDescription": "Tapping uses fingers of the picking hand to hammer notes on the fretboard, in combination with the fretting hand. It enables fast, wide-interval lines impossible with conventional technique. More common on electric guitar but applicable to acoustic.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-035"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute basic two-hand tapping patterns",
+                        "Combine tapping with hammer-ons and pull-offs",
+                        "Apply to passages in lead playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced",
+                        "lead"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-054",
+                    "sectionId": "vlo-sctn-014",
+                    "roadmapId": "rm-vlo",
+                    "title": "Advanced Fingerstyle Techniques",
+                    "shortDescription": "Percussive techniques, harmonics, and complex polyphonic playing.",
+                    "longDescription": "Modern fingerstyle (associated with players like Michael Hedges, Tommy Emmanuel, and Andy McKee) integrates percussive hits on the guitar body, natural and artificial harmonics, alternate tunings, and elaborate polyphonic textures.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-022",
+                        "vlo-tpc-046"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce clean natural harmonics on key frets (5, 7, 12)",
+                        "Add basic percussive elements (taps on the body)",
+                        "Explore alternate tunings (DADGAD, drop D, etc.)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "advanced",
+                        "technique"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-015",
+            "roadmapId": "rm-vlo",
+            "title": "Advanced Repertoire",
+            "shortDescription": "Bach, Tárrega masterworks, Villa-Lobos, Barrios, and contemporary classical guitar.",
+            "longDescription": "Advanced repertoire opens the great solo guitar literature: Bach transcriptions, Tárrega's masterworks (including the iconic 'Recuerdos de la Alhambra'), 20th-century giants Villa-Lobos and Barrios, and contemporary composers expanding the instrument's possibilities.",
+            "instrumentId": "inst-guitar",
+            "genreId": "gen-classical",
+            "dependencies": [
+                "vlo-sctn-013",
+                "vlo-sctn-014"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 15,
+            "estimatedTime": {
+                "min": 100,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "repertoire",
+                "classical",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-055",
+                    "sectionId": "vlo-sctn-015",
+                    "roadmapId": "rm-vlo",
+                    "title": "Bach on Guitar",
+                    "shortDescription": "Lute suites, cello suites, and violin works transcribed for guitar.",
+                    "longDescription": "J.S. Bach didn't write for guitar specifically, but his lute suites (BWV 995-1000, 1006a), the cello suites, and the violin sonatas and partitas have become essential classical guitar repertoire. These works develop polyphonic playing and musical maturity.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn movements from a Bach lute suite or cello suite arrangement",
+                        "Master polyphonic voicing required for Bach",
+                        "Develop stylistic understanding of Baroque ornamentation and phrasing"
+                    ],
+                    "commonMistakes": [
+                        "Treating Bach as a virtuoso showcase rather than as polyphonic music — voice independence matters more than speed"
+                    ],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "vlo-res-009",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Category:Bach%2C_Johann_Sebastian",
+                            "title": "J.S. Bach works on IMSLP (free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "baroque",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-056",
+                    "sectionId": "vlo-sctn-015",
+                    "roadmapId": "rm-vlo",
+                    "title": "Tárrega Advanced Works",
+                    "shortDescription": "'Recuerdos de la Alhambra' and other Tárrega masterworks.",
+                    "longDescription": "Tárrega's mature works include 'Recuerdos de la Alhambra' (the iconic tremolo study), 'Capricho Árabe', and the 'Gran Vals'. These pieces require all the advanced classical techniques and stand among the most performed solo guitar music.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-048",
+                        "vlo-tpc-051"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Master tremolo for 'Recuerdos de la Alhambra'",
+                        "Learn 'Capricho Árabe' or other advanced Tárrega works",
+                        "Apply mature musical interpretation"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "vlo-res-010",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Category:T%C3%A1rrega%2C_Francisco",
+                            "title": "Tárrega works on IMSLP (free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-057",
+                    "sectionId": "vlo-sctn-015",
+                    "roadmapId": "rm-vlo",
+                    "title": "Villa-Lobos and Barrios",
+                    "shortDescription": "Two great 20th-century composers whose works defined modern classical guitar.",
+                    "longDescription": "Heitor Villa-Lobos (1887-1959, Brazilian) and Agustín Barrios Mangoré (1885-1944, Paraguayan) wrote some of the most important classical guitar music of the 20th century. Villa-Lobos's 12 Études and 5 Preludes are landmarks; Barrios's 'La Catedral' and 'Un Sueño en la Floresta' are showpieces. Note: most of these works are still under copyright in many jurisdictions.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-048"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least one Villa-Lobos Prelude or Étude",
+                        "Learn at least one Barrios work",
+                        "Engage with the Latin American classical guitar tradition"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to recordings by Andrés Segovia, John Williams, Julian Bream, and Brazilian masters like Sérgio Abreu and the Assad brothers"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "20th-century",
+                        "advanced",
+                        "brazilian"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-058",
+                    "sectionId": "vlo-sctn-015",
+                    "roadmapId": "rm-vlo",
+                    "title": "Contemporary Composers",
+                    "shortDescription": "Leo Brouwer, Sérgio Assad, Roland Dyens, and other modern voices.",
+                    "longDescription": "Late 20th- and 21st-century classical guitar composers have expanded the instrument's vocabulary with new techniques, jazz influences, world music elements, and contemporary harmonic languages. Leo Brouwer (Cuban), Sérgio Assad (Brazilian), Roland Dyens (French), Carlo Domeniconi, and others have written extensively.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-057"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least one work from a contemporary composer",
+                        "Engage with extended techniques specific to modern works",
+                        "Develop interpretive flexibility for varied modern styles"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "classical",
+                        "repertoire",
+                        "contemporary",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-016",
+            "roadmapId": "rm-vlo",
+            "title": "Improvisation and Stylistic Application",
+            "shortDescription": "Blues, modal, Brazilian, and jazz improvisation and comping.",
+            "longDescription": "Improvisation extends technique into musical creation. This section progresses from blues improvisation through modal soloing, Brazilian improvisation, and jazz comping.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-009",
+                "vlo-sctn-010"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 16,
+            "estimatedTime": {
+                "min": 50,
+                "max": 300,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "improvisation",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-059",
+                    "sectionId": "vlo-sctn-016",
+                    "roadmapId": "rm-vlo",
+                    "title": "Blues Improvisation",
+                    "shortDescription": "The 12-bar blues form and improvising over it with pentatonic and blues scales.",
+                    "longDescription": "The 12-bar blues progression (I7-IV7-V7 in various combinations) is the most common improvising vehicle for beginners and intermediates. The minor pentatonic scale with the added ♭5 ('blue note') is the standard improvising vocabulary.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a 12-bar blues rhythm guitar pattern",
+                        "Improvise over a 12-bar blues using minor pentatonic with the blue note",
+                        "Develop phrasing: call and response, motif development"
+                    ],
+                    "commonMistakes": [
+                        "Running the scale up and down without phrasing",
+                        "Ignoring the chord changes — target chord tones on strong beats"
+                    ],
+                    "practiceTips": [
+                        "Find a backing track and just play. Listening time matters as much as practice time."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-060",
+                    "sectionId": "vlo-sctn-016",
+                    "roadmapId": "rm-vlo",
+                    "title": "Modal Soloing",
+                    "shortDescription": "Improvise using modes for jazz, rock, and fusion contexts.",
+                    "longDescription": "Beyond major and minor scales lie the seven diatonic modes (Dorian, Phrygian, Lydian, Mixolydian, etc.). Each has a distinctive sound, and each pairs with specific chord types. Mixolydian fits over dominant 7th chords; Dorian fits over minor 7th chords; Lydian fits over major 7th chords.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recognize which mode fits which chord type",
+                        "Improvise using Dorian, Mixolydian, and Lydian in appropriate contexts",
+                        "Use modes as a coloration tool, not just a scale-of-the-moment"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "modal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-061",
+                    "sectionId": "vlo-sctn-016",
+                    "roadmapId": "rm-vlo",
+                    "title": "Brazilian Improvisation",
+                    "shortDescription": "Soloing in bossa, choro, and samba contexts.",
+                    "longDescription": "Improvising in Brazilian music involves recognizing the chord progressions (often with rich harmony — m7, maj7, 7b9, etc.) and using appropriate scales (often modes, melodic minor, or bebop-influenced ideas). The phrasing is conversational rather than displaying.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-060",
+                        "vlo-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Improvise over a bossa nova chord progression",
+                        "Choose scales/modes that fit each chord",
+                        "Develop rhythmically and stylistically appropriate phrasing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Transcribe solos by Brazilian masters — listening time is essential"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "improvisation",
+                        "brazilian",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-062",
+                    "sectionId": "vlo-sctn-016",
+                    "roadmapId": "rm-vlo",
+                    "title": "Jazz Comping",
+                    "shortDescription": "Provide harmonic accompaniment in a jazz context.",
+                    "longDescription": "Comping (from 'accompany') is the art of providing rhythmic and harmonic support to a soloist. You'll learn comping chord voicings (often 'shell voicings' with just the root, 3rd, and 7th), rhythmic patterns (the classic Freddie Green 'four-on-the-floor', bossa comping, modern comping), and how to listen and respond to soloists.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "vlo-tpc-060"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play shell voicings for common jazz chords",
+                        "Apply common comping rhythms (four-on-the-floor, syncopated patterns)",
+                        "Comp through a jazz standard (Rhythm Changes, ii-V-I in many keys)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "jazz",
+                        "improvisation",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "vlo-sctn-017",
+            "roadmapId": "rm-vlo",
+            "title": "Ear Training and Memorization",
+            "shortDescription": "Playing by ear, transcription, and reliable memorization — parallel skills.",
+            "longDescription": "This section covers three skills that develop in parallel with everything else: playing by ear, transcription, and memorization for performance.",
+            "instrumentId": "inst-guitar",
+            "genreId": null,
+            "dependencies": [
+                "vlo-sctn-003"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 17,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "ear-training",
+                "memorization",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "vlo-tpc-063",
+                    "sectionId": "vlo-sctn-017",
+                    "roadmapId": "rm-vlo",
+                    "title": "Playing by Ear",
+                    "shortDescription": "Reproduce melodies and chord progressions on the guitar without sheet music.",
+                    "longDescription": "Playing by ear is fundamental for any guitarist working in popular music, where charts are often sparse or absent. Start with simple melodies, then chord progressions, then complete songs.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "vlo-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work out simple melodies by ear",
+                        "Identify chord progressions by ear (start with I-IV-V)",
+                        "Build a repertoire of songs learned without sheet music"
+                    ],
+                    "commonMistakes": [
+                        "Searching randomly — listen first, then play",
+                        "Skipping this skill — it's irreplaceable for popular music"
+                    ],
+                    "practiceTips": [
+                        "Start with songs you've heard many times — easier to hear when the song is in your memory",
+                        "Use software to slow recordings without changing pitch"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "playing-by-ear"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-064",
+                    "sectionId": "vlo-sctn-017",
+                    "roadmapId": "rm-vlo",
+                    "title": "Transcription",
+                    "shortDescription": "Notate what you hear — a deep ear-training discipline.",
+                    "longDescription": "Transcribing solos and arrangements from recordings is one of the most efficient ways to develop your ear, your stylistic vocabulary, and your repertoire. Choose recordings slightly above your current level and work them out note by note.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "vlo-tpc-063"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe a melody or short solo from recording",
+                        "Notate the result in TAB or standard notation",
+                        "Use the transcription as a springboard for your own playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Slow software (e.g., Anytune, Transcribe!) makes a huge difference",
+                        "Transcribe one short phrase at a time, master it, then move on"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "vlo-tpc-065",
+                    "sectionId": "vlo-sctn-017",
+                    "roadmapId": "rm-vlo",
+                    "title": "Memorization for Performance",
+                    "shortDescription": "Memorize pieces robustly enough to perform them with confidence.",
+                    "longDescription": "Memorization for performance combines muscle memory (the hands know where to go), aural memory (you can hear the piece in your head), visual memory (you see the score or the fingerboard), and analytical memory (you understand the harmony and structure). All four together produce robust performance memory.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "vlo-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Memorize a piece using all four memory modes",
+                        "Test memory by starting from arbitrary points in the piece",
+                        "Maintain memorized repertoire through periodic review"
+                    ],
+                    "commonMistakes": [
+                        "Relying only on muscle memory — it breaks under pressure"
+                    ],
+                    "practiceTips": [
+                        "Play through pieces mentally, away from the guitar — if you can do that, memory is solid"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "memorization",
+                        "performance"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}
