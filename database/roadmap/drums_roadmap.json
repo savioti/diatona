@@ -1,0 +1,3363 @@
+{
+    "id": "rm-drm",
+    "title": "Drums Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn drum kit from absolute beginner to advanced.",
+    "longDescription": "This roadmap guides learners from the first time at a kit to advanced playing across rock, jazz, funk, Latin, metal, and prog. It covers the 40 PAS rudiments (singles, doubles, paradiddles, flams, drags, ratamacues, and hybrids) along with foot technique, 4-way independence, dynamics and stroke control, fills, and the rhythmic vocabulary of major genres. Parallel tracks for pad practice, ear training, transcription, and memorization run throughout. Drum-specific free resources with stable URLs are scarce; this roadmap focuses on the practice methodology rather than linking external content.",
+    "sections": [
+        {
+            "id": "drm-sctn-001",
+            "roadmapId": "rm-drm",
+            "title": "Getting Started",
+            "shortDescription": "Kit anatomy, setup, posture, and stick grip.",
+            "longDescription": "Before any practice begins, the physical foundations matter: knowing the parts of the kit, setting it up ergonomically, sitting correctly, and holding the sticks properly. Bad habits formed here are hard to undo later.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "drm-sctn-002",
+                "drm-sctn-003",
+                "drm-sctn-004"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-001",
+                    "sectionId": "drm-sctn-001",
+                    "roadmapId": "rm-drm",
+                    "title": "Parts of the Drum Kit",
+                    "shortDescription": "Snare, toms, bass drum, hi-hat, ride, crash, and the basic kit layout.",
+                    "longDescription": "A standard drum kit consists of a snare drum, bass (kick) drum, one or more toms (rack toms and floor tom), hi-hat cymbals (a pair on a stand with a pedal), a ride cymbal, and one or more crash cymbals. You'll learn the names, positions, and primary sonic roles of each component.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name and identify all major parts of a 5-piece drum kit",
+                        "Understand the sonic role of each drum and cymbal (snare = backbeat, kick = downbeats, hi-hat = subdivision, etc.)",
+                        "Recognize different kit configurations (4-piece, 5-piece, double bass, fusion, etc.)"
+                    ],
+                    "commonMistakes": [
+                        "Confusing the ride and crash cymbals — ride is for steady rhythmic patterns, crash is for accents",
+                        "Calling the bass drum a 'kick drum' or vice versa (they're the same thing — both terms are correct)"
+                    ],
+                    "practiceTips": [
+                        "Spend a few minutes pointing to each piece and naming it — fast familiarity matters",
+                        "Visit a music store and look at multiple kit configurations to understand the variations"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-001",
+                            "type": "quiz",
+                            "title": "Drum Kit Anatomy Quiz",
+                            "description": "Quick check on kit components.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-001",
+                                    "questionText": "The cymbal typically used for steady rhythmic patterns (like a steady eighth-note pulse) is:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-001",
+                                            "optionText": "The crash"
+                                        },
+                                        {
+                                            "id": "drm-opt-002",
+                                            "optionText": "The ride"
+                                        },
+                                        {
+                                            "id": "drm-opt-003",
+                                            "optionText": "The splash"
+                                        },
+                                        {
+                                            "id": "drm-opt-004",
+                                            "optionText": "The china"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-002"
+                                    ],
+                                    "explanation": "The ride cymbal is the primary timekeeping cymbal — typically larger and with a defined 'ping' that sustains a steady pulse. The crash is for accents and explosions."
+                                },
+                                {
+                                    "id": "drm-qstn-002",
+                                    "questionText": "In standard kit terminology, the bass drum is also called:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-005",
+                                            "optionText": "The snare drum"
+                                        },
+                                        {
+                                            "id": "drm-opt-006",
+                                            "optionText": "The kick drum"
+                                        },
+                                        {
+                                            "id": "drm-opt-007",
+                                            "optionText": "The floor tom"
+                                        },
+                                        {
+                                            "id": "drm-opt-008",
+                                            "optionText": "The hi-hat"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-006"
+                                    ],
+                                    "explanation": "'Bass drum' and 'kick drum' are interchangeable terms for the same drum — the large drum played with a foot pedal."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-002",
+                    "sectionId": "drm-sctn-001",
+                    "roadmapId": "rm-drm",
+                    "title": "Setting Up the Drum Kit",
+                    "shortDescription": "Position the kit ergonomically for your body.",
+                    "longDescription": "Kit setup is personal but follows ergonomic principles: drums and cymbals should be reachable without straining, with the snare directly in front of you and toms angled slightly toward you. Cymbals should be at heights that allow natural striking motion.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Position the throne (seat) at the correct height (thighs roughly parallel to the floor or slightly downward)",
+                        "Place the snare drum directly in front, slightly below the belt line",
+                        "Angle the toms toward you for easier striking",
+                        "Set cymbal heights to natural striking levels"
+                    ],
+                    "commonMistakes": [
+                        "Throne too low (creates back strain and limits pedal power)",
+                        "Cymbals too high (causes shoulder strain) or too low (you'll hit the bell instead of the bow)"
+                    ],
+                    "practiceTips": [
+                        "Spend time on setup before drilling technique — bad ergonomics teach bad habits"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "setup",
+                        "ergonomics"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-003",
+                    "sectionId": "drm-sctn-001",
+                    "roadmapId": "rm-drm",
+                    "title": "Posture and Seating",
+                    "shortDescription": "Sit in a way that supports good technique and prevents injury.",
+                    "longDescription": "Drummers sit on a throne (the drum-specific stool). The throne should be high enough that your thighs slope slightly downward, your back is upright but not rigid, and your feet can operate the pedals naturally. Good posture is a long-term investment — bad posture causes back and shoulder problems over years.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sit upright with shoulders relaxed",
+                        "Position feet on pedals with heels resting naturally",
+                        "Adjust throne height so thighs slope slightly downward"
+                    ],
+                    "commonMistakes": [
+                        "Slouching forward — leads to back pain and reduced playing power",
+                        "Locking the lower back — keep it engaged but not rigid"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture",
+                        "ergonomics"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-004",
+                    "sectionId": "drm-sctn-001",
+                    "roadmapId": "rm-drm",
+                    "title": "Holding the Drumsticks (Matched and Traditional Grip)",
+                    "shortDescription": "Two main grip styles and the fundamentals of holding sticks correctly.",
+                    "longDescription": "Matched grip uses the same overhand grip in both hands and is the most common modern approach. Traditional grip uses an underhand grip in the left hand (originally because marching drums hung at an angle), still used in jazz and orchestral playing. In either grip, the stick rests on the fulcrum (typically thumb and index finger) and the remaining fingers wrap loosely around the stick.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Hold the sticks in matched grip with a relaxed fulcrum",
+                        "Understand the difference between American, French, and German matched grip variants",
+                        "Introduce traditional grip if pursuing jazz or orchestral playing"
+                    ],
+                    "commonMistakes": [
+                        "Gripping too tightly (kills rebound and creates tension)",
+                        "Holding too far back on the stick (loses control) or too far forward (reduces rebound)"
+                    ],
+                    "practiceTips": [
+                        "Find the stick's balance point and place your fulcrum slightly behind it (toward the butt end)",
+                        "If the stick can't naturally bounce in your hand, you're gripping too tightly"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "grip",
+                        "technique"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-002",
+                            "type": "quiz",
+                            "title": "Stick Grip Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-003",
+                                    "questionText": "In matched grip, both hands hold the stick:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-009",
+                                            "optionText": "Differently — one overhand, one underhand"
+                                        },
+                                        {
+                                            "id": "drm-opt-010",
+                                            "optionText": "The same way — both overhand"
+                                        },
+                                        {
+                                            "id": "drm-opt-011",
+                                            "optionText": "Both underhand"
+                                        },
+                                        {
+                                            "id": "drm-opt-012",
+                                            "optionText": "Either way is fine"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-010"
+                                    ],
+                                    "explanation": "Matched grip means both hands hold the sticks identically (overhand). Traditional grip differs in the left hand (underhand)."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-002",
+            "roadmapId": "rm-drm",
+            "title": "First Stick Technique",
+            "shortDescription": "Single strokes, double strokes, rebound, and tone production.",
+            "longDescription": "Stick technique is the basis of everything else. This section establishes single strokes, double strokes, rebound control, and how to produce clear tone on each drum.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-001"
+            ],
+            "unlocks": [
+                "drm-sctn-005",
+                "drm-sctn-006",
+                "drm-sctn-010",
+                "drm-sctn-016"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 5,
+                "max": 12,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "rudiments",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-005",
+                    "sectionId": "drm-sctn-002",
+                    "roadmapId": "rm-drm",
+                    "title": "Single Strokes",
+                    "shortDescription": "Alternate right-left-right-left — the most basic stroke pattern.",
+                    "longDescription": "Single stroke is the foundation of all drumming. Each stick strikes once before alternating to the other hand. You'll practice on a practice pad with even tempo and consistent volume between hands.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play even single strokes alternating R-L-R-L",
+                        "Maintain consistent volume between right and left hand",
+                        "Use a metronome for steady tempo"
+                    ],
+                    "commonMistakes": [
+                        "Loud right hand, weak left hand — work the weaker hand more",
+                        "Tense forearms"
+                    ],
+                    "practiceTips": [
+                        "Practice on a pad daily — 5-10 minutes of singles every day pays off enormously"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "rudiments",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-006",
+                    "sectionId": "drm-sctn-002",
+                    "roadmapId": "rm-drm",
+                    "title": "Double Strokes",
+                    "shortDescription": "Two strokes per hand using rebound: R-R-L-L-R-R-L-L.",
+                    "longDescription": "Double strokes use a single arm motion to produce two strokes per hand. The first stroke uses the wrist/arm; the second stroke uses the rebound, controlled by the fingers. Mastering double strokes is one of the major early milestones.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play even, controlled double strokes",
+                        "Use rebound — let the stick bounce, then control it with the fingers",
+                        "Match volume between the two strokes within each hand"
+                    ],
+                    "commonMistakes": [
+                        "Forcing two equal strokes with the arm — kills the technique. The second stroke should feel almost effortless via rebound.",
+                        "Uneven volumes between the first and second stroke"
+                    ],
+                    "practiceTips": [
+                        "Practice double strokes very slowly — feel each stroke separately before adding speed"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "rudiments",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-003",
+                            "type": "quiz",
+                            "title": "Double Strokes Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-004",
+                                    "questionText": "In a properly executed double stroke, the second stroke is produced by:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-013",
+                                            "optionText": "A second separate wrist motion"
+                                        },
+                                        {
+                                            "id": "drm-opt-014",
+                                            "optionText": "The natural rebound of the stick, controlled by the fingers"
+                                        },
+                                        {
+                                            "id": "drm-opt-015",
+                                            "optionText": "A foot pedal"
+                                        },
+                                        {
+                                            "id": "drm-opt-016",
+                                            "optionText": "Striking harder than the first"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-014"
+                                    ],
+                                    "explanation": "A good double stroke uses one wrist motion plus the stick's natural rebound for the second stroke. The fingers control the rebound's intensity. Forcing two equal wrist motions is inefficient and slow."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-007",
+                    "sectionId": "drm-sctn-002",
+                    "roadmapId": "rm-drm",
+                    "title": "Rebound and Bounce Control",
+                    "shortDescription": "Use the stick's natural bounce as part of your technique.",
+                    "longDescription": "Sticks bounce — gravity and elasticity make them spring back from the drumhead. Good drummers harness this rebound rather than fighting it. Rebound control is the foundation of multiple bounce (buzz) rolls, doubles, and efficient single strokes.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Let the stick bounce naturally and feel the rebound",
+                        "Control the number of bounces by adjusting grip pressure",
+                        "Apply rebound to single and double strokes"
+                    ],
+                    "commonMistakes": [
+                        "Strangling the stick at impact — kills the rebound",
+                        "Letting the stick bounce uncontrollably"
+                    ],
+                    "practiceTips": [
+                        "Drop a stick on a pad from a few inches and let it bounce freely. Then practice catching it after exactly 2, 3, or 4 bounces."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-008",
+                    "sectionId": "drm-sctn-002",
+                    "roadmapId": "rm-drm",
+                    "title": "Tone Production",
+                    "shortDescription": "Striking each drum to produce a clear, full tone.",
+                    "longDescription": "Each drum has a sweet spot (typically the center of the head for kick and snare, slightly off-center for toms) and an optimal striking technique. The stroke should be downward through the head, not on top of it. Stick angle, striking position, and follow-through all affect tone.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strike the snare drum's sweet spot for a clear, ringing tone",
+                        "Vary stroke height for dynamic range",
+                        "Avoid 'choking' the drum by pressing down rather than striking through"
+                    ],
+                    "commonMistakes": [
+                        "Pressing the stick into the head instead of striking and rebounding away",
+                        "Striking the rim by accident (unless intentionally cross-sticking)"
+                    ],
+                    "practiceTips": [
+                        "Compare the sound of striking the exact center vs slightly off-center — different drums have different sweet spots"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-003",
+            "roadmapId": "rm-drm",
+            "title": "Reading Drum Notation",
+            "shortDescription": "The drum staff, subdivisions, and metronome practice.",
+            "longDescription": "Reading drum notation lets you study with method books and play with charts. This section covers the drum staff, rhythmic subdivision (counting), and the central practice of working with a metronome.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-001"
+            ],
+            "unlocks": [
+                "drm-sctn-005",
+                "drm-sctn-006"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 4,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-009",
+                    "sectionId": "drm-sctn-003",
+                    "roadmapId": "rm-drm",
+                    "title": "The Drum Staff and Notation Conventions",
+                    "shortDescription": "How each part of the kit is notated on the staff.",
+                    "longDescription": "Drum notation uses a 5-line staff with a percussion clef. Different lines and spaces are assigned to different kit pieces: hi-hat at the top, snare in the middle, kick at the bottom, toms and cymbals in specific positions. Standard notation conventions are mostly consistent, though variations exist.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify the staff positions for kick, snare, hi-hat, ride, crash, and toms",
+                        "Recognize standard symbols (x for hi-hat/cymbals, regular noteheads for drums)",
+                        "Read simple drum patterns from notation"
+                    ],
+                    "commonMistakes": [
+                        "Confusing the hi-hat position with the cymbal position — they're on different lines"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-004",
+                            "type": "quiz",
+                            "title": "Drum Notation Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-005",
+                                    "questionText": "In standard drum notation, the snare drum is typically notated on:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-017",
+                                            "optionText": "The top line of the staff"
+                                        },
+                                        {
+                                            "id": "drm-opt-018",
+                                            "optionText": "The middle of the staff (third space or line)"
+                                        },
+                                        {
+                                            "id": "drm-opt-019",
+                                            "optionText": "The bottom of the staff"
+                                        },
+                                        {
+                                            "id": "drm-opt-020",
+                                            "optionText": "Above the staff"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-018"
+                                    ],
+                                    "explanation": "The snare drum sits roughly in the middle of the drum staff (typically the third space). Kick is at the bottom; hi-hat and cymbals are above the staff or on the top lines."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-010",
+                    "sectionId": "drm-sctn-003",
+                    "roadmapId": "rm-drm",
+                    "title": "Rhythm and Subdivision",
+                    "shortDescription": "Counting eighth notes, sixteenth notes, and triplets at the kit.",
+                    "longDescription": "Drummers think in terms of subdivisions: dividing a beat into 2 (eighth notes), 4 (sixteenth notes), or 3 (triplets) equal parts. Counting subdivisions aloud while playing is the fastest way to internalize rhythm. The metronome is your constant practice partner.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count eighth notes ('1 and 2 and...') while playing",
+                        "Count sixteenth notes ('1 e and a, 2 e and a...')",
+                        "Count triplets ('1 trip let, 2 trip let...')",
+                        "Use a metronome from day one"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the metronome — there's no shortcut to good time",
+                        "Counting aloud only at slow tempos — keep counting even at fast tempos until it's internalized"
+                    ],
+                    "practiceTips": [
+                        "Spend 5 minutes daily playing single strokes in different subdivisions while counting"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "reading",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-011",
+                    "sectionId": "drm-sctn-003",
+                    "roadmapId": "rm-drm",
+                    "title": "Practicing with a Metronome",
+                    "shortDescription": "The non-negotiable foundation of drum practice.",
+                    "longDescription": "Drummers must develop excellent time. The metronome is the only way to objectively verify your time. Practice at a wide range of tempos, including slow ones — fast practice without slow practice is how bad habits form.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Practice all exercises and grooves with a metronome",
+                        "Use slow tempos to build precision",
+                        "Develop the habit of playing 'on top of', 'in the middle of', or 'behind' the click consciously"
+                    ],
+                    "commonMistakes": [
+                        "Always playing at the same tempo (typically too fast)",
+                        "Rushing or dragging without noticing — the metronome reveals this"
+                    ],
+                    "practiceTips": [
+                        "Practice the same passage at 40, 60, 80, and 100 BPM — the slow tempos are surprisingly revealing"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "practice-method",
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-004",
+            "roadmapId": "rm-drm",
+            "title": "Foot Technique",
+            "shortDescription": "Bass drum pedal, hi-hat pedal, and basic foot independence.",
+            "longDescription": "Drumming uses all four limbs. This section establishes foot technique: bass drum (heel-up and heel-down), hi-hat pedal operation, and the first foot independence exercises.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-001"
+            ],
+            "unlocks": [
+                "drm-sctn-006",
+                "drm-sctn-009"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 3,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "foot",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-012",
+                    "sectionId": "drm-sctn-004",
+                    "roadmapId": "rm-drm",
+                    "title": "Bass Drum Pedal: Heel-Up vs Heel-Down",
+                    "shortDescription": "Two main bass drum techniques with different feels and uses.",
+                    "longDescription": "Heel-down keeps the heel on the pedal at all times, using ankle motion to strike. It's quieter, more nuanced, and common in jazz. Heel-up lifts the heel and uses leg motion, producing more power and speed — preferred for rock and metal.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute heel-down strokes with the heel anchored",
+                        "Execute heel-up strokes with controlled leg motion",
+                        "Use both techniques as appropriate to the music"
+                    ],
+                    "commonMistakes": [
+                        "Letting the foot bury the beater against the head (deadens the tone and reduces speed)",
+                        "Tense ankle — relax and let gravity work"
+                    ],
+                    "practiceTips": [
+                        "Let the beater rebound off the head, just like the stick. Don't pin it against the head."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "foot",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-005",
+                            "type": "quiz",
+                            "title": "Kick Pedal Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-006",
+                                    "questionText": "Heel-up bass drum technique is generally preferred for:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-021",
+                                            "optionText": "Jazz and quiet music"
+                                        },
+                                        {
+                                            "id": "drm-opt-022",
+                                            "optionText": "Rock, metal, and fast/loud playing"
+                                        },
+                                        {
+                                            "id": "drm-opt-023",
+                                            "optionText": "Marching only"
+                                        },
+                                        {
+                                            "id": "drm-opt-024",
+                                            "optionText": "It doesn't matter"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-022"
+                                    ],
+                                    "explanation": "Heel-up uses leg muscles for more power and speed, making it the go-to for loud rock, metal, and fast bass patterns. Heel-down is quieter and more nuanced — favored in jazz."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-013",
+                    "sectionId": "drm-sctn-004",
+                    "roadmapId": "rm-drm",
+                    "title": "The Hi-Hat Pedal",
+                    "shortDescription": "Open, close, and chick the hi-hat with the foot.",
+                    "longDescription": "The left foot operates the hi-hat pedal. It closes the cymbals together (producing a tight 'chick' sound), holds them in various positions (open, partially open, closed), and works rhythmically — often chick-ing on beats 2 and 4 in jazz.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a clean 'chick' by pressing and releasing the hi-hat pedal",
+                        "Hold the hi-hat closed, half-open, or open at will",
+                        "Add the hi-hat foot on beats 2 and 4 (jazz convention)"
+                    ],
+                    "commonMistakes": [
+                        "Resting the foot heavily on the pedal (changes hi-hat tone)",
+                        "Forgetting to release the pedal — the cymbals need to be loose to ring"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "foot",
+                        "hihat"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-014",
+                    "sectionId": "drm-sctn-004",
+                    "roadmapId": "rm-drm",
+                    "title": "Foot Independence Basics",
+                    "shortDescription": "Coordinate the bass drum and hi-hat foot together.",
+                    "longDescription": "Both feet must operate independently. Common first patterns: bass on beats 1 and 3, hi-hat foot on beats 2 and 4 (or vice versa for jazz). Building foot independence requires patient practice.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-012",
+                        "drm-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play bass on 1 and 3 while hi-hat foot chick on 2 and 4",
+                        "Reverse the pattern (bass on 2 and 4, chick on 1 and 3)",
+                        "Maintain steady tempo with both feet"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Start very slowly. Foot independence builds over weeks, not days."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "foot",
+                        "coordination"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-005",
+            "roadmapId": "rm-drm",
+            "title": "Basic Rudiments",
+            "shortDescription": "The foundational rudiments: single stroke roll, double stroke roll, paradiddle, buzz roll, 5-stroke roll.",
+            "longDescription": "Rudiments are the alphabet of drumming. This section introduces the 40 PAS rudiments framework and works through the most foundational ones: singles, doubles, the single paradiddle, the multiple bounce (buzz) roll, and the 5-stroke roll.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-002",
+                "drm-sctn-003"
+            ],
+            "unlocks": [
+                "drm-sctn-007",
+                "drm-sctn-008"
+            ],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "rudiments",
+                "technique",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-015",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "The 40 PAS Rudiments: Overview",
+                    "shortDescription": "The canonical list of drum rudiments organized into four families.",
+                    "longDescription": "The Percussive Arts Society's 40 essential rudiments are the canonical vocabulary of stick technique. They're grouped into four families: roll rudiments (singles, doubles, multi-bounce, and the numbered rolls), diddle rudiments (paradiddles and variants), flam rudiments (any rudiment with a grace note flam), and drag rudiments (any rudiment with two grace notes — a drag).",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Recognize the four rudiment families and what defines each",
+                        "Understand that rudiments are the basis for kit application",
+                        "Plan to gradually learn all 40 over time"
+                    ],
+                    "commonMistakes": [
+                        "Trying to learn all 40 at once",
+                        "Treating rudiments as a checklist rather than ongoing daily practice"
+                    ],
+                    "practiceTips": [
+                        "Pick 2-3 rudiments per week and drill them daily. After a few months, you'll have a working command of most of the 40."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-006",
+                            "type": "quiz",
+                            "title": "Rudiments Overview Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-007",
+                                    "questionText": "How many essential rudiments does the Percussive Arts Society list?",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-025",
+                                            "optionText": "13"
+                                        },
+                                        {
+                                            "id": "drm-opt-026",
+                                            "optionText": "26"
+                                        },
+                                        {
+                                            "id": "drm-opt-027",
+                                            "optionText": "40"
+                                        },
+                                        {
+                                            "id": "drm-opt-028",
+                                            "optionText": "100"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-027"
+                                    ],
+                                    "explanation": "The PAS lists 40 essential rudiments, grouped into roll rudiments, diddle rudiments, flam rudiments, and drag rudiments."
+                                },
+                                {
+                                    "id": "drm-qstn-008",
+                                    "questionText": "What defines a 'flam' rudiment?",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-029",
+                                            "optionText": "It's played only on the snare"
+                                        },
+                                        {
+                                            "id": "drm-opt-030",
+                                            "optionText": "It contains a grace note (a soft stroke immediately preceding the main stroke)"
+                                        },
+                                        {
+                                            "id": "drm-opt-031",
+                                            "optionText": "It's the fastest rudiment"
+                                        },
+                                        {
+                                            "id": "drm-opt-032",
+                                            "optionText": "It uses both feet"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-030"
+                                    ],
+                                    "explanation": "A flam consists of a grace note (soft, leading) immediately preceding a main stroke. Both notes sound nearly simultaneously, with the grace note slightly earlier and quieter."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-016",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "Single Stroke Roll",
+                    "shortDescription": "The foundational rudiment: alternating singles R-L-R-L at controlled tempo.",
+                    "longDescription": "The single stroke roll is the simplest rudiment but one of the most demanding to master at high speeds. Practice with a metronome, starting slowly and building up. Strive for absolute evenness between hands.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play single stroke roll at multiple tempos with even hands",
+                        "Maintain rhythmic precision with a metronome",
+                        "Use as a daily warm-up exercise"
+                    ],
+                    "commonMistakes": [
+                        "Stronger right than left hand — drill the weaker hand specifically"
+                    ],
+                    "practiceTips": [
+                        "Record yourself and listen — uneven hands are easier to hear than to feel"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "rolls",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-017",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "Double Stroke Roll",
+                    "shortDescription": "Two strokes per hand: R-R-L-L-R-R-L-L.",
+                    "longDescription": "The double stroke roll is the basis of many other rudiments and rolls. It requires the rebound control covered earlier. As tempo increases, the second stroke shifts from a controlled rebound to a finger-driven 'press' — but this only works once the slow foundation is solid.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-006",
+                        "drm-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play double stroke roll at multiple tempos",
+                        "Match volume between the two strokes in each hand",
+                        "Build speed gradually over weeks"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "rolls"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-018",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "Single Paradiddle",
+                    "shortDescription": "Pattern: R-L-R-R-L-R-L-L. The most important diddle rudiment.",
+                    "longDescription": "The single paradiddle is one of the most useful rudiments. The pattern is single-single-double-single-single-double (R-L-R-R-L-R-L-L). It produces a natural accent pattern that maps beautifully to the kit and forms the basis for countless beats and fills.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play single paradiddle evenly with a metronome",
+                        "Accent the first note of each grouping (the 'para')",
+                        "Apply to the kit: e.g., R-L on hi-hat, R-R on snare"
+                    ],
+                    "commonMistakes": [
+                        "Losing the pattern when accenting the first note",
+                        "Speeding up uncontrollably — start slow and stay there until it's smooth"
+                    ],
+                    "practiceTips": [
+                        "Master the paradiddle to a metronome at 60 BPM with even strokes before adding accents",
+                        "Try the paradiddle on different surfaces: pad, snare, splitting between snare and hi-hat"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "diddle",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-007",
+                            "type": "quiz",
+                            "title": "Single Paradiddle Quiz",
+                            "description": "Test your knowledge.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-009",
+                                    "questionText": "The sticking pattern for a single paradiddle is:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-033",
+                                            "optionText": "R-L-R-L-R-L-R-L"
+                                        },
+                                        {
+                                            "id": "drm-opt-034",
+                                            "optionText": "R-R-L-L-R-R-L-L"
+                                        },
+                                        {
+                                            "id": "drm-opt-035",
+                                            "optionText": "R-L-R-R-L-R-L-L"
+                                        },
+                                        {
+                                            "id": "drm-opt-036",
+                                            "optionText": "R-L-L-R-L-R-R-L"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-035"
+                                    ],
+                                    "explanation": "Single paradiddle: R-L-R-R (then L-R-L-L on the next iteration). The pattern 'PA-ra-di-DDLE' is one paradiddle starting with the right hand."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-019",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "Multiple Bounce Roll (Buzz Roll)",
+                    "shortDescription": "Press the stick into the head to produce multiple uncontrolled bounces.",
+                    "longDescription": "The buzz roll (multiple bounce, or 'closed roll') is produced by letting each stick bounce 3-5 times per stroke. Used to create sustained sound on the snare, it's essential in concert and orchestral contexts and ubiquitous in marching.",
+                    "difficulty": "beginner",
+                    "order": 5,
+                    "prerequisites": [
+                        "drm-tpc-007",
+                        "drm-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a smooth, sustained buzz roll alternating hands",
+                        "Control the number of bounces per stroke (consistency matters)",
+                        "Use varying pressure for varying sound quality"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard (kills the bounces and produces a thud)",
+                        "Pressing too softly (uncontrolled or buzzy bounces)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "rolls"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-020",
+                    "sectionId": "drm-sctn-005",
+                    "roadmapId": "rm-drm",
+                    "title": "Five-Stroke Roll",
+                    "shortDescription": "Two double strokes plus an accented single: R-R-L-L-R or L-L-R-R-L.",
+                    "longDescription": "The five-stroke roll consists of two double strokes followed by one accented single. It's the first of the numbered rolls (5, 7, 9, 11, 13, 15, 17) and a building block of many drum corps and orchestral patterns.",
+                    "difficulty": "beginner",
+                    "order": 6,
+                    "prerequisites": [
+                        "drm-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play 5-stroke roll cleanly at varying tempos",
+                        "Accent the final note (the 'tap')",
+                        "Apply the rhythmic feel in 8th-note and 16th-note contexts"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "rolls"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-006",
+            "roadmapId": "rm-drm",
+            "title": "First Grooves",
+            "shortDescription": "The basic rock beat, variations, sixteenth-note grooves, and steady tempo.",
+            "longDescription": "Grooves are what drummers play in music. This section starts with the basic rock beat, expands to common variations, introduces sixteenth-note grooves for funk and modern styles, and emphasizes the central importance of steady tempo.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-002",
+                "drm-sctn-003",
+                "drm-sctn-004"
+            ],
+            "unlocks": [
+                "drm-sctn-008",
+                "drm-sctn-009",
+                "drm-sctn-011"
+            ],
+            "difficulty": "beginner",
+            "order": 6,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "groove",
+                "rock",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-021",
+                    "sectionId": "drm-sctn-006",
+                    "roadmapId": "rm-drm",
+                    "title": "The Basic Rock Beat",
+                    "shortDescription": "Kick on 1 & 3, snare on 2 & 4, hi-hat on every eighth note.",
+                    "longDescription": "The basic rock beat is the foundation of most popular music. Bass drum on beats 1 and 3, snare drum on beats 2 and 4 (the 'backbeat'), and steady eighth notes on the closed hi-hat. Master this groove before anything else.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the basic rock beat at multiple tempos (60-120 BPM)",
+                        "Maintain steady time with a metronome",
+                        "Keep hi-hat hits even in volume"
+                    ],
+                    "commonMistakes": [
+                        "Rushing — the rock beat is deceptively hard to play perfectly steady",
+                        "Letting kick or snare overpower the hi-hat (or vice versa) — balance matters"
+                    ],
+                    "practiceTips": [
+                        "Spend 10-15 minutes daily on the basic rock beat alone — it's the most important groove you'll ever play"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "groove",
+                        "rock",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-008",
+                            "type": "quiz",
+                            "title": "Basic Rock Beat Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-010",
+                                    "questionText": "In the basic rock beat, the snare drum (backbeat) falls on:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-037",
+                                            "optionText": "Beats 1 and 3"
+                                        },
+                                        {
+                                            "id": "drm-opt-038",
+                                            "optionText": "Beats 2 and 4"
+                                        },
+                                        {
+                                            "id": "drm-opt-039",
+                                            "optionText": "Every beat"
+                                        },
+                                        {
+                                            "id": "drm-opt-040",
+                                            "optionText": "Only beat 1"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-038"
+                                    ],
+                                    "explanation": "The backbeat is on 2 and 4 — this is the defining rhythmic element of most rock, pop, and R&B."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-022",
+                    "sectionId": "drm-sctn-006",
+                    "roadmapId": "rm-drm",
+                    "title": "Eighth-Note Groove Variations",
+                    "shortDescription": "Vary the bass drum pattern to create different rock and pop grooves.",
+                    "longDescription": "Keeping the snare on 2 and 4 and the hi-hat on eighth notes, vary the bass drum pattern to create different feels: bass on 1 only, bass on every quarter, bass on the 'and' of 2, etc. Each variation maps to specific songs and styles.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play several common eighth-note groove variations",
+                        "Match variations to song examples",
+                        "Maintain steady time across variations"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "groove",
+                        "rock",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-023",
+                    "sectionId": "drm-sctn-006",
+                    "roadmapId": "rm-drm",
+                    "title": "Sixteenth-Note Grooves",
+                    "shortDescription": "Play hi-hat in sixteenth notes for funk and modern pop grooves.",
+                    "longDescription": "Sixteenth-note grooves play the hi-hat (or ride) in steady 16th notes (4 per beat). This is the basis of funk, hip-hop, and modern pop drumming. The kick and snare placement creates different feels.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play steady 16th-note hi-hat without rushing",
+                        "Add kick and snare in common funk/pop patterns",
+                        "Maintain hand-foot coordination"
+                    ],
+                    "commonMistakes": [
+                        "Rushing 16ths — happens to everyone; use the metronome"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "groove",
+                        "funk",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-024",
+                    "sectionId": "drm-sctn-006",
+                    "roadmapId": "rm-drm",
+                    "title": "Maintaining Steady Tempo",
+                    "shortDescription": "The most important skill for any drummer.",
+                    "longDescription": "A drummer's primary job is keeping time. Practice tempos that don't drift, that stay locked to the metronome, and that hold steady even through fills and changes. Recording yourself reveals tempo issues immediately.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play any groove for 4+ minutes without tempo drift",
+                        "Use a metronome consistently",
+                        "Record practice sessions to verify steady time"
+                    ],
+                    "commonMistakes": [
+                        "Speeding up during fills (the classic drummer mistake)",
+                        "Slowing during difficult sections"
+                    ],
+                    "practiceTips": [
+                        "Set a metronome at 60 BPM and play the basic rock beat for 5 minutes straight without drifting. Record it. Listen back. Repeat daily."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "timing",
+                        "fundamentals",
+                        "practice-method"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-007",
+            "roadmapId": "rm-drm",
+            "title": "Intermediate Rudiments",
+            "shortDescription": "Paradiddle variants, flams, drag rudiments, and ratamacues.",
+            "longDescription": "This section extends the rudiment vocabulary into the four main families. You'll learn the paradiddle variants (double, triple, paradiddle-diddle), the flam rudiments (flam, flam tap, flam accent), and the drag rudiments (drag, drag tap, ratamacues).",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-005"
+            ],
+            "unlocks": [
+                "drm-sctn-012"
+            ],
+            "difficulty": "intermediate",
+            "order": 7,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "rudiments",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-025",
+                    "sectionId": "drm-sctn-007",
+                    "roadmapId": "rm-drm",
+                    "title": "Paradiddle Variants: Double, Triple, Paradiddle-Diddle",
+                    "shortDescription": "Extensions of the single paradiddle.",
+                    "longDescription": "Once the single paradiddle is solid, three variants extend the family: the double paradiddle (R-L-R-L-R-R-L-R-L-R-L-L), the triple paradiddle (six singles then a double), and the paradiddle-diddle (R-L-R-R-L-L). Each has its own rhythmic feel and kit applications.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play double paradiddle cleanly",
+                        "Play triple paradiddle",
+                        "Play paradiddle-diddle with the unique double-at-the-end feel"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Master each variant slowly before combining with kit application"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "diddle",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-026",
+                    "sectionId": "drm-sctn-007",
+                    "roadmapId": "rm-drm",
+                    "title": "The Flam",
+                    "shortDescription": "A grace note immediately preceding a main stroke — softly leading.",
+                    "longDescription": "A flam is a grace note (small, soft) struck just before a main note. Both notes sound almost simultaneously, with the grace note slightly earlier and quieter. The grace note typically comes from a low stick height, the main note from a higher stick height. Notation marks the grace note as a small note before the main one.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean flams with one hand leading softly and the other striking the main note",
+                        "Alternate flam leads (right-hand flam, left-hand flam)",
+                        "Control the spacing between grace note and main note"
+                    ],
+                    "commonMistakes": [
+                        "Both strokes the same volume (no flam — just a doubled hit)",
+                        "Strokes too far apart (sounds like a separate grace note rather than a flam)"
+                    ],
+                    "practiceTips": [
+                        "Practice the heights: grace stick at 1-2 inches, main stick at 6-12 inches. The height difference creates the volume difference."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "flam",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-009",
+                            "type": "quiz",
+                            "title": "Flam Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-011",
+                                    "questionText": "A flam consists of:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-041",
+                                            "optionText": "Two equal-volume strokes played simultaneously"
+                                        },
+                                        {
+                                            "id": "drm-opt-042",
+                                            "optionText": "A loud grace note followed by a soft main note"
+                                        },
+                                        {
+                                            "id": "drm-opt-043",
+                                            "optionText": "A soft grace note followed by a louder main note, played nearly simultaneously"
+                                        },
+                                        {
+                                            "id": "drm-opt-044",
+                                            "optionText": "Four rapid strokes in a row"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-043"
+                                    ],
+                                    "explanation": "A flam is a soft grace note (small, leading) followed nearly immediately by a louder main stroke. The grace note appears just before the main note, both played as close together as possible while remaining distinct."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-027",
+                    "sectionId": "drm-sctn-007",
+                    "roadmapId": "rm-drm",
+                    "title": "Flam Tap and Flam Accent",
+                    "shortDescription": "Two essential flam family rudiments.",
+                    "longDescription": "The flam tap pattern is: flam-tap, where the flam is on count 1 and the tap is on count '&', alternating hands. The flam accent is similar but with a different sticking that produces a triplet-like feel. Both build flam fluency.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play flam tap alternating hands smoothly",
+                        "Play flam accent in a triplet feel",
+                        "Apply both to kit drumming"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "flam",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-028",
+                    "sectionId": "drm-sctn-007",
+                    "roadmapId": "rm-drm",
+                    "title": "Drag and Drag Tap",
+                    "shortDescription": "Rudiments with two grace notes (a drag) preceding the main stroke.",
+                    "longDescription": "A drag is two grace notes (typically a double stroke played softly) immediately preceding a main stroke. The drag tap pattern combines drags with taps in various sequences. Drag rudiments produce a characteristic 'rolled' or 'crushed' effect into the main note.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean drags with two soft grace notes followed by the main stroke",
+                        "Play drag tap rudiments alternating hands",
+                        "Use drags in kit fills and grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "drag",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-029",
+                    "sectionId": "drm-sctn-007",
+                    "roadmapId": "rm-drm",
+                    "title": "Ratamacue Family",
+                    "shortDescription": "Drag rudiments with extended patterns: single, double, and triple ratamacue.",
+                    "longDescription": "The single ratamacue is a drag plus a four-stroke pattern. The double and triple add additional drag-and-stroke groupings. These are some of the more complex drag rudiments but are essential for rounded drumming vocabulary.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "drm-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play single ratamacue cleanly",
+                        "Extend to double and triple ratamacue",
+                        "Apply to musical contexts"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "drag",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-008",
+            "roadmapId": "rm-drm",
+            "title": "Drum Fills",
+            "shortDescription": "Basic fills, triplet fills, and applying rudiments as fills.",
+            "longDescription": "Fills connect sections of a song and add interest to grooves. This section starts with basic 16-note fills, extends to triplet fills, and applies rudiments to fill vocabulary.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-005",
+                "drm-sctn-006"
+            ],
+            "unlocks": [
+                "drm-sctn-012"
+            ],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fills",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-030",
+                    "sectionId": "drm-sctn-008",
+                    "roadmapId": "rm-drm",
+                    "title": "Basic 4-Beat Fills",
+                    "shortDescription": "Sixteenth-note fills around the kit — the entry point to fill vocabulary.",
+                    "longDescription": "A basic fill plays 16 sixteenth notes across the snare and toms in one bar, with the kit's pitches creating melodic motion. Start with single-stroke fills (R-L-R-L) moving down the toms.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a basic 16-note fill using single strokes",
+                        "End the fill cleanly on beat 1 of the next bar",
+                        "Use a metronome to keep the fill in time"
+                    ],
+                    "commonMistakes": [
+                        "Speeding up during the fill (universal beginner problem)",
+                        "Not landing back on beat 1 — leaves the band wondering where the downbeat is"
+                    ],
+                    "practiceTips": [
+                        "Practice fills with a metronome that keeps playing through the fill — the click forces you to land on time"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fills",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-031",
+                    "sectionId": "drm-sctn-008",
+                    "roadmapId": "rm-drm",
+                    "title": "Triplet Fills",
+                    "shortDescription": "Fills based on triplet subdivisions (three notes per beat).",
+                    "longDescription": "Triplet fills feel rhythmically distinct from sixteenth-note fills. They subdivide each beat into three equal notes. Triplet fills are foundational in shuffles, blues, jazz, and many rock contexts.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play triplet fills around the kit",
+                        "Distinguish triplet feel from sixteenth-note feel by ear",
+                        "Apply to triplet/shuffle-based grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fills",
+                        "rhythm",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-032",
+                    "sectionId": "drm-sctn-008",
+                    "roadmapId": "rm-drm",
+                    "title": "Rudimental Fills",
+                    "shortDescription": "Apply rudiments (paradiddles, flams, drags) to the kit as fills.",
+                    "longDescription": "Rudimental fills take the patterns drilled on the pad and distribute them across the kit's drums. A single paradiddle played with the single strokes on the hi-hat and the doubles on the snare creates one type of fill; the same paradiddle played across all drums creates another.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-018",
+                        "drm-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply single paradiddles to kit fills",
+                        "Apply flam tap and flam accent to fills",
+                        "Develop a personal vocabulary of rudimental fills"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Take one rudiment per week and find 3 different kit applications for it"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fills",
+                        "rudiments",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-009",
+            "roadmapId": "rm-drm",
+            "title": "Coordination and Independence",
+            "shortDescription": "4-way independence, hi-hat foot patterns, cross-sticking, and ostinato practice.",
+            "longDescription": "Advanced drumming demands that all four limbs operate independently. This section develops 4-way independence, hi-hat foot patterns, cross-sticking, and the ostinato practice methodology that underlies sophisticated drumming.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-004",
+                "drm-sctn-006"
+            ],
+            "unlocks": [
+                "drm-sctn-011",
+                "drm-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 20,
+                "max": 100,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "coordination",
+                "independence",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-033",
+                    "sectionId": "drm-sctn-009",
+                    "roadmapId": "rm-drm",
+                    "title": "4-Way Independence",
+                    "shortDescription": "Each of your four limbs can play different rhythms simultaneously.",
+                    "longDescription": "Advanced drumming requires that each limb operate independently. Start with simple exercises: hi-hat with right hand, snare with left, bass drum with right foot, hi-hat pedal with left foot — each playing a different rhythm.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-014",
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play hi-hat foot on the 'and' of beats while a basic rock beat runs",
+                        "Layer simple ostinato patterns across all four limbs",
+                        "Build independence incrementally — add one rhythm at a time"
+                    ],
+                    "commonMistakes": [
+                        "Trying to learn complex independence patterns at full speed (start at painful slow tempos)",
+                        "Tensing up when one limb's pattern gets difficult"
+                    ],
+                    "practiceTips": [
+                        "Vocalize each limb's pattern separately, then together",
+                        "When stuck, drop one limb out, drill the remaining three until automatic, then add the fourth back"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "coordination",
+                        "independence",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-010",
+                            "type": "quiz",
+                            "title": "4-Way Independence Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-012",
+                                    "questionText": "The single most effective way to develop 4-way independence is:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-045",
+                                            "optionText": "Practice fast and force the body to figure it out"
+                                        },
+                                        {
+                                            "id": "drm-opt-046",
+                                            "optionText": "Start very slowly and gradually layer independent rhythms"
+                                        },
+                                        {
+                                            "id": "drm-opt-047",
+                                            "optionText": "Skip basic exercises and tackle complex pieces directly"
+                                        },
+                                        {
+                                            "id": "drm-opt-048",
+                                            "optionText": "Only practice each limb separately, never together"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-046"
+                                    ],
+                                    "explanation": "Independence builds through slow, systematic layering. Adding rhythms one at a time at slow tempos lets the brain consolidate the patterns before you try them together at speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-034",
+                    "sectionId": "drm-sctn-009",
+                    "roadmapId": "rm-drm",
+                    "title": "Hi-Hat Foot on the And",
+                    "shortDescription": "Play the hi-hat pedal on the off-beats (the 'and' of each beat).",
+                    "longDescription": "Adding the hi-hat foot on the 'and' of every beat (or on 2 and 4) gives a groove more rhythmic interest and is fundamental to many jazz and funk approaches. It also develops left-foot timing.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play hi-hat foot on every 'and'",
+                        "Maintain steady tempo across all four limbs",
+                        "Apply to basic rock and funk grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "coordination",
+                        "foot",
+                        "groove"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-035",
+                    "sectionId": "drm-sctn-009",
+                    "roadmapId": "rm-drm",
+                    "title": "Cross-Stick (Rim Click)",
+                    "shortDescription": "Strike the rim of the snare drum with the shaft of the stick for a click sound.",
+                    "longDescription": "Cross-sticking lays the stick across the snare drum so the shaft strikes the opposite rim. It produces a dry 'click' commonly used in ballads, Latin styles, and quiet passages. The technique requires a specific hand position that takes practice.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a clean cross-stick click",
+                        "Transition between cross-stick and regular snare hits smoothly",
+                        "Apply to ballad and Latin grooves"
+                    ],
+                    "commonMistakes": [
+                        "Clicking only the air, missing the rim — angle the stick correctly"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "groove"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-036",
+                    "sectionId": "drm-sctn-009",
+                    "roadmapId": "rm-drm",
+                    "title": "Ostinato Practice",
+                    "shortDescription": "One limb plays a fixed repeating pattern (ostinato) while other limbs play varying rhythms.",
+                    "longDescription": "Ostinato practice is the most efficient way to build deep independence. The bass drum or hi-hat foot plays a fixed pattern; the hands explore varying rhythms above it. The classic Stick Control by George Lawrence Stone formalizes this approach.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Maintain a foot ostinato while the hands play varying rhythms",
+                        "Apply to jazz comping",
+                        "Use as a daily independence-building exercise"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Even 10 minutes of ostinato practice daily produces large gains over weeks"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "coordination",
+                        "independence",
+                        "practice-method",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-010",
+            "roadmapId": "rm-drm",
+            "title": "Dynamics and Stroke Technique",
+            "shortDescription": "Stroke types, Moeller technique, accent patterns, and cymbal technique.",
+            "longDescription": "Dynamic control transforms mechanical drumming into music. This section covers the four stroke types, the Moeller whip technique, accent patterns, and cymbal technique for tonal variety.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-002"
+            ],
+            "unlocks": [
+                "drm-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 15,
+                "max": 60,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "dynamics",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-037",
+                    "sectionId": "drm-sctn-010",
+                    "roadmapId": "rm-drm",
+                    "title": "The Four Stroke Types",
+                    "shortDescription": "Full stroke, down stroke, tap, and up stroke — the four basic stroke heights.",
+                    "longDescription": "The four stroke types form the basis of dynamic playing. A full stroke starts high and ends high (loud, ready for the next loud stroke). A down stroke starts high and ends low (loud, ready for a quiet stroke). A tap stays low (quiet, ready for another quiet stroke). An up stroke starts low and ends high (quiet, preparing for a loud stroke).",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-007"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Distinguish full, down, tap, and up strokes",
+                        "Use them to produce controlled dynamics",
+                        "Apply to accented patterns"
+                    ],
+                    "commonMistakes": [
+                        "Returning the stick to a single fixed height regardless of context — wastes motion and limits dynamics"
+                    ],
+                    "practiceTips": [
+                        "Practice the four-stroke 'check pattern': down-tap-tap-up, alternating hands. It teaches all four strokes in sequence."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "dynamics",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-011",
+                            "type": "quiz",
+                            "title": "Stroke Types Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-013",
+                                    "questionText": "A 'down stroke' starts and ends at which heights?",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-049",
+                                            "optionText": "Low to low"
+                                        },
+                                        {
+                                            "id": "drm-opt-050",
+                                            "optionText": "Low to high"
+                                        },
+                                        {
+                                            "id": "drm-opt-051",
+                                            "optionText": "High to high"
+                                        },
+                                        {
+                                            "id": "drm-opt-052",
+                                            "optionText": "High to low"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-052"
+                                    ],
+                                    "explanation": "A down stroke starts from a high stick position (producing a loud stroke) and ends low (ready for a quiet stroke or tap next). The four-stroke system: full (high-high), down (high-low), tap (low-low), up (low-high)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-038",
+                    "sectionId": "drm-sctn-010",
+                    "roadmapId": "rm-drm",
+                    "title": "Moeller Technique",
+                    "shortDescription": "A whip-like motion that combines accents and softer strokes efficiently.",
+                    "longDescription": "The Moeller technique uses an arm-driven whipping motion to produce accents with minimal effort, while taps fall naturally between the whips. It's especially useful for fast accented patterns like the classic 'down-tap-tap-up' pattern. The technique takes time to develop but unlocks high-energy playing without strain.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-037"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute the basic Moeller whip stroke",
+                        "Combine the whip with tap strokes",
+                        "Apply to accented rudimental patterns"
+                    ],
+                    "commonMistakes": [
+                        "Tense arms — the whole point of Moeller is whip-like relaxation",
+                        "Overusing the arm — the whip is small and efficient, not exaggerated"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "dynamics",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-039",
+                    "sectionId": "drm-sctn-010",
+                    "roadmapId": "rm-drm",
+                    "title": "Accent Patterns",
+                    "shortDescription": "Emphasize specific notes within an even stream of strokes.",
+                    "longDescription": "Accent patterns transform an undifferentiated stream of single strokes into musical phrases. Common patterns: accent on count 1, accent on 'and's, accent every fourth note, etc. Each pattern requires precise control of stick heights.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-037"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply accents in even 16th-note streams",
+                        "Maintain rhythmic precision while changing dynamics",
+                        "Use accents to make grooves musical"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice accent patterns on a pad with a metronome — the pure exercise reveals control issues"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "dynamics",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-040",
+                    "sectionId": "drm-sctn-010",
+                    "roadmapId": "rm-drm",
+                    "title": "Cymbal Technique",
+                    "shortDescription": "Strike cymbals to produce different sounds: ride, crash, accent, swell.",
+                    "longDescription": "Cymbals respond to where and how they're struck. The bow (the body of the cymbal) produces a clear pinging sound used for ride patterns. The edge produces explosive crashes. The bell (the raised center) produces a high, cutting accent. Stick angle, depth of strike, and follow-through all shape the result.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strike the ride cymbal's bow for a clear ping",
+                        "Strike crashes through the edge with a sweeping motion",
+                        "Use the bell of the ride or crash for accent variety"
+                    ],
+                    "commonMistakes": [
+                        "Striking the edge of a ride cymbal repeatedly (creates excessive noise/ring)",
+                        "Hitting cymbals too hard (cracks cymbals over time and produces ugly tone)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-011",
+            "roadmapId": "rm-drm",
+            "title": "Genre Basics",
+            "shortDescription": "Rock, funk, jazz, and Latin drumming foundations.",
+            "longDescription": "Different genres require different approaches to drumming. This section covers the foundational vocabulary of rock, funk, jazz, and Latin styles — enough to play in each genre comfortably and to choose your specialization.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-006",
+                "drm-sctn-009"
+            ],
+            "unlocks": [
+                "drm-sctn-014",
+                "drm-sctn-015"
+            ],
+            "difficulty": "intermediate",
+            "order": 11,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-041",
+                    "sectionId": "drm-sctn-011",
+                    "roadmapId": "rm-drm",
+                    "title": "Rock Drumming Basics",
+                    "shortDescription": "Power, simplicity, and feel — the essence of rock drumming.",
+                    "longDescription": "Rock drumming emphasizes clear backbeats, steady tempo, and serving the song. Beyond the basic rock beat, you'll work on syncopated kick patterns, 8th and 16th note hi-hat variations, and the classic rock 'big' sound.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-021",
+                        "drm-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play several common rock grooves",
+                        "Apply syncopated kick patterns",
+                        "Maintain rock-solid tempo at varied dynamics"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "rock",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-042",
+                    "sectionId": "drm-sctn-011",
+                    "roadmapId": "rm-drm",
+                    "title": "Funk Drumming Basics",
+                    "shortDescription": "Tight, ghosted snare, syncopated kick — funk drumming.",
+                    "longDescription": "Funk drumming features ghost notes (very soft snare notes between the main backbeats), syncopated kick drum patterns, and tight 16th-note hi-hat work. Players like Clyde Stubblefield (James Brown's drummer) and David Garibaldi (Tower of Power) defined the style.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-023",
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a basic funk groove with ghost notes on the snare",
+                        "Apply syncopated kick patterns under the 16th-note hi-hat",
+                        "Develop the 'pocket' feel essential to funk"
+                    ],
+                    "commonMistakes": [
+                        "Ghost notes too loud — they should be felt more than heard",
+                        "Losing the pocket — funk requires absolute tempo control"
+                    ],
+                    "practiceTips": [
+                        "Listen to 'Funky Drummer' (Clyde Stubblefield) — the textbook funk groove",
+                        "Practice with a backing track or band more than with isolated exercises"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-043",
+                    "sectionId": "drm-sctn-011",
+                    "roadmapId": "rm-drm",
+                    "title": "Jazz Drumming Basics",
+                    "shortDescription": "Swing feel, the ride cymbal pattern, and 'comping' on the snare.",
+                    "longDescription": "Jazz drumming centers on the ride cymbal playing a swing pattern (ding-ding-da-ding-ding-da, with the 'da' slightly delayed for swing feel), with the hi-hat foot on 2 and 4. The snare and bass drum 'comp' (accompany) the soloist with sparse, conversational fills and accents.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-013",
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the classic jazz ride pattern with swing feel",
+                        "Add hi-hat foot on 2 and 4",
+                        "Begin comping on the snare drum"
+                    ],
+                    "commonMistakes": [
+                        "Playing the ride pattern with straight eighths instead of swing eighths",
+                        "Comping too loudly or too constantly — jazz comping is conversational, not relentless"
+                    ],
+                    "practiceTips": [
+                        "Listen to Tony Williams, Elvin Jones, Max Roach, Roy Haynes — the foundational jazz drummers"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "drm-assess-012",
+                            "type": "quiz",
+                            "title": "Jazz Drumming Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "drm-qstn-014",
+                                    "questionText": "In traditional jazz drumming, the hi-hat foot typically plays on:",
+                                    "options": [
+                                        {
+                                            "id": "drm-opt-053",
+                                            "optionText": "Every beat"
+                                        },
+                                        {
+                                            "id": "drm-opt-054",
+                                            "optionText": "Beats 1 and 3"
+                                        },
+                                        {
+                                            "id": "drm-opt-055",
+                                            "optionText": "Beats 2 and 4"
+                                        },
+                                        {
+                                            "id": "drm-opt-056",
+                                            "optionText": "Only the 'and' of beats"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "drm-opt-055"
+                                    ],
+                                    "explanation": "The jazz hi-hat foot pattern places a 'chick' on beats 2 and 4 — the 'and 2 and 4' creates the characteristic feel of swing."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "drm-tpc-044",
+                    "sectionId": "drm-sctn-011",
+                    "roadmapId": "rm-drm",
+                    "title": "Latin Rhythm Basics",
+                    "shortDescription": "Samba, bossa nova, and basic Latin patterns.",
+                    "longDescription": "Latin styles bring their own rhythmic vocabulary. The samba (Brazilian) features a constant 16th-note feel with a characteristic bass drum 'surdo' pattern. The bossa nova (Brazilian) is more subtle and syncopated. Cuban styles (son, salsa, mambo) use complex clave-based rhythms.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a basic samba on the kit",
+                        "Play a basic bossa nova pattern",
+                        "Recognize the 3-2 and 2-3 clave patterns"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to authentic recordings — Latin styles are deeply about feel, which method books can't fully capture"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "latin",
+                        "brazilian",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-012",
+            "roadmapId": "rm-drm",
+            "title": "Advanced Rudiments",
+            "shortDescription": "Numbered rolls, flam paradiddles, pataflafla, Swiss triplets, hybrids, and kit application.",
+            "longDescription": "This section completes the rudiment vocabulary with the numbered rolls (7 through 17 strokes), advanced flam rudiments (flam paradiddle, pataflafla, Swiss Army triplet), modern hybrid rudiments, and the essential skill of applying rudiments to the full kit.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-007",
+                "drm-sctn-008"
+            ],
+            "unlocks": [
+                "drm-sctn-014"
+            ],
+            "difficulty": "advanced",
+            "order": 12,
+            "estimatedTime": {
+                "min": 50,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "rudiments",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-045",
+                    "sectionId": "drm-sctn-012",
+                    "roadmapId": "rm-drm",
+                    "title": "The Numbered Rolls (7, 9, 13, 15, 17)",
+                    "shortDescription": "The remaining numbered roll rudiments beyond the 5-stroke.",
+                    "longDescription": "Beyond the 5-stroke roll lie the 7, 9, 13, 15, and 17-stroke rolls. Each contains a specific number of strokes (counting the final accented tap) and produces a distinct rhythmic shape. They're staples of orchestral, marching, and drum corps playing.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-020"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play all numbered rolls cleanly",
+                        "Distinguish them by ear and by rhythmic context",
+                        "Apply to musical situations"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "rolls",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-046",
+                    "sectionId": "drm-sctn-012",
+                    "roadmapId": "rm-drm",
+                    "title": "Flam Paradiddle and Flam Paradiddle-Diddle",
+                    "shortDescription": "Combine a flam with a paradiddle pattern.",
+                    "longDescription": "The flam paradiddle starts each paradiddle with a flam, producing a strong accented pattern. The flam paradiddle-diddle extends this with the paradiddle-diddle pattern. Both build flam fluency and accent control.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-025",
+                        "drm-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play flam paradiddle cleanly",
+                        "Play flam paradiddle-diddle",
+                        "Apply to kit fills and grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "flam",
+                        "diddle",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-047",
+                    "sectionId": "drm-sctn-012",
+                    "roadmapId": "rm-drm",
+                    "title": "Pataflafla and Swiss Army Triplet",
+                    "shortDescription": "Two distinctive flam-based rudiments.",
+                    "longDescription": "The pataflafla is an alternating-hand four-note pattern with flams on the first and fourth strokes. The Swiss Army triplet (or 'Swiss triplet') is a flam followed by a tap, with a specific sticking. Both are tricky rudiments that reward serious practice.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-046"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play pataflafla with both flams hitting on the correct count",
+                        "Play Swiss Army triplet with the unique sticking",
+                        "Apply to drumkit and stylistic contexts"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "flam",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-048",
+                    "sectionId": "drm-sctn-012",
+                    "roadmapId": "rm-drm",
+                    "title": "Hybrid Rudiments",
+                    "shortDescription": "Modern rudiments beyond the PAS 40 — drumline and corps inventions.",
+                    "longDescription": "Hybrid rudiments are combinations and inventions beyond the official 40. Common ones include the cheese (a flam with a drag attached), 'eggbeater' patterns, and various sticking variations developed by drum corps and educators. They expand the modern rudimental vocabulary.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 3-5 hybrid rudiments",
+                        "Apply hybrids to fills and grooves",
+                        "Develop your own hybrid combinations"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "hybrid",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-049",
+                    "sectionId": "drm-sctn-012",
+                    "roadmapId": "rm-drm",
+                    "title": "Applying Rudiments to the Kit",
+                    "shortDescription": "Distribute rudiments across all the drums for fills, grooves, and solos.",
+                    "longDescription": "Rudiments are powerful when distributed across the kit. A paradiddle's accent can move from snare to tom; a flam can land on any drum. The deeper your rudiment vocabulary, the broader your musical options. This is a lifelong study.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "drm-tpc-025",
+                        "drm-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Take each known rudiment and find 3-5 kit applications",
+                        "Build fills, grooves, and solos from rudimental vocabulary",
+                        "Recognize rudimental patterns in recordings"
+                    ],
+                    "commonMistakes": [
+                        "Treating rudiments as pad-only exercises — they're meant for music"
+                    ],
+                    "practiceTips": [
+                        "Pick one rudiment per week and spend 5-10 minutes daily exploring kit applications"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rudiments",
+                        "advanced",
+                        "kit-application"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-013",
+            "roadmapId": "rm-drm",
+            "title": "Advanced Technique",
+            "shortDescription": "Advanced Moeller, heel-toe, double bass, and linear playing.",
+            "longDescription": "This section covers advanced techniques: refined Moeller for endurance, heel-toe and slide bass techniques, double bass drumming, and linear playing concepts.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-009",
+                "drm-sctn-010"
+            ],
+            "unlocks": [
+                "drm-sctn-014"
+            ],
+            "difficulty": "advanced",
+            "order": 13,
+            "estimatedTime": {
+                "min": 50,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-050",
+                    "sectionId": "drm-sctn-013",
+                    "roadmapId": "rm-drm",
+                    "title": "Advanced Moeller and Free Stroke Technique",
+                    "shortDescription": "Refined whip technique for sustained speed and power.",
+                    "longDescription": "Beyond basic Moeller, advanced players use the whip motion to sustain fast, accented playing for extended periods. The 'free stroke' technique (closely related) lets the stick rebound freely after each strike, using minimal effort. These approaches are essential for any drumming requiring endurance.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sustain Moeller-based playing for extended periods without tension",
+                        "Combine Moeller with rudimental patterns",
+                        "Develop personal economy of motion"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Record yourself frequently — Moeller technique evolves over years and you'll catch problems on playback"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-051",
+                    "sectionId": "drm-sctn-013",
+                    "roadmapId": "rm-drm",
+                    "title": "Heel-Toe and Slide Bass Drum Technique",
+                    "shortDescription": "Advanced foot techniques for fast bass drum playing.",
+                    "longDescription": "Heel-toe technique produces two bass drum strokes per leg motion: one with the heel-down position, one with the toe pressing down. The slide technique slides the foot forward on the footboard to get two strokes from one pedal stroke. Both unlock fast bass playing without double pedals.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute heel-toe technique with controlled doubles",
+                        "Use the slide technique for fast 16th-note bass passages",
+                        "Combine with single bass strokes fluently"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "foot",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-052",
+                    "sectionId": "drm-sctn-013",
+                    "roadmapId": "rm-drm",
+                    "title": "Double Bass Drumming",
+                    "shortDescription": "Use two bass pedals (or a double pedal) for fast bass drum patterns.",
+                    "longDescription": "Double bass drumming uses two bass drums (or one bass drum with a double pedal) to produce fast bass patterns. Essential in metal genres (thrash, death, power metal, etc.) and increasingly common in modern rock. Coordinated double bass requires foot-hand independence.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 120,
+                        "max": 480,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play even alternating 16th notes between both bass pedals",
+                        "Coordinate double bass with snare backbeats and hi-hat",
+                        "Apply to metal grooves and fills"
+                    ],
+                    "commonMistakes": [
+                        "Uneven bass strokes (often the weaker foot lags)",
+                        "Sacrificing the hands' steady time when the feet get busy"
+                    ],
+                    "practiceTips": [
+                        "Practice with a metronome — fast double bass that's not in time is just noise"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "foot",
+                        "metal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-053",
+                    "sectionId": "drm-sctn-013",
+                    "roadmapId": "rm-drm",
+                    "title": "Linear Playing",
+                    "shortDescription": "Each limb plays in turn, never simultaneously — creates a single linear stream.",
+                    "longDescription": "Linear playing is a style where no two drums or cymbals are struck simultaneously. The flow moves continuously between limbs. Used heavily in fusion, modern jazz, and progressive styles. It develops coordination and creates a particular rhythmic flow.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play linear grooves where each limb takes turns",
+                        "Build fills using linear concepts",
+                        "Apply to fusion and modern styles"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fusion",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-014",
+            "roadmapId": "rm-drm",
+            "title": "Genre Mastery",
+            "shortDescription": "Advanced rock/metal, jazz, funk, Latin, and odd time signatures.",
+            "longDescription": "This section pushes into mastery of specific genres: advanced rock and metal (double bass, blast beats, prog and djent), jazz (brushes, comping, soloing over forms), funk (deep pocket, ghost notes), Latin (Brazilian and Cuban traditions), and odd time signatures.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-011",
+                "drm-sctn-012",
+                "drm-sctn-013"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 14,
+            "estimatedTime": {
+                "min": 100,
+                "max": 1000,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-054",
+                    "sectionId": "drm-sctn-014",
+                    "roadmapId": "rm-drm",
+                    "title": "Advanced Rock and Metal Drumming",
+                    "shortDescription": "Genre-specific techniques and the demands of heavy music.",
+                    "longDescription": "Advanced rock and metal drumming demands endurance, precision, and a specific stylistic vocabulary. Metal subgenres each have characteristic approaches: thrash (Lars Ulrich, Dave Lombardo), death metal (blast beats), prog metal (Mike Portnoy, Danny Carey), djent (linear polyrhythms). Each subgenre rewards focused study.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "drm-tpc-052",
+                        "drm-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play blast beats cleanly",
+                        "Execute extended double bass passages",
+                        "Apply odd time signatures and polyrhythms used in prog and djent"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "rock",
+                        "metal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-055",
+                    "sectionId": "drm-sctn-014",
+                    "roadmapId": "rm-drm",
+                    "title": "Jazz Drumming Mastery",
+                    "shortDescription": "Brush technique, soloing over forms, and bebop vocabulary.",
+                    "longDescription": "Advanced jazz drumming includes brush technique (using wire brushes instead of sticks for a soft, swept sound), soloing over song forms (trading 4s and 8s with other musicians, or extended solos), and the rhythmic vocabulary of bebop and beyond. Listen to Tony Williams, Elvin Jones, Roy Haynes, Max Roach, Brian Blade.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-043"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Develop brush technique on the snare",
+                        "Solo melodically over a 32-bar form",
+                        "Comp interactively with a small group"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Find a jazz combo or weekly jam session — jazz drumming is a conversation that can only be learned in dialogue"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-056",
+                    "sectionId": "drm-sctn-014",
+                    "roadmapId": "rm-drm",
+                    "title": "Funk Drumming Mastery",
+                    "shortDescription": "Deep pocket, ghost notes, and the language of funk drumming.",
+                    "longDescription": "Advanced funk drumming is about the pocket — that elusive feeling of total rhythmic agreement with the band. Ghost notes on the snare add density without volume; the kick syncopates in conversation with the bass line; the hi-hat may open and close subtly. Listen to David Garibaldi, Clyde Stubblefield, Steve Gadd, James Gadson.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Develop dense ghost note vocabulary",
+                        "Play in a deep pocket with a bassist",
+                        "Apply linear concepts to funk grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-057",
+                    "sectionId": "drm-sctn-014",
+                    "roadmapId": "rm-drm",
+                    "title": "Latin Drumming Mastery",
+                    "shortDescription": "Brazilian (samba, bossa, partido alto), Cuban (son, salsa, mambo, songo), and other styles.",
+                    "longDescription": "Each Latin tradition has deep vocabulary worth years of study. Brazilian drumming relies on the surdo and characteristic bossa/samba patterns. Cuban styles are built around clave (a key two-bar rhythmic pattern). Other regions (Caribbean, African) bring their own languages.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-044"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Master at least one Latin tradition in depth",
+                        "Apply clave-based thinking to Cuban styles",
+                        "Listen extensively to authentic recordings"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "latin",
+                        "brazilian",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-058",
+                    "sectionId": "drm-sctn-014",
+                    "roadmapId": "rm-drm",
+                    "title": "Odd Time Signatures",
+                    "shortDescription": "Play in 5, 7, 9, 11 — beyond the comfort of 4/4 and 3/4.",
+                    "longDescription": "Odd time signatures (5/4, 7/8, 9/8, 11/8, etc.) appear in progressive rock, jazz fusion, and many world music traditions. The key is to internalize the count of the unusual meter, then build grooves that feel natural within it.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "drm-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play steady grooves in 5/4 and 7/8",
+                        "Subdivide odd meters intelligently (e.g., 7/8 = 3+2+2 or 2+2+3)",
+                        "Apply to repertoire that uses odd meters"
+                    ],
+                    "commonMistakes": [
+                        "Counting the meter robotically without finding a natural feel"
+                    ],
+                    "practiceTips": [
+                        "Listen to King Crimson, Yes, Tigran Hamasyan, Meshuggah — all use odd meters extensively"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "prog",
+                        "rhythm",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-015",
+            "roadmapId": "rm-drm",
+            "title": "Performance and Recording",
+            "shortDescription": "Drum tuning, click track work, live performance, and recording.",
+            "longDescription": "Performance and recording skills extend beyond practice room playing. This section covers tuning your drums for musical sound, playing to a click track, live performance considerations, and recording-specific skills.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-011"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 15,
+            "estimatedTime": {
+                "min": 20,
+                "max": 100,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "performance",
+                "recording",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-059",
+                    "sectionId": "drm-sctn-015",
+                    "roadmapId": "rm-drm",
+                    "title": "Tuning the Drums",
+                    "shortDescription": "Adjust each drum's pitch and resonance for a musical sound.",
+                    "longDescription": "Drum tuning is a skill in its own right. Each drum has two heads (batter and resonant); both must be in balance. The pitch should suit the music: lower for rock, higher for jazz. Tension rods should be tuned in cross pattern, not in sequence around the rim.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tune a snare drum to a clear, focused pitch",
+                        "Tune toms to a melodic descending pattern",
+                        "Tune the bass drum for desired attack and resonance"
+                    ],
+                    "commonMistakes": [
+                        "Cranking all lugs to maximum tension — produces a tight choked sound",
+                        "Tuning tension rods in sequence around the rim instead of in a cross pattern"
+                    ],
+                    "practiceTips": [
+                        "Tap near each lug to check for even tension — uneven lugs cause overtones and ringing"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "tuning",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-060",
+                    "sectionId": "drm-sctn-015",
+                    "roadmapId": "rm-drm",
+                    "title": "Playing to a Click Track",
+                    "shortDescription": "Recording sessions and modern performance often require playing to a metronome click.",
+                    "longDescription": "Click track playing is a non-negotiable skill for professional drummers. The click runs in your headphones; you stay locked to it for the entire performance. It requires absolute time, focus, and the ability to feel the click as a partner rather than an enforcer.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-024"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play complete songs locked to a click track",
+                        "Maintain feel and dynamics even when the click is in your ears",
+                        "Use the click as a rhythmic partner, not a metronome to follow"
+                    ],
+                    "commonMistakes": [
+                        "Following the click reactively instead of playing in the pocket with it"
+                    ],
+                    "practiceTips": [
+                        "Practice with the click in only one ear (or at low volume) — closer to real-world recording conditions"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "recording",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-061",
+                    "sectionId": "drm-sctn-015",
+                    "roadmapId": "rm-drm",
+                    "title": "Live Performance",
+                    "shortDescription": "Playing in a band, monitoring, gear management, and stage presence.",
+                    "longDescription": "Live performance demands skills that practice rooms don't teach: hearing yourself through monitors, adjusting to room acoustics, communicating with bandmates, managing gear setup and tear-down efficiently, and projecting energy to the audience.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play complete sets with a band",
+                        "Adapt to different monitoring situations",
+                        "Manage gear setup quickly and reliably"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-062",
+                    "sectionId": "drm-sctn-015",
+                    "roadmapId": "rm-drm",
+                    "title": "Recording Basics for Drummers",
+                    "shortDescription": "What drummers need to know about studio recording.",
+                    "longDescription": "Drummers in the studio face specific challenges: playing to a click, consistent dynamics over many takes, managing volume in untreated rooms, and producing musical (not just accurate) takes. Understanding microphone placement and signal flow helps you collaborate with engineers.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "drm-tpc-060"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play recording takes consistently",
+                        "Understand basic drum microphone setups",
+                        "Communicate effectively with recording engineers"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "recording",
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "drm-sctn-016",
+            "roadmapId": "rm-drm",
+            "title": "Practice Methods and Ear Training",
+            "shortDescription": "Pad practice, playing along with recordings, transcription, and memorization.",
+            "longDescription": "This section covers the practice and listening skills that develop alongside everything else: practice pad work, playing along with recordings, drum transcription, and memorization for performance.",
+            "instrumentId": "inst-drums",
+            "genreId": null,
+            "dependencies": [
+                "drm-sctn-002"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 16,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "practice-method",
+                "ear-training",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "drm-tpc-063",
+                    "sectionId": "drm-sctn-016",
+                    "roadmapId": "rm-drm",
+                    "title": "Practice Pad Work",
+                    "shortDescription": "The pad lets you drill technique anywhere, anytime.",
+                    "longDescription": "A practice pad is a portable, quiet rubber surface that simulates a snare drum. It's ideal for rudimental practice, technique work, and warm-ups when the full kit isn't available. Many advanced drummers spend hours daily on pad work even after years of kit experience.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Establish a daily pad practice routine",
+                        "Focus on hand technique without the distraction of the full kit",
+                        "Track progress with rudiments at increasing tempos"
+                    ],
+                    "commonMistakes": [
+                        "Treating the pad as 'less than' kit practice — the pad is where technique is refined"
+                    ],
+                    "practiceTips": [
+                        "Even 15-20 minutes of pad work daily produces large technical gains over weeks"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "practice-method",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-064",
+                    "sectionId": "drm-sctn-016",
+                    "roadmapId": "rm-drm",
+                    "title": "Playing Along with Recordings",
+                    "shortDescription": "Drumming with records develops feel, ear, and stylistic knowledge.",
+                    "longDescription": "Playing along with recordings exposes you to professional drumming, builds the ear, and helps you internalize styles. Choose songs slightly above your level. Mute the drum track when you can, or play along with the original to learn what the drummer played.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "drm-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play along with at least 10 songs across multiple genres",
+                        "Match the original drummer's parts closely",
+                        "Then develop your own variations"
+                    ],
+                    "commonMistakes": [
+                        "Playing only one style — broaden your stylistic range"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "practice-method",
+                        "stylistic"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-065",
+                    "sectionId": "drm-sctn-016",
+                    "roadmapId": "rm-drm",
+                    "title": "Drum Transcription",
+                    "shortDescription": "Notate drum parts from recordings — the deepest form of study.",
+                    "longDescription": "Transcribing drum parts forces you to listen carefully, identify each drum, and notate rhythms accurately. It's the single most efficient way to develop your ear, your stylistic vocabulary, and your understanding of how great drummers think.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "drm-tpc-064"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe a complete song's drum part",
+                        "Notate accurately in drum notation",
+                        "Apply the transcribed parts to your own playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Pick parts slightly above your level — too easy is unchallenging, too hard is demoralizing"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "drm-tpc-066",
+                    "sectionId": "drm-sctn-016",
+                    "roadmapId": "rm-drm",
+                    "title": "Memorization for Performance",
+                    "shortDescription": "Memorize songs, parts, and solos reliably for performance.",
+                    "longDescription": "Memorization combines muscle memory (limbs know the patterns), aural memory (you can hear the song in your head), and structural memory (you understand the song's form and dynamics). Robust memory uses all three.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Memorize complete songs reliably",
+                        "Maintain memorized repertoire over time",
+                        "Test memory by starting from arbitrary points in the song"
+                    ],
+                    "commonMistakes": [
+                        "Relying only on muscle memory (breaks under performance pressure)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "memorization",
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}
