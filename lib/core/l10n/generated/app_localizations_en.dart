@@ -109,6 +109,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get theme => 'Theme';
 
   @override
+  String get menuLearning => 'Learning';
+
+  @override
+  String get menuTraining => 'Training';
+
+  @override
   String get menuNoteTrainer => 'Note Trainer';
 
   @override
@@ -119,6 +125,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get menuAbout => 'About';
+
+  @override
+  String get menuCredits => 'Credits';
 
   @override
   String get comingSoon => 'Coming Soon';

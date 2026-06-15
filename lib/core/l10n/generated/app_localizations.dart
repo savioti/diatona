@@ -287,6 +287,18 @@ abstract class AppLocalizations {
   /// **'Theme'**
   String get theme;
 
+  /// No description provided for @menuLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning'**
+  String get menuLearning;
+
+  /// No description provided for @menuTraining.
+  ///
+  /// In en, this message translates to:
+  /// **'Training'**
+  String get menuTraining;
+
   /// No description provided for @menuNoteTrainer.
   ///
   /// In en, this message translates to:
@@ -310,6 +322,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'About'**
   String get menuAbout;
+
+  /// No description provided for @menuCredits.
+  ///
+  /// In en, this message translates to:
+  /// **'Credits'**
+  String get menuCredits;
 
   /// No description provided for @comingSoon.
   ///

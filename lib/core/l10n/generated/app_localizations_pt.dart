@@ -109,6 +109,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get theme => 'Tema';
 
   @override
+  String get menuLearning => 'Aprendizado';
+
+  @override
+  String get menuTraining => 'Treinamento';
+
+  @override
   String get menuNoteTrainer => 'Treinador de Notas';
 
   @override
@@ -119,6 +125,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get menuAbout => 'Sobre';
+
+  @override
+  String get menuCredits => 'Créditos';
 
   @override
   String get comingSoon => 'Em Breve';
@@ -229,6 +238,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get theme => 'Tema';
 
   @override
+  String get menuLearning => 'Aprendizado';
+
+  @override
+  String get menuTraining => 'Treinamento';
+
+  @override
   String get menuNoteTrainer => 'Treinador de Notas';
 
   @override
@@ -239,6 +254,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get menuAbout => 'Sobre';
+
+  @override
+  String get menuCredits => 'Créditos';
 
   @override
   String get comingSoon => 'Em Breve';

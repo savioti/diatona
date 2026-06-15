@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../home/presentation/home_screen.dart';
 import '../../settings/presentation/settings_screen.dart';
+import '../../trainer/presentation/training_menu_screen.dart';
+import 'widgets/feature_card.dart';
 
 class MainMenuScreen extends ConsumerWidget {
   const MainMenuScreen({super.key});
@@ -51,86 +52,39 @@ class MainMenuScreen extends ConsumerWidget {
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,
                   children: [
-                    _FeatureCard(
-                      icon: Icons.music_note_rounded,
-                      label: l10n.menuNoteTrainer,
-                      comingSoon: true,
-                    ),
-                    _FeatureCard(
-                      icon: Icons.piano_rounded,
-                      label: l10n.menuChordTraining,
+                    FeatureCard(
+                      icon: Icons.fitness_center_rounded,
+                      label: l10n.menuTraining,
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
-                          builder: (_) => const HomeScreen(),
+                          builder: (_) => const TrainingMenuScreen(),
                         ),
                       ),
                     ),
-                    _FeatureCard(
+                    FeatureCard(
+                      icon: Icons.school_rounded,
+                      label: l10n.menuLearning,
+                      comingSoon: true,
+                    ),
+                    FeatureCard(
                       icon: Icons.favorite_rounded,
                       label: l10n.menuDonate,
                       comingSoon: true,
                     ),
-                    _FeatureCard(
+                    FeatureCard(
                       icon: Icons.info_outline_rounded,
                       label: l10n.menuAbout,
+                      comingSoon: true,
+                    ),
+                    FeatureCard(
+                      icon: Icons.stars_rounded,
+                      label: l10n.menuCredits,
                       comingSoon: true,
                     ),
                   ],
                 ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _FeatureCard extends StatelessWidget {
-  const _FeatureCard({
-    required this.icon,
-    required this.label,
-    this.onTap,
-    this.comingSoon = false,
-  });
-
-  final IconData icon;
-  final String label;
-  final VoidCallback? onTap;
-  final bool comingSoon;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final cs = theme.colorScheme;
-
-    return Opacity(
-      opacity: comingSoon ? 0.45 : 1.0,
-      child: Material(
-        color: cs.primaryContainer,
-        borderRadius: BorderRadius.circular(20),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(20),
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(icon, size: 36, color: cs.primary),
-                const SizedBox(height: 12),
-                Text(
-                  label,
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: cs.onPrimaryContainer,
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
-            ),
           ),
         ),
       ),

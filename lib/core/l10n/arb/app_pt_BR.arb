@@ -47,9 +47,12 @@
   "ok": "OK",
   "settings": "Configurações",
   "theme": "Tema",
-"menuNoteTrainer": "Treinador de Notas",
+  "menuLearning": "Aprendizado",
+  "menuTraining": "Treinamento",
+  "menuNoteTrainer": "Treinador de Notas",
   "menuChordTraining": "Treino de Acordes",
   "menuDonate": "Doar",
   "menuAbout": "Sobre",
+  "menuCredits": "Créditos",
   "comingSoon": "Em Breve"
 }

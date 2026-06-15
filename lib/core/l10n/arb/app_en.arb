@@ -75,7 +75,11 @@
   "@settings": {},
   "theme": "Theme",
   "@theme": {},
-"menuNoteTrainer": "Note Trainer",
+  "menuLearning": "Learning",
+  "@menuLearning": {},
+  "menuTraining": "Training",
+  "@menuTraining": {},
+  "menuNoteTrainer": "Note Trainer",
   "@menuNoteTrainer": {},
   "menuChordTraining": "Chord Training",
   "@menuChordTraining": {},
@@ -83,6 +87,8 @@
   "@menuDonate": {},
   "menuAbout": "About",
   "@menuAbout": {},
+  "menuCredits": "Credits",
+  "@menuCredits": {},
   "comingSoon": "Coming Soon",
   "@comingSoon": {}
 }
