@@ -136,31 +136,37 @@ class AppLocalizationsPt extends AppLocalizations {
   String get menuCredits => 'Créditos';
 
   @override
+  String get menuReference => 'Referência';
+
+  @override
+  String get menuTools => 'Ferramentas';
+
+  @override
   String get comingSoon => 'Em Breve';
 
   @override
-  String get noteTrainerClefLabel => 'Clave';
+  String get noteTrainerClefLabel => 'Clef';
 
   @override
-  String get noteLevelStandard => 'Padrão';
+  String get noteLevelStandard => 'Standard';
 
   @override
-  String get noteLevelAccidentals => 'Acidentes';
+  String get noteLevelAccidentals => 'Accidentals';
 
   @override
-  String get chordDisplay => 'Exibição de Acorde';
+  String get chordDisplay => 'Chord Display';
 
   @override
-  String get displayModeSymbol => 'Símbolo';
+  String get displayModeSymbol => 'Symbol';
 
   @override
-  String get displayModeTrebleClef => 'Clave de Sol';
+  String get displayModeTrebleClef => 'Treble Clef';
 
   @override
-  String get displayModeBassClef => 'Clave de Fá';
+  String get displayModeBassClef => 'Bass Clef';
 
   @override
-  String get displayModeGuitar => 'Guitarra';
+  String get displayModeGuitar => 'Guitar';
 
   @override
   String get displayModeUkulele => 'Ukulele';
@@ -298,32 +304,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get menuCredits => 'Créditos';
 
   @override
+  String get menuReference => 'Referência';
+
+  @override
+  String get menuTools => 'Ferramentas';
+
+  @override
   String get comingSoon => 'Em Breve';
-
-  @override
-  String get noteTrainerClefLabel => 'Clave';
-
-  @override
-  String get noteLevelStandard => 'Padrão';
-
-  @override
-  String get noteLevelAccidentals => 'Acidentes';
-
-  @override
-  String get chordDisplay => 'Exibição de Acorde';
-
-  @override
-  String get displayModeSymbol => 'Símbolo';
-
-  @override
-  String get displayModeTrebleClef => 'Clave de Sol';
-
-  @override
-  String get displayModeBassClef => 'Clave de Fá';
-
-  @override
-  String get displayModeGuitar => 'Guitarra';
-
-  @override
-  String get displayModeUkulele => 'Ukulele';
 }

@@ -136,31 +136,37 @@ class AppLocalizationsEs extends AppLocalizations {
   String get menuCredits => 'Créditos';
 
   @override
+  String get menuReference => 'Referencia';
+
+  @override
+  String get menuTools => 'Herramientas';
+
+  @override
   String get comingSoon => 'Próximamente';
 
   @override
-  String get noteTrainerClefLabel => 'Clave';
+  String get noteTrainerClefLabel => 'Clef';
 
   @override
-  String get noteLevelStandard => 'Estándar';
+  String get noteLevelStandard => 'Standard';
 
   @override
-  String get noteLevelAccidentals => 'Accidentales';
+  String get noteLevelAccidentals => 'Accidentals';
 
   @override
-  String get chordDisplay => 'Visualización de Acorde';
+  String get chordDisplay => 'Chord Display';
 
   @override
-  String get displayModeSymbol => 'Símbolo';
+  String get displayModeSymbol => 'Symbol';
 
   @override
-  String get displayModeTrebleClef => 'Clave de Sol';
+  String get displayModeTrebleClef => 'Treble Clef';
 
   @override
-  String get displayModeBassClef => 'Clave de Fa';
+  String get displayModeBassClef => 'Bass Clef';
 
   @override
-  String get displayModeGuitar => 'Guitarra';
+  String get displayModeGuitar => 'Guitar';
 
   @override
   String get displayModeUkulele => 'Ukulele';

@@ -136,6 +136,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuCredits => 'Credits';
 
   @override
+  String get menuReference => 'Reference';
+
+  @override
+  String get menuTools => 'Tools';
+
+  @override
   String get comingSoon => 'Coming Soon';
 
   @override

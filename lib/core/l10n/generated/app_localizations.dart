@@ -314,7 +314,7 @@ abstract class AppLocalizations {
   /// No description provided for @menuNoteTrainer.
   ///
   /// In en, this message translates to:
-  /// **'Note Training'**
+  /// **'Note Trainer'**
   String get menuNoteTrainer;
 
   /// No description provided for @menuChordTraining.
@@ -340,6 +340,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Credits'**
   String get menuCredits;
+
+  /// No description provided for @menuReference.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get menuReference;
+
+  /// No description provided for @menuTools.
+  ///
+  /// In en, this message translates to:
+  /// **'Tools'**
+  String get menuTools;
 
   /// No description provided for @comingSoon.
   ///

@@ -81,6 +81,16 @@ class MainMenuScreen extends ConsumerWidget {
                       label: l10n.menuCredits,
                       comingSoon: true,
                     ),
+                    FeatureCard(
+                      icon: Icons.menu_book_rounded,
+                      label: l10n.menuReference,
+                      comingSoon: true,
+                    ),
+                    FeatureCard(
+                      icon: Icons.tune_rounded,
+                      label: l10n.menuTools,
+                      comingSoon: true,
+                    ),
                   ],
                 ),
               ),
