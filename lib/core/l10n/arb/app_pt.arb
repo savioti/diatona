@@ -1,11 +1,13 @@
 {
   "@@locale": "pt",
   "appTitle": "Diatona",
+  "homeTitle": "Treino de Acordes",
   "getReady": "Prepare-se",
   "start": "Iniciar",
   "stop": "Parar",
   "next": "Próximo",
   "correct": "Correto!",
+  "skipped": "Pulado",
   "level": "Nível",
   "timeLimit": "Limite de Tempo",
   "noTimeLimit": "∞",

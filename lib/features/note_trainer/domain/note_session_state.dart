@@ -1,62 +1,60 @@
 import 'package:flutter/foundation.dart';
 
-import 'chord.dart';
+import 'note_clef.dart';
+import 'note_item.dart';
 
 @immutable
-class TrainingSessionState {
-  const TrainingSessionState({
+class NoteSessionState {
+  const NoteSessionState({
     required this.isActive,
     required this.isGetReady,
     required this.level,
     required this.timeLimitSeconds,
-    this.currentChord,
+    required this.clef,
+    this.currentNote,
     this.showSuccess = false,
     this.showSkip = false,
   });
 
-  const TrainingSessionState.idle()
+  const NoteSessionState.idle()
       : isActive = false,
         isGetReady = false,
         level = 1,
         timeLimitSeconds = 3,
-        currentChord = null,
+        clef = NoteClef.trebleClef,
+        currentNote = null,
         showSuccess = false,
         showSkip = false;
 
   final bool isActive;
-
-  /// True during the 2-second "Get Ready" phase before the first chord appears.
   final bool isGetReady;
-
   final int level;
-
-  /// Seconds the user has to play each chord. 0 = no time limit.
   final int timeLimitSeconds;
-
-  final Chord? currentChord;
-
-  /// True for ~800 ms after a correct root note is detected, triggering the success overlay.
+  final NoteClef clef;
+  final NoteItem? currentNote;
   final bool showSuccess;
 
-  /// True for ~600 ms after the user skips a chord, triggering the skip overlay.
+  /// True for ~600 ms after the user skips a note, triggering the skip overlay.
   final bool showSkip;
 
-  TrainingSessionState copyWith({
+  NoteSessionState copyWith({
     bool? isActive,
     bool? isGetReady,
     int? level,
     int? timeLimitSeconds,
-    Chord? currentChord,
+    NoteClef? clef,
+    NoteItem? currentNote,
     bool? showSuccess,
     bool? showSkip,
-    bool clearChord = false,
+    bool clearNote = false,
   }) {
-    return TrainingSessionState(
+    return NoteSessionState(
       isActive: isActive ?? this.isActive,
       isGetReady: isGetReady ?? this.isGetReady,
       level: level ?? this.level,
       timeLimitSeconds: timeLimitSeconds ?? this.timeLimitSeconds,
-      currentChord: clearChord ? null : (currentChord ?? this.currentChord),
+      clef: clef ?? this.clef,
+      currentNote: clearNote ? null : (currentNote ?? this.currentNote),
       showSuccess: showSuccess ?? this.showSuccess,
       showSkip: showSkip ?? this.showSkip,
     );

@@ -61,3 +61,4 @@ flutter:
     - assets/logo/
     - assets/instrument_sounds/
     - assets/instrument_sounds/piano/
+    - database/

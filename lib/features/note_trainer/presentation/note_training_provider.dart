@@ -5,81 +5,90 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../audio/audio_service.dart';
 import '../../audio/pitch_detection_service.dart';
-import '../data/chord_data.dart';
-import '../domain/chord.dart';
-import '../domain/training_session_state.dart';
+import '../data/note_data.dart';
+import '../domain/note_clef.dart';
+import '../domain/note_item.dart';
+import '../domain/note_session_state.dart';
 
-final _audioServiceProvider = Provider<AudioService>((ref) {
+final _noteAudioProvider = Provider<AudioService>((ref) {
   final service = AudioService();
   ref.onDispose(service.dispose);
   return service;
 });
 
-final _pitchServiceProvider = Provider<PitchDetectionService>((ref) {
+final _notePitchProvider = Provider<PitchDetectionService>((ref) {
   final service = PitchDetectionService();
   ref.onDispose(service.dispose);
   return service;
 });
 
-class TrainingNotifier extends Notifier<TrainingSessionState> {
+class NoteTrainingNotifier extends Notifier<NoteSessionState> {
   final _random = Random();
   Timer? _getReadyTimer;
   Timer? _timeLimitTimer;
   Timer? _successTimer;
   Timer? _silenceTimer;
   StreamSubscription<String>? _pitchSub;
-  List<Chord> _pool = [];
-  Map<Chord, int> _successCounts = {};
+  List<NoteItem> _pool = [];
+  Map<NoteItem, int> _successCounts = {};
   bool _advancing = false;
   bool _waitingForNoteOff = false;
   late AudioService _audio;
 
-
   @override
-  TrainingSessionState build() {
-    _audio = ref.read(_audioServiceProvider);
+  NoteSessionState build() {
+    _audio = ref.read(_noteAudioProvider);
     ref.onDispose(_cleanup);
-    return const TrainingSessionState.idle();
+    return const NoteSessionState.idle();
   }
 
-  Future<void> start(int level, int timeLimitSeconds, {bool cumulative = true}) async {
+  Future<void> start(
+    int timeLimitSeconds,
+    NoteClef clef,
+    int level, {
+    bool cumulative = true,
+  }) async {
     _cleanup();
     await _audio.init();
-    _pool = cumulative ? buildChordPool(level) : buildChordPoolSingle(level);
-    _successCounts = {for (final c in _pool) c: 0};
+    _pool = cumulative
+        ? buildNotePool(clef, level)
+        : buildNotePoolSingle(clef, level);
+    _successCounts = {for (final n in _pool) n: 0};
     _advancing = false;
 
-    final pitchService = ref.read(_pitchServiceProvider);
+    final pitchService = ref.read(_notePitchProvider);
     await pitchService.start();
     _pitchSub = pitchService.notes.listen(_onPitch);
 
     if (timeLimitSeconds == 0) {
-      final chord = _pickNextChord(null);
-      state = TrainingSessionState(
+      final note = _pickNextNote(null);
+      state = NoteSessionState(
         isActive: true,
         isGetReady: false,
         level: level,
         timeLimitSeconds: timeLimitSeconds,
-        currentChord: chord,
+        clef: clef,
+        currentNote: note,
       );
     } else {
-      state = TrainingSessionState(
+      state = NoteSessionState(
         isActive: true,
         isGetReady: true,
         level: level,
         timeLimitSeconds: timeLimitSeconds,
+        clef: clef,
       );
-      _getReadyTimer = Timer(const Duration(seconds: 2), _showFirstChord);
+      _getReadyTimer = Timer(const Duration(seconds: 2), _showFirstNote);
     }
   }
 
-  void _showFirstChord() {
-    final chord = _pickNextChord(null);
-    state = state.copyWith(isGetReady: false, currentChord: chord);
+  void _showFirstNote() {
+    final note = _pickNextNote(null);
+    state = state.copyWith(isGetReady: false, currentNote: note);
     _startTimeLimitTimer();
   }
 
-  void _onPitch(String note) {
+  void _onPitch(String detected) {
     if (state.isGetReady || !state.isActive) return;
 
     if (_waitingForNoteOff) {
@@ -92,17 +101,16 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     }
 
     if (_advancing) return;
-    final chord = state.currentChord;
-    if (chord == null) return;
-    final root = chord.rootNote;
-    if (note == root || note == chord.altRootNote) _onSuccess();
+    final note = state.currentNote;
+    if (note == null) return;
+    if (detected == note.detectedName) _onSuccess();
   }
 
   void _onSuccess() {
     _advancing = true;
     _waitingForNoteOff = true;
-    final chord = state.currentChord;
-    if (chord != null) _successCounts[chord] = (_successCounts[chord] ?? 0) + 1;
+    final note = state.currentNote;
+    if (note != null) _successCounts[note] = (_successCounts[note] ?? 0) + 1;
     _silenceTimer?.cancel();
     _timeLimitTimer?.cancel();
     _successTimer?.cancel();
@@ -111,7 +119,7 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     state = state.copyWith(showSuccess: true);
 
     _successTimer = Timer(const Duration(milliseconds: 800), () {
-      _advanceChord();
+      _advanceNote();
       unawaited(_restartPitchService());
       _successTimer = Timer(
         const Duration(milliseconds: 300),
@@ -121,7 +129,7 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
   }
 
   Future<void> _restartPitchService() async {
-    final pitchService = ref.read(_pitchServiceProvider);
+    final pitchService = ref.read(_notePitchProvider);
     await pitchService.stop();
     if (!state.isActive) return;
     await pitchService.start();
@@ -134,7 +142,7 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     _successTimer?.cancel();
     state = state.copyWith(showSkip: true);
     _successTimer = Timer(const Duration(milliseconds: 600), () {
-      _advanceChord();
+      _advanceNote();
       _successTimer = Timer(
         const Duration(milliseconds: 300),
         () => _advancing = false,
@@ -142,15 +150,15 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     });
   }
 
-  void _advanceChord() {
-    final next = _pickNextChord(state.currentChord);
-    state = state.copyWith(currentChord: next, showSuccess: false, showSkip: false);
+  void _advanceNote() {
+    final next = _pickNextNote(state.currentNote);
+    state = state.copyWith(currentNote: next, showSuccess: false, showSkip: false);
     _startTimeLimitTimer();
   }
 
   void stop() {
     _cleanup();
-    state = const TrainingSessionState.idle();
+    state = const NoteSessionState.idle();
   }
 
   void _startTimeLimitTimer() {
@@ -161,16 +169,16 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     }
   }
 
-  Chord _pickNextChord(Chord? excluded) {
+  NoteItem _pickNextNote(NoteItem? excluded) {
     if (_pool.length == 1) return _pool.first;
     final candidates = excluded != null
-        ? _pool.where((c) => c != excluded).toList()
+        ? _pool.where((n) => n != excluded).toList()
         : List.of(_pool);
-    final minCount = candidates
-        .map((c) => _successCounts[c] ?? 0)
-        .reduce(min);
-    final leastPlayed =
-        candidates.where((c) => (_successCounts[c] ?? 0) == minCount).toList();
+    final minCount =
+        candidates.map((n) => _successCounts[n] ?? 0).reduce(min);
+    final leastPlayed = candidates
+        .where((n) => (_successCounts[n] ?? 0) == minCount)
+        .toList();
     return leastPlayed[_random.nextInt(leastPlayed.length)];
   }
 
@@ -182,11 +190,11 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
     _pitchSub?.cancel();
     _pitchSub = null;
     _waitingForNoteOff = false;
-    unawaited(ref.read(_pitchServiceProvider).stop());
+    unawaited(ref.read(_notePitchProvider).stop());
   }
 }
 
-final trainingProvider =
-    NotifierProvider<TrainingNotifier, TrainingSessionState>(
-  TrainingNotifier.new,
+final noteTrainingProvider =
+    NotifierProvider<NoteTrainingNotifier, NoteSessionState>(
+  NoteTrainingNotifier.new,
 );

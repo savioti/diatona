@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Diatona';
 
   @override
+  String get homeTitle => 'Chord Training';
+
+  @override
   String get getReady => 'Get Ready';
 
   @override
@@ -25,6 +28,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get correct => 'Correct!';
+
+  @override
+  String get skipped => 'Skipped';
 
   @override
   String get level => 'Level';
@@ -131,4 +137,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get comingSoon => 'Coming Soon';
+
+  @override
+  String get noteTrainerClefLabel => 'Clef';
+
+  @override
+  String get noteLevelStandard => 'Standard';
+
+  @override
+  String get noteLevelAccidentals => 'Accidentals';
+
+  @override
+  String get chordDisplay => 'Chord Display';
+
+  @override
+  String get displayModeSymbol => 'Symbol';
+
+  @override
+  String get displayModeTrebleClef => 'Treble Clef';
+
+  @override
+  String get displayModeBassClef => 'Bass Clef';
+
+  @override
+  String get displayModeGuitar => 'Guitar';
+
+  @override
+  String get displayModeUkulele => 'Ukulele';
 }

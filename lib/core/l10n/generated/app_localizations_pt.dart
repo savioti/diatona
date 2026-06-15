@@ -12,6 +12,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get appTitle => 'Diatona';
 
   @override
+  String get homeTitle => 'Treino de Acordes';
+
+  @override
   String get getReady => 'Prepare-se';
 
   @override
@@ -25,6 +28,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get correct => 'Correto!';
+
+  @override
+  String get skipped => 'Pulado';
 
   @override
   String get level => 'Nível';
@@ -131,6 +137,33 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get comingSoon => 'Em Breve';
+
+  @override
+  String get noteTrainerClefLabel => 'Clave';
+
+  @override
+  String get noteLevelStandard => 'Padrão';
+
+  @override
+  String get noteLevelAccidentals => 'Acidentes';
+
+  @override
+  String get chordDisplay => 'Exibição de Acorde';
+
+  @override
+  String get displayModeSymbol => 'Símbolo';
+
+  @override
+  String get displayModeTrebleClef => 'Clave de Sol';
+
+  @override
+  String get displayModeBassClef => 'Clave de Fá';
+
+  @override
+  String get displayModeGuitar => 'Guitarra';
+
+  @override
+  String get displayModeUkulele => 'Ukulele';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -141,6 +174,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get appTitle => 'Diatona';
 
   @override
+  String get homeTitle => 'Treino de Acordes';
+
+  @override
   String get getReady => 'Prepare-se';
 
   @override
@@ -154,6 +190,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get correct => 'Correto!';
+
+  @override
+  String get skipped => 'Pulado';
 
   @override
   String get level => 'Nível';
@@ -260,4 +299,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get comingSoon => 'Em Breve';
+
+  @override
+  String get noteTrainerClefLabel => 'Clave';
+
+  @override
+  String get noteLevelStandard => 'Padrão';
+
+  @override
+  String get noteLevelAccidentals => 'Acidentes';
+
+  @override
+  String get chordDisplay => 'Exibição de Acorde';
+
+  @override
+  String get displayModeSymbol => 'Símbolo';
+
+  @override
+  String get displayModeTrebleClef => 'Clave de Sol';
+
+  @override
+  String get displayModeBassClef => 'Clave de Fá';
+
+  @override
+  String get displayModeGuitar => 'Guitarra';
+
+  @override
+  String get displayModeUkulele => 'Ukulele';
 }

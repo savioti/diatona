@@ -5,28 +5,30 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/training_overlay.dart';
-import '../domain/chord_type.dart';
-import '../domain/training_session_state.dart';
-import 'training_provider.dart';
-import 'widgets/chord_display.dart';
+import '../domain/note_clef.dart';
+import '../domain/note_session_state.dart';
+import 'note_training_provider.dart';
+import 'widgets/note_display.dart';
 
-class TrainingScreen extends ConsumerStatefulWidget {
-  const TrainingScreen({
+class NoteTrainingScreen extends ConsumerStatefulWidget {
+  const NoteTrainingScreen({
     super.key,
-    required this.level,
     required this.timeLimitSeconds,
+    required this.clef,
+    required this.level,
     required this.cumulative,
   });
 
-  final int level;
   final int timeLimitSeconds;
+  final NoteClef clef;
+  final int level;
   final bool cumulative;
 
   @override
-  ConsumerState<TrainingScreen> createState() => _TrainingScreenState();
+  ConsumerState<NoteTrainingScreen> createState() => _NoteTrainingScreenState();
 }
 
-class _TrainingScreenState extends ConsumerState<TrainingScreen>
+class _NoteTrainingScreenState extends ConsumerState<NoteTrainingScreen>
     with SingleTickerProviderStateMixin {
   AnimationController? _progressController;
 
@@ -44,11 +46,10 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
     }
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(trainingProvider.notifier).start(
-            widget.level,
-            widget.timeLimitSeconds,
-            cumulative: widget.cumulative,
-          );
+      ref
+          .read(noteTrainingProvider.notifier)
+          .start(widget.timeLimitSeconds, widget.clef, widget.level,
+              cumulative: widget.cumulative);
     });
   }
 
@@ -61,26 +62,26 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
   }
 
   void _stop() {
-    ref.read(trainingProvider.notifier).stop();
+    ref.read(noteTrainingProvider.notifier).stop();
     Navigator.of(context).pop();
   }
 
   void _advance() {
-    ref.read(trainingProvider.notifier).advance();
+    ref.read(noteTrainingProvider.notifier).advance();
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final session = ref.watch(trainingProvider);
+    final session = ref.watch(noteTrainingProvider);
     final colorScheme = Theme.of(context).colorScheme;
 
-    ref.listen<TrainingSessionState>(trainingProvider, (prev, next) {
+    ref.listen<NoteSessionState>(noteTrainingProvider, (prev, next) {
       if (next.showSuccess || next.showSkip || !next.isActive) {
         _progressController?.stop();
         return;
       }
-      if (!next.isGetReady && next.currentChord != prev?.currentChord) {
+      if (!next.isGetReady && next.currentNote != prev?.currentNote) {
         _progressController?.forward(from: 0.0);
       }
     });
@@ -88,6 +89,13 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
     final timeLimitLabel = session.timeLimitSeconds == 0
         ? l10n.noTimeLimit
         : l10n.seconds(session.timeLimitSeconds);
+
+    final levelLabel = session.level == 1
+        ? l10n.noteLevelStandard
+        : l10n.noteLevelAccidentals;
+    final clefLabel = session.clef == NoteClef.trebleClef
+        ? l10n.displayModeTrebleClef
+        : l10n.displayModeBassClef;
 
     return PopScope(
       onPopInvokedWithResult: (didPop, _) {
@@ -106,14 +114,14 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          _levelName(session.level, l10n),
+                          levelLabel,
                           style: Theme.of(context)
                               .textTheme
                               .titleLarge
                               ?.copyWith(color: colorScheme.primary),
                         ),
                         Text(
-                          timeLimitLabel,
+                          '$clefLabel · $timeLimitLabel',
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
@@ -133,8 +141,9 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
                 const SizedBox(height: 24),
                 Stack(
                   children: [
-                    ChordDisplay(
-                      chord: session.currentChord,
+                    NoteDisplay(
+                      note: session.currentNote,
+                      clef: session.clef,
                       isGetReady: session.isGetReady || !session.isActive,
                       getReadyText: l10n.getReady,
                     ),
@@ -143,14 +152,14 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
                       color: Colors.green.withValues(alpha: 0.92),
                       icon: Icons.check_circle_rounded,
                       title: l10n.correct,
-                      label: session.currentChord?.symbol,
+                      label: session.currentNote?.name,
                     ),
                     TrainingOverlay(
                       show: session.showSkip,
                       color: Colors.orange.withValues(alpha: 0.92),
                       icon: Icons.skip_next_rounded,
                       title: l10n.skipped,
-                      label: session.currentChord?.symbol,
+                      label: session.currentNote?.name,
                     ),
                   ],
                 ),
@@ -184,24 +193,5 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen>
         ),
       ),
     );
-  }
-
-  String _levelName(int level, AppLocalizations l10n) {
-    final type =
-        ChordType.values[(level - 1).clamp(0, ChordType.values.length - 1)];
-    return switch (type) {
-      ChordType.major => l10n.levelMajor,
-      ChordType.minor => l10n.levelMinor,
-      ChordType.aug => l10n.levelAug,
-      ChordType.dim => l10n.levelDim,
-      ChordType.sus => l10n.levelSus,
-      ChordType.seventh => l10n.levelSeventh,
-      ChordType.maj7 => l10n.levelMaj7,
-      ChordType.m7 => l10n.levelM7,
-      ChordType.dim7 => l10n.levelDim7,
-      ChordType.halfDim7 => l10n.levelHalfDim7,
-      ChordType.mMaj7 => l10n.levelMMaj7,
-      ChordType.augMaj7 => l10n.levelAugMaj7,
-    };
   }
 }

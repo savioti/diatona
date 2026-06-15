@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/theme/app_theme.dart';
+import '../domain/chord_display_mode.dart';
 import 'settings_repository.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>(
@@ -54,3 +55,17 @@ class SelectedThemeNotifier extends Notifier<AppThemeVariant> {
 
 final selectedThemeProvider =
     NotifierProvider<SelectedThemeNotifier, AppThemeVariant>(SelectedThemeNotifier.new);
+
+class SelectedDisplayModeNotifier extends Notifier<ChordDisplayMode> {
+  @override
+  ChordDisplayMode build() {
+    final index = ref.read(settingsRepositoryProvider).loadDisplayMode();
+    return ChordDisplayMode.values[index.clamp(0, ChordDisplayMode.values.length - 1)];
+  }
+
+  void update(ChordDisplayMode mode) => state = mode;
+}
+
+final selectedDisplayModeProvider =
+    NotifierProvider<SelectedDisplayModeNotifier, ChordDisplayMode>(
+        SelectedDisplayModeNotifier.new);

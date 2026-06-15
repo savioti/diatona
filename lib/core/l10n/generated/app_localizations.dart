@@ -107,6 +107,12 @@ abstract class AppLocalizations {
   /// **'Diatona'**
   String get appTitle;
 
+  /// No description provided for @homeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Chord Training'**
+  String get homeTitle;
+
   /// No description provided for @getReady.
   ///
   /// In en, this message translates to:
@@ -136,6 +142,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Correct!'**
   String get correct;
+
+  /// No description provided for @skipped.
+  ///
+  /// In en, this message translates to:
+  /// **'Skipped'**
+  String get skipped;
 
   /// No description provided for @level.
   ///
@@ -302,7 +314,7 @@ abstract class AppLocalizations {
   /// No description provided for @menuNoteTrainer.
   ///
   /// In en, this message translates to:
-  /// **'Note Trainer'**
+  /// **'Note Training'**
   String get menuNoteTrainer;
 
   /// No description provided for @menuChordTraining.
@@ -334,6 +346,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Coming Soon'**
   String get comingSoon;
+
+  /// No description provided for @noteTrainerClefLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Clef'**
+  String get noteTrainerClefLabel;
+
+  /// No description provided for @noteLevelStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get noteLevelStandard;
+
+  /// No description provided for @noteLevelAccidentals.
+  ///
+  /// In en, this message translates to:
+  /// **'Accidentals'**
+  String get noteLevelAccidentals;
+
+  /// No description provided for @chordDisplay.
+  ///
+  /// In en, this message translates to:
+  /// **'Chord Display'**
+  String get chordDisplay;
+
+  /// No description provided for @displayModeSymbol.
+  ///
+  /// In en, this message translates to:
+  /// **'Symbol'**
+  String get displayModeSymbol;
+
+  /// No description provided for @displayModeTrebleClef.
+  ///
+  /// In en, this message translates to:
+  /// **'Treble Clef'**
+  String get displayModeTrebleClef;
+
+  /// No description provided for @displayModeBassClef.
+  ///
+  /// In en, this message translates to:
+  /// **'Bass Clef'**
+  String get displayModeBassClef;
+
+  /// No description provided for @displayModeGuitar.
+  ///
+  /// In en, this message translates to:
+  /// **'Guitar'**
+  String get displayModeGuitar;
+
+  /// No description provided for @displayModeUkulele.
+  ///
+  /// In en, this message translates to:
+  /// **'Ukulele'**
+  String get displayModeUkulele;
 }
 
 class _AppLocalizationsDelegate
