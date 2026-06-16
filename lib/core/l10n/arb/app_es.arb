@@ -110,5 +110,6 @@
   "refPentatonicLegend": "● = nota  ⊙ = fundamental  Toca las cajas para alternar",
   "refFnTonic": "Tónica",
   "refFnSubdominant": "Subdom.",
-  "refFnDominant": "Dom."
+  "refFnDominant": "Dom.",
+  "aboutAppDescription": "Entrenador de reconocimiento de acordes. Toca la nota fundamental en tu instrumento y entrena tu oído."
 }

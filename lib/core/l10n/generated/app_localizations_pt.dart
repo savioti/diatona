@@ -247,6 +247,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get refFnDominant => 'Dom.';
+
+  @override
+  String get aboutAppDescription =>
+      'Treinador de reconhecimento de acordes. Toque a nota fundamental no seu instrumento e treine o ouvido.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -492,4 +496,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get refFnDominant => 'Dom.';
+
+  @override
+  String get aboutAppDescription =>
+      'Treinador de reconhecimento de acordes. Toque a nota fundamental no seu instrumento e treine o ouvido.';
 }

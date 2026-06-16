@@ -171,5 +171,7 @@
   "refFnSubdominant": "Subdom.",
   "@refFnSubdominant": {},
   "refFnDominant": "Dom.",
-  "@refFnDominant": {}
+  "@refFnDominant": {},
+  "aboutAppDescription": "Chord recognition trainer. Play the root note on your instrument and train your ear.",
+  "@aboutAppDescription": {}
 }

@@ -247,4 +247,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get refFnDominant => 'Dom.';
+
+  @override
+  String get aboutAppDescription =>
+      'Entrenador de reconocimiento de acordes. Toca la nota fundamental en tu instrumento y entrena tu oído.';
 }

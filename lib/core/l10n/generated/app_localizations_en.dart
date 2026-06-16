@@ -247,4 +247,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get refFnDominant => 'Dom.';
+
+  @override
+  String get aboutAppDescription =>
+      'Chord recognition trainer. Play the root note on your instrument and train your ear.';
 }

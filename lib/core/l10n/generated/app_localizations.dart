@@ -556,6 +556,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Dom.'**
   String get refFnDominant;
+
+  /// No description provided for @aboutAppDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Chord recognition trainer. Play the root note on your instrument and train your ear.'**
+  String get aboutAppDescription;
 }
 
 class _AppLocalizationsDelegate

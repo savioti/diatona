@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../about/presentation/about_screen.dart';
 import '../../references/presentation/references_screen.dart';
 import '../../settings/presentation/settings_screen.dart';
 import '../../trainer/presentation/training_menu_screen.dart';
@@ -89,7 +90,11 @@ class MainMenuScreen extends ConsumerWidget {
                     FeatureCard(
                       icon: Icons.info_outline_rounded,
                       label: l10n.menuAbout,
-                      comingSoon: true,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const AboutScreen(),
+                        ),
+                      ),
                     ),
                   ],
                 ),
