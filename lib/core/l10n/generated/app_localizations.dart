@@ -574,6 +574,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'System default'**
   String get languageSystem;
+
+  /// No description provided for @menuEarTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Ear Trainer'**
+  String get menuEarTrainer;
+
+  /// No description provided for @earTrainerDirection.
+  ///
+  /// In en, this message translates to:
+  /// **'Direction'**
+  String get earTrainerDirection;
+
+  /// No description provided for @earTrainerAscending.
+  ///
+  /// In en, this message translates to:
+  /// **'Ascending'**
+  String get earTrainerAscending;
+
+  /// No description provided for @earTrainerDescending.
+  ///
+  /// In en, this message translates to:
+  /// **'Descending'**
+  String get earTrainerDescending;
+
+  /// No description provided for @earTrainerHarmonic.
+  ///
+  /// In en, this message translates to:
+  /// **'Harmonic'**
+  String get earTrainerHarmonic;
+
+  /// No description provided for @earTrainerRandom.
+  ///
+  /// In en, this message translates to:
+  /// **'Random'**
+  String get earTrainerRandom;
+
+  /// No description provided for @earTrainerCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom'**
+  String get earTrainerCustom;
+
+  /// No description provided for @earTrainerSelectAtLeastTwo.
+  ///
+  /// In en, this message translates to:
+  /// **'Select at least 2 intervals'**
+  String get earTrainerSelectAtLeastTwo;
+
+  /// No description provided for @earTrainerWhatInterval.
+  ///
+  /// In en, this message translates to:
+  /// **'What interval is this?'**
+  String get earTrainerWhatInterval;
+
+  /// No description provided for @earTrainerWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong!'**
+  String get earTrainerWrong;
+
+  /// No description provided for @intervalMinSecond.
+  ///
+  /// In en, this message translates to:
+  /// **'Minor 2nd'**
+  String get intervalMinSecond;
+
+  /// No description provided for @intervalMajSecond.
+  ///
+  /// In en, this message translates to:
+  /// **'Major 2nd'**
+  String get intervalMajSecond;
+
+  /// No description provided for @intervalMinThird.
+  ///
+  /// In en, this message translates to:
+  /// **'Minor 3rd'**
+  String get intervalMinThird;
+
+  /// No description provided for @intervalMajThird.
+  ///
+  /// In en, this message translates to:
+  /// **'Major 3rd'**
+  String get intervalMajThird;
+
+  /// No description provided for @intervalPerfectFourth.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect 4th'**
+  String get intervalPerfectFourth;
+
+  /// No description provided for @intervalTritone.
+  ///
+  /// In en, this message translates to:
+  /// **'Tritone'**
+  String get intervalTritone;
+
+  /// No description provided for @intervalPerfectFifth.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect 5th'**
+  String get intervalPerfectFifth;
+
+  /// No description provided for @intervalMinSixth.
+  ///
+  /// In en, this message translates to:
+  /// **'Minor 6th'**
+  String get intervalMinSixth;
+
+  /// No description provided for @intervalMajSixth.
+  ///
+  /// In en, this message translates to:
+  /// **'Major 6th'**
+  String get intervalMajSixth;
+
+  /// No description provided for @intervalMinSeventh.
+  ///
+  /// In en, this message translates to:
+  /// **'Minor 7th'**
+  String get intervalMinSeventh;
+
+  /// No description provided for @intervalMajSeventh.
+  ///
+  /// In en, this message translates to:
+  /// **'Major 7th'**
+  String get intervalMajSeventh;
+
+  /// No description provided for @intervalOctave.
+  ///
+  /// In en, this message translates to:
+  /// **'Octave'**
+  String get intervalOctave;
 }
 
 class _AppLocalizationsDelegate

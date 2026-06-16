@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../ear_trainer/presentation/ear_trainer_home_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../main_menu/presentation/widgets/feature_card.dart';
 import '../../note_trainer/presentation/note_home_screen.dart';
@@ -57,6 +58,15 @@ class TrainingMenuScreen extends StatelessWidget {
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (_) => const HomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.hearing_rounded,
+                      label: l10n.menuEarTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const EarTrainerHomeScreen(),
                         ),
                       ),
                     ),

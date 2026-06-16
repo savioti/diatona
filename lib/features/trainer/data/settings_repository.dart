@@ -15,6 +15,10 @@ class SettingsRepository {
   static const _keyNoteInterval = 'pref_note_interval';
   static const _keyNoteLevel = 'pref_note_level';
   static const _keyNoteCumulative = 'pref_note_cumulative';
+  static const _keyEarLevel = 'pref_ear_level';
+  static const _keyEarDirection = 'pref_ear_direction';
+  static const _keyEarCustomMode = 'pref_ear_custom_mode';
+  static const _keyEarCustomPool = 'pref_ear_custom_pool';
 
   int loadLevel() => _prefs.getInt(_keyLevel) ?? 1;
   int loadInterval() => _prefs.getInt(_keyInterval) ?? 5;
@@ -37,4 +41,21 @@ class SettingsRepository {
   Future<void> saveNoteInterval(int interval) => _prefs.setInt(_keyNoteInterval, interval);
   Future<void> saveNoteLevel(int level) => _prefs.setInt(_keyNoteLevel, level);
   Future<void> saveNoteCumulative(bool v) => _prefs.setBool(_keyNoteCumulative, v);
+
+  int loadEarLevel() => _prefs.getInt(_keyEarLevel) ?? 1;
+  int loadEarDirection() => _prefs.getInt(_keyEarDirection) ?? 0;
+  bool loadEarCustomMode() => _prefs.getBool(_keyEarCustomMode) ?? false;
+  List<int> loadEarCustomPool() =>
+      (_prefs.getString(_keyEarCustomPool) ?? '')
+          .split(',')
+          .where((s) => s.isNotEmpty)
+          .map(int.tryParse)
+          .whereType<int>()
+          .toList();
+
+  Future<void> saveEarLevel(int level) => _prefs.setInt(_keyEarLevel, level);
+  Future<void> saveEarDirection(int index) => _prefs.setInt(_keyEarDirection, index);
+  Future<void> saveEarCustomMode(bool v) => _prefs.setBool(_keyEarCustomMode, v);
+  Future<void> saveEarCustomPool(List<int> indices) =>
+      _prefs.setString(_keyEarCustomPool, indices.join(','));
 }

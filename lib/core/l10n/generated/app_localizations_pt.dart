@@ -257,6 +257,72 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get languageSystem => 'Padrão do sistema';
+
+  @override
+  String get menuEarTrainer => 'Treinador de Ouvido';
+
+  @override
+  String get earTrainerDirection => 'Direção';
+
+  @override
+  String get earTrainerAscending => 'Ascendente';
+
+  @override
+  String get earTrainerDescending => 'Descendente';
+
+  @override
+  String get earTrainerHarmonic => 'Harmônico';
+
+  @override
+  String get earTrainerRandom => 'Aleatório';
+
+  @override
+  String get earTrainerCustom => 'Personalizado';
+
+  @override
+  String get earTrainerSelectAtLeastTwo => 'Selecione ao menos 2 intervalos';
+
+  @override
+  String get earTrainerWhatInterval => 'Que intervalo é esse?';
+
+  @override
+  String get earTrainerWrong => 'Errado!';
+
+  @override
+  String get intervalMinSecond => '2ª menor';
+
+  @override
+  String get intervalMajSecond => '2ª maior';
+
+  @override
+  String get intervalMinThird => '3ª menor';
+
+  @override
+  String get intervalMajThird => '3ª maior';
+
+  @override
+  String get intervalPerfectFourth => '4ª justa';
+
+  @override
+  String get intervalTritone => 'Trítono';
+
+  @override
+  String get intervalPerfectFifth => '5ª justa';
+
+  @override
+  String get intervalMinSixth => '6ª menor';
+
+  @override
+  String get intervalMajSixth => '6ª maior';
+
+  @override
+  String get intervalMinSeventh => '7ª menor';
+
+  @override
+  String get intervalMajSeventh => '7ª maior';
+
+  @override
+  String get intervalOctave => 'Oitava';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -512,4 +578,70 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get languageSystem => 'Padrão do sistema';
+
+  @override
+  String get menuEarTrainer => 'Treinador de Ouvido';
+
+  @override
+  String get earTrainerDirection => 'Direção';
+
+  @override
+  String get earTrainerAscending => 'Ascendente';
+
+  @override
+  String get earTrainerDescending => 'Descendente';
+
+  @override
+  String get earTrainerHarmonic => 'Harmônico';
+
+  @override
+  String get earTrainerRandom => 'Aleatório';
+
+  @override
+  String get earTrainerCustom => 'Personalizado';
+
+  @override
+  String get earTrainerSelectAtLeastTwo => 'Selecione ao menos 2 intervalos';
+
+  @override
+  String get earTrainerWhatInterval => 'Que intervalo é esse?';
+
+  @override
+  String get earTrainerWrong => 'Errado!';
+
+  @override
+  String get intervalMinSecond => '2ª menor';
+
+  @override
+  String get intervalMajSecond => '2ª maior';
+
+  @override
+  String get intervalMinThird => '3ª menor';
+
+  @override
+  String get intervalMajThird => '3ª maior';
+
+  @override
+  String get intervalPerfectFourth => '4ª justa';
+
+  @override
+  String get intervalTritone => 'Trítono';
+
+  @override
+  String get intervalPerfectFifth => '5ª justa';
+
+  @override
+  String get intervalMinSixth => '6ª menor';
+
+  @override
+  String get intervalMajSixth => '6ª maior';
+
+  @override
+  String get intervalMinSeventh => '7ª menor';
+
+  @override
+  String get intervalMajSeventh => '7ª maior';
+
+  @override
+  String get intervalOctave => 'Oitava';
 }

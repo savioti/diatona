@@ -257,4 +257,70 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get languageSystem => 'Idioma del sistema';
+
+  @override
+  String get menuEarTrainer => 'Entrenador de Oído';
+
+  @override
+  String get earTrainerDirection => 'Dirección';
+
+  @override
+  String get earTrainerAscending => 'Ascendente';
+
+  @override
+  String get earTrainerDescending => 'Descendente';
+
+  @override
+  String get earTrainerHarmonic => 'Armónico';
+
+  @override
+  String get earTrainerRandom => 'Aleatorio';
+
+  @override
+  String get earTrainerCustom => 'Personalizado';
+
+  @override
+  String get earTrainerSelectAtLeastTwo => 'Selecciona al menos 2 intervalos';
+
+  @override
+  String get earTrainerWhatInterval => '¿Qué intervalo es este?';
+
+  @override
+  String get earTrainerWrong => '¡Incorrecto!';
+
+  @override
+  String get intervalMinSecond => '2ª menor';
+
+  @override
+  String get intervalMajSecond => '2ª mayor';
+
+  @override
+  String get intervalMinThird => '3ª menor';
+
+  @override
+  String get intervalMajThird => '3ª mayor';
+
+  @override
+  String get intervalPerfectFourth => '4ª justa';
+
+  @override
+  String get intervalTritone => 'Trítono';
+
+  @override
+  String get intervalPerfectFifth => '5ª justa';
+
+  @override
+  String get intervalMinSixth => '6ª menor';
+
+  @override
+  String get intervalMajSixth => '6ª mayor';
+
+  @override
+  String get intervalMinSeventh => '7ª menor';
+
+  @override
+  String get intervalMajSeventh => '7ª mayor';
+
+  @override
+  String get intervalOctave => 'Octava';
 }
