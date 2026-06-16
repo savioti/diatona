@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/l10n/generated/app_localizations.dart';
+
 class IntervalSelector extends StatefulWidget {
   const IntervalSelector({
     super.key,
@@ -77,7 +79,7 @@ class _IntervalSelectorState extends State<IntervalSelector> {
         const SizedBox(width: 16),
         FilterChip(
           label: Text(
-            'No limit',
+            AppLocalizations.of(context).noTimeLimit,
             style: TextStyle(
               color: _noLimit ? colorScheme.onPrimary : colorScheme.onSurface,
             ),

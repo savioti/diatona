@@ -44,14 +44,9 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
 
   Future<void> start(int level, int timeLimitSeconds, {bool cumulative = true}) async {
     _cleanup();
-    await _audio.init();
     _pool = cumulative ? buildChordPool(level) : buildChordPoolSingle(level);
     _successCounts = {for (final c in _pool) c: 0};
     _advancing = false;
-
-    final pitchService = ref.read(_pitchServiceProvider);
-    await pitchService.start();
-    _pitchSub = pitchService.notes.listen(_onPitch);
 
     if (timeLimitSeconds == 0) {
       final chord = _pickNextChord(null);
@@ -71,6 +66,11 @@ class TrainingNotifier extends Notifier<TrainingSessionState> {
       );
       _getReadyTimer = Timer(const Duration(seconds: 2), _showFirstChord);
     }
+
+    await _audio.init();
+    final pitchService = ref.read(_pitchServiceProvider);
+    await pitchService.start();
+    _pitchSub = pitchService.notes.listen(_onPitch);
   }
 
   void _showFirstChord() {

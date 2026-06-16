@@ -23,7 +23,7 @@ const _qualityToType = <String, ChordType>{
 Map<ChordType, List<Chord>> chordData = {};
 
 Future<void> initChordData() async {
-  final raw = await rootBundle.loadString('database/chords.json');
+  final raw = await rootBundle.loadString('database/trainer/chords.json');
   final list = jsonDecode(raw) as List<dynamic>;
 
   final grouped = <ChordType, List<Chord>>{

@@ -1,0 +1,84 @@
+{
+  "references": [
+    {
+      "id": "ref-circle-of-fifths",
+      "type": "circle_of_fifths",
+      "title": "The Circle of Fifths",
+      "shortDescription": "Circular diagram organizing all 12 keys by sharps and flats.",
+      "howItWorks": "Moving clockwise, each step adds a sharp; moving counter-clockwise, each step adds a flat. The outer ring shows major keys, the middle ring shows their relative minor keys, and the innermost ring shows the number of sharps or flats. Keys that are adjacent on the circle share the most notes, making them harmonically related. The circle instantly shows key signatures, relative minor chords, and common modulation paths.",
+      "tags": ["keys", "harmony", "key-signatures", "theory"]
+    },
+    {
+      "id": "ref-harmony-map",
+      "type": "harmony_map",
+      "title": "Functional Harmony Map",
+      "shortDescription": "Roman numeral system for chord functions and transposable progressions.",
+      "howItWorks": "Instead of using specific chord names (C, G, Am), a numerical system (I, ii, iii, IV, V, vi, vii°) is used. Each number represents a chord's function within the key: Tonic (I, iii, vi — rest and stability), Subdominant (ii, IV — departure and tension building), and Dominant (V, vii° — strong tension demanding resolution). This allows you to analyze and transpose progressions to any key as if they were recipes.",
+      "tags": ["harmony", "chord-progressions", "roman-numerals", "theory"]
+    },
+    {
+      "id": "ref-caged-system",
+      "type": "caged_system",
+      "title": "The CAGED System",
+      "shortDescription": "Five open chord shapes connected across the entire guitar neck.",
+      "howItWorks": "The CAGED system is based on the idea that the 5 open chord shapes (C, A, G, E, D) can be moved and connected along the fretboard. The system maps the entire neck, showing every possible position for a single chord and how to link those positions to create solos and melodies. Each shape gets its name from the open chord it resembles, and they chain together continuously up the neck: C → A → G → E → D → C (repeat).",
+      "tags": ["guitar", "fretboard", "chords", "technique", "improvisation"]
+    },
+    {
+      "id": "ref-modes-chart",
+      "type": "modes_chart",
+      "title": "Parent Scale Chart for Modes",
+      "shortDescription": "Derive any mode from a major scale you already know.",
+      "howItWorks": "Instead of learning each mode (Dorian, Phrygian, etc.) as a new scale, you relate them to a major scale you already know. D Dorian, for example, consists of the exact same notes as the C Major scale, but starting and ending on the note D. Each mode is generated from a different degree of the major scale. This means that knowing one major scale gives you all 7 modes of that scale for free.",
+      "tags": ["modes", "scales", "theory", "dorian", "phrygian", "lydian"]
+    },
+    {
+      "id": "ref-scale-formula",
+      "type": "scale_formula",
+      "title": "Major Scale Intervallic Formula",
+      "shortDescription": "Build any major scale with the W-W-H-W-W-W-H step pattern.",
+      "howItWorks": "This is the recipe for building any major scale, defined by the sequence of whole steps (W = 2 semitones) and half steps (H = 1 semitone): W - W - H - W - W - W - H. By applying this formula starting from any root note, you construct the corresponding major scale without needing to memorize its notes individually. Pick a root, apply the formula, and the scale unfolds automatically.",
+      "tags": ["scales", "intervals", "theory", "major-scale", "formula"]
+    },
+    {
+      "id": "ref-minor-keys",
+      "type": "minor_keys",
+      "title": "The Two Rules for Minor Keys",
+      "shortDescription": "When and why to raise the 6th and 7th degrees in minor.",
+      "howItWorks": "The Natural Minor scale follows the key signature as-is. The first rule (Harmonic Minor) says to raise the 7th degree by a half step, creating a leading tone that resolves strongly to the tonic, and making the dominant chord a V7 that 'demands' resolution. The second rule (Melodic Minor) says to also raise the 6th degree when ascending, to avoid the awkward augmented 2nd interval that the harmonic minor creates between ♭6 and ♯7. These two raised notes explain why songs in minor keys often use notes outside the key signature.",
+      "tags": ["scales", "minor", "harmony", "theory", "harmonic", "melodic"]
+    },
+    {
+      "id": "ref-circle-of-fourths",
+      "type": "circle_of_fourths",
+      "title": "The Circle of Fourths",
+      "shortDescription": "The Circle of Fifths in reverse — the strongest chord movement map.",
+      "howItWorks": "This is the Circle of Fifths traversed counter-clockwise (C → F → B♭ → E♭…). It is the practical map for the strongest movement in chord progressions: a root descending a fifth (or equivalently, ascending a fourth). This motion, called the 'dominant movement', is heard in V→I cadences and ii→V→I jazz progressions. It is also the standard order for practicing scales, arpeggios, and licks in all 12 keys.",
+      "tags": ["keys", "harmony", "chord-progressions", "practice", "cadences"]
+    },
+    {
+      "id": "ref-chord-qualities",
+      "type": "chord_qualities",
+      "title": "Universal Chord Qualities",
+      "shortDescription": "Interval formulas for every chord quality — from triads to extensions.",
+      "howItWorks": "Instead of memorizing thousands of chords, you memorize their interval formulas relative to the major scale. A chord is always compared to the major scale starting on its root: major = 1 3 5, minor = 1 ♭3 5, dominant 7th = 1 3 5 ♭7, major 7th = 1 3 5 7, minor 7th = 1 ♭3 5 ♭7. Each extension (9, 11, 13) is the corresponding scale note moved up an octave (9 = 2, 11 = 4, 13 = 6). Alterations add ♭ or ♯ to any of these degrees.",
+      "tags": ["chords", "intervals", "theory", "extensions", "formulas"]
+    },
+    {
+      "id": "ref-rhythm-tree",
+      "type": "rhythm_tree",
+      "title": "The Rhythm Tree",
+      "shortDescription": "Visualize how time subdivides from whole notes to sixteenth notes.",
+      "howItWorks": "A diagram that visualizes the subdivision of time. A whole note fills an entire measure (4 beats). It divides into 2 half notes, which divide into 4 quarter notes (one per beat), then 8 eighth notes, then 16 sixteenth notes. The trick is to map each level to a counting syllable: quarter notes get '1 2 3 4', eighth notes add '&' (1-& 2-& 3-& 4-&), sixteenth notes add 'e' and 'a' (1-e-&-a 2-e-&-a). Transforming complex rhythms into simple syllable patterns makes them easy to internalize.",
+      "tags": ["rhythm", "notation", "time", "subdivisions", "counting"]
+    },
+    {
+      "id": "ref-pentatonic-boxes",
+      "type": "pentatonic_boxes",
+      "title": "Pentatonic Box Framework",
+      "shortDescription": "Five interlocking fretboard shapes for minor and major pentatonic.",
+      "howItWorks": "The pentatonic scale (5 notes) maps onto 5 'box' shapes or positions that interlock and cover the entire guitar neck. The ultimate shortcut is realizing the same 5 shapes work for both the minor pentatonic scale and its relative major pentatonic — the only thing that changes is which note you treat as the tonal center. So by learning 5 shapes once, you have access to pentatonic soloing in all 12 keys, in both major and minor contexts.",
+      "tags": ["guitar", "pentatonic", "scales", "improvisation", "fretboard"]
+    }
+  ]
+}

@@ -359,11 +359,11 @@ abstract class AppLocalizations {
   /// **'Coming Soon'**
   String get comingSoon;
 
-  /// No description provided for @noteTrainerClefLabel.
+  /// No description provided for @noteTrainerDisplayModeLabel.
   ///
   /// In en, this message translates to:
-  /// **'Clef'**
-  String get noteTrainerClefLabel;
+  /// **'Display Mode'**
+  String get noteTrainerDisplayModeLabel;
 
   /// No description provided for @noteLevelStandard.
   ///
@@ -401,6 +401,12 @@ abstract class AppLocalizations {
   /// **'Bass Clef'**
   String get displayModeBassClef;
 
+  /// No description provided for @displayModeLetterNames.
+  ///
+  /// In en, this message translates to:
+  /// **'Letter Names'**
+  String get displayModeLetterNames;
+
   /// No description provided for @displayModeGuitar.
   ///
   /// In en, this message translates to:
@@ -412,6 +418,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ukulele'**
   String get displayModeUkulele;
+
+  /// No description provided for @refLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load references: {error}'**
+  String refLoadError(String error);
+
+  /// No description provided for @refHowItWorksTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get refHowItWorksTooltip;
+
+  /// No description provided for @refTapKeyToExplore.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a key to explore'**
+  String get refTapKeyToExplore;
+
+  /// No description provided for @refAscendingFifths.
+  ///
+  /// In en, this message translates to:
+  /// **'Ascending 5ths (clockwise) →'**
+  String get refAscendingFifths;
+
+  /// No description provided for @refAscendingFourths.
+  ///
+  /// In en, this message translates to:
+  /// **'← Ascending 4ths (counter-clockwise)'**
+  String get refAscendingFourths;
+
+  /// No description provided for @refNoAccidentals.
+  ///
+  /// In en, this message translates to:
+  /// **'No accidentals'**
+  String get refNoAccidentals;
+
+  /// No description provided for @refKeySignature.
+  ///
+  /// In en, this message translates to:
+  /// **'Key signature'**
+  String get refKeySignature;
+
+  /// No description provided for @refDiatonicChords.
+  ///
+  /// In en, this message translates to:
+  /// **'Diatonic chords'**
+  String get refDiatonicChords;
+
+  /// No description provided for @refTapChordFunction.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a chord to see its function'**
+  String get refTapChordFunction;
+
+  /// No description provided for @refTapLevelExpand.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a level to expand subdivisions'**
+  String get refTapLevelExpand;
+
+  /// No description provided for @refWholeStepLegend.
+  ///
+  /// In en, this message translates to:
+  /// **'W = whole step (2 frets)'**
+  String get refWholeStepLegend;
+
+  /// No description provided for @refHalfStepLegend.
+  ///
+  /// In en, this message translates to:
+  /// **'H = half step (1 fret)'**
+  String get refHalfStepLegend;
+
+  /// No description provided for @refMinorNatural.
+  ///
+  /// In en, this message translates to:
+  /// **'Natural'**
+  String get refMinorNatural;
+
+  /// No description provided for @refMinorHarmonic.
+  ///
+  /// In en, this message translates to:
+  /// **'Harmonic'**
+  String get refMinorHarmonic;
+
+  /// No description provided for @refMinorMelodic.
+  ///
+  /// In en, this message translates to:
+  /// **'Melodic'**
+  String get refMinorMelodic;
+
+  /// No description provided for @refScaleNotesFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Scale notes (from {note}, using {parentKey}):'**
+  String refScaleNotesFrom(String note, String parentKey);
+
+  /// No description provided for @refModeFormula.
+  ///
+  /// In en, this message translates to:
+  /// **'Formula'**
+  String get refModeFormula;
+
+  /// No description provided for @refModeCharacteristic.
+  ///
+  /// In en, this message translates to:
+  /// **'Characteristic'**
+  String get refModeCharacteristic;
+
+  /// No description provided for @refModeMood.
+  ///
+  /// In en, this message translates to:
+  /// **'Mood'**
+  String get refModeMood;
+
+  /// No description provided for @refPentatonicLegend.
+  ///
+  /// In en, this message translates to:
+  /// **'● = note  ⊙ = root  Tap boxes above to toggle'**
+  String get refPentatonicLegend;
+
+  /// No description provided for @refFnTonic.
+  ///
+  /// In en, this message translates to:
+  /// **'Tonic'**
+  String get refFnTonic;
+
+  /// No description provided for @refFnSubdominant.
+  ///
+  /// In en, this message translates to:
+  /// **'Subdom.'**
+  String get refFnSubdominant;
+
+  /// No description provided for @refFnDominant.
+  ///
+  /// In en, this message translates to:
+  /// **'Dom.'**
+  String get refFnDominant;
 }
 
 class _AppLocalizationsDelegate

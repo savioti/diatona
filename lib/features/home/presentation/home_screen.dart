@@ -28,18 +28,20 @@ class HomeScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      l10n.homeTitle,
-                      style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                        fontSize: 32,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                    ),
-                  ),
-                ],
+              IconButton(
+                icon: const Icon(Icons.chevron_left_rounded),
+                iconSize: 28,
+                onPressed: () => Navigator.of(context).pop(),
+                padding: EdgeInsets.zero,
+                alignment: Alignment.centerLeft,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                l10n.homeTitle,
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                  fontSize: 32,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
               ),
               const SizedBox(height: 48),
               Text(l10n.level, style: Theme.of(context).textTheme.titleLarge),

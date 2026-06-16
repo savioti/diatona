@@ -93,9 +93,11 @@ class _NoteTrainingScreenState extends ConsumerState<NoteTrainingScreen>
     final levelLabel = session.level == 1
         ? l10n.noteLevelStandard
         : l10n.noteLevelAccidentals;
-    final clefLabel = session.clef == NoteClef.trebleClef
-        ? l10n.displayModeTrebleClef
-        : l10n.displayModeBassClef;
+    final clefLabel = switch (session.clef) {
+      NoteClef.trebleClef => l10n.displayModeTrebleClef,
+      NoteClef.bassClef => l10n.displayModeBassClef,
+      NoteClef.letterNames => l10n.displayModeLetterNames,
+    };
 
     return PopScope(
       onPopInvokedWithResult: (didPop, _) {

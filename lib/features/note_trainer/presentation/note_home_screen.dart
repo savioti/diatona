@@ -27,6 +27,14 @@ class NoteHomeScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              IconButton(
+                icon: const Icon(Icons.chevron_left_rounded),
+                iconSize: 28,
+                onPressed: () => Navigator.of(context).pop(),
+                padding: EdgeInsets.zero,
+                alignment: Alignment.centerLeft,
+              ),
+              const SizedBox(height: 8),
               Text(
                 l10n.menuNoteTrainer,
                 style: Theme.of(context).textTheme.displayLarge?.copyWith(
@@ -91,7 +99,7 @@ class NoteHomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 24),
               Text(
-                l10n.noteTrainerClefLabel,
+                l10n.noteTrainerDisplayModeLabel,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: 12),
@@ -197,6 +205,7 @@ class _ClefSelector extends StatelessWidget {
     String label(NoteClef c) => switch (c) {
           NoteClef.trebleClef => l10n.displayModeTrebleClef,
           NoteClef.bassClef => l10n.displayModeBassClef,
+          NoteClef.letterNames => l10n.displayModeLetterNames,
         };
 
     return Wrap(

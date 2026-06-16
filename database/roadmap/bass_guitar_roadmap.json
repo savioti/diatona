@@ -1,0 +1,2943 @@
+{
+    "id": "rm-bss",
+    "title": "Electric Bass Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn electric bass from absolute beginner to advanced.",
+    "longDescription": "This roadmap covers everything specific to electric bass: the dual rhythmic-harmonic role of bass, fingerstyle technique (the most common), slap and pop (the iconic funk technique), pick playing, walking bass lines (the heart of jazz bass), and locking with the drummer (the most important skill of all). It covers reading bass clef (unique among electric instruments), scales and arpeggios, the building blocks of bass lines (root-fifth, octaves, arpeggios, approach notes), and deep dives into rock, blues, jazz, funk, Brazilian, metal, and fusion bass. Free resources draw on StudyBass.com, which has stable URLs going back over 15 years.",
+    "sections": [
+        {
+            "id": "bss-sctn-001",
+            "roadmapId": "rm-bss",
+            "title": "Getting Started",
+            "shortDescription": "Anatomy, posture, tuning, and understanding the bass's role.",
+            "longDescription": "Before any notes are played, the physical and conceptual foundations matter: knowing your instrument, sitting/standing correctly, tuning, and understanding what the bass actually does in music. The bass's dual rhythmic-harmonic role shapes everything that follows.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "bss-sctn-002",
+                "bss-sctn-003",
+                "bss-sctn-004",
+                "bss-sctn-013"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-001",
+                    "sectionId": "bss-sctn-001",
+                    "roadmapId": "rm-bss",
+                    "title": "Parts of the Bass Guitar",
+                    "shortDescription": "Anatomy of the electric bass: body, neck, pickups, controls, hardware.",
+                    "longDescription": "An electric bass has the same general layout as an electric guitar but with four (sometimes five or six) strings, a longer scale length (typically 34 inches), and pickups optimized for the lower frequencies. Common pickup configurations include P-style (Precision, split-coil) and J-style (Jazz, single-coil), each with its own tonal character.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name all major parts of the electric bass",
+                        "Distinguish 4-string, 5-string, and 6-string basses by string count",
+                        "Understand the difference between P-style and J-style pickups by sound and look"
+                    ],
+                    "commonMistakes": [
+                        "Confusing scale length (string length) with neck size",
+                        "Treating bass as 'just a thicker guitar' — bass has its own technique, role, and approach"
+                    ],
+                    "practiceTips": [
+                        "Get familiar with your specific bass's controls — passive vs active electronics behave quite differently"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "bss-assess-001",
+                            "type": "quiz",
+                            "title": "Parts of the Bass Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "bss-qstn-001",
+                                    "questionText": "A standard electric bass has how many strings?",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-001",
+                                            "optionText": "3"
+                                        },
+                                        {
+                                            "id": "bss-opt-002",
+                                            "optionText": "4"
+                                        },
+                                        {
+                                            "id": "bss-opt-003",
+                                            "optionText": "5"
+                                        },
+                                        {
+                                            "id": "bss-opt-004",
+                                            "optionText": "6"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-002"
+                                    ],
+                                    "explanation": "The standard electric bass has 4 strings, though 5-string and 6-string basses are also common (especially in modern rock, metal, and fusion)."
+                                },
+                                {
+                                    "id": "bss-qstn-002",
+                                    "questionText": "Compared to a guitar, a typical bass has:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-005",
+                                            "optionText": "The same scale length"
+                                        },
+                                        {
+                                            "id": "bss-opt-006",
+                                            "optionText": "A shorter scale length"
+                                        },
+                                        {
+                                            "id": "bss-opt-007",
+                                            "optionText": "A longer scale length (typically 34 inches)"
+                                        },
+                                        {
+                                            "id": "bss-opt-008",
+                                            "optionText": "No frets"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-007"
+                                    ],
+                                    "explanation": "Bass scale length is typically 34 inches (long-scale), compared to roughly 25.5 inches on most guitars. Short-scale basses (30-32 inches) and extra-long-scale (35-36 inches) exist but are less common."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bss-tpc-002",
+                    "sectionId": "bss-sctn-001",
+                    "roadmapId": "rm-bss",
+                    "title": "Posture and Holding the Bass",
+                    "shortDescription": "Sitting and standing positions, plus strap height.",
+                    "longDescription": "Bass is most commonly played standing with a strap, though sitting is fine for practice. Strap height matters significantly: too low pushes the wrist into awkward angles; too high cramps the picking arm. The bass should sit at roughly the same height seated and standing so your technique stays consistent.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Stand with the bass at a comfortable height (typically belly-button area)",
+                        "Sit with the bass stable on your leg, not slipping",
+                        "Keep both wrists relatively straight in either position"
+                    ],
+                    "commonMistakes": [
+                        "Wearing the bass too low (looks cool but causes wrist strain)",
+                        "Adjusting strap height drastically between seated and standing — keeps your technique inconsistent"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-003",
+                    "sectionId": "bss-sctn-001",
+                    "roadmapId": "rm-bss",
+                    "title": "Tuning the Bass",
+                    "shortDescription": "Standard tuning (E-A-D-G), plus 5-string (B-E-A-D-G) and drop tunings.",
+                    "longDescription": "Standard 4-string bass tuning is E-A-D-G from lowest to highest — the same notes as the four lowest guitar strings, but sounding one octave lower. 5-string basses add a low B string. Drop tunings (Drop D, Drop C) lower the lowest string for heavier sounds, common in metal and modern rock.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tune to standard E-A-D-G using a tuner",
+                        "Tune relatively by matching the 5th fret of one string to the open string above",
+                        "Understand 5-string tuning (B-E-A-D-G)"
+                    ],
+                    "commonMistakes": [
+                        "Tuning down past the target pitch — always come up to pitch for stable tuning"
+                    ],
+                    "practiceTips": [
+                        "A clip-on tuner works fine through the headstock vibration even when the amp is off"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "tuning"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "bss-assess-002",
+                            "type": "quiz",
+                            "title": "Tuning Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "bss-qstn-003",
+                                    "questionText": "Standard 4-string bass tuning, from lowest to highest, is:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-009",
+                                            "optionText": "E-A-D-G"
+                                        },
+                                        {
+                                            "id": "bss-opt-010",
+                                            "optionText": "B-E-A-D"
+                                        },
+                                        {
+                                            "id": "bss-opt-011",
+                                            "optionText": "G-D-A-E"
+                                        },
+                                        {
+                                            "id": "bss-opt-012",
+                                            "optionText": "E-B-G-D"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-009"
+                                    ],
+                                    "explanation": "Standard 4-string bass is tuned E-A-D-G, the same letter names as the four lowest guitar strings but sounding an octave lower."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bss-tpc-004",
+                    "sectionId": "bss-sctn-001",
+                    "roadmapId": "rm-bss",
+                    "title": "The Role of the Bass in a Band",
+                    "shortDescription": "The bridge between rhythm and harmony.",
+                    "longDescription": "The bass sits at the intersection of rhythm and harmony. Rhythmically, it locks tightly with the drums (especially the kick drum). Harmonically, it provides the root notes that anchor each chord — it's literally the bottom of the harmony. Understanding this dual role shapes everything you'll learn about bass playing.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Understand the bass's rhythmic role with the drummer",
+                        "Understand the bass's harmonic role as the foundation of chord progressions",
+                        "Recognize that bass playing serves the song, not the bassist's ego"
+                    ],
+                    "commonMistakes": [
+                        "Treating bass as a soloing instrument first and a supportive instrument second — the order should usually be reversed"
+                    ],
+                    "practiceTips": [
+                        "Listen to bassists in your favorite music. Notice how they lock with the drummer and outline the harmony."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "musicality"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-002",
+            "roadmapId": "rm-bss",
+            "title": "Right Hand Fingerstyle Technique",
+            "shortDescription": "Thumb anchor/floating, index-middle alternation, tone production, and muting.",
+            "longDescription": "Fingerstyle is the most common bass technique. This section covers the right-hand foundations: thumb placement (anchor vs floating), strict index-middle alternation, tone production through proper plucking, and right-hand muting.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-001"
+            ],
+            "unlocks": [
+                "bss-sctn-005",
+                "bss-sctn-008",
+                "bss-sctn-009"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 8,
+                "max": 20,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "fingerstyle",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-005",
+                    "sectionId": "bss-sctn-002",
+                    "roadmapId": "rm-bss",
+                    "title": "Thumb Anchor and Floating Thumb",
+                    "shortDescription": "Two approaches to right-hand thumb placement.",
+                    "longDescription": "The thumb anchor rests the right-hand thumb on the pickup (or a specific string), giving a stable reference for the plucking fingers. The floating thumb moves dynamically: it rests on a lower string to mute it as you play higher strings. Both have their uses; many players use a hybrid approach.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use the thumb anchor technique on the pickup",
+                        "Apply floating thumb to mute lower strings when playing higher ones",
+                        "Switch between approaches based on what you're playing"
+                    ],
+                    "commonMistakes": [
+                        "Letting unused strings ring (especially under distortion or in a band context)",
+                        "Tensing the thumb against the pickup"
+                    ],
+                    "practiceTips": [
+                        "Floating thumb is the modern standard for clean 5- and 6-string playing — develop it from the start if possible"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-001",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/right-hand-technique/floating-thumb/",
+                            "title": "Floating Thumb (StudyBass, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-006",
+                    "sectionId": "bss-sctn-002",
+                    "roadmapId": "rm-bss",
+                    "title": "Index and Middle Finger Alternation",
+                    "shortDescription": "The foundation of fingerstyle bass: strictly alternating i-m-i-m.",
+                    "longDescription": "Most fingerstyle bass uses strict alternation between the index (i) and middle (m) fingers. This is the bass equivalent of alternate picking on guitar: it lets you play steady streams of notes at speed without one finger getting overworked.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pluck strict i-m-i-m alternation",
+                        "Maintain even volume between fingers",
+                        "Apply to scales, exercises, and bass lines"
+                    ],
+                    "commonMistakes": [
+                        "Reverting to the dominant finger when something gets hard — strict alternation must become automatic",
+                        "Loud index, weak middle (or vice versa)"
+                    ],
+                    "practiceTips": [
+                        "Practice all scales and exercises with strict alternation, even when it feels awkward"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-002",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/right-hand-technique/two-finger-alternation/",
+                            "title": "Two-Finger Alternation (StudyBass, free)",
+                            "durationInMinutes": 10,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "fingerstyle",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "bss-assess-003",
+                            "type": "quiz",
+                            "title": "Fingerstyle Alternation Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "bss-qstn-004",
+                                    "questionText": "Strict alternation in fingerstyle bass means:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-013",
+                                            "optionText": "Using only the index finger"
+                                        },
+                                        {
+                                            "id": "bss-opt-014",
+                                            "optionText": "Using only the middle finger"
+                                        },
+                                        {
+                                            "id": "bss-opt-015",
+                                            "optionText": "Alternating index and middle strictly (i-m-i-m)"
+                                        },
+                                        {
+                                            "id": "bss-opt-016",
+                                            "optionText": "Whatever feels natural"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-015"
+                                    ],
+                                    "explanation": "Strict alternation uses index and middle fingers in strict succession (i-m-i-m), regardless of which string the next note is on. This builds even tone and speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bss-tpc-007",
+                    "sectionId": "bss-sctn-002",
+                    "roadmapId": "rm-bss",
+                    "title": "Tone Production",
+                    "shortDescription": "Plucking technique that produces full, clear bass tone.",
+                    "longDescription": "Bass tone comes from the angle and depth of the plucking finger. Pluck through the string (not on top of it), with the finger landing on the next lower string (similar to rest-stroke on classical guitar) for a fuller tone. Striking position along the string (closer to the bridge = brighter, closer to the neck = warmer) also significantly shapes tone.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pluck through the string with the finger landing on the next string",
+                        "Vary plucking position for tonal variety (bridge vs neck)",
+                        "Produce a consistent, strong tone"
+                    ],
+                    "commonMistakes": [
+                        "Plucking only the top of the string ('flicking') — produces a thin, twangy tone",
+                        "Excessive pluck force causing fret buzz or string clatter"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "tone"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-008",
+                    "sectionId": "bss-sctn-002",
+                    "roadmapId": "rm-bss",
+                    "title": "Right Hand Muting",
+                    "shortDescription": "Use the right hand to silence strings that should not ring.",
+                    "longDescription": "Bass strings ring loudly when struck, and unmuted strings create noise especially with distortion or compression. The right-hand thumb (floating-thumb style) or palm mutes lower strings as you play higher ones. Without good muting, bass lines sound muddy.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Mute lower strings while playing higher ones using the floating thumb",
+                        "Use the palm to mute when needed for clean lines",
+                        "Recognize when strings are bleeding unintentionally"
+                    ],
+                    "commonMistakes": [
+                        "Ignoring string noise — train your ear to hear unintended bleed early"
+                    ],
+                    "practiceTips": [
+                        "Record yourself frequently — string bleed shows up clearly on recordings"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "muting"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-003",
+            "roadmapId": "rm-bss",
+            "title": "Left Hand Fundamentals",
+            "shortDescription": "Fretting technique, one-finger-per-fret, muting, and slurs.",
+            "longDescription": "The left hand frets notes — but also mutes strings. This section covers proper fretting (minimum pressure, finger position), the one-finger-per-fret position system, left-hand muting (essential for clean bass tone), and the slur techniques (hammer-ons, pull-offs, slides).",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-001"
+            ],
+            "unlocks": [
+                "bss-sctn-005",
+                "bss-sctn-006"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 6,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "left-hand",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-009",
+                    "sectionId": "bss-sctn-003",
+                    "roadmapId": "rm-bss",
+                    "title": "Fretting Technique",
+                    "shortDescription": "Press strings cleanly with minimal force.",
+                    "longDescription": "Good fretting technique presses the string just behind the fret (not on top), using the fingertip, with the thumb on the back of the neck for leverage. Excessive pressure causes pain, fatigue, and intonation problems. Press only as hard as needed for a clear note.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Press strings just behind the fret",
+                        "Use minimum pressure for clean tone",
+                        "Keep the thumb on the back of the neck (not wrapped around)"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard (causes finger pain, tunes the note sharp, and limits speed)",
+                        "Pressing in the middle of the fret space (causes buzz)"
+                    ],
+                    "practiceTips": [
+                        "Test the minimum pressure: gradually reduce pressure on a fretted note until it just barely buzzes, then back off slightly"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "left-hand",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-010",
+                    "sectionId": "bss-sctn-003",
+                    "roadmapId": "rm-bss",
+                    "title": "One-Finger-Per-Fret Technique",
+                    "shortDescription": "Assign one finger to each fret within a 4-fret span.",
+                    "longDescription": "The one-finger-per-fret system places fingers 1-4 over four consecutive frets, ready to fret any of them without shifting. This is the most efficient way to play scales and lines within a position. Hand position matters: keep the wrist neutral and the fingers curved naturally over the strings.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Place fingers 1-4 over four consecutive frets",
+                        "Play scales using one-finger-per-fret without shifting",
+                        "Maintain proper hand position throughout"
+                    ],
+                    "commonMistakes": [
+                        "Reaching across frets with the same finger (eats up time and creates inconsistent tone)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "left-hand",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-011",
+                    "sectionId": "bss-sctn-003",
+                    "roadmapId": "rm-bss",
+                    "title": "Left Hand Muting",
+                    "shortDescription": "The left hand mutes strings as much as it frets them.",
+                    "longDescription": "Bass left-hand technique is as much about muting as fretting. The fingers that aren't actively pressing a note should be lightly touching nearby strings to keep them silent. This is essential — especially with distortion, compression, or when transitioning between strings.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Lightly mute adjacent strings with idle fingers",
+                        "Avoid open string bleed when changing positions",
+                        "Keep playing clean even at high gain or volume"
+                    ],
+                    "commonMistakes": [
+                        "Lifting fingers completely off the strings when not fretting (causes unwanted ringing)"
+                    ],
+                    "practiceTips": [
+                        "Plug into a distorted amp and play scales — distortion exposes muting problems immediately"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "left-hand",
+                        "muting"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-012",
+                    "sectionId": "bss-sctn-003",
+                    "roadmapId": "rm-bss",
+                    "title": "Hammer-Ons, Pull-Offs, and Slides",
+                    "shortDescription": "Sound notes without re-plucking them with the right hand.",
+                    "longDescription": "Hammer-ons hammer a fretting finger down to sound a higher note; pull-offs flick the finger off to sound a lower note. Slides move the fretting finger along the string while maintaining contact. All three add expression and reduce reliance on the right hand for note production.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean hammer-ons and pull-offs",
+                        "Slide between notes while maintaining tone",
+                        "Apply slurs to bass lines and fills"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "left-hand",
+                        "expression"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-004",
+            "roadmapId": "rm-bss",
+            "title": "Reading and Counting",
+            "shortDescription": "Bass clef, TAB, chord symbols, and rhythmic counting.",
+            "longDescription": "Reading is essential for bassists — especially bass clef (unique among electric instruments) and chord symbols (the most common working format). This section covers all reading formats plus rhythmic counting.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-001"
+            ],
+            "unlocks": [
+                "bss-sctn-005"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 8,
+                "max": 20,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-013",
+                    "sectionId": "bss-sctn-004",
+                    "roadmapId": "rm-bss",
+                    "title": "Reading the Bass Clef",
+                    "shortDescription": "Unlike guitar, bass is notated in bass clef (the F clef).",
+                    "longDescription": "Bass guitar music is written in bass clef, sounding an octave below written (similar to how guitar is in treble clef but sounds an octave below written). The bass clef has its own line and space names: lines from bottom to top are G-B-D-F-A; spaces are A-C-E-G. Learning to read bass clef opens method books, charts, and orchestral repertoire.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify all line and space notes in bass clef",
+                        "Understand that bass guitar sounds an octave below written pitch",
+                        "Read simple bass lines from standard notation"
+                    ],
+                    "commonMistakes": [
+                        "Skipping bass clef and relying only on TAB — limits the music you can access",
+                        "Confusing bass clef with treble clef (the line and space notes are completely different)"
+                    ],
+                    "practiceTips": [
+                        "Use a mnemonic for bass clef lines: 'Good Boys Do Fine Always' (G-B-D-F-A)",
+                        "Quiz yourself daily on note identification — fluency takes weeks"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-003",
+                            "type": "article",
+                            "url": "https://www.musictheory.net/lessons/10",
+                            "title": "The Staff, Clefs, and Ledger Lines (musictheory.net)",
+                            "durationInMinutes": 5,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "bss-assess-004",
+                            "type": "quiz",
+                            "title": "Bass Clef Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "bss-qstn-005",
+                                    "questionText": "Bass guitar music is typically notated in:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-017",
+                                            "optionText": "Treble clef"
+                                        },
+                                        {
+                                            "id": "bss-opt-018",
+                                            "optionText": "Bass clef"
+                                        },
+                                        {
+                                            "id": "bss-opt-019",
+                                            "optionText": "Alto clef"
+                                        },
+                                        {
+                                            "id": "bss-opt-020",
+                                            "optionText": "Tenor clef"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-018"
+                                    ],
+                                    "explanation": "Bass guitar is written in bass clef (the F clef), unlike guitar which uses treble clef. Both bass and guitar sound an octave below their written pitch."
+                                },
+                                {
+                                    "id": "bss-qstn-006",
+                                    "questionText": "The lines of the bass clef staff, from bottom to top, are:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-021",
+                                            "optionText": "E-G-B-D-F"
+                                        },
+                                        {
+                                            "id": "bss-opt-022",
+                                            "optionText": "G-B-D-F-A"
+                                        },
+                                        {
+                                            "id": "bss-opt-023",
+                                            "optionText": "F-A-C-E-G"
+                                        },
+                                        {
+                                            "id": "bss-opt-024",
+                                            "optionText": "A-C-E-G-B"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-022"
+                                    ],
+                                    "explanation": "Bass clef lines from bottom to top: G-B-D-F-A. A common mnemonic is 'Good Boys Do Fine Always.'"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bss-tpc-014",
+                    "sectionId": "bss-sctn-004",
+                    "roadmapId": "rm-bss",
+                    "title": "Reading TAB",
+                    "shortDescription": "Bass tablature works the same way as guitar TAB but with four lines.",
+                    "longDescription": "Bass TAB shows four horizontal lines representing the four strings (top = G, bottom = E). Numbers indicate fret position. TAB shows pitch but typically not rhythm, so combining TAB with standard notation gives the most complete picture.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read bass TAB fluently",
+                        "Recognize TAB symbols for hammer-ons, pull-offs, slides",
+                        "Combine TAB with standard notation when both are provided"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "tab",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-015",
+                    "sectionId": "bss-sctn-004",
+                    "roadmapId": "rm-bss",
+                    "title": "Chord Symbols and Lead Sheets",
+                    "shortDescription": "Bassists most often read from chord charts rather than full notation.",
+                    "longDescription": "Most working bass situations involve reading chord symbols ('Cmaj7', 'Am7', 'G7', etc.) and constructing a bass line that fits. Understanding chord symbols and what notes belong to each chord is more important for working bassists than reading every bass note from the page.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read common chord symbols fluently",
+                        "Identify the root, third, fifth, and seventh of each chord",
+                        "Construct a basic bass line from chord symbols"
+                    ],
+                    "commonMistakes": [
+                        "Playing only the root note throughout — boring and unmusical",
+                        "Trying to play every note of the chord — that's the chord player's job, not the bassist's"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "harmony",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-016",
+                    "sectionId": "bss-sctn-004",
+                    "roadmapId": "rm-bss",
+                    "title": "Counting Rhythm",
+                    "shortDescription": "Steady pulse, subdivision, and counting at the bass.",
+                    "longDescription": "Bassists lock with the drummer, so rhythmic accuracy is non-negotiable. Practice counting subdivisions (eighth notes, sixteenth notes, triplets) aloud while playing, always with a metronome. Bass that drifts in tempo destabilizes the entire band.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count subdivisions aloud while playing",
+                        "Use a metronome consistently",
+                        "Maintain steady tempo through chord and rhythm changes"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the metronome — bass time problems sink the entire band",
+                        "Counting only at slow tempo — keep counting as tempo increases"
+                    ],
+                    "practiceTips": [
+                        "Try practicing with a drum loop instead of just a metronome — closer to real performance conditions"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-005",
+            "roadmapId": "rm-bss",
+            "title": "First Bass Lines",
+            "shortDescription": "Notes on the strings, octaves, root playing, and locking with drums.",
+            "longDescription": "This section transitions from technique to actually playing music. Learn the notes on each string, master the octave shape, play simple bass lines using root notes, and develop the all-important skill of locking rhythmically with a drummer.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-002",
+                "bss-sctn-003",
+                "bss-sctn-004"
+            ],
+            "unlocks": [
+                "bss-sctn-006",
+                "bss-sctn-007",
+                "bss-sctn-015"
+            ],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 15,
+                "max": 40,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "groove",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-017",
+                    "sectionId": "bss-sctn-005",
+                    "roadmapId": "rm-bss",
+                    "title": "Notes on the Bass",
+                    "shortDescription": "Learn the natural notes on each string.",
+                    "longDescription": "Knowing every note on the bass is essential for moving past TAB-dependent playing. Focus on the E and A strings first (most root notes for bass lines), then extend to D and G. Memorize one string per week — full fretboard fluency takes a few months but is transformative.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-003"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify any natural note on the E and A strings within 2 seconds",
+                        "Extend to all four strings",
+                        "Use the knowledge to find roots for chord symbols quickly"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Drill one string daily for a week, then rotate"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-018",
+                    "sectionId": "bss-sctn-005",
+                    "roadmapId": "rm-bss",
+                    "title": "Octaves on the Bass",
+                    "shortDescription": "Find the same note an octave higher using consistent shapes.",
+                    "longDescription": "The octave shape on bass is 'two strings up, two frets up' — a powerful shape used constantly in bass lines (disco bass is built on it). Knowing this shape lets you find any note's octave instantly and unlocks octave-based playing across the neck.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply the 'two strings up, two frets up' octave shape",
+                        "Use octaves in bass lines (e.g., classic disco octave patterns)",
+                        "Find any note's octave instantly across the neck"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "patterns"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-019",
+                    "sectionId": "bss-sctn-005",
+                    "roadmapId": "rm-bss",
+                    "title": "Root Note Playing",
+                    "shortDescription": "Play the root note of each chord, locked to the drummer.",
+                    "longDescription": "Root note playing is the simplest and most important bass technique. When a chord changes, you play its root note. When the chord is C, you play C; when it's G, you play G. This is foundational, sounds great, and locks tight with drums. Most beginning bass parts are mostly root notes.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-017",
+                        "bss-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play through a chord progression hitting only roots, in time with a metronome or drum loop",
+                        "Choose appropriate octaves for the root (typically low — that's why it's called bass)",
+                        "Lock rhythmically with the drum part"
+                    ],
+                    "commonMistakes": [
+                        "Trying to play 'busy' bass before mastering root playing — fancy lines on shaky roots sound worse than steady roots"
+                    ],
+                    "practiceTips": [
+                        "Listen to John Paul Jones (Led Zeppelin) for textbook root note playing that's deeply musical"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "harmony",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-020",
+                    "sectionId": "bss-sctn-005",
+                    "roadmapId": "rm-bss",
+                    "title": "Locking with the Drummer",
+                    "shortDescription": "Bass and drums together form the rhythm section — the band's engine.",
+                    "longDescription": "The single most important bass skill is locking rhythmically with the drummer, especially the kick drum. Where the drummer puts the kick is where you usually want to put the bass note. Listen, breathe with the drummer, feel the same pocket.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Match bass note placement to kick drum placement",
+                        "Play in 'the pocket' with a drum track",
+                        "Lock with a live drummer for at least 15 minutes at a time"
+                    ],
+                    "commonMistakes": [
+                        "Practicing only alone without a drummer or drum loop — you'll never develop pocket without rhythmic partners"
+                    ],
+                    "practiceTips": [
+                        "Practice with drum loops or drum tracks daily — 15 minutes daily beats 2 hours weekly",
+                        "Slow down to lock — speed and lock are independent skills; nail the lock first"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "groove",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-006",
+            "roadmapId": "rm-bss",
+            "title": "Scales and Arpeggios",
+            "shortDescription": "Major, minor, pentatonic scales, triad arpeggios, and position playing.",
+            "longDescription": "Scales and arpeggios are the building blocks of bass lines. This section covers the major scale, the three forms of minor, the pentatonic scales (essential for rock and blues), triad arpeggios, and the position playing concept that organizes the fretboard.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-003",
+                "bss-sctn-005"
+            ],
+            "unlocks": [
+                "bss-sctn-007",
+                "bss-sctn-012"
+            ],
+            "difficulty": "intermediate",
+            "order": 6,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "scales",
+                "arpeggios",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-021",
+                    "sectionId": "bss-sctn-006",
+                    "roadmapId": "rm-bss",
+                    "title": "The Major Scale",
+                    "shortDescription": "Build major scales in one position using one-finger-per-fret.",
+                    "longDescription": "The major scale fingering on bass uses one position spanning 4 frets across 3-4 strings. The pattern is transferable — once you know it, you can play any major scale by starting on any root. Practice in all 12 keys.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-010"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the major scale in one position from any root",
+                        "Apply to common keys (C, G, D, F, etc.)",
+                        "Recognize scale degrees (1, 2, 3, 4, 5, 6, 7) within the pattern"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Sing scale degrees aloud while playing — '1, 2, 3, 4...' or solfège",
+                        "Use a metronome — even single-position scales need rhythmic precision"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-004",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/major-scale/major-scale-bass-pattern/",
+                            "title": "Major Scale Pattern (StudyBass, free)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "scales",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-022",
+                    "sectionId": "bss-sctn-006",
+                    "roadmapId": "rm-bss",
+                    "title": "Minor Scales",
+                    "shortDescription": "Natural, harmonic, and melodic minor scale fingerings.",
+                    "longDescription": "Natural minor uses the same notes as its relative major but starts on the 6th scale degree. Harmonic minor raises the 7th. Melodic minor raises the 6th and 7th. All three appear in different musical contexts and have their own fingerings on bass.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play natural minor scales in one position",
+                        "Apply harmonic and melodic minor as needed",
+                        "Distinguish them aurally"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "minor",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-023",
+                    "sectionId": "bss-sctn-006",
+                    "roadmapId": "rm-bss",
+                    "title": "Pentatonic Scales",
+                    "shortDescription": "Minor and major pentatonic — five-note scales used in rock, blues, funk.",
+                    "longDescription": "Pentatonic scales (5 notes per octave) are the workhorses of rock, blues, country, and funk bass. The minor pentatonic (1, b3, 4, 5, b7) is the most common. The major pentatonic uses 1, 2, 3, 5, 6. Both have efficient fingerings on bass.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play minor pentatonic from any root",
+                        "Play major pentatonic from any root",
+                        "Apply pentatonics to bass lines and fills"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "bss-res-005",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/pentatonic-scales/",
+                            "title": "Pentatonic Scales (StudyBass, free)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "scales",
+                        "pentatonic",
+                        "blues",
+                        "rock"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-024",
+                    "sectionId": "bss-sctn-006",
+                    "roadmapId": "rm-bss",
+                    "title": "Triad Arpeggios",
+                    "shortDescription": "Play the chord notes (root, third, fifth) one at a time across the neck.",
+                    "longDescription": "Arpeggios on bass are essential because bass lines often outline chord tones rather than play full scales. Major and minor triad arpeggios are the most common. Learn them in multiple positions across the neck.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play major and minor triad arpeggios from any root",
+                        "Apply arpeggios to bass lines",
+                        "Recognize the sound of major vs minor by ear from the arpeggio"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice arpeggios with chord backing — hearing the arpeggio in context teaches its function"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "arpeggios",
+                        "chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-025",
+                    "sectionId": "bss-sctn-006",
+                    "roadmapId": "rm-bss",
+                    "title": "Position Playing",
+                    "shortDescription": "Play in a 'position' — a 4-fret span — and shift between positions.",
+                    "longDescription": "A position is a 4-fret span where your fingers (one-per-fret) stay anchored. Within a position, you can play many scales and arpeggios without shifting. As your playing develops, you shift positions deliberately to access notes outside the current position.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "bss-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Stay in position for entire phrases when possible",
+                        "Shift positions deliberately and smoothly",
+                        "Identify the most efficient position for a given line"
+                    ],
+                    "commonMistakes": [
+                        "Shifting positions reflexively when staying put would work — wastes motion"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-007",
+            "roadmapId": "rm-bss",
+            "title": "Bass Line Vocabulary",
+            "shortDescription": "Root-fifth, octaves, arpeggios, approach notes, and riff-based bass.",
+            "longDescription": "This section assembles the building blocks of musical bass lines. Beyond just root notes, you'll learn root-fifth patterns, octave-based lines, arpeggios as melodic material, approach notes, and riff-based playing.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-005",
+                "bss-sctn-006"
+            ],
+            "unlocks": [
+                "bss-sctn-009",
+                "bss-sctn-010",
+                "bss-sctn-011"
+            ],
+            "difficulty": "intermediate",
+            "order": 7,
+            "estimatedTime": {
+                "min": 15,
+                "max": 40,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "bass-lines",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-026",
+                    "sectionId": "bss-sctn-007",
+                    "roadmapId": "rm-bss",
+                    "title": "Root-Fifth Patterns",
+                    "shortDescription": "Play the root and fifth of each chord — the simplest beyond just roots.",
+                    "longDescription": "After just roots, the most common bass pattern is alternating root and fifth. This pattern works in country, rock, polka, and many other styles. The fifth is typically a 5th above the root (e.g., for C, the fifth is G) or a 4th below (e.g., for C, also G but one octave down).",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play root-fifth patterns through chord progressions",
+                        "Choose whether the fifth is above or below the root based on context",
+                        "Apply to country, rock, and polka grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to country and rockabilly bass — root-fifth patterns are everywhere"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "patterns",
+                        "rock",
+                        "country"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-027",
+                    "sectionId": "bss-sctn-007",
+                    "roadmapId": "rm-bss",
+                    "title": "Octave-Based Bass Lines",
+                    "shortDescription": "Use the octave shape to create catchy, danceable bass lines.",
+                    "longDescription": "Octave-based bass lines are central to disco, funk, dance music, and many pop styles. The most basic pattern: root on beat 1, root one octave higher on beat 2 (or the 'and' of 1), etc. The visual shape (2 strings up, 2 frets up) makes this easy to play.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play octave-based bass lines across a chord progression",
+                        "Combine octaves with root-fifth and other patterns",
+                        "Apply to disco and dance grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to disco bass lines (Bernard Edwards on Chic) — octaves used masterfully"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "patterns",
+                        "disco",
+                        "funk"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-028",
+                    "sectionId": "bss-sctn-007",
+                    "roadmapId": "rm-bss",
+                    "title": "Arpeggios in Bass Lines",
+                    "shortDescription": "Outline each chord's notes one at a time across the bar.",
+                    "longDescription": "Arpeggiated bass lines play the chord tones (root, third, fifth, sometimes seventh) sequentially. This creates a melodic, harmonically rich bass line that outlines the harmony clearly. Common in many styles, especially when the bass needs to imply harmony with no chord instrument present.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-024"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play arpeggiated bass lines over chord progressions",
+                        "Choose ascending vs descending arpeggios for variety",
+                        "Mix arpeggios with other patterns within a line"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "arpeggios",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-029",
+                    "sectionId": "bss-sctn-007",
+                    "roadmapId": "rm-bss",
+                    "title": "Approach Notes",
+                    "shortDescription": "Add chromatic or scale-tone leading notes to make lines more interesting.",
+                    "longDescription": "Approach notes lead into the next chord's root from a half step below (chromatic approach) or a step above/below (diatonic approach). They smooth chord changes and make bass lines feel like they're going somewhere. Essential for walking bass and many other styles.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use chromatic approach notes (a half step below the target)",
+                        "Use scale-tone approach notes",
+                        "Combine approach notes with arpeggios"
+                    ],
+                    "commonMistakes": [
+                        "Using approach notes everywhere — they're powerful but lose impact if overused"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "intermediate",
+                        "jazz"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-030",
+                    "sectionId": "bss-sctn-007",
+                    "roadmapId": "rm-bss",
+                    "title": "Riff-Based Playing",
+                    "shortDescription": "Some bass lines are fixed melodic riffs — memorize and play them.",
+                    "longDescription": "Many famous bass parts are fixed riffs that repeat: the bass line to 'Another One Bites the Dust', 'Money' by Pink Floyd, 'Come Together' by The Beatles, 'Stand By Me' by Ben E. King. Learning iconic bass riffs builds vocabulary and teaches what makes bass lines memorable.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "bss-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 5-10 iconic bass riffs",
+                        "Apply riff patterns to your own bass lines",
+                        "Recognize riff-based vs improvisational bass approaches"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-008",
+            "roadmapId": "rm-bss",
+            "title": "Pick Playing",
+            "shortDescription": "Pick grip, alternate picking, and palm muting on bass.",
+            "longDescription": "Pick playing on bass is common in rock, punk, and metal. This section covers proper grip, alternate picking, and palm muting — the techniques that distinguish pick bass from fingerstyle.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-002"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 5,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "technique",
+                "pick",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-031",
+                    "sectionId": "bss-sctn-008",
+                    "roadmapId": "rm-bss",
+                    "title": "Pick Grip and Basic Motion",
+                    "shortDescription": "Holding the pick for bass is similar to guitar but with a different feel.",
+                    "longDescription": "Bass with a pick is common in rock, punk, metal, and some pop. Hold the pick the same way as guitar (thumb-index, minimal protrusion), but bass strings are thicker and require a slightly heavier touch. Many pick bassists use heavier picks for the increased mass.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Grip a pick correctly for bass",
+                        "Strike strings with appropriate force",
+                        "Choose pick gauges suited for bass (often medium-heavy or heavy)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "pick"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-032",
+                    "sectionId": "bss-sctn-008",
+                    "roadmapId": "rm-bss",
+                    "title": "Alternate Picking on Bass",
+                    "shortDescription": "Strict down-up-down-up picking for fast, even lines.",
+                    "longDescription": "Alternate picking on bass works the same as guitar: strict alternation builds speed and evenness. With bass's thicker strings, the motion is slightly larger and more deliberate, but the principle is identical.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-031"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pick alternating down-up consistently",
+                        "Maintain alternation through string changes",
+                        "Apply to scales, exercises, and bass lines"
+                    ],
+                    "commonMistakes": [
+                        "Reverting to all downstrokes when something gets fast or hard"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "pick"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-033",
+                    "sectionId": "bss-sctn-008",
+                    "roadmapId": "rm-bss",
+                    "title": "Palm Muting on Bass",
+                    "shortDescription": "Damp the strings near the bridge for a tighter, more percussive tone.",
+                    "longDescription": "Palm muting with a pick produces a tight, punchy tone common in metal, punk, and some pop. The picking-hand palm rests lightly on the strings just in front of the bridge. The amount of mute controls the tone — light muting for sustain, heavy muting for percussive thumps.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply palm muting consistently while picking",
+                        "Vary the amount of muting for different tones",
+                        "Combine palm muting with alternate picking"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "right-hand",
+                        "pick",
+                        "metal",
+                        "rock"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-009",
+            "roadmapId": "rm-bss",
+            "title": "Slap and Pop",
+            "shortDescription": "The iconic funk bass technique: thumb slaps and finger pops.",
+            "longDescription": "Slap and pop is the most recognizable bass technique. This section covers the slap (thumb on lower strings), the pop (finger pull on higher strings), and combining them into funk grooves. Most useful in funk, fusion, R&B, and some pop styles.",
+            "instrumentId": "inst-bass",
+            "genreId": "gen-funk",
+            "dependencies": [
+                "bss-sctn-002",
+                "bss-sctn-007"
+            ],
+            "unlocks": [
+                "bss-sctn-012"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 15,
+                "max": 60,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "slap",
+                "funk",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-034",
+                    "sectionId": "bss-sctn-009",
+                    "roadmapId": "rm-bss",
+                    "title": "Slap Technique Basics",
+                    "shortDescription": "Strike the string with the side of the thumb for a percussive thump.",
+                    "longDescription": "Slap technique uses the side of the thumb to strike the lower strings (typically E and A), producing a percussive, attacking sound. The motion comes from the wrist, not the whole arm. Larry Graham (Sly and the Family Stone) is often credited as the inventor; Marcus Miller, Victor Wooten, and Flea (Red Hot Chili Peppers) are modern masters.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strike the string with the side of the thumb cleanly",
+                        "Produce a consistent slap tone",
+                        "Use wrist motion (not arm motion)"
+                    ],
+                    "commonMistakes": [
+                        "Hitting the string too hard (causes rattles and unmusical sound)",
+                        "Using arm motion instead of wrist"
+                    ],
+                    "practiceTips": [
+                        "Watch slow-motion videos of Marcus Miller or Victor Wooten slapping — the motion is much smaller than it looks at full speed"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-006",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/slap-bass/slap-bass-basics/",
+                            "title": "Slap Bass Basics (StudyBass, free)",
+                            "durationInMinutes": 20,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "technique",
+                        "slap",
+                        "funk",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "bss-assess-005",
+                            "type": "quiz",
+                            "title": "Slap Basics Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "bss-qstn-007",
+                                    "questionText": "In slap technique, you strike the string with:",
+                                    "options": [
+                                        {
+                                            "id": "bss-opt-025",
+                                            "optionText": "The fingernail"
+                                        },
+                                        {
+                                            "id": "bss-opt-026",
+                                            "optionText": "The fingertip"
+                                        },
+                                        {
+                                            "id": "bss-opt-027",
+                                            "optionText": "The side of the thumb (specifically the thumb knuckle area)"
+                                        },
+                                        {
+                                            "id": "bss-opt-028",
+                                            "optionText": "The palm"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "bss-opt-027"
+                                    ],
+                                    "explanation": "Slap is produced by the side of the thumb — specifically the bony area near the knuckle — striking the string. The motion is wrist-driven."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "bss-tpc-035",
+                    "sectionId": "bss-sctn-009",
+                    "roadmapId": "rm-bss",
+                    "title": "Pop Technique",
+                    "shortDescription": "Pull a string sharply with the index or middle finger so it snaps back against the fretboard.",
+                    "longDescription": "Pop technique uses the index or middle finger to pull a string outward and release it, causing it to snap back against the fretboard. It's typically used on the higher strings (D and G) for accent notes between slap thumps on the lower strings. Slap and pop together create the iconic funk bass texture.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pull a string with index or middle finger for a clean pop",
+                        "Combine pops with slaps in alternating patterns",
+                        "Apply to basic funk grooves"
+                    ],
+                    "commonMistakes": [
+                        "Popping too softly (no snap) or too hard (string slap against the body, ugly sound)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "pop",
+                        "funk",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-036",
+                    "sectionId": "bss-sctn-009",
+                    "roadmapId": "rm-bss",
+                    "title": "Slap & Pop Grooves",
+                    "shortDescription": "Combine slap and pop into the iconic funk bass language.",
+                    "longDescription": "Slap and pop combine into rhythmic patterns characteristic of funk, fusion, and modern R&B. The thumb plays root notes on the lower strings (slap); the index/middle pulls higher strings (pop). Add ghost notes, hammer-ons, and pull-offs for sophistication.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-035"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a basic slap and pop funk groove",
+                        "Add ghost notes (muted slaps and pops)",
+                        "Build a vocabulary of slap and pop patterns"
+                    ],
+                    "commonMistakes": [
+                        "Trying to play fast before slow practice — slap and pop demands precise rhythmic control",
+                        "Loud slaps and pops without dynamic variation — vary the intensity for musical expression"
+                    ],
+                    "practiceTips": [
+                        "Listen to Marcus Miller, Larry Graham, Louis Johnson — the slap masters"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "slap",
+                        "pop",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-010",
+            "roadmapId": "rm-bss",
+            "title": "Genre Basics",
+            "shortDescription": "Rock, blues, reggae, and country bass approaches.",
+            "longDescription": "Different genres demand different bass approaches. This section covers the foundational vocabulary for rock, blues, reggae, and country bass.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-007"
+            ],
+            "unlocks": [
+                "bss-sctn-014"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 20,
+                "max": 60,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-037",
+                    "sectionId": "bss-sctn-010",
+                    "roadmapId": "rm-bss",
+                    "title": "Rock Bass",
+                    "shortDescription": "Rock bass typically anchors the harmony and locks tight with the drums.",
+                    "longDescription": "Rock bass approaches vary by subgenre: classic rock (Paul McCartney, John Paul Jones, John Entwistle) often features melodic lines that move beyond root notes. Hard rock and punk lean more toward driving root-fifth or eighth-note patterns. Modern rock blends these approaches.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-026",
+                        "bss-tpc-020"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play classic rock bass lines",
+                        "Apply driving eighth-note patterns for punk and hard rock",
+                        "Develop melodic bass thinking (McCartney-style)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "rock",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-038",
+                    "sectionId": "bss-sctn-010",
+                    "roadmapId": "rm-bss",
+                    "title": "Blues Bass",
+                    "shortDescription": "The 12-bar blues progression and characteristic blues bass patterns.",
+                    "longDescription": "Blues bass typically plays variations on the 12-bar blues progression (I7-IV7-V7), with patterns like the boogie-woogie walking line, simple shuffle root-fifth, and bluesy melodic fills. The blues feel — slightly behind the beat, with the right swing — matters more than the notes.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-026",
+                        "bss-tpc-029"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a 12-bar blues with the boogie-woogie walking pattern",
+                        "Apply shuffle feel correctly",
+                        "Develop blues phrasing in bass fills"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Willie Dixon, Donald 'Duck' Dunn — foundational blues bassists"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-039",
+                    "sectionId": "bss-sctn-010",
+                    "roadmapId": "rm-bss",
+                    "title": "Reggae Bass",
+                    "shortDescription": "Reggae bass is melodic, prominent, and creates the genre's distinctive groove.",
+                    "longDescription": "Reggae bass plays a much more melodic and prominent role than in most genres. Bass lines are often hooky, syncopated, and serve as a secondary melody. The 'one drop' feel emphasizes beat 3 (or beat 1, depending on perspective), giving reggae its characteristic groove. Aston 'Family Man' Barrett of The Wailers is the textbook reggae bassist.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play reggae bass lines with the characteristic groove",
+                        "Emphasize melodic content over root-only playing",
+                        "Lock with the 'one drop' drum pattern"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Bob Marley's recordings — the bass is foregrounded and instructive"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "reggae",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-040",
+                    "sectionId": "bss-sctn-010",
+                    "roadmapId": "rm-bss",
+                    "title": "Country Bass",
+                    "shortDescription": "Steady, supportive, often root-fifth based bass for country music.",
+                    "longDescription": "Country bass typically uses root-fifth patterns, often with a slight 'galloping' or boom-chick feel. The bass plays a supportive role, locked tightly to the drummer's kick and snare pattern. Walking bass figures connect chord changes.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play country root-fifth patterns confidently",
+                        "Apply walking patterns between chords",
+                        "Maintain steady, supportive playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "country",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-011",
+            "roadmapId": "rm-bss",
+            "title": "Walking Bass Lines",
+            "shortDescription": "The art of walking bass — the heart of jazz bass playing.",
+            "longDescription": "Walking bass is the central jazz bass technique: quarter notes that smoothly connect chord changes while outlining each chord's harmony. This section covers basic walking, walking over ii-V-I (the most important jazz progression), walking blues, and personal variations.",
+            "instrumentId": "inst-bass",
+            "genreId": "gen-jazz",
+            "dependencies": [
+                "bss-sctn-007"
+            ],
+            "unlocks": [
+                "bss-sctn-014"
+            ],
+            "difficulty": "advanced",
+            "order": 11,
+            "estimatedTime": {
+                "min": 50,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "bass-lines",
+                "walking",
+                "jazz",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-041",
+                    "sectionId": "bss-sctn-011",
+                    "roadmapId": "rm-bss",
+                    "title": "Walking Bass Basics",
+                    "shortDescription": "Quarter notes connecting chord roots — the foundation of jazz bass.",
+                    "longDescription": "A walking bass line plays quarter notes (one per beat) that connect each chord's root to the next chord's root. The most basic approach: root on beat 1, chord tones on beats 2 and 3, an approach note to the next chord on beat 4. This creates the smooth, swinging motion of jazz bass.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-029"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Construct a basic walking line over a chord progression",
+                        "Use chord tones on strong beats (1 and 3)",
+                        "Use approach notes (chromatic or diatonic) on beat 4 to lead to the next chord"
+                    ],
+                    "commonMistakes": [
+                        "Stepping outside the chord randomly — every note should have a function",
+                        "Boring repetition — vary the line's contour and direction"
+                    ],
+                    "practiceTips": [
+                        "Practice with a backing track at a slow tempo — walking is about steady time and clear chord changes"
+                    ],
+                    "resources": [
+                        {
+                            "id": "bss-res-007",
+                            "type": "article",
+                            "url": "https://www.studybass.com/lessons/walking-bass-lines/",
+                            "title": "Walking Bass Lines (StudyBass, free)",
+                            "durationInMinutes": 30,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "bass-lines",
+                        "walking",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-042",
+                    "sectionId": "bss-sctn-011",
+                    "roadmapId": "rm-bss",
+                    "title": "Walking Over ii-V-I",
+                    "shortDescription": "The most important jazz progression and how to walk through it.",
+                    "longDescription": "The ii-V-I progression is the foundation of most jazz. In C major: Dm7 → G7 → Cmaj7. Walking bass over ii-V-I requires recognizing each chord, outlining its tones, and using smooth approach notes between them. Master this in all 12 keys.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Walk through a ii-V-I in any key",
+                        "Apply to standard tunes that use ii-V-I",
+                        "Vary the line's contour while maintaining smooth voice leading"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Pick one standard (e.g., 'Autumn Leaves') and work walking lines through it daily"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "walking",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-043",
+                    "sectionId": "bss-sctn-011",
+                    "roadmapId": "rm-bss",
+                    "title": "Walking Blues Lines",
+                    "shortDescription": "Apply walking bass to the 12-bar blues form.",
+                    "longDescription": "Walking blues lines combine the chord-outlining approach of walking bass with the blue notes and shuffle feel of blues. Each bar gets four quarter notes that outline the current chord and lead to the next. Essential for jazz blues, swing, and many traditional jazz contexts.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-041",
+                        "bss-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Walk through a 12-bar blues in any key",
+                        "Apply blue notes (b5, b7) for blues character",
+                        "Maintain steady swing feel throughout"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "walking",
+                        "blues",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-044",
+                    "sectionId": "bss-sctn-011",
+                    "roadmapId": "rm-bss",
+                    "title": "Walking Bass Variations and Embellishments",
+                    "shortDescription": "Add melodic interest, rhythmic variations, and personal style to walking lines.",
+                    "longDescription": "Once basic walking is comfortable, you can add ornamentations: triplets, eighth-note pickups, chromatic passing tones, octave leaps, and rhythmic variations. The best walking bass lines balance steady forward motion with melodic and rhythmic interest.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Add triplet pickups and rhythmic variations",
+                        "Use chromatic and diatonic embellishments",
+                        "Develop a personal walking style"
+                    ],
+                    "commonMistakes": [
+                        "Over-embellishing — walking bass should mostly walk; variations are seasoning, not the main dish"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "bass-lines",
+                        "walking",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-012",
+            "roadmapId": "rm-bss",
+            "title": "Intermediate to Advanced Technique",
+            "shortDescription": "Tapping, harmonics, string skipping, and double thumbing.",
+            "longDescription": "This section covers advanced techniques: two-handed tapping, natural and artificial harmonics, string skipping for wider intervals, and Wooten-style double thumbing.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-006",
+                "bss-sctn-009"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 12,
+            "estimatedTime": {
+                "min": 30,
+                "max": 150,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-045",
+                    "sectionId": "bss-sctn-012",
+                    "roadmapId": "rm-bss",
+                    "title": "Two-Handed Tapping",
+                    "shortDescription": "Use both hands on the fretboard to play notes too wide or fast for one hand.",
+                    "longDescription": "Tapping uses the picking-hand fingers to hammer notes onto the fretboard, while the fretting hand also fretts notes — together producing fast wide-interval lines. Stuart Hamm, Billy Sheehan, and Victor Wooten are notable bass tappers. The technique is showy but musically useful for specific contexts.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute basic tapped notes with the picking hand",
+                        "Combine with fretting-hand notes for two-handed lines",
+                        "Mute carefully to avoid open string noise"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Open string ringing is the main tapping problem — mute aggressively"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tapping",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-046",
+                    "sectionId": "bss-sctn-012",
+                    "roadmapId": "rm-bss",
+                    "title": "Natural and Artificial Harmonics",
+                    "shortDescription": "Produce bell-like overtones by touching the string at specific points.",
+                    "longDescription": "Natural harmonics ring when you lightly touch the string at certain points (12th, 7th, 5th, 4th frets) without pressing down. The string vibrates in its overtone modes, producing pitches like a bell. Artificial harmonics use both hands to produce harmonics at any pitch. Both are common in modern bass playing — Jaco Pastorius and Pino Palladino are famous for harmonic playing.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce clean natural harmonics at the 12th, 7th, 5th frets",
+                        "Apply harmonics in bass lines and melodic passages",
+                        "Begin work on artificial harmonics"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Jaco Pastorius's 'Portrait of Tracy' — a masterpiece of bass harmonics"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "harmonics",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-047",
+                    "sectionId": "bss-sctn-012",
+                    "roadmapId": "rm-bss",
+                    "title": "String Skipping",
+                    "shortDescription": "Skip non-adjacent strings for wider melodic intervals.",
+                    "longDescription": "String skipping plays notes on non-adjacent strings, creating wider intervals than scale playing produces. Useful for arpeggio playing, advanced fills, and stylistic variety. Requires careful right-hand control to mute the skipped string.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-006",
+                        "bss-tpc-008"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play passages that skip strings (e.g., from G string to D string)",
+                        "Mute the skipped string to prevent bleed",
+                        "Apply to arpeggios and bass lines"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-048",
+                    "sectionId": "bss-sctn-012",
+                    "roadmapId": "rm-bss",
+                    "title": "Double Thumbing",
+                    "shortDescription": "Strike the string with both the down and up motions of the thumb.",
+                    "longDescription": "Double thumbing produces two slap notes per thumb motion (down on the string, then up underneath the string). Victor Wooten popularized this technique, which enables fast slap passages impossible with the traditional thumb-only slap.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 300,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean down-up double thumb strokes",
+                        "Combine with traditional slap and pop",
+                        "Apply to fast funk lines"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "slap",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-013",
+            "roadmapId": "rm-bss",
+            "title": "Equipment",
+            "shortDescription": "Bass amps, effects pedals, active vs passive electronics, and strings.",
+            "longDescription": "Bass equipment differs from guitar equipment in important ways. This section covers bass amps (and why they need more power), bass-specific pedals (compressor, overdrive, octave), active vs passive bass electronics, and string choices.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-001"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 13,
+            "estimatedTime": {
+                "min": 3,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "equipment",
+                "tone",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-049",
+                    "sectionId": "bss-sctn-013",
+                    "roadmapId": "rm-bss",
+                    "title": "Bass Amplifiers",
+                    "shortDescription": "Tube vs solid state, combo vs head-and-cab, and tone controls for bass.",
+                    "longDescription": "Bass amps must reproduce low frequencies cleanly, which requires more power than guitar amps. Combo amps integrate amp and speaker; head-and-cabinet setups separate them (common for larger gigs). Tube amps offer warm overdrive; solid-state and class-D amps offer reliability and weight savings.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Distinguish tube and solid-state bass amps",
+                        "Set EQ tastefully (bass amps' EQ is more sensitive than guitar amps')",
+                        "Understand the role of bass cabinets and speaker sizes (10s for clarity, 15s for fullness)"
+                    ],
+                    "commonMistakes": [
+                        "Cranking the bass knob to maximum — produces a muddy, room-filling sub-bass with no definition"
+                    ],
+                    "practiceTips": [
+                        "Set all knobs at 5 to start, then adjust — gives you a neutral reference"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "amplifier",
+                        "tone"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-050",
+                    "sectionId": "bss-sctn-013",
+                    "roadmapId": "rm-bss",
+                    "title": "Effects Pedals for Bass",
+                    "shortDescription": "Bass-specific effects: compressor, overdrive, octave, envelope filter, chorus.",
+                    "longDescription": "Bass pedals are typically used more sparingly than guitar pedals. The compressor is universally useful for evening out dynamics. Bass overdrive adds grit without losing low end. Octave pedals add a sub-octave for fatness. Envelope filters (auto-wah) and chorus are used for specific effects.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-049"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use a compressor to even out dynamics",
+                        "Apply overdrive without losing low-end definition",
+                        "Understand specific bass effects (octave, envelope filter)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "pedals",
+                        "effects"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-051",
+                    "sectionId": "bss-sctn-013",
+                    "roadmapId": "rm-bss",
+                    "title": "Active vs Passive Electronics",
+                    "shortDescription": "Two electronic systems for bass, with very different feels.",
+                    "longDescription": "Passive basses have no onboard preamp — the pickups feed the amp directly. They have a vintage tone, less output, and behave 'naturally'. Active basses have an onboard preamp powered by a 9V battery, offering more output, EQ on the bass itself, and a more modern sound.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Understand the differences between active and passive bass electronics",
+                        "Use the onboard EQ effectively on an active bass",
+                        "Know when to choose which (active for slap and modern, passive for vintage tones)"
+                    ],
+                    "commonMistakes": [
+                        "Maxing the active EQ — active boosts are powerful and easy to overdo"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "electronics"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-052",
+                    "sectionId": "bss-sctn-013",
+                    "roadmapId": "rm-bss",
+                    "title": "Strings and Setup",
+                    "shortDescription": "String types, gauges, and basic bass setup.",
+                    "longDescription": "Bass strings come in several types: roundwound (bright, common), flatwound (warm, vintage), tapewound (very warm, muted). Gauges vary; heavier strings produce more tension and a fuller tone but are harder to fret. A proper setup (truss rod adjustment, action, intonation) makes the bass play and sound its best.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Choose strings appropriate to your style",
+                        "Understand basic setup parameters (action, intonation, truss rod)",
+                        "Recognize when your bass needs adjustment"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "For most setup work, take your bass to a tech once a year — bass setup is technical work"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "equipment",
+                        "maintenance"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-014",
+            "roadmapId": "rm-bss",
+            "title": "Advanced Genre Mastery",
+            "shortDescription": "Jazz, funk, Brazilian, metal, and fusion bass at the master level.",
+            "longDescription": "Each major bass genre rewards focused study. This section covers advanced jazz bass (walking and soloing), funk bass mastery (pocket and ghost notes), Brazilian styles (bossa, samba, MPB), metal bass (precision and endurance), and fusion (jazz harmony with rock virtuosity).",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-010",
+                "bss-sctn-011"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 14,
+            "estimatedTime": {
+                "min": 100,
+                "max": 1000,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-053",
+                    "sectionId": "bss-sctn-014",
+                    "roadmapId": "rm-bss",
+                    "title": "Jazz Bass Mastery",
+                    "shortDescription": "Walking lines through standards, soloing, and the jazz tradition.",
+                    "longDescription": "Jazz bass requires deep harmonic knowledge and walking bass fluency in all keys. Beyond walking, jazz bassists often solo melodically (using arpeggios, scales, and chord-tone targeting), comp behind soloists, and contribute to the rhythmic conversation of the group. Masters include Paul Chambers, Ron Carter, Jaco Pastorius (electric), Charles Mingus, Christian McBride.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-042"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Walk through a wide repertoire of jazz standards",
+                        "Solo melodically over jazz changes",
+                        "Apply different bass approaches (walking, ostinato, broken time) appropriately"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Transcribe Paul Chambers, Ron Carter, or Jaco — extensive listening and copying is the path forward"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-054",
+                    "sectionId": "bss-sctn-014",
+                    "roadmapId": "rm-bss",
+                    "title": "Funk Bass Mastery",
+                    "shortDescription": "Deep pocket, ghost notes, syncopation, and the funk language.",
+                    "longDescription": "Funk bass is about the pocket — that locked-in feeling with the drummer. Beyond slap, funk bassists use fingerstyle ghost notes, syncopated kick-drum interaction, and tight rhythmic precision. Players like James Jamerson (Motown), Bootsy Collins (P-Funk), Larry Graham (Sly Stone), Bernard Edwards (Chic), Verdine White (Earth Wind & Fire), and Marcus Miller defined the genre.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-036"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Develop deep pocket playing",
+                        "Apply ghost notes and syncopation",
+                        "Build a vocabulary of funk grooves"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Transcribe James Jamerson lines — his Motown work is the textbook for funk and pop bass"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "funk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-055",
+                    "sectionId": "bss-sctn-014",
+                    "roadmapId": "rm-bss",
+                    "title": "Brazilian Bass: Bossa Nova, Samba, MPB",
+                    "shortDescription": "Brazilian bass styles emphasize melodic, syncopated lines that interlock with percussion.",
+                    "longDescription": "Bossa nova bass typically plays a syncopated pattern emphasizing roots and fifths in a specific rhythm. Samba bass is more energetic and percussive. MPB bass varies stylistically but consistently features rich harmony and melodic awareness. Major Brazilian bassists include Sérgio Mendes-era players, Nico Assumpção, and many session players in the Rio scene.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "bss-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play bossa nova bass patterns",
+                        "Play samba bass with appropriate energy and feel",
+                        "Apply Brazilian rhythmic feel to broader playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "brazilian",
+                        "bossa-nova",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-056",
+                    "sectionId": "bss-sctn-014",
+                    "roadmapId": "rm-bss",
+                    "title": "Metal Bass",
+                    "shortDescription": "Metal bass requires precision, endurance, and often pick-based techniques.",
+                    "longDescription": "Metal bass is often pick-based (for punch and consistency with fast guitars) and locks tightly with the kick drum (often double kick in fast metal). Players like Steve Harris (Iron Maiden), Cliff Burton (Metallica), Geezer Butler (Black Sabbath), and Justin Chancellor (Tool) define different metal subgenres.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "bss-tpc-032"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play fast bass lines locked to double kick patterns",
+                        "Use pick technique for metal-appropriate attack",
+                        "Develop endurance for extended fast playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "metal",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-057",
+                    "sectionId": "bss-sctn-014",
+                    "roadmapId": "rm-bss",
+                    "title": "Fusion Bass",
+                    "shortDescription": "Jazz harmony, rock energy, and bass virtuosity meet.",
+                    "longDescription": "Fusion combines jazz harmonic vocabulary with rock and funk energy, often featuring virtuosic bass lines. Jaco Pastorius redefined what electric bass could do; Stanley Clarke, Marcus Miller, Victor Wooten, and Anthony Jackson have built on that foundation. Fusion bass often takes solos and contributes melodically as much as harmonically.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "bss-tpc-041",
+                        "bss-tpc-036"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply jazz harmonic knowledge with fusion energy",
+                        "Develop a soloing voice on bass",
+                        "Combine techniques: fingerstyle, slap, tapping, chordal playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "fusion",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "bss-sctn-015",
+            "roadmapId": "rm-bss",
+            "title": "Ear Training and Performance",
+            "shortDescription": "Playing by ear, transcription, rhythm section playing, and live performance.",
+            "longDescription": "This section covers skills that develop in parallel with everything else: playing by ear (essential for working bassists), transcription (the deepest form of bass study), rhythm section playing (locking with drummers), and live performance considerations.",
+            "instrumentId": "inst-bass",
+            "genreId": null,
+            "dependencies": [
+                "bss-sctn-005"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 15,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "ear-training",
+                "performance",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "bss-tpc-058",
+                    "sectionId": "bss-sctn-015",
+                    "roadmapId": "rm-bss",
+                    "title": "Playing by Ear",
+                    "shortDescription": "Work out bass lines, chord progressions, and full songs from recordings.",
+                    "longDescription": "Playing by ear is essential for working bassists. Most band situations involve learning songs by listening, not by reading. Start with simple root note identification, then add chord changes, then full bass lines. The ability to identify chord progressions by ear is especially valuable.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "bss-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work out simple bass lines by ear",
+                        "Identify chord progressions by ear (start with I-IV-V)",
+                        "Build a repertoire of songs learned by ear"
+                    ],
+                    "commonMistakes": [
+                        "Searching randomly — listen first, then play"
+                    ],
+                    "practiceTips": [
+                        "Use software that slows recordings without changing pitch",
+                        "Start with songs that have prominent, clearly audible bass lines"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "playing-by-ear"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-059",
+                    "sectionId": "bss-sctn-015",
+                    "roadmapId": "rm-bss",
+                    "title": "Bass Transcription",
+                    "shortDescription": "Notate bass parts from recordings — the deepest form of bass study.",
+                    "longDescription": "Transcribing bass parts trains your ear, builds vocabulary, and reveals how great bassists construct lines. Pick a player you admire and transcribe their parts. James Jamerson, Paul McCartney, Jaco Pastorius, and Carol Kaye have generated more bass-pedagogy material through transcription than any method book.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "bss-tpc-058"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 480,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe a complete bass part from a recording",
+                        "Notate accurately in bass clef and/or TAB",
+                        "Internalize the transcribed phrases for personal use"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "James Jamerson transcriptions exist in book form (Standing in the Shadows of Motown) — incredible reference material",
+                        "Transcribe lines slightly above your level"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-060",
+                    "sectionId": "bss-sctn-015",
+                    "roadmapId": "rm-bss",
+                    "title": "Playing with a Rhythm Section",
+                    "shortDescription": "Bass + drums = the rhythm section. Locking in with a drummer is everything.",
+                    "longDescription": "Working bassists develop deep rhythmic communication with drummers. Listen to the kick drum, breathe with the drummer, leave space, support — these are skills that only emerge through extensive playing time with real or virtual drummers. The single most important bass skill is rhythm section feel.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Lock rhythmically with a drummer for extended sets",
+                        "Develop ear-to-ear awareness with the drummer",
+                        "Support the song through rhythm section discipline"
+                    ],
+                    "commonMistakes": [
+                        "Practicing only with metronomes and click tracks — drum tracks and live drummers are essential"
+                    ],
+                    "practiceTips": [
+                        "Find drummers to play with as often as possible — even informal jams build the rhythm section ear faster than any solo practice"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "rhythm-section",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "bss-tpc-061",
+                    "sectionId": "bss-sctn-015",
+                    "roadmapId": "rm-bss",
+                    "title": "Live Performance",
+                    "shortDescription": "Stage presence, gear setup, monitoring, and dealing with band dynamics.",
+                    "longDescription": "Live bass performance demands skills not learned in the practice room: hearing yourself through stage monitors (or in-ear monitors), managing volume in different venues, communicating non-verbally with the band, and dealing with the unexpected (broken strings, dead batteries, monitor failures).",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Set up and tear down gear efficiently",
+                        "Adapt playing to different room acoustics and monitor situations",
+                        "Maintain steady time and feel under stage conditions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}

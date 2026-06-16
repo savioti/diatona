@@ -145,7 +145,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get comingSoon => 'Coming Soon';
 
   @override
-  String get noteTrainerClefLabel => 'Clef';
+  String get noteTrainerDisplayModeLabel => 'Display Mode';
 
   @override
   String get noteLevelStandard => 'Standard';
@@ -166,8 +166,85 @@ class AppLocalizationsEn extends AppLocalizations {
   String get displayModeBassClef => 'Bass Clef';
 
   @override
+  String get displayModeLetterNames => 'Letter Names';
+
+  @override
   String get displayModeGuitar => 'Guitar';
 
   @override
   String get displayModeUkulele => 'Ukulele';
+
+  @override
+  String refLoadError(String error) {
+    return 'Failed to load references: $error';
+  }
+
+  @override
+  String get refHowItWorksTooltip => 'How it works';
+
+  @override
+  String get refTapKeyToExplore => 'Tap a key to explore';
+
+  @override
+  String get refAscendingFifths => 'Ascending 5ths (clockwise) →';
+
+  @override
+  String get refAscendingFourths => '← Ascending 4ths (counter-clockwise)';
+
+  @override
+  String get refNoAccidentals => 'No accidentals';
+
+  @override
+  String get refKeySignature => 'Key signature';
+
+  @override
+  String get refDiatonicChords => 'Diatonic chords';
+
+  @override
+  String get refTapChordFunction => 'Tap a chord to see its function';
+
+  @override
+  String get refTapLevelExpand => 'Tap a level to expand subdivisions';
+
+  @override
+  String get refWholeStepLegend => 'W = whole step (2 frets)';
+
+  @override
+  String get refHalfStepLegend => 'H = half step (1 fret)';
+
+  @override
+  String get refMinorNatural => 'Natural';
+
+  @override
+  String get refMinorHarmonic => 'Harmonic';
+
+  @override
+  String get refMinorMelodic => 'Melodic';
+
+  @override
+  String refScaleNotesFrom(String note, String parentKey) {
+    return 'Scale notes (from $note, using $parentKey):';
+  }
+
+  @override
+  String get refModeFormula => 'Formula';
+
+  @override
+  String get refModeCharacteristic => 'Characteristic';
+
+  @override
+  String get refModeMood => 'Mood';
+
+  @override
+  String get refPentatonicLegend =>
+      '● = note  ⊙ = root  Tap boxes above to toggle';
+
+  @override
+  String get refFnTonic => 'Tonic';
+
+  @override
+  String get refFnSubdominant => 'Subdom.';
+
+  @override
+  String get refFnDominant => 'Dom.';
 }

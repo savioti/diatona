@@ -49,7 +49,22 @@ class NoteDisplay extends StatelessWidget {
                   letterSpacing: 2,
                 ),
               )
-            : _buildStaff(note, clef),
+            : clef == NoteClef.letterNames
+                ? _buildLetterName(note, colorScheme)
+                : _buildStaff(note, clef),
+      ),
+    );
+  }
+
+  Widget _buildLetterName(NoteItem? note, ColorScheme colorScheme) {
+    if (note == null) return const SizedBox.shrink();
+    return Text(
+      key: ValueKey(note.id),
+      note.name,
+      style: TextStyle(
+        fontSize: 96,
+        fontWeight: FontWeight.bold,
+        color: colorScheme.onPrimaryContainer,
       ),
     );
   }

@@ -85,8 +85,8 @@ class ChordDatabase {
   }
 
   Future<void> _load() async {
-    final chordsRaw = await rootBundle.loadString('database/chords.json');
-    final voicingsRaw = await rootBundle.loadString('database/voicings.json');
+    final chordsRaw = await rootBundle.loadString('database/trainer/chords.json');
+    final voicingsRaw = await rootBundle.loadString('database/trainer/voicings.json');
 
     final chordsList =
         (jsonDecode(chordsRaw) as List).cast<Map<String, dynamic>>();

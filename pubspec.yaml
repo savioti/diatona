@@ -62,3 +62,6 @@ flutter:
     - assets/instrument_sounds/
     - assets/instrument_sounds/piano/
     - database/
+    - database/references/
+    - database/roadmap/
+    - database/trainer/

@@ -49,16 +49,11 @@ class NoteTrainingNotifier extends Notifier<NoteSessionState> {
     bool cumulative = true,
   }) async {
     _cleanup();
-    await _audio.init();
     _pool = cumulative
         ? buildNotePool(clef, level)
         : buildNotePoolSingle(clef, level);
     _successCounts = {for (final n in _pool) n: 0};
     _advancing = false;
-
-    final pitchService = ref.read(_notePitchProvider);
-    await pitchService.start();
-    _pitchSub = pitchService.notes.listen(_onPitch);
 
     if (timeLimitSeconds == 0) {
       final note = _pickNextNote(null);
@@ -80,6 +75,11 @@ class NoteTrainingNotifier extends Notifier<NoteSessionState> {
       );
       _getReadyTimer = Timer(const Duration(seconds: 2), _showFirstNote);
     }
+
+    await _audio.init();
+    final pitchService = ref.read(_notePitchProvider);
+    await pitchService.start();
+    _pitchSub = pitchService.notes.listen(_onPitch);
   }
 
   void _showFirstNote() {

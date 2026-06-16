@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../references/presentation/references_screen.dart';
 import '../../settings/presentation/settings_screen.dart';
 import '../../trainer/presentation/training_menu_screen.dart';
 import 'widgets/feature_card.dart';
@@ -67,6 +68,20 @@ class MainMenuScreen extends ConsumerWidget {
                       comingSoon: true,
                     ),
                     FeatureCard(
+                      icon: Icons.tune_rounded,
+                      label: l10n.menuTools,
+                      comingSoon: true,
+                    ),
+                    FeatureCard(
+                      icon: Icons.menu_book_rounded,
+                      label: l10n.menuReference,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ReferencesScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
                       icon: Icons.favorite_rounded,
                       label: l10n.menuDonate,
                       comingSoon: true,
@@ -74,21 +89,6 @@ class MainMenuScreen extends ConsumerWidget {
                     FeatureCard(
                       icon: Icons.info_outline_rounded,
                       label: l10n.menuAbout,
-                      comingSoon: true,
-                    ),
-                    FeatureCard(
-                      icon: Icons.stars_rounded,
-                      label: l10n.menuCredits,
-                      comingSoon: true,
-                    ),
-                    FeatureCard(
-                      icon: Icons.menu_book_rounded,
-                      label: l10n.menuReference,
-                      comingSoon: true,
-                    ),
-                    FeatureCard(
-                      icon: Icons.tune_rounded,
-                      label: l10n.menuTools,
                       comingSoon: true,
                     ),
                   ],

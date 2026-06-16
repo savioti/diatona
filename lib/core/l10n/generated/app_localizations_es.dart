@@ -145,29 +145,106 @@ class AppLocalizationsEs extends AppLocalizations {
   String get comingSoon => 'Próximamente';
 
   @override
-  String get noteTrainerClefLabel => 'Clef';
+  String get noteTrainerDisplayModeLabel => 'Modo de Visualización';
 
   @override
-  String get noteLevelStandard => 'Standard';
+  String get noteLevelStandard => 'Estándar';
 
   @override
-  String get noteLevelAccidentals => 'Accidentals';
+  String get noteLevelAccidentals => 'Con Alteraciones';
 
   @override
-  String get chordDisplay => 'Chord Display';
+  String get chordDisplay => 'Visualización de Acordes';
 
   @override
-  String get displayModeSymbol => 'Symbol';
+  String get displayModeSymbol => 'Símbolo';
 
   @override
-  String get displayModeTrebleClef => 'Treble Clef';
+  String get displayModeTrebleClef => 'Clave de Sol';
 
   @override
-  String get displayModeBassClef => 'Bass Clef';
+  String get displayModeBassClef => 'Clave de Fa';
 
   @override
-  String get displayModeGuitar => 'Guitar';
+  String get displayModeLetterNames => 'Nombres de Notas';
+
+  @override
+  String get displayModeGuitar => 'Guitarra';
 
   @override
   String get displayModeUkulele => 'Ukulele';
+
+  @override
+  String refLoadError(String error) {
+    return 'Error al cargar referencias: $error';
+  }
+
+  @override
+  String get refHowItWorksTooltip => 'Cómo funciona';
+
+  @override
+  String get refTapKeyToExplore => 'Toca una tonalidad para explorar';
+
+  @override
+  String get refAscendingFifths => '5ªs ascendentes (horario) →';
+
+  @override
+  String get refAscendingFourths => '← 4ªs ascendentes (antihorario)';
+
+  @override
+  String get refNoAccidentals => 'Sin alteraciones';
+
+  @override
+  String get refKeySignature => 'Armadura';
+
+  @override
+  String get refDiatonicChords => 'Acordes diatónicos';
+
+  @override
+  String get refTapChordFunction => 'Toca un acorde para ver su función';
+
+  @override
+  String get refTapLevelExpand => 'Toca un nivel para expandir subdivisiones';
+
+  @override
+  String get refWholeStepLegend => 'E = tono entero (2 trastes)';
+
+  @override
+  String get refHalfStepLegend => 'S = semitono (1 traste)';
+
+  @override
+  String get refMinorNatural => 'Natural';
+
+  @override
+  String get refMinorHarmonic => 'Armónica';
+
+  @override
+  String get refMinorMelodic => 'Melódica';
+
+  @override
+  String refScaleNotesFrom(String note, String parentKey) {
+    return 'Notas de la escala (desde $note, usando $parentKey):';
+  }
+
+  @override
+  String get refModeFormula => 'Fórmula';
+
+  @override
+  String get refModeCharacteristic => 'Característica';
+
+  @override
+  String get refModeMood => 'Ambiente';
+
+  @override
+  String get refPentatonicLegend =>
+      '● = nota  ⊙ = fundamental  Toca las cajas para alternar';
+
+  @override
+  String get refFnTonic => 'Tónica';
+
+  @override
+  String get refFnSubdominant => 'Subdom.';
+
+  @override
+  String get refFnDominant => 'Dom.';
 }

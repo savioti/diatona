@@ -1,0 +1,2334 @@
+{
+    "id": "rm-uku",
+    "title": "Ukulele Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn ukulele from absolute beginner to advanced.",
+    "longDescription": "This roadmap covers everything specific to the ukulele: the four common sizes (soprano, concert, tenor, baritone), the unique re-entrant G-C-E-A tuning, easy beginner chords (C major needs only one finger!), strumming patterns including the iconic Island strum, fingerstyle playing, the Hawaiian techniques (roll, chunk, fan), genre playing across Hawaiian/pop/jazz/blues, and advanced techniques like chord melody, tapping, and harmonics that virtuoso players like Jake Shimabukuro have popularized.",
+    "sections": [
+        {
+            "id": "uku-sctn-001",
+            "roadmapId": "rm-uku",
+            "title": "Getting Started",
+            "shortDescription": "Sizes, anatomy, posture, and the unique re-entrant tuning.",
+            "longDescription": "The ukulele is welcoming but has its own quirks. This section covers the four common sizes (and which is best for beginners), the parts of the instrument, holding posture, and the all-important re-entrant tuning that gives the uke its characteristic sound.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "uku-sctn-002",
+                "uku-sctn-003",
+                "uku-sctn-009"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 1,
+                "max": 3,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-001",
+                    "sectionId": "uku-sctn-001",
+                    "roadmapId": "rm-uku",
+                    "title": "Ukulele Sizes",
+                    "shortDescription": "Soprano, concert, tenor, and baritone — four sizes with different sounds.",
+                    "longDescription": "The ukulele family has four common sizes. Soprano (the smallest, classic size) has the brightest, most traditional Hawaiian sound. Concert is slightly larger and easier to fret. Tenor is larger still, with a fuller tone — favored by virtuoso players. Baritone is the largest and tuned differently (D-G-B-E, like the top four guitar strings).",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Distinguish the four ukulele sizes",
+                        "Understand the tonal differences between sizes",
+                        "Recognize that baritone uses different tuning than the other three"
+                    ],
+                    "commonMistakes": [
+                        "Assuming all ukuleles are the same — size affects feel, fingering, and most importantly, tone",
+                        "Confusing the baritone tuning with the standard G-C-E-A"
+                    ],
+                    "practiceTips": [
+                        "If you're unsure which size to start with, concert is the most versatile beginner choice — easier to fret than soprano, smaller than tenor"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "uku-assess-001",
+                            "type": "quiz",
+                            "title": "Ukulele Sizes Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "uku-qstn-001",
+                                    "questionText": "Which ukulele size uses a different tuning from the others?",
+                                    "options": [
+                                        {
+                                            "id": "uku-opt-001",
+                                            "optionText": "Soprano"
+                                        },
+                                        {
+                                            "id": "uku-opt-002",
+                                            "optionText": "Concert"
+                                        },
+                                        {
+                                            "id": "uku-opt-003",
+                                            "optionText": "Tenor"
+                                        },
+                                        {
+                                            "id": "uku-opt-004",
+                                            "optionText": "Baritone"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "uku-opt-004"
+                                    ],
+                                    "explanation": "Baritone ukulele is tuned D-G-B-E (the same as the top four strings of a guitar). The other three sizes — soprano, concert, and tenor — use standard G-C-E-A tuning."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "uku-tpc-002",
+                    "sectionId": "uku-sctn-001",
+                    "roadmapId": "rm-uku",
+                    "title": "Parts of the Ukulele",
+                    "shortDescription": "Anatomy: headstock, tuning pegs, nut, neck, fretboard, body, soundhole, bridge.",
+                    "longDescription": "The ukulele's parts mirror those of the guitar in miniature: headstock with tuning pegs, neck with fretboard and frets, body with soundhole and bridge. Some ukuleles are made of solid wood; others use laminate. Strings are typically nylon or fluorocarbon.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name all major parts of the ukulele",
+                        "Understand the difference between solid-wood and laminate construction",
+                        "Recognize nylon vs fluorocarbon strings"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-003",
+                    "sectionId": "uku-sctn-001",
+                    "roadmapId": "rm-uku",
+                    "title": "Holding the Ukulele",
+                    "shortDescription": "Standing, sitting, and the role of strumming-hand support.",
+                    "longDescription": "Holding the ukulele is more flexible than holding a guitar. Sitting, rest the lower body of the uke on your right leg (for right-handers) and stabilize with the right forearm. Standing, you can hold it against your chest or use a strap (some ukes accept strap buttons). Many players manage without a strap, holding the uke against the body with the strumming forearm.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Hold the ukulele securely while seated or standing",
+                        "Use the strumming forearm to stabilize when no strap is used",
+                        "Keep both wrists relaxed"
+                    ],
+                    "commonMistakes": [
+                        "Gripping the neck like a baseball bat with the fretting hand — keeps the thumb wrapped, which limits finger movement"
+                    ],
+                    "practiceTips": [
+                        "Most ukuleles don't have strap buttons by default — you can have a tech install them, or use a tie-on strap"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-004",
+                    "sectionId": "uku-sctn-001",
+                    "roadmapId": "rm-uku",
+                    "title": "Tuning the Ukulele",
+                    "shortDescription": "Standard tuning is G-C-E-A — and the G is higher than the C (re-entrant tuning).",
+                    "longDescription": "Standard soprano, concert, and tenor ukulele tuning is G-C-E-A. Critically, this is *re-entrant tuning*: the G string (4th string) is tuned HIGHER than the C string (3rd string), not lower as you'd expect. This gives the ukulele its characteristic bright, jangly sound. (Some players use 'low G' tuning, which is one octave lower for a more guitar-like sound.) Baritone ukulele uses D-G-B-E (non-re-entrant).",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tune to standard G-C-E-A with re-entrant high G",
+                        "Understand the difference between high-G (re-entrant) and low-G tunings",
+                        "Use a tuner or tuning app reliably"
+                    ],
+                    "commonMistakes": [
+                        "Tuning the G string an octave too low because 'it's the 4th string, so it should be lowest'",
+                        "Forgetting that baritone tunes differently"
+                    ],
+                    "practiceTips": [
+                        "A clip-on tuner is the easiest way to tune — they work fine on small instruments like the ukulele",
+                        "Mnemonic for G-C-E-A: 'My Dog Has Fleas' — sung as the four note pitches in order"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "tuning"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "uku-assess-002",
+                            "type": "quiz",
+                            "title": "Ukulele Tuning Quiz",
+                            "description": "Test your understanding of re-entrant tuning.",
+                            "questions": [
+                                {
+                                    "id": "uku-qstn-002",
+                                    "questionText": "Standard ukulele tuning (G-C-E-A) is characterized as re-entrant because:",
+                                    "options": [
+                                        {
+                                            "id": "uku-opt-005",
+                                            "optionText": "All four strings have the same pitch"
+                                        },
+                                        {
+                                            "id": "uku-opt-006",
+                                            "optionText": "The strings go from highest to lowest"
+                                        },
+                                        {
+                                            "id": "uku-opt-007",
+                                            "optionText": "The G (4th string) is tuned HIGHER than the C (3rd string)"
+                                        },
+                                        {
+                                            "id": "uku-opt-008",
+                                            "optionText": "The strings are tuned in fifths"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "uku-opt-007"
+                                    ],
+                                    "explanation": "Re-entrant tuning means the strings are not arranged in strict ascending order of pitch. On a standard ukulele, the G string is HIGHER in pitch than the C string — giving the uke its characteristic jangly sound."
+                                },
+                                {
+                                    "id": "uku-qstn-003",
+                                    "questionText": "Baritone ukulele is tuned to:",
+                                    "options": [
+                                        {
+                                            "id": "uku-opt-009",
+                                            "optionText": "G-C-E-A (same as soprano)"
+                                        },
+                                        {
+                                            "id": "uku-opt-010",
+                                            "optionText": "D-G-B-E (the same as the top four guitar strings)"
+                                        },
+                                        {
+                                            "id": "uku-opt-011",
+                                            "optionText": "E-A-D-G (the same as a 4-string bass)"
+                                        },
+                                        {
+                                            "id": "uku-opt-012",
+                                            "optionText": "All fourths"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "uku-opt-010"
+                                    ],
+                                    "explanation": "Baritone ukulele uses D-G-B-E, which matches the top four strings of a standard-tuned guitar. This makes the baritone a natural choice for guitar players exploring ukulele."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-002",
+            "roadmapId": "rm-uku",
+            "title": "First Strokes and Touch",
+            "shortDescription": "Strumming with thumb or index, right hand position, plucking, and left hand basics.",
+            "longDescription": "Before chords, develop comfortable touch with both hands. This section covers strumming technique, right-hand position for good tone, single-note plucking, and proper left-hand fretting.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-001"
+            ],
+            "unlocks": [
+                "uku-sctn-004",
+                "uku-sctn-007"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 3,
+                "max": 6,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-005",
+                    "sectionId": "uku-sctn-002",
+                    "roadmapId": "rm-uku",
+                    "title": "First Strums",
+                    "shortDescription": "Strumming with the thumb or index finger.",
+                    "longDescription": "Two main strumming approaches: with the thumb (most traditional, warmer tone) or with the side of the index finger nail (brighter, more articulate). Either way, the motion is light and primarily from the wrist, not the whole arm. Most beginner method books start with simple downstrokes.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strum simple downstrokes with thumb or index finger",
+                        "Keep the wrist relaxed",
+                        "Produce an even, ringing tone from all four strings"
+                    ],
+                    "commonMistakes": [
+                        "Strumming too hard — the uke responds well to a light touch",
+                        "Tense forearm or shoulder"
+                    ],
+                    "practiceTips": [
+                        "Try both thumb and index-finger strumming — most players use both depending on context"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "strumming",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-006",
+                    "sectionId": "uku-sctn-002",
+                    "roadmapId": "rm-uku",
+                    "title": "Right Hand Position",
+                    "shortDescription": "Where to strike the strings: between the soundhole and the neck joint.",
+                    "longDescription": "The right hand typically strums or plucks at or near where the neck meets the body of the ukulele (not over the soundhole, as you might expect). Striking too close to the soundhole muddles the sound; striking too close to the bridge produces a harsh, thin tone.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Position the strumming hand at the neck-body joint",
+                        "Vary position slightly for tonal variety",
+                        "Avoid striking over the soundhole"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "strumming",
+                        "tone"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-007",
+                    "sectionId": "uku-sctn-002",
+                    "roadmapId": "rm-uku",
+                    "title": "Plucking Single Notes",
+                    "shortDescription": "Use the thumb or fingers to play one note at a time.",
+                    "longDescription": "Beyond chord strumming, you can pluck individual notes for melody or fingerstyle patterns. The thumb naturally plays the bass strings (G and C); the index, middle, and ring fingers play higher strings. This is the foundation of fingerpicking.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Pluck single strings cleanly with thumb or fingers",
+                        "Vary tone by where and how you pluck",
+                        "Distinguish strumming from plucking by context"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fingerstyle",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-008",
+                    "sectionId": "uku-sctn-002",
+                    "roadmapId": "rm-uku",
+                    "title": "Left Hand Basics",
+                    "shortDescription": "Fretting fingers, thumb position, and the principle of minimum pressure.",
+                    "longDescription": "The left hand fingertips press the strings just behind the frets. The thumb stays behind the neck (roughly opposing the middle finger), not wrapped around the top. Press only as hard as needed for a clean note — excessive pressure causes pain, fatigue, and intonation problems. Ukulele frets are small and close together, especially on soprano, so accurate finger placement matters.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Press strings just behind the frets",
+                        "Keep the thumb on the back of the neck",
+                        "Use minimum pressure for clean notes"
+                    ],
+                    "commonMistakes": [
+                        "Wrapping the thumb over the top of the neck (limits finger reach for chords)",
+                        "Pressing too hard"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "left-hand",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-003",
+            "roadmapId": "rm-uku",
+            "title": "Reading and Counting",
+            "shortDescription": "Chord diagrams, TAB, and counting rhythm.",
+            "longDescription": "This section covers the formats ukulele music is typically written in: chord diagrams (most common), TAB (for melodies), and the rhythmic counting that underlies playing in time.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-001"
+            ],
+            "unlocks": [
+                "uku-sctn-004",
+                "uku-sctn-009"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 2,
+                "max": 5,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-009",
+                    "sectionId": "uku-sctn-003",
+                    "roadmapId": "rm-uku",
+                    "title": "Reading Chord Diagrams",
+                    "shortDescription": "Ukulele chord diagrams use the same conventions as guitar, but with four strings.",
+                    "longDescription": "Ukulele chord diagrams show four vertical lines (the four strings), with the G string on the left and the A string on the right. Horizontal lines represent frets. Dots show finger placement; numbers show finger numbers; 'x' means don't play (rare on uke); 'o' means open string.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read standard ukulele chord diagrams",
+                        "Distinguish them from guitar chord diagrams (4 strings vs 6)",
+                        "Identify finger numbers and string positions"
+                    ],
+                    "commonMistakes": [
+                        "Reading the diagram with the strings in the wrong order (G is leftmost when held in playing position)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-010",
+                    "sectionId": "uku-sctn-003",
+                    "roadmapId": "rm-uku",
+                    "title": "Reading Ukulele TAB",
+                    "shortDescription": "Tablature for ukulele uses four lines representing the four strings.",
+                    "longDescription": "Ukulele TAB has four horizontal lines representing the strings, with the top line being the A string (highest pitch) and the bottom line being the G string. Numbers indicate fret positions. Easy to read once you remember the string order.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Read ukulele TAB fluently",
+                        "Apply TAB to single-note melodies and chord shapes"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "tab",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-011",
+                    "sectionId": "uku-sctn-003",
+                    "roadmapId": "rm-uku",
+                    "title": "Counting Rhythm",
+                    "shortDescription": "Steady pulse, eighth notes, and counting with a metronome.",
+                    "longDescription": "Rhythm matters on ukulele just as on any instrument. Practice counting beats and subdivisions ('1 and 2 and...') while strumming, ideally with a metronome. Most ukulele music is in 4/4 with eighth-note strumming.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count quarter and eighth notes aloud while strumming",
+                        "Use a metronome consistently",
+                        "Maintain steady tempo through chord changes"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the metronome — rushing or dragging is invisible without one"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-004",
+            "roadmapId": "rm-uku",
+            "title": "First Chords",
+            "shortDescription": "The friendly beginner chords that unlock hundreds of songs.",
+            "longDescription": "The ukulele is famously beginner-friendly because its first chords are very approachable — C major is one finger! This section covers C, F, Am, G7, and the next set (D, Em, A7, C7), then combines them into common progressions.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-002",
+                "uku-sctn-003"
+            ],
+            "unlocks": [
+                "uku-sctn-005",
+                "uku-sctn-006",
+                "uku-sctn-007",
+                "uku-sctn-008",
+                "uku-sctn-015"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 6,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-012",
+                    "sectionId": "uku-sctn-004",
+                    "roadmapId": "rm-uku",
+                    "title": "The C Chord",
+                    "shortDescription": "The single easiest chord on ukulele — one finger.",
+                    "longDescription": "C major on ukulele uses just one finger: the ring finger (or pinky) on the 3rd fret of the A string. All other strings ring open. It's often the very first chord beginners learn — and it sounds great because of the open strings.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-008",
+                        "uku-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play C major with one finger, all other strings ringing",
+                        "Strum with consistent tone",
+                        "Check that each string rings clearly"
+                    ],
+                    "commonMistakes": [
+                        "Letting the fretting finger touch and mute adjacent strings"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "uku-assess-003",
+                            "type": "quiz",
+                            "title": "C Chord Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "uku-qstn-004",
+                                    "questionText": "How many fingers are needed to play C major on a standard-tuned ukulele?",
+                                    "options": [
+                                        {
+                                            "id": "uku-opt-013",
+                                            "optionText": "1"
+                                        },
+                                        {
+                                            "id": "uku-opt-014",
+                                            "optionText": "2"
+                                        },
+                                        {
+                                            "id": "uku-opt-015",
+                                            "optionText": "3"
+                                        },
+                                        {
+                                            "id": "uku-opt-016",
+                                            "optionText": "4"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "uku-opt-013"
+                                    ],
+                                    "explanation": "C major on ukulele uses just one finger: third fret of the A string. The other three strings ring open. It's the easiest chord to play on the instrument."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "uku-tpc-013",
+                    "sectionId": "uku-sctn-004",
+                    "roadmapId": "rm-uku",
+                    "title": "F Major and A Minor",
+                    "shortDescription": "Two more cornerstone beginner chords.",
+                    "longDescription": "F major uses two fingers (E string 1st fret, G string 2nd fret). A minor uses one finger (G string 2nd fret) and is closely related to F. Both are commonly used in popular songs and pair naturally with C.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play F major cleanly with all strings ringing",
+                        "Play A minor with one finger",
+                        "Switch between C, F, and Am smoothly"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Notice that Am and F share a common finger position — Am is essentially F minus one finger"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-014",
+                    "sectionId": "uku-sctn-004",
+                    "roadmapId": "rm-uku",
+                    "title": "G7 (and G Major)",
+                    "shortDescription": "G7 is one of the most-played chords on ukulele.",
+                    "longDescription": "G7 uses three fingers and works as a dominant chord in many keys. Because the ukulele's typical key is often C, and G7 is the V7 of C, you'll see G7 constantly. G major (regular, not 7th) is also useful but slightly trickier — many beginners learn G7 first.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-013"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play G7 cleanly",
+                        "Apply G7 in C major progressions (V7 → I)",
+                        "Begin work on regular G major"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-015",
+                    "sectionId": "uku-sctn-004",
+                    "roadmapId": "rm-uku",
+                    "title": "More Open Chords: D, Em, A7, C7",
+                    "shortDescription": "Additional common chords that expand your vocabulary significantly.",
+                    "longDescription": "Once you have C, F, Am, G7, the next set extends your range: D (or D7, often easier), Em, A7, and C7. These chords let you play in more keys and access many more songs.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [
+                        "uku-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play D (or D7), Em, A7, and C7 cleanly",
+                        "Switch between any pair of these chords smoothly",
+                        "Combine with the first set (C, F, Am, G7) for varied progressions"
+                    ],
+                    "commonMistakes": [
+                        "Avoiding D because it's harder — work through it; many songs need it"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "open-chords",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-016",
+                    "sectionId": "uku-sctn-004",
+                    "roadmapId": "rm-uku",
+                    "title": "First Chord Progressions",
+                    "shortDescription": "Combine open chords into common progressions and play your first songs.",
+                    "longDescription": "Combine the chords you know into common progressions. C-F-G7-C (I-IV-V7-I) is the classic. C-Am-F-G7 (I-vi-IV-V7) plays through countless pop songs. Em-C-G-D powers many singer-songwriter favorites.",
+                    "difficulty": "beginner",
+                    "order": 5,
+                    "prerequisites": [
+                        "uku-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play 3-5 common chord progressions fluently",
+                        "Apply progressions to actual songs you enjoy",
+                        "Match strumming patterns to the song's feel"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Pick a song you love that uses 3-4 of the chords you know, and learn to play it through. Motivation matters more than method books."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "progressions",
+                        "beginner"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-005",
+            "roadmapId": "rm-uku",
+            "title": "Strumming Patterns",
+            "shortDescription": "Down-up strumming, common patterns, the Island strum, and chunking.",
+            "longDescription": "Strumming patterns transform plain chord changes into music. This section covers the foundational down-up alternating strum, common rhythmic patterns (especially D-D-U-U-D-U), the iconic Island strum, and the chunking technique that adds percussive backbeat.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-004"
+            ],
+            "unlocks": [
+                "uku-sctn-006",
+                "uku-sctn-011",
+                "uku-sctn-012"
+            ],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 8,
+                "max": 20,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "strumming",
+                "rhythm",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-017",
+                    "sectionId": "uku-sctn-005",
+                    "roadmapId": "rm-uku",
+                    "title": "Down and Up Strumming",
+                    "shortDescription": "Alternate downstrokes and upstrokes for eighth-note strumming.",
+                    "longDescription": "Beyond pure downstrokes, alternating down-up strums produces eighth-note strumming. The downstroke uses the back of the index nail (or thumb); the upstroke uses the pad of the index finger. Both should feel light and relaxed.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Strum even down-up patterns",
+                        "Maintain consistent volume between down and up",
+                        "Apply to chord progressions"
+                    ],
+                    "commonMistakes": [
+                        "Stopping the strumming hand on rests — keep the hand moving even when not striking",
+                        "Up-strokes much quieter than downstrokes"
+                    ],
+                    "practiceTips": [
+                        "Even if you're not strumming on a given beat, keep the hand moving in the down-up pattern — it maintains the groove"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "rhythm",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-018",
+                    "sectionId": "uku-sctn-005",
+                    "roadmapId": "rm-uku",
+                    "title": "Common Strumming Patterns",
+                    "shortDescription": "D-D-U-U-D-U and other patterns that appear in countless songs.",
+                    "longDescription": "Beyond pure down-up, certain rhythmic patterns appear constantly: D-D-U-U-D-U (called by many names — 'the most useful pattern'), Calypso (D-D-U-D-U), Island strum (D-U-D-X-U where X is a chunk/mute), and various others. Master a few patterns and you can accompany most songs.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play D-D-U-U-D-U fluently with chord changes",
+                        "Play 2-3 other common patterns",
+                        "Match patterns to songs by feel"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice a pattern on a single chord until it's automatic, then add chord changes"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "rhythm",
+                        "patterns"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-019",
+                    "sectionId": "uku-sctn-005",
+                    "roadmapId": "rm-uku",
+                    "title": "The 'Island' Strum",
+                    "shortDescription": "A characteristic Hawaiian-flavored strumming pattern.",
+                    "longDescription": "The Island strum (D-U-Chunk-U-D-U or variations) is closely associated with Hawaiian music and beach-vibe playing. The 'chunk' (palm mute) on beat 2 gives it a percussive feel. It's one of the most recognizably ukulele-y patterns.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the basic Island strum cleanly",
+                        "Add the chunk percussively",
+                        "Apply to Hawaiian-style and pop songs"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Israel Kamakawiwo'ole's 'Somewhere Over the Rainbow' — textbook Island strum"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "hawaiian",
+                        "rhythm"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-020",
+                    "sectionId": "uku-sctn-005",
+                    "roadmapId": "rm-uku",
+                    "title": "Chunking (Muted Strums)",
+                    "shortDescription": "A percussive damped strum that adds backbeat to your playing.",
+                    "longDescription": "Chunking (also called 'choking' or 'palm mute strum') is a percussive technique where the strum is damped by the heel of the strumming hand right after striking, producing a 'chuck' sound rather than ringing chord. Used on beats 2 and 4 (the backbeats), it adds a drum-like feel to ukulele playing.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "uku-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean chunks on beats 2 and 4",
+                        "Combine chunks with regular strums in a pattern",
+                        "Apply to a song to add rhythmic drive"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "strumming",
+                        "technique",
+                        "hawaiian"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-006",
+            "roadmapId": "rm-uku",
+            "title": "Smooth Chord Changes",
+            "shortDescription": "Anchor fingers and effective transition practice.",
+            "longDescription": "Smooth chord changes are what separates frustrating playing from musical playing. This section covers anchor finger technique and effective practice methods for speeding up transitions.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-004",
+                "uku-sctn-005"
+            ],
+            "unlocks": [],
+            "difficulty": "beginner",
+            "order": 6,
+            "estimatedTime": {
+                "min": 2,
+                "max": 5,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "technique",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-021",
+                    "sectionId": "uku-sctn-006",
+                    "roadmapId": "rm-uku",
+                    "title": "Anchor Finger Technique",
+                    "shortDescription": "When changing chords, keep shared fingers in place.",
+                    "longDescription": "Many ukulele chord changes share notes. The Am-to-F change keeps the G string finger in place; the C-to-Am change keeps the open strings open. Recognizing these anchors and keeping fingers planted saves motion and produces faster, cleaner changes.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-016"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify anchor fingers between common chord pairs",
+                        "Keep anchor fingers planted during changes",
+                        "Apply to common progressions (C-F-G7, Am-F-C-G, etc.)"
+                    ],
+                    "commonMistakes": [
+                        "Lifting all fingers between every chord — slow and inefficient"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "technique"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-022",
+                    "sectionId": "uku-sctn-006",
+                    "roadmapId": "rm-uku",
+                    "title": "Practicing Chord Transitions",
+                    "shortDescription": "The 1-minute change exercise: how many clean changes can you make in 60 seconds?",
+                    "longDescription": "Smooth chord changes are largely a matter of brain training. Effective practice methods include: the 1-minute change exercise (count clean changes between two chords in 60 seconds, then try to beat your record), ghost changes (form chord shapes in the air without strumming), and slow strumming with full focus on the transition.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply the 1-minute change exercise to your weakest chord changes",
+                        "Use ghost changes to drill shapes",
+                        "Strum slow enough that no gap exists at chord changes"
+                    ],
+                    "commonMistakes": [
+                        "Practicing fast and sloppy"
+                    ],
+                    "practiceTips": [
+                        "Five minutes of focused 1-minute changes daily produces large gains over a few weeks"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "technique",
+                        "practice-method"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-007",
+            "roadmapId": "rm-uku",
+            "title": "Fingerpicking",
+            "shortDescription": "Fingerstyle technique, basic arpeggios, and alternating thumb patterns.",
+            "longDescription": "Fingerpicking opens up a new world beyond strumming. This section covers fingerstyle basics (p-i-m-a finger assignments), arpeggio patterns, and adapted Travis-style alternating thumb playing.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-002",
+                "uku-sctn-004"
+            ],
+            "unlocks": [
+                "uku-sctn-011"
+            ],
+            "difficulty": "intermediate",
+            "order": 7,
+            "estimatedTime": {
+                "min": 8,
+                "max": 25,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fingerstyle",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-023",
+                    "sectionId": "uku-sctn-007",
+                    "roadmapId": "rm-uku",
+                    "title": "Fingerstyle Basics",
+                    "shortDescription": "Use the thumb and three fingers (often p-i-m-a) to pluck individual strings.",
+                    "longDescription": "Fingerstyle ukulele plays the strings one at a time using individual fingers. Common assignments: thumb (p) on the G string, index (i) on the C string, middle (m) on the E string, ring (a) on the A string. Each finger has a default string, which speeds up playing patterns.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-007"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use the thumb to play the G string",
+                        "Use i, m, a fingers on C, E, A strings respectively",
+                        "Pluck cleanly without strings buzzing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "technique",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-024",
+                    "sectionId": "uku-sctn-007",
+                    "roadmapId": "rm-uku",
+                    "title": "Basic Arpeggio Patterns",
+                    "shortDescription": "Pluck chord notes one at a time in patterns: p-i-m-a, p-a-m-i, etc.",
+                    "longDescription": "Once chords are formed by the left hand, the right hand can pluck the notes one at a time as arpeggios. The simplest pattern is p-i-m-a (low to high). Variations like p-i-m-a-m-i and others add rhythmic and melodic interest.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play p-i-m-a arpeggios over open chords",
+                        "Apply pattern variations to chord progressions",
+                        "Maintain even tone across the four fingers"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "arpeggios",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-025",
+                    "sectionId": "uku-sctn-007",
+                    "roadmapId": "rm-uku",
+                    "title": "Alternating Thumb (Travis-Style)",
+                    "shortDescription": "The thumb plays a steady bass pattern while the fingers add melody and chord notes.",
+                    "longDescription": "Adapted from guitar Travis picking, this pattern uses the thumb to play a steady bass alternation (typically G string and C string) while the fingers add notes on the upper strings. Note that on a re-entrant uke, the 'bass' isn't actually lower in pitch (since the G is higher than the C), but the technique still works musically.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-024"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play steady alternating thumb pattern on G and C strings",
+                        "Add finger notes between thumb strikes",
+                        "Apply to chord progressions"
+                    ],
+                    "commonMistakes": [
+                        "Losing the thumb pattern when adding fingers"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fingerstyle",
+                        "technique",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-008",
+            "roadmapId": "rm-uku",
+            "title": "Barre Chords",
+            "shortDescription": "The dreaded B chord and movable shapes that unlock the neck.",
+            "longDescription": "Barre chords let you play any chord across the ukulele's neck. This section covers the famously challenging B and Bm chords, then extends to movable chord shapes that open up the whole instrument.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-004"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 5,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "chords",
+                "barre-chords",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-026",
+                    "sectionId": "uku-sctn-008",
+                    "roadmapId": "rm-uku",
+                    "title": "The B and Bm Chord Challenge",
+                    "shortDescription": "B major and B minor are infamously tricky on ukulele.",
+                    "longDescription": "B major and B minor require barring the top two strings while the other fingers form the rest of the chord. Many beginners avoid them, but they're unavoidable for many songs. Approach them like the F chord on guitar: angle, not pressure, is the secret.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-015"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play B major or B minor with clean ringing strings",
+                        "Use partial barre with the index finger",
+                        "Don't avoid songs that require these chords — push through"
+                    ],
+                    "commonMistakes": [
+                        "Pressing too hard instead of adjusting angle"
+                    ],
+                    "practiceTips": [
+                        "Roll the index finger slightly so the bony edge contacts the strings",
+                        "Patience: B chord fluency takes weeks of consistent practice"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-027",
+                    "sectionId": "uku-sctn-008",
+                    "roadmapId": "rm-uku",
+                    "title": "Movable Chord Shapes",
+                    "shortDescription": "Chord shapes that contain no open strings can be moved up the neck to play any chord.",
+                    "longDescription": "On ukulele, certain chord shapes have no open strings — these are movable. A major shape moved up two frets becomes a different major chord, and so on. Understanding movable shapes lets you play any chord on the neck once you know the notes.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify movable major and minor shapes",
+                        "Move shapes up the neck to play different chords",
+                        "Use the 4th string note to identify the chord"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "chords",
+                        "barre-chords",
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-009",
+            "roadmapId": "rm-uku",
+            "title": "The Fretboard",
+            "shortDescription": "Learn the notes on each string and octave patterns.",
+            "longDescription": "Fretboard knowledge transforms ukulele playing from pattern-based to truly fluent. This section covers note identification across the four strings and the octave patterns that connect them.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-001",
+                "uku-sctn-003"
+            ],
+            "unlocks": [
+                "uku-sctn-010"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 5,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fretboard",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-028",
+                    "sectionId": "uku-sctn-009",
+                    "roadmapId": "rm-uku",
+                    "title": "Notes on the Fretboard",
+                    "shortDescription": "Learn the natural notes on each string up to fret 12.",
+                    "longDescription": "Knowing the notes on the fretboard is the foundation for moving beyond memorized chord shapes. With only four strings, the ukulele fretboard is more approachable to memorize than a guitar's. Focus on the C and A strings first (most common root strings).",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-004"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify any natural note on the C and A strings within 2 seconds",
+                        "Extend to all four strings",
+                        "Use fretboard knowledge to find any chord shape"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Drill notes on one string daily for a week, then rotate"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-029",
+                    "sectionId": "uku-sctn-009",
+                    "roadmapId": "rm-uku",
+                    "title": "Octave Patterns",
+                    "shortDescription": "Use octave shapes to find the same note in multiple places.",
+                    "longDescription": "Octave shapes on ukulele connect notes across the fretboard. The most common: a note on the C string and the same note 4 frets up on the A string. With re-entrant tuning, the patterns are slightly different from a guitar's.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Find octave shapes across the fretboard",
+                        "Use octaves to find notes quickly",
+                        "Apply to melodic playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fretboard",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-010",
+            "roadmapId": "rm-uku",
+            "title": "Scales and Melody Playing",
+            "shortDescription": "C major scale, pentatonic scales, and single-note melody.",
+            "longDescription": "The ukulele isn't just for strumming chords — it plays melodies beautifully. This section covers the C major scale, pentatonic scales for soloing, and single-note melody playing.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-009"
+            ],
+            "unlocks": [
+                "uku-sctn-012"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 8,
+                "max": 25,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "scales",
+                "melody",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-030",
+                    "sectionId": "uku-sctn-010",
+                    "roadmapId": "rm-uku",
+                    "title": "C Major Scale on Ukulele",
+                    "shortDescription": "The most basic scale — entirely white-key, no accidentals needed.",
+                    "longDescription": "The C major scale on ukulele uses no sharps or flats. The classic fingering plays it across multiple strings starting from the C on the 3rd fret of the G string (with re-entrant tuning) or the open C string. Master this before exploring other keys.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-028"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the C major scale ascending and descending",
+                        "Use one-finger-per-fret fingering",
+                        "Apply with a metronome at moderate tempos"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "melody",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-031",
+                    "sectionId": "uku-sctn-010",
+                    "roadmapId": "rm-uku",
+                    "title": "Pentatonic Scales on Ukulele",
+                    "shortDescription": "Minor and major pentatonic — five-note scales for soloing.",
+                    "longDescription": "Pentatonic scales (5 notes per octave) are the workhorses of soloing on any instrument, ukulele included. The shapes adapt to the ukulele's four-string layout. Useful for blues, rock, folk, and pop melodic playing.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play minor pentatonic from any root",
+                        "Play major pentatonic from any root",
+                        "Apply to simple soloing over chord progressions"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "scales",
+                        "pentatonic",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-032",
+                    "sectionId": "uku-sctn-010",
+                    "roadmapId": "rm-uku",
+                    "title": "Playing Melodies on Ukulele",
+                    "shortDescription": "Single-note melodies, songs, and the melodic possibilities of the uke.",
+                    "longDescription": "Beyond chords, the ukulele plays single-note melodies beautifully. The re-entrant tuning gives it a distinctive sound — melodies can leap between strings in ways that wouldn't be possible on guitar. Many traditional Hawaiian pieces are played as melody with chord punctuation.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-030"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play simple melodies single-note style",
+                        "Apply correct fingerings (one-finger-per-fret where possible)",
+                        "Combine melody with occasional strummed chords"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "melody",
+                        "fingerstyle",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-011",
+            "roadmapId": "rm-uku",
+            "title": "Hawaiian and Traditional Techniques",
+            "shortDescription": "Hawaiian roll, fan strum, and tremolo picking.",
+            "longDescription": "The ukulele has its own tradition of expressive techniques developed especially in Hawaiian playing. This section covers the Hawaiian roll, the flamenco-influenced fan strum, and tremolo picking.",
+            "instrumentId": "inst-ukulele",
+            "genreId": "gen-hawaiian",
+            "dependencies": [
+                "uku-sctn-005",
+                "uku-sctn-007"
+            ],
+            "unlocks": [
+                "uku-sctn-012",
+                "uku-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 11,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "hawaiian",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-033",
+                    "sectionId": "uku-sctn-011",
+                    "roadmapId": "rm-uku",
+                    "title": "The Hawaiian Roll",
+                    "shortDescription": "A fast, fan-like strum using multiple fingers in sequence.",
+                    "longDescription": "The Hawaiian roll (or 'four-finger roll') strums the strings with the fingers in rapid succession — typically ring, middle, index, thumb — producing a fanned, rapid sound. It's used for dramatic emphasis, song intros, and the end of phrases. It's a distinctive ukulele technique.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute a basic roll with the fingers in sequence",
+                        "Apply rolls for emphasis at the end of phrases",
+                        "Develop speed gradually"
+                    ],
+                    "commonMistakes": [
+                        "Trying to play fast before slow practice — the roll requires precise finger sequencing"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "hawaiian",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-034",
+                    "sectionId": "uku-sctn-011",
+                    "roadmapId": "rm-uku",
+                    "title": "Fan Strum",
+                    "shortDescription": "A flamenco-influenced rapid strum that creates a continuous wash of sound.",
+                    "longDescription": "The fan strum (or 'fanning' technique) plays a continuous rapid alternation of fingers (typically i-m-a or just i-m) to create a sustained strumming sound similar to flamenco rasgueado. It can be sustained for long passages, creating an exciting, energetic texture.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-033"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute a sustained fan strum",
+                        "Maintain even volume across fingers",
+                        "Apply for dramatic moments in songs"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "hawaiian",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-035",
+                    "sectionId": "uku-sctn-011",
+                    "roadmapId": "rm-uku",
+                    "title": "Tremolo Picking",
+                    "shortDescription": "Rapid alternation on a single string for a sustained, tremulous melody note.",
+                    "longDescription": "Tremolo on ukulele uses rapid alternation between the thumb (or index) on a single string, producing a sustained quivering tone. It's a beautiful effect for slow melody passages and ballads. Used by virtuoso players like Jake Shimabukuro.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce even tremolo on a single string",
+                        "Apply to melodic passages",
+                        "Maintain rhythmic precision while tremolo-ing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-012",
+            "roadmapId": "rm-uku",
+            "title": "Genre Playing",
+            "shortDescription": "Hawaiian, pop, jazz, and blues approaches to ukulele.",
+            "longDescription": "The ukulele plays across many styles. This section covers traditional Hawaiian music (the uke's native tradition), modern pop and indie playing, jazz ukulele (Lyle Ritz tradition), and blues on the uke.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-005",
+                "uku-sctn-010",
+                "uku-sctn-011"
+            ],
+            "unlocks": [
+                "uku-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 12,
+            "estimatedTime": {
+                "min": 30,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-036",
+                    "sectionId": "uku-sctn-012",
+                    "roadmapId": "rm-uku",
+                    "title": "Hawaiian and Polynesian Music",
+                    "shortDescription": "The ukulele's native musical tradition.",
+                    "longDescription": "The ukulele originated in Hawaii (adapted from a Portuguese-imported instrument called the machete in the 1880s) and is deeply tied to Hawaiian musical traditions. Master players like Israel Kamakawiwo'ole ('Bruddah Iz'), Eddie Kamae, and Ohta-san defined Hawaiian uke playing. The style emphasizes warm vocals supported by gentle strumming and tasteful fingerpicking.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-019"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn 3-5 traditional Hawaiian songs",
+                        "Apply the Island strum and other Hawaiian techniques",
+                        "Listen extensively to traditional Hawaiian recordings"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "hawaiian",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-037",
+                    "sectionId": "uku-sctn-012",
+                    "roadmapId": "rm-uku",
+                    "title": "Pop and Contemporary Playing",
+                    "shortDescription": "Modern pop, indie, and singer-songwriter approaches to ukulele.",
+                    "longDescription": "The ukulele has had a massive resurgence in modern pop and indie music. Players like Jason Mraz, Vance Joy, and Twenty One Pilots have brought the uke into mainstream pop. The style emphasizes accessible chord progressions, songwriting, and singing alongside the playing.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-018"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 5 pop songs you enjoy",
+                        "Develop singing-while-playing skill",
+                        "Adapt strumming patterns to song feels"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "pop",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-038",
+                    "sectionId": "uku-sctn-012",
+                    "roadmapId": "rm-uku",
+                    "title": "Jazz Ukulele",
+                    "shortDescription": "Chord melody, comping, and jazz harmony on uke.",
+                    "longDescription": "Jazz uke applies seventh chords, extended harmonies, and chord melody arrangements to the instrument. Lyle Ritz is the giant of jazz ukulele, with masterful arrangements of standards. Jake Shimabukuro has also brought jazz-influenced playing to wider audiences.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply 7th chords and extensions to uke playing",
+                        "Learn a jazz standard arranged for ukulele",
+                        "Begin work on chord melody (playing melody and chords together)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Lyle Ritz's records — the high water mark for jazz ukulele"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-039",
+                    "sectionId": "uku-sctn-012",
+                    "roadmapId": "rm-uku",
+                    "title": "Blues Ukulele",
+                    "shortDescription": "12-bar blues, shuffle feel, and blues phrasing on a small instrument.",
+                    "longDescription": "Blues on ukulele works the same way as on any instrument — 12-bar form, dominant 7 chords, blue notes — but the small size and re-entrant tuning give it a unique character. The blues style adds welcome grit and depth to the uke's bright tone.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "uku-tpc-031"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play a 12-bar blues on ukulele",
+                        "Apply blue notes and shuffle feel",
+                        "Improvise simple blues solos"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "blues",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-013",
+            "roadmapId": "rm-uku",
+            "title": "Intermediate Repertoire and Chord-Melody",
+            "shortDescription": "Hawaiian standards, chord melody arrangements, and popular song arrangements.",
+            "longDescription": "This section moves from technique to actual repertoire: traditional Hawaiian standards, the chord melody approach (playing melody and harmony simultaneously), and popular song arrangements.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-011",
+                "uku-sctn-012"
+            ],
+            "unlocks": [
+                "uku-sctn-014"
+            ],
+            "difficulty": "intermediate",
+            "order": 13,
+            "estimatedTime": {
+                "min": 30,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "repertoire",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-040",
+                    "sectionId": "uku-sctn-013",
+                    "roadmapId": "rm-uku",
+                    "title": "Hawaiian Standards",
+                    "shortDescription": "The core repertoire of traditional Hawaiian ukulele music.",
+                    "longDescription": "Hawaiian standards include 'Aloha 'Oe' (by Queen Liliʻuokalani), 'Pearly Shells', 'Hawaiian Wedding Song', and many others. Learning these connects you to the instrument's deep tradition.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-036"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 3-5 Hawaiian standards",
+                        "Apply traditional techniques (Island strum, chunking, rolls)",
+                        "Sing while playing where appropriate"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "hawaiian",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-041",
+                    "sectionId": "uku-sctn-013",
+                    "roadmapId": "rm-uku",
+                    "title": "Chord Melody Arrangements",
+                    "shortDescription": "Play the melody and chords simultaneously on solo ukulele.",
+                    "longDescription": "Chord melody is the art of arranging songs so that you play both the melody and the harmony at the same time on a single instrument — the highest note is the melody, while lower notes complete the chord. It's the most sophisticated approach to solo ukulele.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-023",
+                        "uku-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Arrange a simple song as a chord melody",
+                        "Identify the melody notes and assign them to the highest string",
+                        "Add chord notes below the melody on the other strings"
+                    ],
+                    "commonMistakes": [
+                        "Adding so many chord notes that the melody gets buried — keep the highest note (the melody) clearest"
+                    ],
+                    "practiceTips": [
+                        "Start with a song with a slow, simple melody — fast melodies make chord melody arranging difficult"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "fingerstyle",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-042",
+                    "sectionId": "uku-sctn-013",
+                    "roadmapId": "rm-uku",
+                    "title": "Popular Song Arrangements",
+                    "shortDescription": "Solo and accompanied arrangements of pop and folk favorites.",
+                    "longDescription": "Many popular songs have been beautifully arranged for ukulele. From Beatles songs to film themes to recent pop hits, you can find arrangements ranging from simple chord charts to complex solo guitar-style arrangements.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-016"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn arrangements of 3-5 popular songs you love",
+                        "Apply chord melody where appropriate",
+                        "Develop sensitivity to which arrangements suit ukulele's tonal range"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "popular",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-014",
+            "roadmapId": "rm-uku",
+            "title": "Advanced Technique and Repertoire",
+            "shortDescription": "Advanced fingerstyle, tapping, harmonics, and virtuoso repertoire.",
+            "longDescription": "The advanced ukulele world has expanded dramatically in recent decades. This section covers complex fingerstyle, tapping, harmonics, and the advanced repertoire that pushes the instrument's possibilities.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-013"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 14,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "repertoire",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-043",
+                    "sectionId": "uku-sctn-014",
+                    "roadmapId": "rm-uku",
+                    "title": "Advanced Fingerstyle",
+                    "shortDescription": "Complex arpeggios, hammer-ons, pull-offs, and inter-string melodic playing.",
+                    "longDescription": "Advanced fingerstyle uke combines multiple techniques: chord melody, hammer-ons/pull-offs, percussive elements, harmonics, and more. Players like Jake Shimabukuro have raised the technical bar dramatically over the past 20 years.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Combine multiple techniques in complex arrangements",
+                        "Apply hammer-ons and pull-offs across strings",
+                        "Develop personal fingerstyle vocabulary"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fingerstyle",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-044",
+                    "sectionId": "uku-sctn-014",
+                    "roadmapId": "rm-uku",
+                    "title": "Tapping",
+                    "shortDescription": "Hammer notes with the picking hand for wide-interval lines.",
+                    "longDescription": "Tapping on ukulele uses the picking-hand fingers to hammer notes onto the fretboard, allowing wide-interval lines impossible with traditional technique. Jake Shimabukuro famously incorporates tapping in his playing.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "uku-tpc-043"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean tapped notes with the picking hand",
+                        "Combine with fretting-hand notes for two-handed lines",
+                        "Mute strings carefully to avoid open string noise"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-045",
+                    "sectionId": "uku-sctn-014",
+                    "roadmapId": "rm-uku",
+                    "title": "Natural and Artificial Harmonics",
+                    "shortDescription": "Bell-like tones produced by lightly touching the string at overtone points.",
+                    "longDescription": "Natural harmonics ring at the 12th, 7th, and 5th frets (and others) when lightly touched. They produce a chime-like sound that's especially beautiful on ukulele. Artificial harmonics let you produce harmonics at any pitch by using both hands.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce clean natural harmonics at standard locations",
+                        "Apply to melodic passages",
+                        "Begin work on artificial harmonics"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-046",
+                    "sectionId": "uku-sctn-014",
+                    "roadmapId": "rm-uku",
+                    "title": "Advanced Repertoire",
+                    "shortDescription": "Jake Shimabukuro's arrangements, classical adaptations, and virtuosic original works.",
+                    "longDescription": "The advanced ukulele repertoire has expanded dramatically: Jake Shimabukuro's solo arrangements (including his famous version of 'While My Guitar Gently Weeps'), classical pieces adapted for uke, and original works by contemporary composers all push the instrument's boundaries.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "uku-tpc-043"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least one advanced solo arrangement",
+                        "Apply all techniques (chord melody, harmonics, tapping, dynamics)",
+                        "Develop performance-ready repertoire"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Watch Jake Shimabukuro performances on video — he's the model for modern advanced ukulele playing"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "uku-sctn-015",
+            "roadmapId": "rm-uku",
+            "title": "Ear Training and Performance",
+            "shortDescription": "Playing by ear, singing while playing, live performance, and transcription.",
+            "longDescription": "This section covers parallel skills that develop throughout your ukulele journey: playing by ear, singing while playing (essential since ukulele is often a self-accompaniment instrument), live performance considerations, and transcription.",
+            "instrumentId": "inst-ukulele",
+            "genreId": null,
+            "dependencies": [
+                "uku-sctn-004"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 15,
+            "estimatedTime": {
+                "min": 20,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "ear-training",
+                "performance",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "uku-tpc-047",
+                    "sectionId": "uku-sctn-015",
+                    "roadmapId": "rm-uku",
+                    "title": "Playing by Ear",
+                    "shortDescription": "Work out songs from recordings without sheet music or tabs.",
+                    "longDescription": "Playing by ear is essential for any ukulele player — many songs are learned by listening rather than reading. Start with melodies, then chord progressions, then complete songs. The ukulele's compact range makes it relatively easy to find melodies by ear.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "uku-tpc-016"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work out simple melodies by ear",
+                        "Identify chord progressions by ear",
+                        "Build a repertoire of songs learned without tabs"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Start with songs you know extremely well — easier to hear when the music is already in memory"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "playing-by-ear"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-048",
+                    "sectionId": "uku-sctn-015",
+                    "roadmapId": "rm-uku",
+                    "title": "Singing While Playing",
+                    "shortDescription": "Combining vocals with ukulele accompaniment.",
+                    "longDescription": "Many ukulele players also sing — the instrument is ideal for self-accompaniment because the strumming is rhythmic and chord-based. The challenge is coordinating: the strumming hand keeps the rhythm while the voice carries the melody. Start with songs where you can already sing the melody confidently.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play and sing a simple song simultaneously",
+                        "Use rhythmic strumming that supports the vocal",
+                        "Coordinate complex strumming with vocal phrasing"
+                    ],
+                    "commonMistakes": [
+                        "Stopping to think — the strumming hand must run on autopilot",
+                        "Letting the strumming dominate the singing (or vice versa)"
+                    ],
+                    "practiceTips": [
+                        "Pick a song you sing in the shower. If you can sing it without the uke, you can probably learn to sing it while playing."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "voice",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-049",
+                    "sectionId": "uku-sctn-015",
+                    "roadmapId": "rm-uku",
+                    "title": "Live Performance Considerations",
+                    "shortDescription": "Amplification, monitoring, stage presence, and ukulele-specific live challenges.",
+                    "longDescription": "Performing live with a ukulele has its own challenges. Most ukuleles are quiet acoustically — for any non-intimate setting, you'll need amplification (a microphone or a pickup-equipped ukulele). Stage presence matters: the uke invites a friendly, accessible vibe.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "uku-tpc-048"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Plan amplification for live performance situations",
+                        "Manage stage nerves through preparation",
+                        "Develop appropriate stage presence"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "uku-tpc-050",
+                    "sectionId": "uku-sctn-015",
+                    "roadmapId": "rm-uku",
+                    "title": "Transcription",
+                    "shortDescription": "Notate what you hear from recordings — the deepest form of musical study.",
+                    "longDescription": "Transcribing parts from recordings trains your ear and builds vocabulary. For ukulele, transcribing both ukulele parts and parts from other instruments (translating them to uke) builds versatile musicianship.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "uku-tpc-047"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe a complete song's chord progression",
+                        "Transcribe a melody or short solo",
+                        "Apply transcribed material to your own playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Slow recordings without changing pitch using software like Audacity, Anytune, or YouTube playback speed"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}

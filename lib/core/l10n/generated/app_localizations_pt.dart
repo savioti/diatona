@@ -145,31 +145,108 @@ class AppLocalizationsPt extends AppLocalizations {
   String get comingSoon => 'Em Breve';
 
   @override
-  String get noteTrainerClefLabel => 'Clef';
+  String get noteTrainerDisplayModeLabel => 'Modo de Exibição';
 
   @override
-  String get noteLevelStandard => 'Standard';
+  String get noteLevelStandard => 'Padrão';
 
   @override
-  String get noteLevelAccidentals => 'Accidentals';
+  String get noteLevelAccidentals => 'Com Acidentes';
 
   @override
-  String get chordDisplay => 'Chord Display';
+  String get chordDisplay => 'Exibição de Acordes';
 
   @override
-  String get displayModeSymbol => 'Symbol';
+  String get displayModeSymbol => 'Símbolo';
 
   @override
-  String get displayModeTrebleClef => 'Treble Clef';
+  String get displayModeTrebleClef => 'Clave de Sol';
 
   @override
-  String get displayModeBassClef => 'Bass Clef';
+  String get displayModeBassClef => 'Clave de Fá';
 
   @override
-  String get displayModeGuitar => 'Guitar';
+  String get displayModeLetterNames => 'Nomes das Notas';
+
+  @override
+  String get displayModeGuitar => 'Guitarra';
 
   @override
   String get displayModeUkulele => 'Ukulele';
+
+  @override
+  String refLoadError(String error) {
+    return 'Erro ao carregar referências: $error';
+  }
+
+  @override
+  String get refHowItWorksTooltip => 'Como funciona';
+
+  @override
+  String get refTapKeyToExplore => 'Toque uma tonalidade para explorar';
+
+  @override
+  String get refAscendingFifths => '5ªs ascendentes (horário) →';
+
+  @override
+  String get refAscendingFourths => '← 4ªs ascendentes (anti-horário)';
+
+  @override
+  String get refNoAccidentals => 'Sem acidentes';
+
+  @override
+  String get refKeySignature => 'Armadura';
+
+  @override
+  String get refDiatonicChords => 'Acordes diatônicos';
+
+  @override
+  String get refTapChordFunction => 'Toque um acorde para ver sua função';
+
+  @override
+  String get refTapLevelExpand => 'Toque um nível para expandir subdivisões';
+
+  @override
+  String get refWholeStepLegend => 'I = intervalo inteiro (2 casas)';
+
+  @override
+  String get refHalfStepLegend => 'M = meio-tom (1 casa)';
+
+  @override
+  String get refMinorNatural => 'Natural';
+
+  @override
+  String get refMinorHarmonic => 'Harmônica';
+
+  @override
+  String get refMinorMelodic => 'Melódica';
+
+  @override
+  String refScaleNotesFrom(String note, String parentKey) {
+    return 'Notas da escala (a partir de $note, usando $parentKey):';
+  }
+
+  @override
+  String get refModeFormula => 'Fórmula';
+
+  @override
+  String get refModeCharacteristic => 'Característica';
+
+  @override
+  String get refModeMood => 'Clima';
+
+  @override
+  String get refPentatonicLegend =>
+      '● = nota  ⊙ = fundamental  Toque as caixas para alternar';
+
+  @override
+  String get refFnTonic => 'Tônica';
+
+  @override
+  String get refFnSubdominant => 'Subdom.';
+
+  @override
+  String get refFnDominant => 'Dom.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -311,4 +388,108 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get comingSoon => 'Em Breve';
+
+  @override
+  String get noteTrainerDisplayModeLabel => 'Modo de Exibição';
+
+  @override
+  String get noteLevelStandard => 'Padrão';
+
+  @override
+  String get noteLevelAccidentals => 'Com Acidentes';
+
+  @override
+  String get chordDisplay => 'Exibição de Acordes';
+
+  @override
+  String get displayModeSymbol => 'Símbolo';
+
+  @override
+  String get displayModeTrebleClef => 'Clave de Sol';
+
+  @override
+  String get displayModeBassClef => 'Clave de Fá';
+
+  @override
+  String get displayModeLetterNames => 'Nomes das Notas';
+
+  @override
+  String get displayModeGuitar => 'Guitarra';
+
+  @override
+  String get displayModeUkulele => 'Ukulele';
+
+  @override
+  String refLoadError(String error) {
+    return 'Erro ao carregar referências: $error';
+  }
+
+  @override
+  String get refHowItWorksTooltip => 'Como funciona';
+
+  @override
+  String get refTapKeyToExplore => 'Toque uma tonalidade para explorar';
+
+  @override
+  String get refAscendingFifths => '5ªs ascendentes (horário) →';
+
+  @override
+  String get refAscendingFourths => '← 4ªs ascendentes (anti-horário)';
+
+  @override
+  String get refNoAccidentals => 'Sem acidentes';
+
+  @override
+  String get refKeySignature => 'Armadura';
+
+  @override
+  String get refDiatonicChords => 'Acordes diatônicos';
+
+  @override
+  String get refTapChordFunction => 'Toque um acorde para ver sua função';
+
+  @override
+  String get refTapLevelExpand => 'Toque um nível para expandir subdivisões';
+
+  @override
+  String get refWholeStepLegend => 'I = intervalo inteiro (2 casas)';
+
+  @override
+  String get refHalfStepLegend => 'M = meio-tom (1 casa)';
+
+  @override
+  String get refMinorNatural => 'Natural';
+
+  @override
+  String get refMinorHarmonic => 'Harmônica';
+
+  @override
+  String get refMinorMelodic => 'Melódica';
+
+  @override
+  String refScaleNotesFrom(String note, String parentKey) {
+    return 'Notas da escala (a partir de $note, usando $parentKey):';
+  }
+
+  @override
+  String get refModeFormula => 'Fórmula';
+
+  @override
+  String get refModeCharacteristic => 'Característica';
+
+  @override
+  String get refModeMood => 'Clima';
+
+  @override
+  String get refPentatonicLegend =>
+      '● = nota  ⊙ = fundamental  Toque as caixas para alternar';
+
+  @override
+  String get refFnTonic => 'Tônica';
+
+  @override
+  String get refFnSubdominant => 'Subdom.';
+
+  @override
+  String get refFnDominant => 'Dom.';
 }

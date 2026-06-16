@@ -14,32 +14,63 @@ class ThemePickerScreen extends ConsumerWidget {
     final current = ref.watch(selectedThemeProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.theme)),
-      body: ListView.separated(
-        padding: const EdgeInsets.symmetric(vertical: 8),
-        itemCount: AppThemeVariant.values.length,
-        separatorBuilder: (_, _) => const Divider(height: 1),
-        itemBuilder: (context, index) {
-          final variant = AppThemeVariant.values[index];
-          final isSelected = variant == current;
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 32, 24, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.chevron_left_rounded),
+                    iconSize: 28,
+                    onPressed: () => Navigator.of(context).pop(),
+                    padding: EdgeInsets.zero,
+                    alignment: Alignment.centerLeft,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    l10n.theme,
+                    style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                      fontSize: 32,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: ListView.separated(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                itemCount: AppThemeVariant.values.length,
+                separatorBuilder: (_, _) => const Divider(height: 1),
+                itemBuilder: (context, index) {
+                  final variant = AppThemeVariant.values[index];
+                  final isSelected = variant == current;
 
-          return ListTile(
-            contentPadding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            leading: _PalettePreview(palette: variant.palette),
-            title: Text(variant.displayName),
-            trailing: isSelected
-                ? Icon(Icons.check,
-                    color: Theme.of(context).colorScheme.primary)
-                : null,
-            onTap: () {
-              ref.read(selectedThemeProvider.notifier).update(variant);
-              ref
-                  .read(settingsRepositoryProvider)
-                  .saveThemeIndex(variant.index);
-            },
-          );
-        },
+                  return ListTile(
+                    contentPadding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    leading: _PalettePreview(palette: variant.palette),
+                    title: Text(variant.displayName),
+                    trailing: isSelected
+                        ? Icon(Icons.check,
+                            color: Theme.of(context).colorScheme.primary)
+                        : null,
+                    onTap: () {
+                      ref.read(selectedThemeProvider.notifier).update(variant);
+                      ref
+                          .read(settingsRepositoryProvider)
+                          .saveThemeIndex(variant.index);
+                    },
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

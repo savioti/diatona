@@ -1,0 +1,3080 @@
+{
+    "id": "rm-clr",
+    "title": "Clarinet Roadmap",
+    "shortDescription": "A comprehensive roadmap to learn clarinet from absolute beginner to advanced.",
+    "longDescription": "This roadmap covers everything specific to the clarinet: assembly and reed care, embouchure formation, diaphragmatic breathing, the three registers (chalumeau, clarion, altissimo), the famous 'break' between chalumeau and clarion, scales and arpeggios in all keys, the classical method book tradition (Klosé, Rose, Lazarus), and genre playing across classical, jazz, klezmer, and wind band. Advanced topics include vibrato, glissando (think Rhapsody in Blue!), circular breathing, multiphonics, and the cornerstone repertoire (Mozart Concerto, Weber concertos, Brahms sonatas). Free resources draw on IMSLP for public-domain method books and repertoire.",
+    "sections": [
+        {
+            "id": "clr-sctn-001",
+            "roadmapId": "rm-clr",
+            "title": "Getting Started",
+            "shortDescription": "Anatomy, assembly, reeds, and basic maintenance.",
+            "longDescription": "Before playing, you need to know your instrument: how to assemble it without damaging the cork, how to choose and care for reeds (the heart of clarinet sound), and how to maintain the instrument so it stays playable for years.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [],
+            "unlocks": [
+                "clr-sctn-002",
+                "clr-sctn-004",
+                "clr-sctn-005"
+            ],
+            "difficulty": "beginner",
+            "order": 1,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "maintenance",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-001",
+                    "sectionId": "clr-sctn-001",
+                    "roadmapId": "rm-clr",
+                    "title": "Parts of the Clarinet",
+                    "shortDescription": "The five-piece anatomy: mouthpiece, barrel, upper joint, lower joint, bell.",
+                    "longDescription": "A standard B♭ clarinet has five parts that come apart for storage: the mouthpiece (which holds the reed and ligature), the barrel (small tube below the mouthpiece, used for fine pitch adjustment), the upper joint (with keys for the left hand), the lower joint (keys for the right hand), and the bell at the bottom. The Boehm system (the modern key system) has 17 keys and 6 rings.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Name and identify all five parts of the clarinet",
+                        "Understand the role of each part in producing sound",
+                        "Recognize that the clarinet is a transposing instrument in B♭ (covered later)"
+                    ],
+                    "commonMistakes": [
+                        "Forcing parts together when assembling — they should slide together with gentle pressure and twist"
+                    ],
+                    "practiceTips": [
+                        "Look at your specific instrument — there are several clarinet types (B♭, A, E♭, bass, etc.), but B♭ is by far the most common starter"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "anatomy",
+                        "beginner"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-001",
+                            "type": "quiz",
+                            "title": "Clarinet Anatomy Quiz",
+                            "description": "Quick check on the parts.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-001",
+                                    "questionText": "A standard clarinet comes apart into how many main pieces?",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-001",
+                                            "optionText": "3"
+                                        },
+                                        {
+                                            "id": "clr-opt-002",
+                                            "optionText": "4"
+                                        },
+                                        {
+                                            "id": "clr-opt-003",
+                                            "optionText": "5"
+                                        },
+                                        {
+                                            "id": "clr-opt-004",
+                                            "optionText": "6"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-003"
+                                    ],
+                                    "explanation": "The clarinet has 5 main pieces: mouthpiece, barrel, upper joint, lower joint, and bell."
+                                },
+                                {
+                                    "id": "clr-qstn-002",
+                                    "questionText": "The most common clarinet for beginners is in which key?",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-005",
+                                            "optionText": "B♭"
+                                        },
+                                        {
+                                            "id": "clr-opt-006",
+                                            "optionText": "A"
+                                        },
+                                        {
+                                            "id": "clr-opt-007",
+                                            "optionText": "C"
+                                        },
+                                        {
+                                            "id": "clr-opt-008",
+                                            "optionText": "E♭"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-005"
+                                    ],
+                                    "explanation": "The B♭ clarinet is the standard beginner instrument. Other clarinets exist (A, E♭, bass, etc.) but B♭ is by far the most common."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-002",
+                    "sectionId": "clr-sctn-001",
+                    "roadmapId": "rm-clr",
+                    "title": "Assembling the Clarinet",
+                    "shortDescription": "Put the parts together in the correct order, with care for the cork.",
+                    "longDescription": "Clarinet assembly requires care because the cork joints can be damaged by rough handling. Use cork grease on the joints periodically. Twist gently while pushing pieces together; never force them. Always align the keys correctly so the bridge mechanism between upper and lower joints engages.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 20,
+                        "max": 45,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Assemble the clarinet in the correct sequence (bell-lower joint-upper joint-barrel-mouthpiece-reed-ligature)",
+                        "Apply cork grease appropriately",
+                        "Align the bridge keys between upper and lower joints correctly"
+                    ],
+                    "commonMistakes": [
+                        "Forcing pieces together when they're stuck (damages cork)",
+                        "Misaligning the bridge keys between upper and lower joints (causes keys to not work properly)",
+                        "Holding pieces by the keys when assembling (bends keys)"
+                    ],
+                    "practiceTips": [
+                        "Hold the upper joint by the top, near the cork — not by the keys",
+                        "Apply cork grease whenever the joints feel dry or stiff"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "maintenance"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-003",
+                    "sectionId": "clr-sctn-001",
+                    "roadmapId": "rm-clr",
+                    "title": "The Reed: Selection and Care",
+                    "shortDescription": "The reed is the heart of clarinet sound — and it's a consumable.",
+                    "longDescription": "Clarinet reeds are thin pieces of cane (or sometimes synthetic material) that vibrate against the mouthpiece to produce sound. They come in strengths from 1 (soft) to 5 (hard), with beginners typically starting at 2 or 2.5. Reeds must be soaked in water (or saliva) before playing, stored properly, and rotated (use multiple reeds rather than just one) to last longer.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Select an appropriate reed strength for your level (typically 2-2.5 for beginners)",
+                        "Soak the reed for 1-2 minutes before playing",
+                        "Store reeds in a proper reed case to prevent warping",
+                        "Rotate through several reeds rather than using just one"
+                    ],
+                    "commonMistakes": [
+                        "Using a reed that's too hard (causes difficulty producing sound, embouchure fatigue)",
+                        "Skipping the soaking step (reed plays poorly when dry)",
+                        "Leaving reeds on the mouthpiece for extended periods (warps the reed)"
+                    ],
+                    "practiceTips": [
+                        "Buy a box of 10 reeds and number them — discover which ones play best and rotate the good ones",
+                        "After playing, wipe the reed dry and store it flat in a reed case"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "reed",
+                        "maintenance"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-002",
+                            "type": "quiz",
+                            "title": "Reed Basics Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-003",
+                                    "questionText": "Clarinet reed strengths range from approximately 1 to 5, where:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-009",
+                                            "optionText": "1 is hardest, 5 is softest"
+                                        },
+                                        {
+                                            "id": "clr-opt-010",
+                                            "optionText": "1 is softest, 5 is hardest"
+                                        },
+                                        {
+                                            "id": "clr-opt-011",
+                                            "optionText": "They all play the same"
+                                        },
+                                        {
+                                            "id": "clr-opt-012",
+                                            "optionText": "Numbers indicate length"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-010"
+                                    ],
+                                    "explanation": "Strength 1 is the softest (easiest to vibrate, but thinner tone), and 5 is the hardest. Beginners typically start at 2 or 2.5 and may move up as embouchure strengthens."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-004",
+                    "sectionId": "clr-sctn-001",
+                    "roadmapId": "rm-clr",
+                    "title": "Care and Maintenance",
+                    "shortDescription": "Daily and periodic care to keep the instrument playing well.",
+                    "longDescription": "After every playing session, swab out the clarinet to remove moisture (a long cloth swab pulled through each joint). Periodically clean the mouthpiece (warm water, no hot water on plastic mouthpieces). Apply cork grease as needed. Take the instrument for professional cleaning and adjustment once or twice a year.",
+                    "difficulty": "beginner",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Swab the instrument after every playing session",
+                        "Clean the mouthpiece weekly",
+                        "Apply cork grease as needed",
+                        "Get professional servicing periodically"
+                    ],
+                    "commonMistakes": [
+                        "Leaving moisture in the instrument (causes pad damage and bad smells)",
+                        "Using hot water on plastic mouthpieces (deforms them)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "maintenance"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-002",
+            "roadmapId": "rm-clr",
+            "title": "Embouchure and First Sounds",
+            "shortDescription": "The lip-and-jaw setup that produces sound, your first notes, and long tone practice.",
+            "longDescription": "The embouchure is the heart of clarinet playing. This section establishes proper embouchure formation, helps you produce your first sounds, and introduces long tones — the foundational tone-development exercise.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-001"
+            ],
+            "unlocks": [
+                "clr-sctn-003",
+                "clr-sctn-006"
+            ],
+            "difficulty": "beginner",
+            "order": 2,
+            "estimatedTime": {
+                "min": 5,
+                "max": 15,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "embouchure",
+                "tone",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-005",
+                    "sectionId": "clr-sctn-002",
+                    "roadmapId": "rm-clr",
+                    "title": "Forming the Embouchure",
+                    "shortDescription": "The arrangement of lips and jaw that lets the reed vibrate properly.",
+                    "longDescription": "Clarinet embouchure typically uses a 'single-lip' approach: the lower lip cushions the reed (rolled slightly inward over the lower teeth), the upper teeth rest directly on the mouthpiece, and the corners of the mouth form a firm seal. The chin should be pointed and flat, not bunched. The pressure is firm but not biting — the reed needs to vibrate.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-002"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Form a single-lip embouchure with the lower lip over the lower teeth",
+                        "Keep the chin pointed and flat",
+                        "Apply firm corner pressure without biting the reed"
+                    ],
+                    "commonMistakes": [
+                        "Biting the reed (kills vibration, produces thin or no sound)",
+                        "Bunched chin (creates an unfocused tone)",
+                        "Smiling embouchure that pulls the corners back (loses tone control)"
+                    ],
+                    "practiceTips": [
+                        "Look in a mirror — embouchure is largely about visual feedback at first",
+                        "The lower lip should look like a flat cushion, not a folded mountain"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "embouchure",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-003",
+                            "type": "quiz",
+                            "title": "Embouchure Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-004",
+                                    "questionText": "The most common clarinet embouchure approach is:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-013",
+                                            "optionText": "Double-lip (both lips over teeth)"
+                                        },
+                                        {
+                                            "id": "clr-opt-014",
+                                            "optionText": "Single-lip (only the lower lip cushions the reed)"
+                                        },
+                                        {
+                                            "id": "clr-opt-015",
+                                            "optionText": "No lip contact with the mouthpiece"
+                                        },
+                                        {
+                                            "id": "clr-opt-016",
+                                            "optionText": "Whatever feels natural"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-014"
+                                    ],
+                                    "explanation": "Single-lip embouchure (lower lip over the lower teeth, upper teeth directly on the mouthpiece) is the standard modern approach. Double-lip is used by some players for particular tonal effects but is less common."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-006",
+                    "sectionId": "clr-sctn-002",
+                    "roadmapId": "rm-clr",
+                    "title": "First Sounds",
+                    "shortDescription": "Produce your first notes by blowing through a properly formed embouchure.",
+                    "longDescription": "Once embouchure is in place, gently blow air through the instrument. The reed should vibrate against the mouthpiece producing sound. Start without any fingers down — this produces a high note. The sound should be clear and steady, not airy or squeaky.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-005"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a steady tone with no fingers down",
+                        "Sustain a single note for several seconds",
+                        "Recognize and correct squeaks (usually embouchure or reed issues)"
+                    ],
+                    "commonMistakes": [
+                        "Squeaks: usually too much air pressure, embouchure issues, or reed problems",
+                        "Airy sound: not enough lip pressure or reed too dry/too soft"
+                    ],
+                    "practiceTips": [
+                        "Don't blow too hard. The reed needs steady, consistent air, not force.",
+                        "If you keep squeaking, check the embouchure in a mirror — usually a problem can be seen"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-007",
+                    "sectionId": "clr-sctn-002",
+                    "roadmapId": "rm-clr",
+                    "title": "Long Tones",
+                    "shortDescription": "The fundamental exercise for clarinet tone development.",
+                    "longDescription": "Long tones are sustained notes held for as long as breath allows, with focus on tone quality, pitch, and steadiness. They're the foundation of all clarinet practice — even professional players play long tones daily for warming up and tone development.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-006"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sustain notes for 10-20 seconds with steady tone and pitch",
+                        "Listen for tone quality (warm and centered, not airy or thin)",
+                        "Maintain stable pitch (use a tuner)"
+                    ],
+                    "commonMistakes": [
+                        "Letting tone become tense or pinched as breath runs out",
+                        "Allowing pitch to drop at the end of a note"
+                    ],
+                    "practiceTips": [
+                        "Practice long tones daily for 5-10 minutes — it builds embouchure, breath control, and tone quality all at once",
+                        "Use a tuner to monitor pitch stability"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-003",
+            "roadmapId": "rm-clr",
+            "title": "Breathing",
+            "shortDescription": "Diaphragmatic breathing, breath support, and breathing for phrasing.",
+            "longDescription": "Breathing on the clarinet is more than just inhaling and exhaling — it's the engine of tone, dynamics, and phrasing. This section covers diaphragmatic breathing, controlled breath support, and the musical art of breathing within phrases.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-002"
+            ],
+            "unlocks": [
+                "clr-sctn-006",
+                "clr-sctn-010"
+            ],
+            "difficulty": "beginner",
+            "order": 3,
+            "estimatedTime": {
+                "min": 3,
+                "max": 8,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "breathing",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-008",
+                    "sectionId": "clr-sctn-003",
+                    "roadmapId": "rm-clr",
+                    "title": "Diaphragmatic Breathing",
+                    "shortDescription": "Use the diaphragm — not the chest — to power the air column.",
+                    "longDescription": "Clarinet (like all wind instruments) requires deep, supported breathing from the diaphragm. The belly should expand on inhale (not the chest); the diaphragm contracts downward, pulling air into the lower lungs. This provides far more air capacity and breath support than chest breathing.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Inhale by expanding the belly outward (not raising the shoulders)",
+                        "Take large, relaxed breaths quickly",
+                        "Use the abdominal muscles to support exhale"
+                    ],
+                    "commonMistakes": [
+                        "Chest breathing (shallow, limited air)",
+                        "Raising the shoulders during inhale (tension and limited capacity)"
+                    ],
+                    "practiceTips": [
+                        "Lie on your back and place a book on your belly. Breathe so the book rises and falls. This trains diaphragmatic breathing."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "breathing",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-004",
+                            "type": "quiz",
+                            "title": "Diaphragmatic Breathing Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-005",
+                                    "questionText": "Proper clarinet breathing involves expansion primarily of:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-017",
+                                            "optionText": "The chest"
+                                        },
+                                        {
+                                            "id": "clr-opt-018",
+                                            "optionText": "The shoulders rising"
+                                        },
+                                        {
+                                            "id": "clr-opt-019",
+                                            "optionText": "The belly/diaphragm area"
+                                        },
+                                        {
+                                            "id": "clr-opt-020",
+                                            "optionText": "Wherever feels natural"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-019"
+                                    ],
+                                    "explanation": "Diaphragmatic breathing expands the belly area as the diaphragm contracts downward, drawing air deep into the lungs. The chest and shoulders should stay relatively still."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-009",
+                    "sectionId": "clr-sctn-003",
+                    "roadmapId": "rm-clr",
+                    "title": "Breath Support",
+                    "shortDescription": "Use the abdominal muscles to maintain steady air pressure during exhalation.",
+                    "longDescription": "Breath support is the controlled use of abdominal muscles to push air out steadily. Without support, tone wavers, pitch drops, and dynamics become uneven. Support is a constant slight pressure, not a forced push — like a steady column of air.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-008"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Apply consistent abdominal support throughout long notes",
+                        "Maintain tone quality and pitch as breath runs out",
+                        "Distinguish 'pushing' from 'supporting' (support is steady, not forced)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice long tones with focus on the last few seconds — that's where support matters most"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "breathing",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-010",
+                    "sectionId": "clr-sctn-003",
+                    "roadmapId": "rm-clr",
+                    "title": "Breathing for Phrasing",
+                    "shortDescription": "Plan where to breathe within musical phrases.",
+                    "longDescription": "Breathing isn't just physical — it's musical. Plan your breaths to fall at phrase endings (commas, periods of musical structure), not arbitrarily. Mark breath points in your music. Train yourself to take quick, full breaths in short pauses.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify musical phrase endings as breath points",
+                        "Take full breaths quickly when needed",
+                        "Plan breath strategy for longer pieces"
+                    ],
+                    "commonMistakes": [
+                        "Breathing mid-phrase (breaks the musical line)",
+                        "Taking shallow breaths because of time pressure (leaves you short of air)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "breathing",
+                        "musicality",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-004",
+            "roadmapId": "rm-clr",
+            "title": "Posture and Hand Position",
+            "shortDescription": "Sitting/standing posture, hand placement, and weight management.",
+            "longDescription": "Physical setup matters for playing comfort, technique, and long-term health. This section covers posture, hand position, and managing the instrument's weight via the thumb rest and (often) a neck strap.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-001"
+            ],
+            "unlocks": [
+                "clr-sctn-006"
+            ],
+            "difficulty": "beginner",
+            "order": 4,
+            "estimatedTime": {
+                "min": 2,
+                "max": 4,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "fundamentals",
+                "posture",
+                "ergonomics",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-011",
+                    "sectionId": "clr-sctn-004",
+                    "roadmapId": "rm-clr",
+                    "title": "Posture",
+                    "shortDescription": "Sit or stand with the instrument held correctly.",
+                    "longDescription": "Clarinet can be played sitting or standing. In either position, the back should be upright but not rigid, the head level, and the instrument held at a roughly 30-45° angle from vertical (not horizontal like a flute, not vertical like a recorder). The neck and shoulders should be relaxed.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sit or stand with relaxed, upright posture",
+                        "Hold the clarinet at approximately 30-45° from vertical",
+                        "Keep the head level (don't tilt forward to reach the mouthpiece)"
+                    ],
+                    "commonMistakes": [
+                        "Hunching forward toward the music stand",
+                        "Holding the clarinet too vertical or too horizontal"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "posture"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-012",
+                    "sectionId": "clr-sctn-004",
+                    "roadmapId": "rm-clr",
+                    "title": "Hand Position",
+                    "shortDescription": "Left hand on top (upper joint), right hand on bottom (lower joint).",
+                    "longDescription": "The left hand operates the upper joint keys (with the left thumb operating the register key on the back). The right hand operates the lower joint keys. The right thumb supports the instrument via the thumb rest. Fingers should be relaxed and curved over the keys and tone holes — not flat or tense.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Position the left hand on the upper joint",
+                        "Position the right hand on the lower joint",
+                        "Support the instrument's weight on the right thumb",
+                        "Keep fingers curved and relaxed"
+                    ],
+                    "commonMistakes": [
+                        "Flat fingers (limit speed and accuracy)",
+                        "Tense thumb (causes pain over long practice)",
+                        "Reaching with fingers instead of moving the hand"
+                    ],
+                    "practiceTips": [
+                        "If the right thumb hurts, consider a neck strap to share the weight",
+                        "Use a mirror occasionally to check that fingers are properly curved"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "hand-position"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-013",
+                    "sectionId": "clr-sctn-004",
+                    "roadmapId": "rm-clr",
+                    "title": "Thumb Rest and Neck Strap",
+                    "shortDescription": "Manage the weight of the instrument.",
+                    "longDescription": "The clarinet's full weight rests on the right thumb via the thumb rest, which can cause thumb pain over time. Many players use a neck strap that attaches to a small ring on the lower joint, distributing the weight to the neck. There are also ergonomic thumb rest modifications.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-012"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 15,
+                        "max": 30,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Use the thumb rest correctly",
+                        "Consider a neck strap if thumb pain develops",
+                        "Avoid playing through pain — instrument weight management is a real issue"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "fundamentals",
+                        "ergonomics"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-005",
+            "roadmapId": "rm-clr",
+            "title": "Reading and Counting",
+            "shortDescription": "Treble clef, transposing instrument concept, and rhythm.",
+            "longDescription": "This section covers what makes clarinet reading distinctive: standard treble clef notation, the all-important transposing instrument concept (clarinet sounds different from what's written), and basic rhythmic counting.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-001"
+            ],
+            "unlocks": [
+                "clr-sctn-006",
+                "clr-sctn-017"
+            ],
+            "difficulty": "beginner",
+            "order": 5,
+            "estimatedTime": {
+                "min": 4,
+                "max": 10,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "reading",
+                "transposition",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-014",
+                    "sectionId": "clr-sctn-005",
+                    "roadmapId": "rm-clr",
+                    "title": "Reading Treble Clef",
+                    "shortDescription": "Clarinet music is written in treble clef.",
+                    "longDescription": "Clarinet music is written in treble clef. You'll learn the line and space notes and how to read simple melodies. Reading fluency develops over months — daily practice with simple etudes is the path.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify all line and space notes in treble clef",
+                        "Read simple melodies fluently",
+                        "Recognize key signatures (covered later in scales)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Use a mnemonic: 'Every Good Boy Does Fine' for lines (E-G-B-D-F), 'FACE' for spaces"
+                    ],
+                    "resources": [
+                        {
+                            "id": "clr-res-001",
+                            "type": "article",
+                            "url": "https://www.musictheory.net/lessons/10",
+                            "title": "The Staff, Clefs, and Ledger Lines (musictheory.net)",
+                            "durationInMinutes": 5,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "reading",
+                        "notation",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-015",
+                    "sectionId": "clr-sctn-005",
+                    "roadmapId": "rm-clr",
+                    "title": "The Clarinet as a Transposing Instrument",
+                    "shortDescription": "Written C on the B♭ clarinet sounds as concert B♭ — a major second below.",
+                    "longDescription": "The B♭ clarinet is a transposing instrument: the note written as C sounds as a B♭. This means if you read written C, the audience hears B♭. When playing with non-transposing instruments (piano, voice), you must mentally transpose or play from clarinet-transposed parts. The A clarinet transposes a minor third down. Other clarinets transpose differently.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Understand that B♭ clarinet sounds a major second below written",
+                        "Read clarinet parts written for the instrument's transposition",
+                        "Recognize when you may need to transpose from a concert pitch part"
+                    ],
+                    "commonMistakes": [
+                        "Trying to play from a piano/concert pitch score directly — you'll be in the wrong key",
+                        "Confusing written pitch with sounding pitch in discussion"
+                    ],
+                    "practiceTips": [
+                        "Most clarinet music is already written for the instrument's transposition — no mental work needed for typical clarinet parts",
+                        "When working with other musicians, clarify whether they're talking in 'clarinet pitch' or 'concert pitch'"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "reading",
+                        "transposition"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-005",
+                            "type": "quiz",
+                            "title": "Transposition Quiz",
+                            "description": "Test your understanding of the transposing nature of the clarinet.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-006",
+                                    "questionText": "When a B♭ clarinet reads the note 'C', the audience hears:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-021",
+                                            "optionText": "Concert C"
+                                        },
+                                        {
+                                            "id": "clr-opt-022",
+                                            "optionText": "Concert B♭ (a major second below)"
+                                        },
+                                        {
+                                            "id": "clr-opt-023",
+                                            "optionText": "Concert D (a major second above)"
+                                        },
+                                        {
+                                            "id": "clr-opt-024",
+                                            "optionText": "It depends on the volume"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-022"
+                                    ],
+                                    "explanation": "The B♭ clarinet sounds a major second below written. Written C sounds as concert B♭. This is what makes it a 'B♭ instrument'."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-016",
+                    "sectionId": "clr-sctn-005",
+                    "roadmapId": "rm-clr",
+                    "title": "Counting Rhythm",
+                    "shortDescription": "Subdivision, time signatures, and steady tempo.",
+                    "longDescription": "Rhythm on clarinet requires precise control of articulation and breath. Count subdivisions aloud while practicing. Use a metronome consistently. Understanding rhythmic patterns helps you place articulation accurately.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Count subdivisions aloud while playing",
+                        "Use a metronome",
+                        "Maintain steady tempo through breath changes"
+                    ],
+                    "commonMistakes": [
+                        "Skipping the metronome",
+                        "Letting tempo drift during long notes"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "rhythm",
+                        "reading",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-006",
+            "roadmapId": "rm-clr",
+            "title": "The Chalumeau Register (First Notes)",
+            "shortDescription": "First notes, simple melodies, and chalumeau tone production.",
+            "longDescription": "The chalumeau register is the clarinet's warm, woody low range. This section introduces the first fingerings, applies them to simple melodies, and refines tone production in this foundational register.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-002",
+                "clr-sctn-003",
+                "clr-sctn-004",
+                "clr-sctn-005"
+            ],
+            "unlocks": [
+                "clr-sctn-007",
+                "clr-sctn-008",
+                "clr-sctn-009"
+            ],
+            "difficulty": "beginner",
+            "order": 6,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "fingerings",
+                "chalumeau",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-017",
+                    "sectionId": "clr-sctn-006",
+                    "roadmapId": "rm-clr",
+                    "title": "First Notes in the Chalumeau Register",
+                    "shortDescription": "Begin with the comfortable, warm low register: low B, A, G, F, E, D, C.",
+                    "longDescription": "The chalumeau register is the clarinet's lowest range, named after the medieval ancestor of the clarinet. Notes here have a warm, woody character. Most method books start by introducing notes one at a time, building up from middle C (the open clarinet note on the upper joint) downward, or from G upward into the staff.",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play and identify the chalumeau register notes (low E through middle B-flat written)",
+                        "Coordinate fingerings with steady tone",
+                        "Hold notes long enough to develop tone and pitch awareness"
+                    ],
+                    "commonMistakes": [
+                        "Squeaking when fingerings aren't fully covering the tone holes",
+                        "Lifting fingers too high (slows movement)"
+                    ],
+                    "practiceTips": [
+                        "Press the keys and tone holes firmly enough to seal completely — leaks cause squeaks and weak tone",
+                        "Keep fingers close to the keys when not actively pressing"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fingerings",
+                        "chalumeau",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-018",
+                    "sectionId": "clr-sctn-006",
+                    "roadmapId": "rm-clr",
+                    "title": "Early Melodies",
+                    "shortDescription": "Apply your first notes to simple melodies.",
+                    "longDescription": "Once you have a handful of notes, you can play melodies. Method books include simple tunes (hymns, folk songs, scale fragments) that teach reading, fingering coordination, and tone all at once.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play simple melodies from a method book",
+                        "Coordinate fingering with reading and rhythm",
+                        "Sustain notes with consistent tone"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "clr-res-002",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Méthode_complète_pour_la_clarinette,_Op.63_(Klosé,_Hyacinthe)",
+                            "title": "Klosé Méthode Complète (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "repertoire",
+                        "fundamentals",
+                        "beginner"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-019",
+                    "sectionId": "clr-sctn-006",
+                    "roadmapId": "rm-clr",
+                    "title": "Tone Production in the Chalumeau",
+                    "shortDescription": "The low register requires relaxed embouchure and strong air.",
+                    "longDescription": "The chalumeau register typically wants a slightly more relaxed embouchure and strong, steady air to produce its characteristic warm tone. If notes sound thin or pinched, the embouchure is probably too tight; if they sound airy, more support or a better seal is needed.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce warm, full tone in the chalumeau register",
+                        "Maintain consistent tone quality across all chalumeau notes",
+                        "Recognize and correct tonal issues (pinched, airy, etc.)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Long tones in the chalumeau register are foundational — they reveal embouchure and air issues immediately"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "chalumeau"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-007",
+            "roadmapId": "rm-clr",
+            "title": "Articulation (Tonguing)",
+            "shortDescription": "Tonguing, staccato, legato, and slurs.",
+            "longDescription": "Articulation is the technique of starting and separating notes with the tongue. This section covers basic tonguing, staccato and legato styles, and slurs — the principal articulation tools of clarinet playing.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-006"
+            ],
+            "unlocks": [
+                "clr-sctn-008",
+                "clr-sctn-012"
+            ],
+            "difficulty": "beginner",
+            "order": 7,
+            "estimatedTime": {
+                "min": 8,
+                "max": 20,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "articulation",
+                "beginner"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-020",
+                    "sectionId": "clr-sctn-007",
+                    "roadmapId": "rm-clr",
+                    "title": "Basic Tonguing",
+                    "shortDescription": "The tongue starts and separates notes by lightly touching the reed.",
+                    "longDescription": "Articulation on clarinet is produced by the tongue lightly touching the tip of the reed to stop its vibration. The classic syllable is 'tah' or 'too' — the tongue strikes the reed briefly. The air keeps flowing; only the tongue's contact stops the sound. Most beginners over-tongue (too hard, too much tongue contact).",
+                    "difficulty": "beginner",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Tongue notes with a light, quick tip-of-tongue motion",
+                        "Keep the air flowing continuously",
+                        "Maintain steady tempo through articulated passages"
+                    ],
+                    "commonMistakes": [
+                        "Stopping the air between notes (cuts off tone and creates separation rather than articulation)",
+                        "Tonguing too hard (creates a 'thud' attack)",
+                        "Using too much of the tongue (slows articulation)"
+                    ],
+                    "practiceTips": [
+                        "Think 'air through, tongue light' — air is always moving, tongue just briefly interrupts",
+                        "Practice with the syllable 'too-too-too' before applying to notes"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "articulation",
+                        "fundamentals"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-006",
+                            "type": "quiz",
+                            "title": "Tonguing Quiz",
+                            "description": "Quick check on articulation.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-007",
+                                    "questionText": "Proper clarinet tonguing involves:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-025",
+                                            "optionText": "Stopping the air between notes"
+                                        },
+                                        {
+                                            "id": "clr-opt-026",
+                                            "optionText": "The tongue lightly touching the reed while air continues to flow"
+                                        },
+                                        {
+                                            "id": "clr-opt-027",
+                                            "optionText": "Using the back of the tongue"
+                                        },
+                                        {
+                                            "id": "clr-opt-028",
+                                            "optionText": "Closing the throat"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-026"
+                                    ],
+                                    "explanation": "Clarinet articulation keeps the air flowing continuously while the tongue lightly touches the reed to start or separate notes. Stopping the air entirely between notes is a major beginner mistake."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-021",
+                    "sectionId": "clr-sctn-007",
+                    "roadmapId": "rm-clr",
+                    "title": "Staccato and Legato",
+                    "shortDescription": "Two opposite articulation styles.",
+                    "longDescription": "Staccato (Italian for 'detached') articulates each note crisply with space between. Legato (smooth) connects notes without separation, using a single breath and only changing fingers. Both are essential articulation tools.",
+                    "difficulty": "beginner",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-020"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play staccato notes with clear separation but consistent tone",
+                        "Play legato passages with smooth, connected notes",
+                        "Switch between articulation styles deliberately"
+                    ],
+                    "commonMistakes": [
+                        "Staccato that's too short (sounds clipped) or with inconsistent tone",
+                        "Legato passages where finger changes cause audible 'bumps'"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "articulation"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-022",
+                    "sectionId": "clr-sctn-007",
+                    "roadmapId": "rm-clr",
+                    "title": "Slurs",
+                    "shortDescription": "Notes connected without articulation, played in a single airflow.",
+                    "longDescription": "Slurs (curved lines over groups of notes in notation) indicate that notes should be played without re-articulating each one. The tongue articulates only the first note; subsequent notes happen by changing fingers while the air continues to flow.",
+                    "difficulty": "beginner",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-020"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play slurred passages with only the first note articulated",
+                        "Maintain smooth tone across slurred notes",
+                        "Recognize slur markings in notation"
+                    ],
+                    "commonMistakes": [
+                        "Tonguing every note when a slur is marked",
+                        "Finger noise or bumps during slurs"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "articulation",
+                        "notation"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-008",
+            "roadmapId": "rm-clr",
+            "title": "Crossing the Break",
+            "shortDescription": "The register key, the break, and the clarion register.",
+            "longDescription": "Crossing the break is the major transition every clarinetist must master. This section covers the register key (which opens up the clarion register), the break (the notorious crossing point between chalumeau and clarion), and tone production in the clarion register.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-006",
+                "clr-sctn-007"
+            ],
+            "unlocks": [
+                "clr-sctn-010",
+                "clr-sctn-011",
+                "clr-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 8,
+            "estimatedTime": {
+                "min": 15,
+                "max": 50,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "registers",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-023",
+                    "sectionId": "clr-sctn-008",
+                    "roadmapId": "rm-clr",
+                    "title": "The Register Key",
+                    "shortDescription": "A small key (operated by the left thumb) that opens up the clarion register.",
+                    "longDescription": "The clarinet overblows at the 12th (an octave plus a fifth), not the octave like flute or oboe. The register key, operated by the left thumb on the back of the upper joint, creates a small vent hole that shifts the instrument into its clarion register. This is what produces the famous 'clarion' bright range used in much classical music.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-017"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Press the register key while playing chalumeau fingerings to produce clarion notes",
+                        "Understand the 12th relationship: open clarinet (G) becomes high D (G+12th)",
+                        "Recognize the change in tone color between registers"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "registers",
+                        "intermediate"
+                    ],
+                    "assessments": [
+                        {
+                            "id": "clr-assess-007",
+                            "type": "quiz",
+                            "title": "Register Key Quiz",
+                            "description": "Quick check.",
+                            "questions": [
+                                {
+                                    "id": "clr-qstn-008",
+                                    "questionText": "The clarinet overblows at:",
+                                    "options": [
+                                        {
+                                            "id": "clr-opt-029",
+                                            "optionText": "The octave"
+                                        },
+                                        {
+                                            "id": "clr-opt-030",
+                                            "optionText": "The fifth"
+                                        },
+                                        {
+                                            "id": "clr-opt-031",
+                                            "optionText": "The 12th (octave plus a fifth)"
+                                        },
+                                        {
+                                            "id": "clr-opt-032",
+                                            "optionText": "The major third"
+                                        }
+                                    ],
+                                    "correctOptionIds": [
+                                        "clr-opt-031"
+                                    ],
+                                    "explanation": "Unlike most woodwinds (which overblow at the octave), the clarinet overblows at the 12th — an octave plus a fifth. This is what creates the famous 'break' between registers and gives the clarinet its unique acoustic character."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "clr-tpc-024",
+                    "sectionId": "clr-sctn-008",
+                    "roadmapId": "rm-clr",
+                    "title": "The Break: Crossing from Chalumeau to Clarion",
+                    "shortDescription": "The most notorious transition in clarinet playing.",
+                    "longDescription": "The 'break' is the crossing point from chalumeau B-flat or B to clarion B (the same note name but different register). It involves a complete fingering change: in the chalumeau, only a couple of fingers are down; in the clarion, many fingers are down PLUS the register key. Coordinating this fingering change smoothly is one of the most challenging early-intermediate clarinet skills.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-023"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Cross the break (chalumeau A or B-flat to clarion B) cleanly",
+                        "Coordinate the register key with full finger changes",
+                        "Maintain tone and pitch across the transition"
+                    ],
+                    "commonMistakes": [
+                        "Squeaking on the crossing note (usually a fingering or air problem)",
+                        "Hesitating audibly between the two notes",
+                        "Avoiding the break in repertoire — face it directly"
+                    ],
+                    "practiceTips": [
+                        "Practice the break in isolation: just the two notes back and forth, very slowly, until smooth",
+                        "Many method books have specific 'crossing the break' exercises — use them daily"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "registers",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-025",
+                    "sectionId": "clr-sctn-008",
+                    "roadmapId": "rm-clr",
+                    "title": "Playing in the Clarion Register",
+                    "shortDescription": "The bright middle-to-upper range where most clarinet melodies live.",
+                    "longDescription": "The clarion register (from clarion B up to clarion C) is the clarinet's brightest, most projective range — the 'clarion call' that gives the instrument its name. Most clarinet melodies live here. Tone production in clarion requires slightly more focused embouchure and air than chalumeau.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-024"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play all clarion register notes with clear tone",
+                        "Maintain pitch and tone color across the register",
+                        "Apply to simple melodies"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "tone",
+                        "clarion",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-009",
+            "roadmapId": "rm-clr",
+            "title": "Scales and Arpeggios",
+            "shortDescription": "Major and minor scales in all 12 keys, plus chromatic and arpeggios.",
+            "longDescription": "Scales and arpeggios are the technical foundation. This section covers the first scales (C, F, G major), expansion to all 12 major scales, the three forms of minor, the chromatic scale, and triad and 7th chord arpeggios.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-006"
+            ],
+            "unlocks": [
+                "clr-sctn-012",
+                "clr-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 9,
+            "estimatedTime": {
+                "min": 20,
+                "max": 80,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "scales",
+                "arpeggios",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-026",
+                    "sectionId": "clr-sctn-009",
+                    "roadmapId": "rm-clr",
+                    "title": "First Major Scales",
+                    "shortDescription": "Start with C, F, and G major — scales that lie naturally on the clarinet.",
+                    "longDescription": "C major (written) is the natural starting scale for clarinet — it sounds as B♭ major to non-clarinetists. F and G major are also accessible. Practice scales daily, ascending and descending, with a metronome. They're the foundation of finger fluency.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play C, F, and G major scales smoothly",
+                        "Maintain steady tempo with a metronome",
+                        "Apply proper fingerings consistently"
+                    ],
+                    "commonMistakes": [
+                        "Practicing fast and sloppy",
+                        "Pausing at the top of the scale before descending — keep it smooth"
+                    ],
+                    "practiceTips": [
+                        "Practice scales at increasing tempos with the metronome — even small gains compound",
+                        "Always practice ascending AND descending"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "scales",
+                        "fundamentals"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-027",
+                    "sectionId": "clr-sctn-009",
+                    "roadmapId": "rm-clr",
+                    "title": "All Major Scales",
+                    "shortDescription": "Work through all 12 major scales over time.",
+                    "longDescription": "Eventually, every clarinetist should know all 12 major scales. Some lie more naturally than others; chromatic-rich keys (like F♯ major) require careful fingering. The standard method books work through all 12 systematically.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 300,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play all 12 major scales over multiple octaves",
+                        "Apply correct fingerings for each",
+                        "Build tempo gradually"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Cycle through 3-4 scales per practice session, rotating so every scale gets weekly attention"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "scales",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-028",
+                    "sectionId": "clr-sctn-009",
+                    "roadmapId": "rm-clr",
+                    "title": "Minor Scales",
+                    "shortDescription": "Natural, harmonic, and melodic minor scales in all 12 keys.",
+                    "longDescription": "After major scales, work through the three forms of minor (natural, harmonic, melodic) in all 12 keys. Method books typically cover them systematically. Like major scales, they're fundamental finger and reading exercises.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 300,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play natural, harmonic, and melodic minor scales",
+                        "Distinguish the three forms aurally and on paper",
+                        "Apply to actual repertoire"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "scales",
+                        "minor",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-029",
+                    "sectionId": "clr-sctn-009",
+                    "roadmapId": "rm-clr",
+                    "title": "Chromatic Scale",
+                    "shortDescription": "All 12 notes in succession — across the clarinet's range.",
+                    "longDescription": "The chromatic scale plays every half step. On clarinet, several notes have multiple fingering options (the chromatic alternatives). Choose appropriate alternate fingerings for smooth chromatic passages.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "clr-tpc-026"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play the chromatic scale smoothly across multiple octaves",
+                        "Use appropriate alternate fingerings",
+                        "Apply to repertoire that requires chromatic passages"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "scales",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-030",
+                    "sectionId": "clr-sctn-009",
+                    "roadmapId": "rm-clr",
+                    "title": "Arpeggios",
+                    "shortDescription": "Triad and seventh chord arpeggios across the range.",
+                    "longDescription": "Arpeggios (chord notes played in succession) are the next technical building block after scales. Major, minor, dominant 7th, and diminished arpeggios appear constantly in classical and jazz repertoire. Practice them in all 12 keys.",
+                    "difficulty": "intermediate",
+                    "order": 5,
+                    "prerequisites": [
+                        "clr-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play major and minor triad arpeggios in all 12 keys",
+                        "Add dominant 7th and diminished 7th arpeggios",
+                        "Build tempo gradually"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "arpeggios",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-010",
+            "roadmapId": "rm-clr",
+            "title": "Dynamics and Expression",
+            "shortDescription": "Dynamics, crescendos and diminuendos, and tone color variation.",
+            "longDescription": "Beyond playing the right notes, expression makes music. This section covers dynamic range, smooth crescendos and diminuendos, and the artful variation of tone color.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-003",
+                "clr-sctn-008"
+            ],
+            "unlocks": [
+                "clr-sctn-015"
+            ],
+            "difficulty": "intermediate",
+            "order": 10,
+            "estimatedTime": {
+                "min": 10,
+                "max": 30,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "expression",
+                "dynamics",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-031",
+                    "sectionId": "clr-sctn-010",
+                    "roadmapId": "rm-clr",
+                    "title": "Dynamics: Soft to Loud",
+                    "shortDescription": "Vary loudness from pianissimo (pp) to fortissimo (ff).",
+                    "longDescription": "Dynamics on clarinet come from breath support and embouchure adjustment. Louder requires more air, with consistent embouchure to keep pitch and tone steady. Softer requires less air but still steady support. The challenge is maintaining tone quality and pitch across the dynamic range.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play single notes from pp to ff with consistent tone",
+                        "Maintain pitch stability across dynamic range",
+                        "Apply dynamics to musical passages"
+                    ],
+                    "commonMistakes": [
+                        "Pitch dropping at soft dynamics or rising at loud dynamics",
+                        "Tone becoming airy at soft volume or harsh at loud volume"
+                    ],
+                    "practiceTips": [
+                        "Practice long tones with crescendo and diminuendo — develops dynamic control",
+                        "Use a tuner to verify pitch stays stable across dynamics"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "expression",
+                        "dynamics",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-032",
+                    "sectionId": "clr-sctn-010",
+                    "roadmapId": "rm-clr",
+                    "title": "Crescendo and Diminuendo",
+                    "shortDescription": "Gradual changes in volume — louder and softer over time.",
+                    "longDescription": "Crescendo gradually gets louder; diminuendo (or decrescendo) gradually gets softer. Both require precise breath and embouchure control. The classic exercise is the 'messa di voce': a long note that crescendos then diminuendos.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-031"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 45,
+                        "max": 90,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute smooth crescendos and diminuendos",
+                        "Apply the messa di voce exercise",
+                        "Use dynamic changes musically in phrases"
+                    ],
+                    "commonMistakes": [
+                        "Sudden volume changes instead of smooth transitions",
+                        "Tone or pitch suffering during the change"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "expression",
+                        "dynamics",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-033",
+                    "sectionId": "clr-sctn-010",
+                    "roadmapId": "rm-clr",
+                    "title": "Tone Color Variation",
+                    "shortDescription": "Adjust embouchure and air to produce different tonal characters.",
+                    "longDescription": "Beyond just volume, clarinet tone color can vary from dark and warm to bright and edgy. Embouchure adjustments, air speed, and even mouthpiece choice contribute to tone color. Different styles (classical vs jazz vs klezmer) often demand different tone colors.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-031"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce a range of tone colors deliberately",
+                        "Match tone color to musical style",
+                        "Listen critically to your own tone"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Record yourself regularly — recordings reveal tone qualities you can't hear from inside your own head"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "expression",
+                        "tone",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-011",
+            "roadmapId": "rm-clr",
+            "title": "The Altissimo Register",
+            "shortDescription": "The clarinet's highest register, with its special fingerings and voicing requirements.",
+            "longDescription": "The altissimo is the clarinet's high register above the staff. This section covers the introduction to altissimo, the special fingerings each note requires, and the voicing adjustments (tongue position and embouchure) that make these notes speak.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-008"
+            ],
+            "unlocks": [
+                "clr-sctn-015"
+            ],
+            "difficulty": "advanced",
+            "order": 11,
+            "estimatedTime": {
+                "min": 20,
+                "max": 100,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "registers",
+                "altissimo",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-034",
+                    "sectionId": "clr-sctn-011",
+                    "roadmapId": "rm-clr",
+                    "title": "Introduction to the Altissimo",
+                    "shortDescription": "The clarinet's highest range — above clarion C.",
+                    "longDescription": "The altissimo register starts around the C above the staff and extends upward. Notes in this range require special 'cross' fingerings (combinations of keys that produce specific high partials) and a more focused embouchure with faster air. Many beginning clarinetists avoid the altissimo; intermediate players should embrace it.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Understand the altissimo register's relationship to other registers",
+                        "Begin work on the first altissimo notes (high C, D, E)",
+                        "Use altissimo fingering charts as reference"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "registers",
+                        "altissimo",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-035",
+                    "sectionId": "clr-sctn-011",
+                    "roadmapId": "rm-clr",
+                    "title": "Altissimo Fingerings",
+                    "shortDescription": "Each altissimo note has a specific fingering (or several alternates).",
+                    "longDescription": "Altissimo fingerings are unique combinations of keys that may seem strange on first encounter. Each note has typically 1-3 viable fingerings; you'll learn which work best for your instrument and embouchure. Reference charts (Kroepsch, Klosé, modern editions) are essential.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn fingerings for high C, D, E, F, G, A",
+                        "Apply alternate fingerings when standard ones don't work",
+                        "Practice altissimo notes daily for stability"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Altissimo notes require gradual development — they may not speak well at first, but they do come with consistent practice"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "fingerings",
+                        "altissimo",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-036",
+                    "sectionId": "clr-sctn-011",
+                    "roadmapId": "rm-clr",
+                    "title": "Voicing the Altissimo",
+                    "shortDescription": "Embouchure and oral cavity adjustments for high notes.",
+                    "longDescription": "'Voicing' refers to the shape of the oral cavity (especially the tongue position) that helps high notes speak. For altissimo, the tongue typically rises toward the roof of the mouth (think 'ee' instead of 'ah'), creating a faster, more focused air stream. The embouchure also typically firms up slightly.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-035"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Adjust tongue position for altissimo notes",
+                        "Maintain appropriate embouchure firmness",
+                        "Combine voicing with correct fingerings for stable high notes"
+                    ],
+                    "commonMistakes": [
+                        "Biting harder to force high notes (kills tone)",
+                        "Not adjusting voicing (high notes don't speak well)"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "altissimo",
+                        "voicing",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-012",
+            "roadmapId": "rm-clr",
+            "title": "Intermediate Technique",
+            "shortDescription": "Fast scales, articulation patterns, trills, grace notes, and double tonguing.",
+            "longDescription": "Beyond the basics, intermediate technique develops finger speed, articulation variety, and ornamental skills. This section covers fast scales, articulation patterns, trills and grace notes, and double/triple tonguing for very fast passages.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-007",
+                "clr-sctn-009"
+            ],
+            "unlocks": [
+                "clr-sctn-013"
+            ],
+            "difficulty": "intermediate",
+            "order": 12,
+            "estimatedTime": {
+                "min": 30,
+                "max": 150,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "technique",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-037",
+                    "sectionId": "clr-sctn-012",
+                    "roadmapId": "rm-clr",
+                    "title": "Fast Scales and Finger Coordination",
+                    "shortDescription": "Build speed in scales and arpeggios.",
+                    "longDescription": "Once basic scales are comfortable, the next step is speed. Build tempo gradually with a metronome (5 BPM at a time). Slow practice for precision; fast practice only after slow practice has cemented accuracy.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play scales at increasing tempos cleanly",
+                        "Apply to scalar passages in repertoire",
+                        "Use rhythmic variations (dotted rhythms, swung rhythms) to break monotony"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "scales",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-038",
+                    "sectionId": "clr-sctn-012",
+                    "roadmapId": "rm-clr",
+                    "title": "Articulation Patterns",
+                    "shortDescription": "Complex articulation combinations: slurred-and-tongued patterns.",
+                    "longDescription": "Real music rarely uses pure staccato or pure legato. Common articulation patterns include: slur 2, tongue 2; slur 4, tongue 4; slurs followed by accents; mixed articulation across phrases. Method books drill these patterns systematically.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-021"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute common articulation patterns cleanly",
+                        "Apply to scales and arpeggios",
+                        "Recognize articulation markings in repertoire and execute accurately"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "clr-res-003",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/40_Studies%2C_Op.34_(Rose%2C_Cyrille)",
+                            "title": "Rose 40 Studies Op. 34 (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "technique",
+                        "articulation",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-039",
+                    "sectionId": "clr-sctn-012",
+                    "roadmapId": "rm-clr",
+                    "title": "Trills and Grace Notes",
+                    "shortDescription": "Rapid alternation between two notes, and ornamental grace notes.",
+                    "longDescription": "Trills rapidly alternate between a written note and the note above (typically a whole or half step away). Grace notes are small ornamental notes that lead into a main note. Both have specific fingerings — some trills require alternate 'trill fingerings' to be playable smoothly.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-037"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 180,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play clean trills with even, rapid alternation",
+                        "Use trill fingerings when appropriate",
+                        "Execute grace notes with appropriate quickness and lightness"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "ornaments",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-040",
+                    "sectionId": "clr-sctn-012",
+                    "roadmapId": "rm-clr",
+                    "title": "Double and Triple Tonguing",
+                    "shortDescription": "Use the back of the tongue (k or g sound) for faster articulation.",
+                    "longDescription": "Standard tonguing maxes out at a certain speed. For faster articulated passages, double tonguing alternates 'tah-kah-tah-kah'; triple tonguing uses 'tah-tah-kah-tah-tah-kah'. Less common on clarinet than on flute or brass, but useful for some demanding passages.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "clr-tpc-038"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 90,
+                        "max": 300,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute clean double tonguing",
+                        "Use triple tonguing for triplet passages",
+                        "Apply to fast articulated passages in repertoire"
+                    ],
+                    "commonMistakes": [
+                        "Audible difference between 'tah' and 'kah' attacks (they should sound the same)"
+                    ],
+                    "practiceTips": [
+                        "Start very slowly. The challenge is making the 'kah' attack sound identical to the 'tah'."
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "articulation",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-013",
+            "roadmapId": "rm-clr",
+            "title": "Intermediate Repertoire and Method Books",
+            "shortDescription": "Klosé, Rose, Lazarus method books, intermediate solo repertoire, and ensemble playing.",
+            "longDescription": "This section bridges from technique to actual music. The classical method book tradition (Klosé, Rose, Baermann, Lazarus) provides systematic technical and musical development. Intermediate solo repertoire and ensemble playing extend the work into real musical contexts.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-008",
+                "clr-sctn-009",
+                "clr-sctn-012"
+            ],
+            "unlocks": [
+                "clr-sctn-014",
+                "clr-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 13,
+            "estimatedTime": {
+                "min": 50,
+                "max": 300,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "repertoire",
+                "method",
+                "ensemble",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-041",
+                    "sectionId": "clr-sctn-013",
+                    "roadmapId": "rm-clr",
+                    "title": "Classical Method Books",
+                    "shortDescription": "The standard etude tradition for clarinet study.",
+                    "longDescription": "Several classical method books form the standard intermediate-to-advanced curriculum: Klosé Méthode Complète (the foundational French method), Rose 32 Etudes and 40 Studies (essential intermediate), Baermann Method (German tradition), Lazarus Method (English tradition), Kroepsch Studies (technique). Most are in the public domain and available on IMSLP.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Work through Rose 32 Etudes or 40 Studies systematically",
+                        "Apply Klosé exercises for technical development",
+                        "Use Kroepsch for advanced technique"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Methodical, daily work in a method book over months produces large gains"
+                    ],
+                    "resources": [
+                        {
+                            "id": "clr-res-004",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Méthode_complète_pour_la_clarinette,_Op.63_(Klosé,_Hyacinthe)",
+                            "title": "Klosé Méthode Complète (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        },
+                        {
+                            "id": "clr-res-005",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/32_Studies_(Rose%2C_Cyrille)",
+                            "title": "Rose 32 Etudes (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        },
+                        {
+                            "id": "clr-res-006",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/40_Studies%2C_Op.34_(Rose%2C_Cyrille)",
+                            "title": "Rose 40 Studies Op. 34 (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        },
+                        {
+                            "id": "clr-res-007",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Method_for_Clarinet_(Lazarus%2C_Henry)",
+                            "title": "Lazarus Method (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "repertoire",
+                        "method",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-042",
+                    "sectionId": "clr-sctn-013",
+                    "roadmapId": "rm-clr",
+                    "title": "Early Solo Repertoire",
+                    "shortDescription": "Pieces accessible to intermediate players.",
+                    "longDescription": "Intermediate clarinet repertoire includes simpler works by Carl Maria von Weber (Six Variations, Op. 33), Hyacinthe Klosé's adaptations of operatic themes, Anton Stadler-era pieces, simpler movements from sonatas (like Brahms Sonata movements at a slow tempo), and many band/orchestral excerpts.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least 2-3 intermediate solo pieces",
+                        "Begin building a repertoire list",
+                        "Work with an accompanist when possible"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-043",
+                    "sectionId": "clr-sctn-013",
+                    "roadmapId": "rm-clr",
+                    "title": "Playing in Ensembles",
+                    "shortDescription": "Clarinet plays a major role in orchestras, wind bands, jazz ensembles, and chamber music.",
+                    "longDescription": "Most clarinetists play in ensembles. This requires skills beyond solo playing: tuning to others, blending tone, following a conductor, counting rests, and listening for cues. The clarinet has a prominent place in symphony orchestras (typically two), wind bands (large clarinet sections), and chamber music.",
+                    "difficulty": "intermediate",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play in a band, orchestra, or chamber ensemble",
+                        "Develop tuning awareness with other instruments",
+                        "Learn to follow a conductor and read rest patterns"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "ensemble",
+                        "performance",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-014",
+            "roadmapId": "rm-clr",
+            "title": "Genre Playing",
+            "shortDescription": "Classical, jazz, klezmer, and wind band approaches.",
+            "longDescription": "The clarinet thrives in many genres, each with its own approach. This section covers classical (the dominant tradition), jazz (a major historical role), klezmer (a unique folk tradition), and wind band (the most common amateur ensemble setting).",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-013"
+            ],
+            "unlocks": [
+                "clr-sctn-016"
+            ],
+            "difficulty": "intermediate",
+            "order": 14,
+            "estimatedTime": {
+                "min": 50,
+                "max": 500,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "genre",
+                "intermediate"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-044",
+                    "sectionId": "clr-sctn-014",
+                    "roadmapId": "rm-clr",
+                    "title": "Classical Clarinet",
+                    "shortDescription": "The classical tradition: solo, chamber, and orchestral playing.",
+                    "longDescription": "Classical clarinet has a rich tradition: Mozart's Concerto K. 622 and Clarinet Quintet K. 581, Weber's two concertos and clarinet quintet, Brahms's two sonatas (Op. 120) and the Clarinet Quintet, contemporary works by composers like Lutosławski and Berio. Classical playing emphasizes precise technique, controlled tone, careful intonation, and stylistic awareness across eras.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Develop a classical clarinet tone and style",
+                        "Learn at least one major classical work",
+                        "Apply era-appropriate phrasing and ornamentation"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen extensively to recordings of great clarinetists: Reginald Kell, Karl Leister, Sabine Meyer, Martin Fröst, Ricardo Morales, among many others"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "classical",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-045",
+                    "sectionId": "clr-sctn-014",
+                    "roadmapId": "rm-clr",
+                    "title": "Jazz Clarinet",
+                    "shortDescription": "Swing, dixieland, and modern jazz approaches.",
+                    "longDescription": "Jazz clarinet has its own tradition: Benny Goodman, Artie Shaw, Sidney Bechet, Pete Fountain, and contemporary players like Eddie Daniels and Anat Cohen. Jazz clarinet typically uses a different embouchure (more relaxed), more vibrato, blues scales and chromatic approach notes, and improvisation. The instrument has a unique voice in jazz, especially dixieland and swing.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-027"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Adapt embouchure and tone for jazz style",
+                        "Learn the standard jazz vocabulary (blues scales, bebop language)",
+                        "Improvise over jazz changes"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Benny Goodman recordings — the textbook for swing-era clarinet",
+                        "Listen to Sidney Bechet for soulful dixieland style"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "jazz",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-046",
+                    "sectionId": "clr-sctn-014",
+                    "roadmapId": "rm-clr",
+                    "title": "Klezmer Clarinet",
+                    "shortDescription": "Jewish folk music with distinctive ornamentation and glissandos.",
+                    "longDescription": "Klezmer (Eastern European Jewish folk music) features the clarinet prominently. The style uses characteristic ornaments: bends, glissandos, krechts (a sob-like break in the tone), and modal scales (Freygish, Mishaberakh). Famous klezmer clarinetists include Naftule Brandwein, Dave Tarras, and Giora Feidman.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-025"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn klezmer ornaments (bends, krechts, glissandos)",
+                        "Play klezmer modes (Freygish/Phrygian dominant, Mishaberakh)",
+                        "Apply to traditional klezmer tunes"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Listen to Naftule Brandwein, Dave Tarras, and Giora Feidman — three generations of klezmer masters"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "klezmer",
+                        "folk",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-047",
+                    "sectionId": "clr-sctn-014",
+                    "roadmapId": "rm-clr",
+                    "title": "Wind Band Playing",
+                    "shortDescription": "The clarinet section of a concert band, marching band, or military band.",
+                    "longDescription": "Wind band repertoire uses clarinets as the section equivalent of strings in an orchestra. The 1st, 2nd, and 3rd clarinets play distinct parts; bass clarinet adds the lower octave. Skills include section blending, marching/standing endurance, and playing in the loud, complex texture of a full band.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [
+                        "clr-tpc-043"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Play in a wind band or community band",
+                        "Develop section blending skills",
+                        "Apply to wind band repertoire (Sousa marches, Holst, Grainger, etc.)"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "genre",
+                        "wind-band",
+                        "ensemble",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-015",
+            "roadmapId": "rm-clr",
+            "title": "Advanced Technique",
+            "shortDescription": "Vibrato, glissando, circular breathing, and multiphonics.",
+            "longDescription": "This section covers advanced techniques used in particular styles: vibrato (jazz mainly), glissando (Rhapsody in Blue!), circular breathing (long sustained phrases), and multiphonics (contemporary repertoire).",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-010",
+                "clr-sctn-011"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 15,
+            "estimatedTime": {
+                "min": 40,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "weekly",
+            "tags": [
+                "technique",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-048",
+                    "sectionId": "clr-sctn-015",
+                    "roadmapId": "rm-clr",
+                    "title": "Vibrato",
+                    "shortDescription": "Controlled pitch oscillation — used in jazz and some classical contexts.",
+                    "longDescription": "Clarinet vibrato is more controversial than vibrato on other woodwinds. The classical tradition typically uses little or no vibrato; jazz and some folk styles use it extensively. Vibrato is produced by varying air pressure (diaphragmatic) or jaw position. Whether to use it and how much depends on the style.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-031"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce controlled vibrato when appropriate",
+                        "Know when to use vibrato (jazz, some folk) and when to avoid it (most classical)",
+                        "Control vibrato speed and width"
+                    ],
+                    "commonMistakes": [
+                        "Wobbly, uncontrolled vibrato",
+                        "Using vibrato in classical contexts where it's stylistically inappropriate"
+                    ],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "expression",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-049",
+                    "sectionId": "clr-sctn-015",
+                    "roadmapId": "rm-clr",
+                    "title": "Glissando (Bend)",
+                    "shortDescription": "Sliding between pitches — used in jazz and klezmer.",
+                    "longDescription": "Glissando (or 'gliss') slides between two notes continuously rather than playing discrete pitches. The famous opening of Gershwin's Rhapsody in Blue is an iconic clarinet glissando. The technique combines fingering movement with embouchure and air manipulation. Used in jazz, klezmer, and contemporary classical music.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-034"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute a clean glissando across multiple notes",
+                        "Apply to the Rhapsody in Blue opening (a benchmark)",
+                        "Use in jazz and klezmer playing"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "The Rhapsody in Blue opening glissando is one of the most famous clarinet moments in all music — learning it is a rite of passage"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "expression",
+                        "jazz",
+                        "klezmer",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-050",
+                    "sectionId": "clr-sctn-015",
+                    "roadmapId": "rm-clr",
+                    "title": "Circular Breathing",
+                    "shortDescription": "Breathe in through the nose while pushing air out through the cheeks.",
+                    "longDescription": "Circular breathing is an advanced technique allowing continuous playing without pausing for breath. The cheeks store air; while you breathe in through the nose, you push that stored air out to maintain the tone. Used in some contemporary classical and jazz contexts. Difficult to learn but useful for very long phrases.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-009"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 480,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Execute basic circular breathing for short durations",
+                        "Apply to passages requiring continuous tone",
+                        "Maintain tone quality during the technique"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Practice circular breathing on water through a straw first — it teaches the cheek/nose coordination without the complication of producing tone"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "breathing",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-051",
+                    "sectionId": "clr-sctn-015",
+                    "roadmapId": "rm-clr",
+                    "title": "Multiphonics",
+                    "shortDescription": "Producing more than one note at once using special fingerings and embouchure.",
+                    "longDescription": "Multiphonics are sounds that contain two or more pitches simultaneously. They're produced by specific fingerings combined with embouchure adjustments that allow multiple harmonic partials to sound at once. Used primarily in contemporary classical and avant-garde music.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "clr-tpc-035"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 240,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Produce simple multiphonics from fingering charts",
+                        "Recognize multiphonic notation in scores",
+                        "Apply to contemporary repertoire that requires them"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "technique",
+                        "contemporary",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-016",
+            "roadmapId": "rm-clr",
+            "title": "Advanced Repertoire and Performance",
+            "shortDescription": "Mozart, Weber, Brahms, orchestral excerpts, and performance preparation.",
+            "longDescription": "The advanced clarinet repertoire opens the great works: Mozart's Concerto (the cornerstone), Weber's concertos, Brahms's sonatas, and standard orchestral excerpts. Combined with performance preparation skills, this section prepares serious players for professional or pre-professional work.",
+            "instrumentId": "inst-clarinet",
+            "genreId": "gen-classical",
+            "dependencies": [
+                "clr-sctn-013",
+                "clr-sctn-014"
+            ],
+            "unlocks": [],
+            "difficulty": "advanced",
+            "order": 16,
+            "estimatedTime": {
+                "min": 200,
+                "max": 1000,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "repertoire",
+                "classical",
+                "advanced"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-052",
+                    "sectionId": "clr-sctn-016",
+                    "roadmapId": "rm-clr",
+                    "title": "Mozart Clarinet Concerto K. 622",
+                    "shortDescription": "The single most important work in the clarinet repertoire.",
+                    "longDescription": "Mozart's Clarinet Concerto in A major, K. 622 (written for Anton Stadler in 1791) is the cornerstone of clarinet literature. Every advanced clarinetist works on it. The work is graceful, melodic, and technically demanding but never showy — it's a benchmark for tone, phrasing, and interpretation.",
+                    "difficulty": "advanced",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-041"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn the Mozart Concerto from beginning to end",
+                        "Apply mature interpretation (style, phrasing, ornamentation)",
+                        "Prepare for performance with orchestra or piano reduction"
+                    ],
+                    "commonMistakes": [
+                        "Treating it as a virtuoso showpiece — Mozart demands singing tone and grace, not flash"
+                    ],
+                    "practiceTips": [
+                        "Listen to multiple great recordings (Reginald Kell, Karl Leister, Sabine Meyer, Martin Fröst, Charles Neidich, and others) — each interpretation reveals something different"
+                    ],
+                    "resources": [
+                        {
+                            "id": "clr-res-008",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Clarinet_Concerto_in_A_major%2C_K.622_(Mozart%2C_Wolfgang_Amadeus)",
+                            "title": "Mozart Clarinet Concerto K. 622 (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "repertoire",
+                        "classical",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-053",
+                    "sectionId": "clr-sctn-016",
+                    "roadmapId": "rm-clr",
+                    "title": "Weber Concertos and Concertino",
+                    "shortDescription": "Carl Maria von Weber's three major clarinet works.",
+                    "longDescription": "Weber wrote three major works for clarinetist Heinrich Baermann: the Concertino in C minor, Op. 26, and the two Concertos (Op. 73 in F minor, Op. 74 in E♭ major). All are virtuoso works demanding both technical brilliance and lyrical playing. They're standard advanced repertoire.",
+                    "difficulty": "advanced",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-052"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least one of the Weber concertos or the Concertino",
+                        "Apply Romantic-era expressive style",
+                        "Develop virtuosic technique"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "clr-res-009",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/Category:Weber%2C_Carl_Maria_von",
+                            "title": "Weber works on IMSLP (free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "repertoire",
+                        "classical",
+                        "romantic",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-054",
+                    "sectionId": "clr-sctn-016",
+                    "roadmapId": "rm-clr",
+                    "title": "Brahms Clarinet Sonatas, Op. 120",
+                    "shortDescription": "Two late masterpieces for clarinet and piano.",
+                    "longDescription": "Brahms wrote his two clarinet sonatas (in F minor and E♭ major) in 1894, near the end of his life. They're profound, deeply lyrical chamber works. Demanding for both clarinet and piano, they're standard recital repertoire for advanced players.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-052"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn at least one Brahms sonata",
+                        "Work extensively with an accompanist",
+                        "Apply mature musical interpretation"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [
+                        {
+                            "id": "clr-res-010",
+                            "type": "book",
+                            "url": "https://imslp.org/wiki/2_Clarinet_Sonatas%2C_Op.120_(Brahms%2C_Johannes)",
+                            "title": "Brahms Op. 120 Clarinet Sonatas (IMSLP, free)",
+                            "durationInMinutes": 60,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "repertoire",
+                        "classical",
+                        "chamber",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-055",
+                    "sectionId": "clr-sctn-016",
+                    "roadmapId": "rm-clr",
+                    "title": "Orchestral Excerpts",
+                    "shortDescription": "Famous clarinet passages from orchestral repertoire — essential for auditions.",
+                    "longDescription": "Orchestral auditions test specific excerpts from major orchestral works: Beethoven's symphonies, Tchaikovsky's symphonies, Rimsky-Korsakov's Capriccio Espagnol and Scheherazade, Mendelssohn's Scottish Symphony, Mahler's Symphony No. 1, and many others. Each excerpt has stylistic and technical demands.",
+                    "difficulty": "advanced",
+                    "order": 4,
+                    "prerequisites": [
+                        "clr-tpc-043"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Learn 5-10 standard orchestral excerpts",
+                        "Prepare excerpts to audition standard",
+                        "Develop awareness of the surrounding orchestral context"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "repertoire",
+                        "orchestral",
+                        "audition",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-056",
+                    "sectionId": "clr-sctn-016",
+                    "roadmapId": "rm-clr",
+                    "title": "Performance Preparation",
+                    "shortDescription": "Solo recitals, auditions, and professional performance considerations.",
+                    "longDescription": "Advanced performance demands many skills: memorization (or robust score reading), stage presence, managing nerves, gear setup, working with collaborative pianists, and adapting to different acoustic environments. Most are learned through experience.",
+                    "difficulty": "advanced",
+                    "order": 5,
+                    "prerequisites": [
+                        "clr-tpc-052"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 0,
+                        "max": 0,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Prepare a solo recital program",
+                        "Manage performance nerves through routine and preparation",
+                        "Adapt to different performance environments"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Perform frequently in low-stakes situations (master classes, studio classes, informal recitals) to build experience"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "performance",
+                        "advanced"
+                    ],
+                    "assessments": []
+                }
+            ]
+        },
+        {
+            "id": "clr-sctn-017",
+            "roadmapId": "rm-clr",
+            "title": "Ear Training and Practice Methods",
+            "shortDescription": "Ear training, sight reading, transcription, and practice routines.",
+            "longDescription": "This section covers the parallel skills that develop alongside everything else: ear training (aural skills), sight reading (essential for ensemble work), transcription (the deepest form of ear training), and building an effective practice routine.",
+            "instrumentId": "inst-clarinet",
+            "genreId": null,
+            "dependencies": [
+                "clr-sctn-005"
+            ],
+            "unlocks": [],
+            "difficulty": "intermediate",
+            "order": 17,
+            "estimatedTime": {
+                "min": 20,
+                "max": 200,
+                "unit": "hours"
+            },
+            "practiceFrequency": "daily",
+            "tags": [
+                "ear-training",
+                "practice-method",
+                "parallel-track"
+            ],
+            "topics": [
+                {
+                    "id": "clr-tpc-057",
+                    "sectionId": "clr-sctn-017",
+                    "roadmapId": "rm-clr",
+                    "title": "Ear Training",
+                    "shortDescription": "Aural skills that support every aspect of clarinet playing.",
+                    "longDescription": "Ear training builds the ability to hear intervals, scales, chords, and melodies — essential for tuning in ensembles, playing by ear, transcribing, and developing musical sensitivity. Practice with software, apps, or method books that test interval recognition, scale identification, and melodic dictation.",
+                    "difficulty": "intermediate",
+                    "order": 1,
+                    "prerequisites": [
+                        "clr-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Identify intervals by ear",
+                        "Recognize major, minor, and modal scales by ear",
+                        "Take simple melodic dictation"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [
+                        "Daily ear training, even 5-10 minutes, builds aural skills faster than less-frequent longer sessions"
+                    ],
+                    "resources": [
+                        {
+                            "id": "clr-res-011",
+                            "type": "exercise",
+                            "url": "https://www.musictheory.net/exercises/ear-interval",
+                            "title": "Interval Ear Training (musictheory.net)",
+                            "durationInMinutes": 15,
+                            "languageCode": "en"
+                        }
+                    ],
+                    "tags": [
+                        "ear-training",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-058",
+                    "sectionId": "clr-sctn-017",
+                    "roadmapId": "rm-clr",
+                    "title": "Sight Reading",
+                    "shortDescription": "Read and play music you've never seen before, in tempo, without stopping.",
+                    "longDescription": "Sight reading is the skill of playing unfamiliar music at first sight. Essential for ensemble playing, where new music appears constantly. Practice by sight reading material slightly below your performance level, daily, without stopping for mistakes.",
+                    "difficulty": "intermediate",
+                    "order": 2,
+                    "prerequisites": [
+                        "clr-tpc-014"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 120,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Sight read at a consistent level daily",
+                        "Keep going through mistakes rather than stopping",
+                        "Read ahead of where you're playing"
+                    ],
+                    "commonMistakes": [
+                        "Stopping to fix every wrong note — kills sight reading skill",
+                        "Sight reading material that's too hard — choose material below your performance level"
+                    ],
+                    "practiceTips": [
+                        "Sight read daily, even 10 minutes — the skill builds steadily over months",
+                        "Concert band parts, hymn collections, and method book exercises are gold for daily sight reading"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "sight-reading",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-059",
+                    "sectionId": "clr-sctn-017",
+                    "roadmapId": "rm-clr",
+                    "title": "Transcription",
+                    "shortDescription": "Notate parts you hear from recordings.",
+                    "longDescription": "Transcribing parts from recordings deepens ear training and reveals how great players approach the instrument. Pick a player or style you love and transcribe their solos or melodic playing. The slow, careful listening involved is extremely educational.",
+                    "difficulty": "advanced",
+                    "order": 3,
+                    "prerequisites": [
+                        "clr-tpc-057"
+                    ],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 60,
+                        "max": 360,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Transcribe a solo or melody from a recording",
+                        "Notate accurately in standard notation",
+                        "Internalize the transcribed material for personal vocabulary"
+                    ],
+                    "commonMistakes": [],
+                    "practiceTips": [],
+                    "resources": [],
+                    "tags": [
+                        "ear-training",
+                        "transcription",
+                        "advanced"
+                    ],
+                    "assessments": []
+                },
+                {
+                    "id": "clr-tpc-060",
+                    "sectionId": "clr-sctn-017",
+                    "roadmapId": "rm-clr",
+                    "title": "Building a Practice Routine",
+                    "shortDescription": "Daily practice structure for consistent progress.",
+                    "longDescription": "Effective practice has structure. A typical clarinet practice session: warm-up (long tones, slow scales), technique (scales, arpeggios, etudes), repertoire (current pieces), and finishing with something enjoyable. Daily consistency matters more than long sessions — 45-60 minutes daily beats 4 hours once a week.",
+                    "difficulty": "intermediate",
+                    "order": 4,
+                    "prerequisites": [],
+                    "relatedTopics": [],
+                    "nextRecommended": [],
+                    "estimatedTime": {
+                        "min": 30,
+                        "max": 60,
+                        "unit": "minutes"
+                    },
+                    "objectives": [
+                        "Build a daily practice routine appropriate to your level",
+                        "Balance technique, repertoire, and musical development",
+                        "Maintain consistency over time"
+                    ],
+                    "commonMistakes": [
+                        "Practicing only repertoire and skipping technique — leads to weak foundation",
+                        "Inconsistent practice — daily is essential"
+                    ],
+                    "practiceTips": [
+                        "Even 30 minutes daily is far better than 3 hours once a week"
+                    ],
+                    "resources": [],
+                    "tags": [
+                        "practice-method",
+                        "intermediate"
+                    ],
+                    "assessments": []
+                }
+            ]
+        }
+    ]
+}

@@ -4,17 +4,15 @@ App for musical training.
 
 ## Planned
 
-- treinar notas no pentagrama
-- treinar acordes no pentagrama
-- treinar acordes de guitarra no diagrama
+- treinador de escalas
+- roadmaps
+- ear training
 - seção de donate
-- note trainer
+- chord dict
 - metronomo
-- escalas
+- language selection
+
 - arpejos
 - progressões
 - intervalos
-- modos gregos
-- ear training
 - análise harmônica
-- treinar acordes de ukulele no diagrama
