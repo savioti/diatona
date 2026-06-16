@@ -562,6 +562,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Chord recognition trainer. Play the root note on your instrument and train your ear.'**
   String get aboutAppDescription;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @languageSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System default'**
+  String get languageSystem;
 }
 
 class _AppLocalizationsDelegate

@@ -69,3 +69,13 @@ class SelectedDisplayModeNotifier extends Notifier<ChordDisplayMode> {
 final selectedDisplayModeProvider =
     NotifierProvider<SelectedDisplayModeNotifier, ChordDisplayMode>(
         SelectedDisplayModeNotifier.new);
+
+class SelectedLocaleNotifier extends Notifier<String> {
+  @override
+  String build() => ref.read(settingsRepositoryProvider).loadLocale();
+
+  void update(String tag) => state = tag;
+}
+
+final selectedLocaleProvider =
+    NotifierProvider<SelectedLocaleNotifier, String>(SelectedLocaleNotifier.new);

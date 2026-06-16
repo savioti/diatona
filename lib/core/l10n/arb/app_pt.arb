@@ -111,5 +111,7 @@
   "refFnTonic": "Tônica",
   "refFnSubdominant": "Subdom.",
   "refFnDominant": "Dom.",
-  "aboutAppDescription": "Treinador de reconhecimento de acordes. Toque a nota fundamental no seu instrumento e treine o ouvido."
+  "aboutAppDescription": "Treinador de reconhecimento de acordes. Toque a nota fundamental no seu instrumento e treine o ouvido.",
+  "language": "Idioma",
+  "languageSystem": "Padrão do sistema"
 }

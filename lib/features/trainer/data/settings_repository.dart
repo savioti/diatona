@@ -10,6 +10,7 @@ class SettingsRepository {
   static const _keyCumulative = 'pref_cumulative';
   static const _keyThemeIndex = 'pref_theme_index';
   static const _keyDisplayMode = 'pref_display_mode';
+  static const _keyLocale = 'pref_locale';
   static const _keyNoteClef = 'pref_note_clef';
   static const _keyNoteInterval = 'pref_note_interval';
   static const _keyNoteLevel = 'pref_note_level';
@@ -20,6 +21,7 @@ class SettingsRepository {
   bool loadCumulative() => _prefs.getBool(_keyCumulative) ?? true;
   int loadThemeIndex() => _prefs.getInt(_keyThemeIndex) ?? 0;
   int loadDisplayMode() => _prefs.getInt(_keyDisplayMode) ?? 0;
+  String loadLocale() => _prefs.getString(_keyLocale) ?? '';
   int loadNoteClef() => _prefs.getInt(_keyNoteClef) ?? 0;
   int loadNoteInterval() => _prefs.getInt(_keyNoteInterval) ?? 5;
   int loadNoteLevel() => _prefs.getInt(_keyNoteLevel) ?? 1;
@@ -30,6 +32,7 @@ class SettingsRepository {
   Future<void> saveCumulative(bool cumulative) => _prefs.setBool(_keyCumulative, cumulative);
   Future<void> saveThemeIndex(int index) => _prefs.setInt(_keyThemeIndex, index);
   Future<void> saveDisplayMode(int index) => _prefs.setInt(_keyDisplayMode, index);
+  Future<void> saveLocale(String tag) => _prefs.setString(_keyLocale, tag);
   Future<void> saveNoteClef(int index) => _prefs.setInt(_keyNoteClef, index);
   Future<void> saveNoteInterval(int interval) => _prefs.setInt(_keyNoteInterval, interval);
   Future<void> saveNoteLevel(int level) => _prefs.setInt(_keyNoteLevel, level);

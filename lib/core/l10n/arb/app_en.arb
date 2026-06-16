@@ -173,5 +173,9 @@
   "refFnDominant": "Dom.",
   "@refFnDominant": {},
   "aboutAppDescription": "Chord recognition trainer. Play the root note on your instrument and train your ear.",
-  "@aboutAppDescription": {}
+  "@aboutAppDescription": {},
+  "language": "Language",
+  "@language": {},
+  "languageSystem": "System default",
+  "@languageSystem": {}
 }

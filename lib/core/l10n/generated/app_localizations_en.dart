@@ -251,4 +251,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aboutAppDescription =>
       'Chord recognition trainer. Play the root note on your instrument and train your ear.';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get languageSystem => 'System default';
 }
