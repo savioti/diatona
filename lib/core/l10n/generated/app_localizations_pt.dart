@@ -323,6 +323,75 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get intervalOctave => 'Oitava';
+
+  @override
+  String get rmChooseRoadmap => 'Escolha um Roteiro';
+
+  @override
+  String get rmChooseRoadmapSubtitle =>
+      'Selecione um instrumento ou assunto para iniciar seu caminho de aprendizado.';
+
+  @override
+  String get rmChangeRoadmap => 'Trocar';
+
+  @override
+  String rmTopicsCompleted(int completed, int total) {
+    return '$completed / $total tópicos concluídos';
+  }
+
+  @override
+  String get rmObjectives => 'Objetivos';
+
+  @override
+  String get rmCommonMistakes => 'Erros Comuns';
+
+  @override
+  String get rmPracticeTips => 'Dicas de Prática';
+
+  @override
+  String get rmTags => 'Tags';
+
+  @override
+  String get rmResources => 'Recursos';
+
+  @override
+  String get rmTakeQuiz => 'Fazer Quiz';
+
+  @override
+  String get rmMarkComplete => 'Marcar como Concluído';
+
+  @override
+  String get rmMarkIncomplete => 'Marcar como Incompleto';
+
+  @override
+  String get rmQuiz => 'Quiz';
+
+  @override
+  String rmQuizScore(int correct, int total) {
+    return '$correct / $total corretas';
+  }
+
+  @override
+  String rmQuizPerfect(int correct, int total) {
+    return 'Pontuação perfeita! $correct / $total corretas';
+  }
+
+  @override
+  String get rmQuizSubmit => 'Enviar';
+
+  @override
+  String get rmQuizDone => 'Concluir';
+
+  @override
+  String get rmQuizRetake => 'Refazer';
+
+  @override
+  String rmLoadError(String error) {
+    return 'Erro: $error';
+  }
+
+  @override
+  String get rmDismiss => 'Fechar';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -644,4 +713,73 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get intervalOctave => 'Oitava';
+
+  @override
+  String get rmChooseRoadmap => 'Escolha um Roteiro';
+
+  @override
+  String get rmChooseRoadmapSubtitle =>
+      'Selecione um instrumento ou assunto para iniciar seu caminho de aprendizado.';
+
+  @override
+  String get rmChangeRoadmap => 'Trocar';
+
+  @override
+  String rmTopicsCompleted(int completed, int total) {
+    return '$completed / $total tópicos concluídos';
+  }
+
+  @override
+  String get rmObjectives => 'Objetivos';
+
+  @override
+  String get rmCommonMistakes => 'Erros Comuns';
+
+  @override
+  String get rmPracticeTips => 'Dicas de Prática';
+
+  @override
+  String get rmTags => 'Tags';
+
+  @override
+  String get rmResources => 'Recursos';
+
+  @override
+  String get rmTakeQuiz => 'Fazer Quiz';
+
+  @override
+  String get rmMarkComplete => 'Marcar como Concluído';
+
+  @override
+  String get rmMarkIncomplete => 'Marcar como Incompleto';
+
+  @override
+  String get rmQuiz => 'Quiz';
+
+  @override
+  String rmQuizScore(int correct, int total) {
+    return '$correct / $total corretas';
+  }
+
+  @override
+  String rmQuizPerfect(int correct, int total) {
+    return 'Pontuação perfeita! $correct / $total corretas';
+  }
+
+  @override
+  String get rmQuizSubmit => 'Enviar';
+
+  @override
+  String get rmQuizDone => 'Concluir';
+
+  @override
+  String get rmQuizRetake => 'Refazer';
+
+  @override
+  String rmLoadError(String error) {
+    return 'Erro: $error';
+  }
+
+  @override
+  String get rmDismiss => 'Fechar';
 }

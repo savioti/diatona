@@ -135,5 +135,46 @@
   "intervalMajSixth": "6ª mayor",
   "intervalMinSeventh": "7ª menor",
   "intervalMajSeventh": "7ª mayor",
-  "intervalOctave": "Octava"
+  "intervalOctave": "Octava",
+  "rmChooseRoadmap": "Elige un Mapa de Ruta",
+  "rmChooseRoadmapSubtitle": "Selecciona un instrumento o tema para comenzar tu ruta de aprendizaje.",
+  "rmChangeRoadmap": "Cambiar",
+  "rmTopicsCompleted": "{completed} / {total} temas completados",
+  "@rmTopicsCompleted": {
+    "placeholders": {
+      "completed": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmObjectives": "Objetivos",
+  "rmCommonMistakes": "Errores Comunes",
+  "rmPracticeTips": "Consejos de Práctica",
+  "rmTags": "Etiquetas",
+  "rmResources": "Recursos",
+  "rmTakeQuiz": "Hacer Quiz",
+  "rmMarkComplete": "Marcar como Completado",
+  "rmMarkIncomplete": "Marcar como Incompleto",
+  "rmQuiz": "Quiz",
+  "rmQuizScore": "{correct} / {total} correctas",
+  "@rmQuizScore": {
+    "placeholders": {
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmQuizPerfect": "¡Puntuación perfecta! {correct} / {total} correctas",
+  "@rmQuizPerfect": {
+    "placeholders": {
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmQuizSubmit": "Enviar",
+  "rmQuizDone": "Listo",
+  "rmQuizRetake": "Repetir",
+  "rmLoadError": "Error: {error}",
+  "@rmLoadError": {
+    "placeholders": { "error": { "type": "String" } }
+  },
+  "rmDismiss": "Cerrar"
 }

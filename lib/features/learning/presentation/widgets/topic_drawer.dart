@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/l10n/generated/app_localizations.dart';
 import '../../data/roadmap_providers.dart';
 import '../../domain/roadmap_models.dart';
+import '../quiz_screen.dart';
 
 class TopicDrawer extends ConsumerWidget {
   const TopicDrawer({
@@ -17,10 +19,8 @@ class TopicDrawer extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final theme = Theme.of(context);
-    final cs = theme.colorScheme;
-    final completed =
-        ref.watch(roadmapProgressProvider).contains(topic.id);
+    final cs = Theme.of(context).colorScheme;
+    final completed = ref.watch(roadmapProgressProvider).contains(topic.id);
 
     return Align(
       alignment: Alignment.centerRight,
@@ -39,7 +39,8 @@ class TopicDrawer extends ConsumerWidget {
                     child: _DrawerContent(topic: topic),
                   ),
                 ),
-                _CompletionButton(
+                _BottomActions(
+                  topic: topic,
                   completed: completed,
                   onToggle: () =>
                       ref.read(roadmapProgressProvider.notifier).toggle(topic.id),
@@ -62,6 +63,7 @@ class _DrawerContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +78,8 @@ class _DrawerContent extends StatelessWidget {
         const SizedBox(height: 12),
         Row(
           children: [
-            if (topic.difficulty.isNotEmpty) _Badge(topic.difficulty, cs.primary, cs.onPrimary),
+            if (topic.difficulty.isNotEmpty)
+              _Badge(topic.difficulty, cs.primary, cs.onPrimary),
             if (topic.difficulty.isNotEmpty && !topic.estimatedTime.isEmpty)
               const SizedBox(width: 8),
             if (!topic.estimatedTime.isEmpty)
@@ -96,40 +99,37 @@ class _DrawerContent extends StatelessWidget {
           Text(topic.longDescription, style: theme.textTheme.bodyMedium),
         ],
         if (topic.objectives.isNotEmpty) ...[
-          _SectionHeader('Objectives'),
+          _SectionHeader(l10n.rmObjectives),
           _BulletList(topic.objectives),
         ],
         if (topic.commonMistakes.isNotEmpty) ...[
-          _SectionHeader('Common Mistakes'),
+          _SectionHeader(l10n.rmCommonMistakes),
           _BulletList(topic.commonMistakes),
         ],
         if (topic.practiceTips.isNotEmpty) ...[
-          _SectionHeader('Practice Tips'),
+          _SectionHeader(l10n.rmPracticeTips),
           _BulletList(topic.practiceTips),
         ],
         if (topic.tags.isNotEmpty) ...[
-          _SectionHeader('Tags'),
+          _SectionHeader(l10n.rmTags),
           Wrap(
             spacing: 8,
             runSpacing: 4,
             children: topic.tags
-                .map((t) => Chip(
-                      label: Text(t),
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                    ))
+                .map(
+                  (t) => Chip(
+                    label: Text(t),
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                )
                 .toList(),
           ),
           const SizedBox(height: 8),
         ],
         if (topic.resources.isNotEmpty) ...[
-          _SectionHeader('Resources'),
+          _SectionHeader(l10n.rmResources),
           ...topic.resources.map((r) => _ResourceTile(resource: r)),
-        ],
-        if (topic.assessments.isNotEmpty) ...[
-          _SectionHeader('Assessment'),
-          ...topic.assessments
-              .map((a) => _AssessmentSection(assessment: a)),
         ],
         const SizedBox(height: 16),
       ],
@@ -176,9 +176,7 @@ class _SectionHeader extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20, bottom: 8),
       child: Text(
         title,
-        style: theme.textTheme.titleMedium?.copyWith(
-          fontWeight: FontWeight.bold,
-        ),
+        style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -271,141 +269,69 @@ class _ResourceTile extends StatelessWidget {
   }
 }
 
-class _AssessmentSection extends StatelessWidget {
-  const _AssessmentSection({required this.assessment});
-
-  final Assessment assessment;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final cs = theme.colorScheme;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          assessment.title,
-          style: theme.textTheme.titleSmall?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        if (assessment.description.isNotEmpty)
-          Padding(
-            padding: const EdgeInsets.only(top: 4, bottom: 8),
-            child: Text(assessment.description,
-                style: theme.textTheme.bodyMedium),
-          ),
-        ...assessment.questions.map((q) => _QuestionCard(
-              question: q,
-              theme: theme,
-              cs: cs,
-            )),
-      ],
-    );
-  }
-}
-
-class _QuestionCard extends StatelessWidget {
-  const _QuestionCard({
-    required this.question,
-    required this.theme,
-    required this.cs,
+class _BottomActions extends StatelessWidget {
+  const _BottomActions({
+    required this.topic,
+    required this.completed,
+    required this.onToggle,
   });
 
-  final AssessmentQuestion question;
-  final ThemeData theme;
-  final ColorScheme cs;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 12),
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: cs.primaryContainer.withAlpha(80),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(question.questionText,
-              style: theme.textTheme.bodyMedium
-                  ?.copyWith(fontWeight: FontWeight.w600)),
-          const SizedBox(height: 8),
-          ...question.options.map((opt) {
-            final isCorrect = question.correctOptionIds.contains(opt.id);
-            return Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Row(
-                children: [
-                  Icon(
-                    isCorrect
-                        ? Icons.check_circle_rounded
-                        : Icons.radio_button_unchecked_rounded,
-                    size: 18,
-                    color: isCorrect ? Colors.green : cs.onSurface.withAlpha(120),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      opt.optionText,
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        color: isCorrect ? Colors.green : null,
-                        fontWeight: isCorrect ? FontWeight.w600 : null,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          }),
-          if (question.explanation.isNotEmpty) ...[
-            const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: cs.surface,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(
-                question.explanation,
-                style: theme.textTheme.bodySmall,
-              ),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _CompletionButton extends StatelessWidget {
-  const _CompletionButton({required this.completed, required this.onToggle});
-
+  final RoadmapTopic topic;
   final bool completed;
   final VoidCallback onToggle;
 
   @override
   Widget build(BuildContext context) {
     final cs = Theme.of(context).colorScheme;
+    final l10n = AppLocalizations.of(context);
+    final hasQuiz = topic.assessments.isNotEmpty;
 
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
-        child: SizedBox(
-          width: double.infinity,
-          child: ElevatedButton.icon(
-            onPressed: onToggle,
-            icon: Icon(
-              completed ? Icons.remove_circle_outline : Icons.check_circle_outline,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (hasQuiz) ...[
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () => _openQuiz(context),
+                  icon: const Icon(Icons.quiz_outlined),
+                  label: Text(l10n.rmTakeQuiz),
+                ),
+              ),
+              const SizedBox(height: 8),
+            ],
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: onToggle,
+                icon: Icon(
+                  completed
+                      ? Icons.remove_circle_outline
+                      : Icons.check_circle_outline,
+                ),
+                label: Text(
+                    completed ? l10n.rmMarkIncomplete : l10n.rmMarkComplete),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: completed ? cs.error : cs.primary,
+                  foregroundColor: completed ? cs.onError : cs.onPrimary,
+                ),
+              ),
             ),
-            label: Text(completed ? 'Mark as Incomplete' : 'Mark as Complete'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: completed ? cs.error : cs.primary,
-              foregroundColor: completed ? cs.onError : cs.onPrimary,
-            ),
-          ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _openQuiz(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => QuizScreen(
+          topicTitle: topic.title,
+          assessments: topic.assessments,
         ),
       ),
     );

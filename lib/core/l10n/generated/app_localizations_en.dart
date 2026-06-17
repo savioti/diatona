@@ -323,4 +323,73 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get intervalOctave => 'Octave';
+
+  @override
+  String get rmChooseRoadmap => 'Choose a Roadmap';
+
+  @override
+  String get rmChooseRoadmapSubtitle =>
+      'Select an instrument or subject to begin your learning path.';
+
+  @override
+  String get rmChangeRoadmap => 'Change';
+
+  @override
+  String rmTopicsCompleted(int completed, int total) {
+    return '$completed / $total topics completed';
+  }
+
+  @override
+  String get rmObjectives => 'Objectives';
+
+  @override
+  String get rmCommonMistakes => 'Common Mistakes';
+
+  @override
+  String get rmPracticeTips => 'Practice Tips';
+
+  @override
+  String get rmTags => 'Tags';
+
+  @override
+  String get rmResources => 'Resources';
+
+  @override
+  String get rmTakeQuiz => 'Take Quiz';
+
+  @override
+  String get rmMarkComplete => 'Mark as Complete';
+
+  @override
+  String get rmMarkIncomplete => 'Mark as Incomplete';
+
+  @override
+  String get rmQuiz => 'Quiz';
+
+  @override
+  String rmQuizScore(int correct, int total) {
+    return '$correct / $total correct';
+  }
+
+  @override
+  String rmQuizPerfect(int correct, int total) {
+    return 'Perfect score! $correct / $total correct';
+  }
+
+  @override
+  String get rmQuizSubmit => 'Submit';
+
+  @override
+  String get rmQuizDone => 'Done';
+
+  @override
+  String get rmQuizRetake => 'Retake';
+
+  @override
+  String rmLoadError(String error) {
+    return 'Error: $error';
+  }
+
+  @override
+  String get rmDismiss => 'Dismiss';
 }

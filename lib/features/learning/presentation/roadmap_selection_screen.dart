@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/l10n/generated/app_localizations.dart';
 import '../data/roadmap_providers.dart';
 import '../data/roadmap_repository.dart';
 import '../domain/roadmap_models.dart';
@@ -13,6 +14,7 @@ class RoadmapSelectionScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       body: SafeArea(
@@ -30,7 +32,7 @@ class RoadmapSelectionScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Choose a Roadmap',
+                l10n.rmChooseRoadmap,
                 style: theme.textTheme.displayLarge?.copyWith(
                   fontSize: 28,
                   color: cs.primary,
@@ -38,7 +40,7 @@ class RoadmapSelectionScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Select an instrument or subject to begin your learning path.',
+                l10n.rmChooseRoadmapSubtitle,
                 style: theme.textTheme.bodyMedium,
               ),
               const SizedBox(height: 24),
@@ -71,10 +73,10 @@ class RoadmapSelectionScreen extends ConsumerWidget {
         .read(roadmapProvider.notifier)
         .select(option.id, option.filename);
 
+    if (!context.mounted) return;
+
     // Reload progress for the newly selected roadmap.
     ref.read(roadmapProgressProvider.notifier).reload(option.id);
-
-    if (!context.mounted) return;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute<void>(builder: (_) => const RoadmapScreen()),
     );

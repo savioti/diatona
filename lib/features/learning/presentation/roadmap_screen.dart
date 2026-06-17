@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/l10n/generated/app_localizations.dart';
 import '../data/roadmap_providers.dart';
 import '../domain/roadmap_models.dart';
 import 'roadmap_selection_screen.dart';
@@ -15,7 +16,9 @@ class RoadmapScreen extends ConsumerWidget {
 
     return roadmapAsync.when(
       loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
-      error: (e, _) => Scaffold(body: Center(child: Text('Error: $e'))),
+      error: (e, _) => Scaffold(
+          body: Center(
+              child: Text(AppLocalizations.of(context).rmLoadError(e.toString())))),
       data: (roadmap) {
         if (roadmap == null) return const RoadmapSelectionScreen();
         return _RoadmapContent(roadmap: roadmap);
@@ -111,7 +114,7 @@ class _TopBar extends StatelessWidget {
           TextButton.icon(
             onPressed: onChangeRoadmap,
             icon: const Icon(Icons.swap_horiz_rounded),
-            label: const Text('Change'),
+            label: Text(AppLocalizations.of(context).rmChangeRoadmap),
           ),
         ],
       ),
@@ -142,7 +145,7 @@ class _ProgressHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '$completedCount / $totalTopics topics completed',
+            AppLocalizations.of(context).rmTopicsCompleted(completedCount, totalTopics),
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: 6),
@@ -387,7 +390,7 @@ class _TopicNode extends ConsumerWidget {
     showGeneralDialog<void>(
       context: context,
       barrierDismissible: true,
-      barrierLabel: 'Dismiss',
+      barrierLabel: AppLocalizations.of(context).rmDismiss,
       barrierColor: Colors.black54,
       transitionDuration: const Duration(milliseconds: 250),
       pageBuilder: (_, _, _) => GestureDetector(

@@ -706,6 +706,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Octave'**
   String get intervalOctave;
+
+  /// No description provided for @rmChooseRoadmap.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a Roadmap'**
+  String get rmChooseRoadmap;
+
+  /// No description provided for @rmChooseRoadmapSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select an instrument or subject to begin your learning path.'**
+  String get rmChooseRoadmapSubtitle;
+
+  /// No description provided for @rmChangeRoadmap.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get rmChangeRoadmap;
+
+  /// No description provided for @rmTopicsCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'{completed} / {total} topics completed'**
+  String rmTopicsCompleted(int completed, int total);
+
+  /// No description provided for @rmObjectives.
+  ///
+  /// In en, this message translates to:
+  /// **'Objectives'**
+  String get rmObjectives;
+
+  /// No description provided for @rmCommonMistakes.
+  ///
+  /// In en, this message translates to:
+  /// **'Common Mistakes'**
+  String get rmCommonMistakes;
+
+  /// No description provided for @rmPracticeTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice Tips'**
+  String get rmPracticeTips;
+
+  /// No description provided for @rmTags.
+  ///
+  /// In en, this message translates to:
+  /// **'Tags'**
+  String get rmTags;
+
+  /// No description provided for @rmResources.
+  ///
+  /// In en, this message translates to:
+  /// **'Resources'**
+  String get rmResources;
+
+  /// No description provided for @rmTakeQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Quiz'**
+  String get rmTakeQuiz;
+
+  /// No description provided for @rmMarkComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as Complete'**
+  String get rmMarkComplete;
+
+  /// No description provided for @rmMarkIncomplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as Incomplete'**
+  String get rmMarkIncomplete;
+
+  /// No description provided for @rmQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get rmQuiz;
+
+  /// No description provided for @rmQuizScore.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct} / {total} correct'**
+  String rmQuizScore(int correct, int total);
+
+  /// No description provided for @rmQuizPerfect.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect score! {correct} / {total} correct'**
+  String rmQuizPerfect(int correct, int total);
+
+  /// No description provided for @rmQuizSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get rmQuizSubmit;
+
+  /// No description provided for @rmQuizDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get rmQuizDone;
+
+  /// No description provided for @rmQuizRetake.
+  ///
+  /// In en, this message translates to:
+  /// **'Retake'**
+  String get rmQuizRetake;
+
+  /// No description provided for @rmLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error: {error}'**
+  String rmLoadError(String error);
+
+  /// No description provided for @rmDismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get rmDismiss;
 }
 
 class _AppLocalizationsDelegate

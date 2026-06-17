@@ -221,5 +221,62 @@
   "intervalMajSeventh": "Major 7th",
   "@intervalMajSeventh": {},
   "intervalOctave": "Octave",
-  "@intervalOctave": {}
+  "@intervalOctave": {},
+  "rmChooseRoadmap": "Choose a Roadmap",
+  "@rmChooseRoadmap": {},
+  "rmChooseRoadmapSubtitle": "Select an instrument or subject to begin your learning path.",
+  "@rmChooseRoadmapSubtitle": {},
+  "rmChangeRoadmap": "Change",
+  "@rmChangeRoadmap": {},
+  "rmTopicsCompleted": "{completed} / {total} topics completed",
+  "@rmTopicsCompleted": {
+    "placeholders": {
+      "completed": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmObjectives": "Objectives",
+  "@rmObjectives": {},
+  "rmCommonMistakes": "Common Mistakes",
+  "@rmCommonMistakes": {},
+  "rmPracticeTips": "Practice Tips",
+  "@rmPracticeTips": {},
+  "rmTags": "Tags",
+  "@rmTags": {},
+  "rmResources": "Resources",
+  "@rmResources": {},
+  "rmTakeQuiz": "Take Quiz",
+  "@rmTakeQuiz": {},
+  "rmMarkComplete": "Mark as Complete",
+  "@rmMarkComplete": {},
+  "rmMarkIncomplete": "Mark as Incomplete",
+  "@rmMarkIncomplete": {},
+  "rmQuiz": "Quiz",
+  "@rmQuiz": {},
+  "rmQuizScore": "{correct} / {total} correct",
+  "@rmQuizScore": {
+    "placeholders": {
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmQuizPerfect": "Perfect score! {correct} / {total} correct",
+  "@rmQuizPerfect": {
+    "placeholders": {
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "rmQuizSubmit": "Submit",
+  "@rmQuizSubmit": {},
+  "rmQuizDone": "Done",
+  "@rmQuizDone": {},
+  "rmQuizRetake": "Retake",
+  "@rmQuizRetake": {},
+  "rmLoadError": "Error: {error}",
+  "@rmLoadError": {
+    "placeholders": { "error": { "type": "String" } }
+  },
+  "rmDismiss": "Dismiss",
+  "@rmDismiss": {}
 }

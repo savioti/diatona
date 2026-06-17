@@ -323,4 +323,73 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get intervalOctave => 'Octava';
+
+  @override
+  String get rmChooseRoadmap => 'Elige un Mapa de Ruta';
+
+  @override
+  String get rmChooseRoadmapSubtitle =>
+      'Selecciona un instrumento o tema para comenzar tu ruta de aprendizaje.';
+
+  @override
+  String get rmChangeRoadmap => 'Cambiar';
+
+  @override
+  String rmTopicsCompleted(int completed, int total) {
+    return '$completed / $total temas completados';
+  }
+
+  @override
+  String get rmObjectives => 'Objetivos';
+
+  @override
+  String get rmCommonMistakes => 'Errores Comunes';
+
+  @override
+  String get rmPracticeTips => 'Consejos de Práctica';
+
+  @override
+  String get rmTags => 'Etiquetas';
+
+  @override
+  String get rmResources => 'Recursos';
+
+  @override
+  String get rmTakeQuiz => 'Hacer Quiz';
+
+  @override
+  String get rmMarkComplete => 'Marcar como Completado';
+
+  @override
+  String get rmMarkIncomplete => 'Marcar como Incompleto';
+
+  @override
+  String get rmQuiz => 'Quiz';
+
+  @override
+  String rmQuizScore(int correct, int total) {
+    return '$correct / $total correctas';
+  }
+
+  @override
+  String rmQuizPerfect(int correct, int total) {
+    return '¡Puntuación perfecta! $correct / $total correctas';
+  }
+
+  @override
+  String get rmQuizSubmit => 'Enviar';
+
+  @override
+  String get rmQuizDone => 'Listo';
+
+  @override
+  String get rmQuizRetake => 'Repetir';
+
+  @override
+  String rmLoadError(String error) {
+    return 'Error: $error';
+  }
+
+  @override
+  String get rmDismiss => 'Cerrar';
 }
