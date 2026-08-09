@@ -1,0 +1,327 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for English (`en`).
+class AppLocalizationsEn extends AppLocalizations {
+  AppLocalizationsEn([String locale = 'en']) : super(locale);
+
+  @override
+  String get appTitle => 'Diatona';
+
+  @override
+  String get homeTitle => 'Chord Training';
+
+  @override
+  String get getReady => 'Get Ready';
+
+  @override
+  String get start => 'Start';
+
+  @override
+  String get stop => 'Stop';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String get correct => 'Correct!';
+
+  @override
+  String get skipped => 'Skipped';
+
+  @override
+  String get level => 'Level';
+
+  @override
+  String get timeLimit => 'Time Limit';
+
+  @override
+  String get noTimeLimit => '∞';
+
+  @override
+  String seconds(int n) {
+    return '${n}s';
+  }
+
+  @override
+  String get levelMajor => 'Major';
+
+  @override
+  String get levelMinor => 'Minor';
+
+  @override
+  String get levelAug => 'Augmented';
+
+  @override
+  String get levelDim => 'Diminished';
+
+  @override
+  String get levelSus => 'Suspended';
+
+  @override
+  String get levelSeventh => '7th';
+
+  @override
+  String get levelMaj7 => 'Major 7th';
+
+  @override
+  String get levelM7 => 'Minor 7th';
+
+  @override
+  String get levelDim7 => 'Diminished 7th';
+
+  @override
+  String get levelHalfDim7 => 'Half-Diminished 7th';
+
+  @override
+  String get levelMMaj7 => 'Minor-Major 7th';
+
+  @override
+  String get levelAugMaj7 => 'Augmented-Major 7th';
+
+  @override
+  String levelLabel(int number, String name) {
+    return 'Level $number: $name';
+  }
+
+  @override
+  String get chordPool => 'Chord Pool';
+
+  @override
+  String chordsCount(int count) {
+    return '$count chords';
+  }
+
+  @override
+  String get cumulativePool => 'Cumulative pool';
+
+  @override
+  String get cumulativePoolHelpTitle => 'Cumulative Pool';
+
+  @override
+  String get cumulativePoolHelpBody =>
+      'When enabled, the chord pool includes all types from level 1 up to the selected level. When disabled, only the chord type of the selected level is used.';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get theme => 'Theme';
+
+  @override
+  String get menuTraining => 'Training';
+
+  @override
+  String get menuNoteTrainer => 'Note Trainer';
+
+  @override
+  String get menuChordTraining => 'Chord Training';
+
+  @override
+  String get menuDonate => 'Donate';
+
+  @override
+  String get menuAbout => 'About';
+
+  @override
+  String get menuCredits => 'Credits';
+
+  @override
+  String get creditsOpenSourceLicenses => 'Open source licenses';
+
+  @override
+  String get creditsOpenSourceLicensesSubtitle =>
+      'Licenses of the packages used by this app';
+
+  @override
+  String get menuReference => 'Reference';
+
+  @override
+  String get comingSoon => 'Coming Soon';
+
+  @override
+  String get noteTrainerDisplayModeLabel => 'Display Mode';
+
+  @override
+  String get noteLevelStandard => 'Standard';
+
+  @override
+  String get noteLevelAccidentals => 'Accidentals';
+
+  @override
+  String get chordDisplay => 'Chord Display';
+
+  @override
+  String get displayModeSymbol => 'Symbol';
+
+  @override
+  String get displayModeTrebleClef => 'Treble Clef';
+
+  @override
+  String get displayModeBassClef => 'Bass Clef';
+
+  @override
+  String get displayModeLetterNames => 'Letter Names';
+
+  @override
+  String get displayModeGuitar => 'Guitar';
+
+  @override
+  String get displayModeUkulele => 'Ukulele';
+
+  @override
+  String refLoadError(String error) {
+    return 'Failed to load references: $error';
+  }
+
+  @override
+  String get refHowItWorksTooltip => 'How it works';
+
+  @override
+  String get refTapKeyToExplore => 'Tap a key to explore';
+
+  @override
+  String get refAscendingFifths => 'Ascending 5ths (clockwise) →';
+
+  @override
+  String get refAscendingFourths => '← Ascending 4ths (counter-clockwise)';
+
+  @override
+  String get refNoAccidentals => 'No accidentals';
+
+  @override
+  String get refKeySignature => 'Key signature';
+
+  @override
+  String get refDiatonicChords => 'Diatonic chords';
+
+  @override
+  String get refTapChordFunction => 'Tap a chord to see its function';
+
+  @override
+  String get refTapLevelExpand => 'Tap a level to expand subdivisions';
+
+  @override
+  String get refWholeStepLegend => 'W = whole step (2 frets)';
+
+  @override
+  String get refHalfStepLegend => 'H = half step (1 fret)';
+
+  @override
+  String get refMinorNatural => 'Natural';
+
+  @override
+  String get refMinorHarmonic => 'Harmonic';
+
+  @override
+  String get refMinorMelodic => 'Melodic';
+
+  @override
+  String refScaleNotesFrom(String note, String parentKey) {
+    return 'Scale notes (from $note, using $parentKey):';
+  }
+
+  @override
+  String get refModeFormula => 'Formula';
+
+  @override
+  String get refModeCharacteristic => 'Characteristic';
+
+  @override
+  String get refModeMood => 'Mood';
+
+  @override
+  String get refPentatonicLegend =>
+      '● = note  ⊙ = root  Tap boxes above to toggle';
+
+  @override
+  String get refFnTonic => 'Tonic';
+
+  @override
+  String get refFnSubdominant => 'Subdom.';
+
+  @override
+  String get refFnDominant => 'Dom.';
+
+  @override
+  String get aboutAppDescription =>
+      'Chord recognition trainer. Play the root note on your instrument and train your ear.';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get languageSystem => 'System default';
+
+  @override
+  String get menuEarTrainer => 'Ear Trainer';
+
+  @override
+  String get earTrainerDirection => 'Direction';
+
+  @override
+  String get earTrainerAscending => 'Ascending';
+
+  @override
+  String get earTrainerDescending => 'Descending';
+
+  @override
+  String get earTrainerHarmonic => 'Harmonic';
+
+  @override
+  String get earTrainerRandom => 'Random';
+
+  @override
+  String get earTrainerCustom => 'Custom';
+
+  @override
+  String get earTrainerSelectAtLeastTwo => 'Select at least 2 intervals';
+
+  @override
+  String get earTrainerWhatInterval => 'What interval is this?';
+
+  @override
+  String get earTrainerWrong => 'Wrong!';
+
+  @override
+  String get intervalMinSecond => 'Minor 2nd';
+
+  @override
+  String get intervalMajSecond => 'Major 2nd';
+
+  @override
+  String get intervalMinThird => 'Minor 3rd';
+
+  @override
+  String get intervalMajThird => 'Major 3rd';
+
+  @override
+  String get intervalPerfectFourth => 'Perfect 4th';
+
+  @override
+  String get intervalTritone => 'Tritone';
+
+  @override
+  String get intervalPerfectFifth => 'Perfect 5th';
+
+  @override
+  String get intervalMinSixth => 'Minor 6th';
+
+  @override
+  String get intervalMajSixth => 'Major 6th';
+
+  @override
+  String get intervalMinSeventh => 'Minor 7th';
+
+  @override
+  String get intervalMajSeventh => 'Major 7th';
+
+  @override
+  String get intervalOctave => 'Octave';
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "guitar",
+        "name": "Guitar",
+        "type": "fretted",
+        "strings": 6,
+        "frets": 21,
+        "tuning": [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4"
+        ]
+    },
+    {
+        "id": "ukulele",
+        "name": "Ukulele",
+        "type": "fretted",
+        "strings": 4,
+        "frets": 15,
+        "tuning": [
+            "G4",
+            "C4",
+            "E4",
+            "A4"
+        ]
+    },
+    {
+        "id": "bass_guitar",
+        "name": "Bass Guitar",
+        "type": "fretted",
+        "strings": 4,
+        "frets": 21,
+        "tuning": [
+            "E1",
+            "A1",
+            "D2",
+            "G2"
+        ]
+    },
+    {
+        "id": "piano",
+        "name": "Piano",
+        "type": "keyboard",
+        "keys": 88,
+        "lowestNote": "A0",
+        "highestNote": "C8"
+    }
+]

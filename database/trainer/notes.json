@@ -1,0 +1,142 @@
+[
+  {
+    "id": "note_c",
+    "pitchClass": 0,
+    "spellings": [
+      {
+        "name": "C",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_csharp",
+    "pitchClass": 1,
+    "spellings": [
+      {
+        "name": "C#",
+        "accidental": "#"
+      },
+      {
+        "name": "Db",
+        "accidental": "b"
+      }
+    ]
+  },
+  {
+    "id": "note_d",
+    "pitchClass": 2,
+    "spellings": [
+      {
+        "name": "D",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_dsharp",
+    "pitchClass": 3,
+    "spellings": [
+      {
+        "name": "D#",
+        "accidental": "#"
+      },
+      {
+        "name": "Eb",
+        "accidental": "b"
+      }
+    ]
+  },
+  {
+    "id": "note_e",
+    "pitchClass": 4,
+    "spellings": [
+      {
+        "name": "E",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_f",
+    "pitchClass": 5,
+    "spellings": [
+      {
+        "name": "F",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_fsharp",
+    "pitchClass": 6,
+    "spellings": [
+      {
+        "name": "F#",
+        "accidental": "#"
+      },
+      {
+        "name": "Gb",
+        "accidental": "b"
+      }
+    ]
+  },
+  {
+    "id": "note_g",
+    "pitchClass": 7,
+    "spellings": [
+      {
+        "name": "G",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_gsharp",
+    "pitchClass": 8,
+    "spellings": [
+      {
+        "name": "G#",
+        "accidental": "#"
+      },
+      {
+        "name": "Ab",
+        "accidental": "b"
+      }
+    ]
+  },
+  {
+    "id": "note_a",
+    "pitchClass": 9,
+    "spellings": [
+      {
+        "name": "A",
+        "accidental": "natural"
+      }
+    ]
+  },
+  {
+    "id": "note_asharp",
+    "pitchClass": 10,
+    "spellings": [
+      {
+        "name": "A#",
+        "accidental": "#"
+      },
+      {
+        "name": "Bb",
+        "accidental": "b"
+      }
+    ]
+  },
+  {
+    "id": "note_b",
+    "pitchClass": 11,
+    "spellings": [
+      {
+        "name": "B",
+        "accidental": "natural"
+      }
+    ]
+  }
+]

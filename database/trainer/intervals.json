@@ -1,0 +1,94 @@
+[
+    {
+        "id": "P1",
+        "semitones": 0,
+        "name": "Perfect Unison",
+        "shortName": "P1",
+        "consonance": "perfect"
+    },
+    {
+        "id": "m2",
+        "semitones": 1,
+        "name": "Minor Second",
+        "shortName": "m2",
+        "consonance": "dissonant"
+    },
+    {
+        "id": "M2",
+        "semitones": 2,
+        "name": "Major Second",
+        "shortName": "M2",
+        "consonance": "dissonant"
+    },
+    {
+        "id": "m3",
+        "semitones": 3,
+        "name": "Minor Third",
+        "shortName": "m3",
+        "consonance": "imperfect"
+    },
+    {
+        "id": "M3",
+        "semitones": 4,
+        "name": "Major Third",
+        "shortName": "M3",
+        "consonance": "imperfect"
+    },
+    {
+        "id": "P4",
+        "semitones": 5,
+        "name": "Perfect Fourth",
+        "shortName": "P4",
+        "consonance": "perfect"
+    },
+    {
+        "id": "TT",
+        "semitones": 6,
+        "name": "Tritone",
+        "shortName": "TT",
+        "enharmonicIds": ["A4", "d5"],
+        "consonance": "dissonant"
+    },
+    {
+        "id": "P5",
+        "semitones": 7,
+        "name": "Perfect Fifth",
+        "shortName": "P5",
+        "consonance": "perfect"
+    },
+    {
+        "id": "m6",
+        "semitones": 8,
+        "name": "Minor Sixth",
+        "shortName": "m6",
+        "consonance": "imperfect"
+    },
+    {
+        "id": "M6",
+        "semitones": 9,
+        "name": "Major Sixth",
+        "shortName": "M6",
+        "consonance": "imperfect"
+    },
+    {
+        "id": "m7",
+        "semitones": 10,
+        "name": "Minor Seventh",
+        "shortName": "m7",
+        "consonance": "dissonant"
+    },
+    {
+        "id": "M7",
+        "semitones": 11,
+        "name": "Major Seventh",
+        "shortName": "M7",
+        "consonance": "dissonant"
+    },
+    {
+        "id": "P8",
+        "semitones": 12,
+        "name": "Perfect Octave",
+        "shortName": "P8",
+        "consonance": "perfect"
+    }
+]
