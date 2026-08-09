@@ -350,6 +350,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scalePlayInOrder => 'Play the notes in order';
 
   @override
+  String get scaleFindTheNotes => 'Work out the notes and play them in order';
+
+  @override
+  String get scaleShowNotes => 'Show the notes';
+
+  @override
+  String get scaleShowNotesHelpTitle => 'Show the Notes';
+
+  @override
+  String get scaleShowNotesHelpBody =>
+      'When enabled, the notes of the scale are listed before you play them. When disabled, only the scale name is shown and the notes are up to you. Either way, three wrong notes move you on to the next scale.';
+
+  @override
+  String get scaleMissed => 'Missed';
+
+  @override
   String scaleNameLabel(String root, String scale) {
     return '$root $scale';
   }

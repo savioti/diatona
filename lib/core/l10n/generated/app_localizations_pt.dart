@@ -350,6 +350,22 @@ class AppLocalizationsPt extends AppLocalizations {
   String get scalePlayInOrder => 'Toque as notas por ordem';
 
   @override
+  String get scaleFindTheNotes => 'Descubra as notas e toque-as por ordem';
+
+  @override
+  String get scaleShowNotes => 'Mostrar as notas';
+
+  @override
+  String get scaleShowNotesHelpTitle => 'Mostrar as Notas';
+
+  @override
+  String get scaleShowNotesHelpBody =>
+      'Quando ativado, as notas da escala são listadas antes de as tocar. Quando desativado, apenas o nome da escala é mostrado e as notas ficam por sua conta. Em qualquer dos casos, três notas erradas avançam para a escala seguinte.';
+
+  @override
+  String get scaleMissed => 'Falhou';
+
+  @override
   String scaleNameLabel(String root, String scale) {
     return '$root $scale';
   }
@@ -726,6 +742,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get scalePlayInOrder => 'Toque as notas em ordem';
+
+  @override
+  String get scaleFindTheNotes => 'Descubra as notas e toque em ordem';
+
+  @override
+  String get scaleShowNotes => 'Mostrar as notas';
+
+  @override
+  String get scaleShowNotesHelpTitle => 'Mostrar as Notas';
+
+  @override
+  String get scaleShowNotesHelpBody =>
+      'Quando ativado, as notas da escala são listadas antes de você tocá-las. Quando desativado, apenas o nome da escala aparece e as notas ficam por sua conta. Nos dois casos, três notas erradas passam para a próxima escala.';
+
+  @override
+  String get scaleMissed => 'Falhou';
 
   @override
   String scaleNameLabel(String root, String scale) {

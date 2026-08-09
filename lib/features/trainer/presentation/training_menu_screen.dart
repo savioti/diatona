@@ -5,6 +5,7 @@ import '../../ear_trainer/presentation/ear_trainer_home_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../main_menu/presentation/widgets/feature_card.dart';
 import '../../note_trainer/presentation/note_home_screen.dart';
+import '../../scale_trainer/presentation/scale_home_screen.dart';
 
 class TrainingMenuScreen extends StatelessWidget {
   const TrainingMenuScreen({super.key});
@@ -67,6 +68,15 @@ class TrainingMenuScreen extends StatelessWidget {
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (_) => const EarTrainerHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.stairs_rounded,
+                      label: l10n.menuScaleTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ScaleHomeScreen(),
                         ),
                       ),
                     ),

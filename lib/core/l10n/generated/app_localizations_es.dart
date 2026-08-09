@@ -350,6 +350,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get scalePlayInOrder => 'Toca las notas en orden';
 
   @override
+  String get scaleFindTheNotes => 'Deduce las notas y tócalas en orden';
+
+  @override
+  String get scaleShowNotes => 'Mostrar las notas';
+
+  @override
+  String get scaleShowNotesHelpTitle => 'Mostrar las Notas';
+
+  @override
+  String get scaleShowNotesHelpBody =>
+      'Cuando está activado, las notas de la escala se muestran antes de tocarlas. Cuando está desactivado, solo aparece el nombre de la escala y las notas corren por tu cuenta. En ambos casos, tres notas erradas pasan a la siguiente escala.';
+
+  @override
+  String get scaleMissed => 'Fallaste';
+
+  @override
   String scaleNameLabel(String root, String scale) {
     return '$root $scale';
   }

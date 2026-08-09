@@ -94,11 +94,18 @@ returns a single level pool.
 
 ## Scale trainer behaviour
 
-- The screen shows a scale, for example `Bb Dorian`, with its notes listed below.
-- The user plays the notes in order on their instrument. Each note that matches fills
-  in, the next one is outlined, notes that do not match are ignored.
+- The screen shows a scale name, for example `Bb Dorian`, and one blank slot per note.
+  Working out which notes those are is the exercise.
+- The user plays the notes in order on their instrument. A correct note fills its slot
+  with the note name and the next slot is outlined.
+- The `Show the notes` option, off by default, lists the notes up front instead. The
+  rest of the round works the same way.
 - Octaves are ignored, only the pitch class is compared, so the scale can be played
   anywhere on the instrument.
+- A wrong note costs one of three tries, shown as crosses under the scale name. The
+  third one reveals the right notes and moves on to the next scale after 1200 ms.
+- A wrong note only counts once it has been detected twice in a row, so a single bad
+  reading from the detector is not charged to the user.
 - Completing the last note shows the success overlay and the next scale follows after
   900 ms, with the same 500 ms silence window the chord trainer uses.
 - Direction is ascending, descending or up and down. Every direction closes the octave,

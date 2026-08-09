@@ -49,12 +49,16 @@ class TrainingOverlay extends StatelessWidget {
                   ),
                   if (label != null) ...[
                     const SizedBox(height: 8),
-                    Text(
-                      label!,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.w500,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: Text(
+                        label!,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],

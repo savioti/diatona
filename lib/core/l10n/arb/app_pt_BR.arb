@@ -144,6 +144,11 @@
   "scaleKeysNaturals": "Naturais",
   "scaleKeysAll": "Todas",
   "scalePlayInOrder": "Toque as notas em ordem",
+  "scaleFindTheNotes": "Descubra as notas e toque em ordem",
+  "scaleShowNotes": "Mostrar as notas",
+  "scaleShowNotesHelpTitle": "Mostrar as Notas",
+  "scaleShowNotesHelpBody": "Quando ativado, as notas da escala são listadas antes de você tocá-las. Quando desativado, apenas o nome da escala aparece e as notas ficam por sua conta. Nos dois casos, três notas erradas passam para a próxima escala.",
+  "scaleMissed": "Falhou",
   "scaleNameLabel": "{root} {scale}",
   "@scaleNameLabel": {
     "placeholders": {

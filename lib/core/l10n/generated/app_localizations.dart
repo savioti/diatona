@@ -755,6 +755,36 @@ abstract class AppLocalizations {
   /// **'Play the notes in order'**
   String get scalePlayInOrder;
 
+  /// No description provided for @scaleFindTheNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Work out the notes and play them in order'**
+  String get scaleFindTheNotes;
+
+  /// No description provided for @scaleShowNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the notes'**
+  String get scaleShowNotes;
+
+  /// No description provided for @scaleShowNotesHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show the Notes'**
+  String get scaleShowNotesHelpTitle;
+
+  /// No description provided for @scaleShowNotesHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, the notes of the scale are listed before you play them. When disabled, only the scale name is shown and the notes are up to you. Either way, three wrong notes move you on to the next scale.'**
+  String get scaleShowNotesHelpBody;
+
+  /// No description provided for @scaleMissed.
+  ///
+  /// In en, this message translates to:
+  /// **'Missed'**
+  String get scaleMissed;
+
   /// No description provided for @scaleNameLabel.
   ///
   /// In en, this message translates to:

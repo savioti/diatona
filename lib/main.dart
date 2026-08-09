@@ -7,12 +7,14 @@ import 'dart:async';
 import 'app.dart';
 import 'features/trainer/data/chord_data.dart';
 import 'features/trainer/data/chord_database.dart';
+import 'features/scale_trainer/data/scale_data.dart';
 import 'features/trainer/data/providers.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   await initChordData();
+  await initScaleData();
   unawaited(ChordDatabase.instance.ensureLoaded());
   runApp(
     ProviderScope(

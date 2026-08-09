@@ -238,6 +238,16 @@
   "@scaleKeysAll": {},
   "scalePlayInOrder": "Play the notes in order",
   "@scalePlayInOrder": {},
+  "scaleFindTheNotes": "Work out the notes and play them in order",
+  "@scaleFindTheNotes": {},
+  "scaleShowNotes": "Show the notes",
+  "@scaleShowNotes": {},
+  "scaleShowNotesHelpTitle": "Show the Notes",
+  "@scaleShowNotesHelpTitle": {},
+  "scaleShowNotesHelpBody": "When enabled, the notes of the scale are listed before you play them. When disabled, only the scale name is shown and the notes are up to you. Either way, three wrong notes move you on to the next scale.",
+  "@scaleShowNotesHelpBody": {},
+  "scaleMissed": "Missed",
+  "@scaleMissed": {},
   "scaleNameLabel": "{root} {scale}",
   "@scaleNameLabel": {
     "placeholders": {

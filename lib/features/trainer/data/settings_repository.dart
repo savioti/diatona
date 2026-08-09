@@ -19,6 +19,12 @@ class SettingsRepository {
   static const _keyEarDirection = 'pref_ear_direction';
   static const _keyEarCustomMode = 'pref_ear_custom_mode';
   static const _keyEarCustomPool = 'pref_ear_custom_pool';
+  static const _keyScaleLevel = 'pref_scale_level';
+  static const _keyScaleCumulative = 'pref_scale_cumulative';
+  static const _keyScaleDirection = 'pref_scale_direction';
+  static const _keyScaleNaturalRoots = 'pref_scale_natural_roots';
+  static const _keyScaleInterval = 'pref_scale_interval';
+  static const _keyScaleShowNotes = 'pref_scale_show_notes';
 
   int loadLevel() => _prefs.getInt(_keyLevel) ?? 1;
   int loadInterval() => _prefs.getInt(_keyInterval) ?? 5;
@@ -58,4 +64,18 @@ class SettingsRepository {
   Future<void> saveEarCustomMode(bool v) => _prefs.setBool(_keyEarCustomMode, v);
   Future<void> saveEarCustomPool(List<int> indices) =>
       _prefs.setString(_keyEarCustomPool, indices.join(','));
+
+  int loadScaleLevel() => _prefs.getInt(_keyScaleLevel) ?? 1;
+  bool loadScaleCumulative() => _prefs.getBool(_keyScaleCumulative) ?? true;
+  int loadScaleDirection() => _prefs.getInt(_keyScaleDirection) ?? 0;
+  bool loadScaleNaturalRoots() => _prefs.getBool(_keyScaleNaturalRoots) ?? true;
+  int loadScaleInterval() => _prefs.getInt(_keyScaleInterval) ?? 0;
+  bool loadScaleShowNotes() => _prefs.getBool(_keyScaleShowNotes) ?? false;
+
+  Future<void> saveScaleLevel(int level) => _prefs.setInt(_keyScaleLevel, level);
+  Future<void> saveScaleCumulative(bool v) => _prefs.setBool(_keyScaleCumulative, v);
+  Future<void> saveScaleDirection(int index) => _prefs.setInt(_keyScaleDirection, index);
+  Future<void> saveScaleNaturalRoots(bool v) => _prefs.setBool(_keyScaleNaturalRoots, v);
+  Future<void> saveScaleInterval(int interval) => _prefs.setInt(_keyScaleInterval, interval);
+  Future<void> saveScaleShowNotes(bool v) => _prefs.setBool(_keyScaleShowNotes, v);
 }
