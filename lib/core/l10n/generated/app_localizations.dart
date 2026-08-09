@@ -317,36 +317,6 @@ abstract class AppLocalizations {
   /// **'Chord Training'**
   String get menuChordTraining;
 
-  /// No description provided for @menuDonate.
-  ///
-  /// In en, this message translates to:
-  /// **'Donate'**
-  String get menuDonate;
-
-  /// No description provided for @donateIntro.
-  ///
-  /// In en, this message translates to:
-  /// **'Diatona is free, has no ads and no accounts. If it is useful to you, a donation helps to keep it growing.'**
-  String get donateIntro;
-
-  /// No description provided for @donatePixCopied.
-  ///
-  /// In en, this message translates to:
-  /// **'PIX key copied'**
-  String get donatePixCopied;
-
-  /// No description provided for @donateLinkError.
-  ///
-  /// In en, this message translates to:
-  /// **'Could not open the link'**
-  String get donateLinkError;
-
-  /// No description provided for @donateThanks.
-  ///
-  /// In en, this message translates to:
-  /// **'Thank you for the support.'**
-  String get donateThanks;
-
   /// No description provided for @menuAbout.
   ///
   /// In en, this message translates to:
@@ -730,6 +700,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Octave'**
   String get intervalOctave;
+
+  /// No description provided for @menuScaleTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Scale Trainer'**
+  String get menuScaleTrainer;
+
+  /// No description provided for @scaleDirection.
+  ///
+  /// In en, this message translates to:
+  /// **'Direction'**
+  String get scaleDirection;
+
+  /// No description provided for @scaleAscending.
+  ///
+  /// In en, this message translates to:
+  /// **'Ascending'**
+  String get scaleAscending;
+
+  /// No description provided for @scaleDescending.
+  ///
+  /// In en, this message translates to:
+  /// **'Descending'**
+  String get scaleDescending;
+
+  /// No description provided for @scaleUpAndDown.
+  ///
+  /// In en, this message translates to:
+  /// **'Up and down'**
+  String get scaleUpAndDown;
+
+  /// No description provided for @scaleKeys.
+  ///
+  /// In en, this message translates to:
+  /// **'Keys'**
+  String get scaleKeys;
+
+  /// No description provided for @scaleKeysNaturals.
+  ///
+  /// In en, this message translates to:
+  /// **'Naturals'**
+  String get scaleKeysNaturals;
+
+  /// No description provided for @scaleKeysAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All keys'**
+  String get scaleKeysAll;
+
+  /// No description provided for @scalePlayInOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Play the notes in order'**
+  String get scalePlayInOrder;
+
+  /// No description provided for @scaleNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{root} {scale}'**
+  String scaleNameLabel(String root, String scale);
+
+  /// No description provided for @scaleMajor.
+  ///
+  /// In en, this message translates to:
+  /// **'Major'**
+  String get scaleMajor;
+
+  /// No description provided for @scaleNaturalMinor.
+  ///
+  /// In en, this message translates to:
+  /// **'Natural Minor'**
+  String get scaleNaturalMinor;
+
+  /// No description provided for @scaleDorian.
+  ///
+  /// In en, this message translates to:
+  /// **'Dorian'**
+  String get scaleDorian;
+
+  /// No description provided for @scaleMixolydian.
+  ///
+  /// In en, this message translates to:
+  /// **'Mixolydian'**
+  String get scaleMixolydian;
+
+  /// No description provided for @scaleLydian.
+  ///
+  /// In en, this message translates to:
+  /// **'Lydian'**
+  String get scaleLydian;
+
+  /// No description provided for @scalePhrygian.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrygian'**
+  String get scalePhrygian;
+
+  /// No description provided for @scaleLocrian.
+  ///
+  /// In en, this message translates to:
+  /// **'Locrian'**
+  String get scaleLocrian;
+
+  /// No description provided for @scaleHarmonicMinor.
+  ///
+  /// In en, this message translates to:
+  /// **'Harmonic Minor'**
+  String get scaleHarmonicMinor;
+
+  /// No description provided for @scaleMelodicMinor.
+  ///
+  /// In en, this message translates to:
+  /// **'Melodic Minor'**
+  String get scaleMelodicMinor;
 }
 
 class _AppLocalizationsDelegate

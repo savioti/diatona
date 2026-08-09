@@ -23,7 +23,6 @@ restrictions (see [CREDITS.md](CREDITS.md)).
 
 ## Planned
 
-- scale trainer
 - chord dict
 - arpejos
 - progressions

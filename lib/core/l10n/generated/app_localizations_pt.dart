@@ -124,22 +124,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get menuChordTraining => 'Treino de Acordes';
 
   @override
-  String get menuDonate => 'Doar';
-
-  @override
-  String get donateIntro =>
-      'O Diatona é gratuito, sem anúncios e sem contas. Se ele for útil para si, um donativo ajuda a mantê-lo a crescer.';
-
-  @override
-  String get donatePixCopied => 'Chave PIX copiada';
-
-  @override
-  String get donateLinkError => 'Não foi possível abrir a ligação';
-
-  @override
-  String get donateThanks => 'Obrigado pelo apoio.';
-
-  @override
   String get menuAbout => 'Sobre';
 
   @override
@@ -337,6 +321,65 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get intervalOctave => 'Oitava';
+
+  @override
+  String get menuScaleTrainer => 'Treino de Escalas';
+
+  @override
+  String get scaleDirection => 'Direção';
+
+  @override
+  String get scaleAscending => 'Ascendente';
+
+  @override
+  String get scaleDescending => 'Descendente';
+
+  @override
+  String get scaleUpAndDown => 'Subir e descer';
+
+  @override
+  String get scaleKeys => 'Tonalidades';
+
+  @override
+  String get scaleKeysNaturals => 'Naturais';
+
+  @override
+  String get scaleKeysAll => 'Todas';
+
+  @override
+  String get scalePlayInOrder => 'Toque as notas por ordem';
+
+  @override
+  String scaleNameLabel(String root, String scale) {
+    return '$root $scale';
+  }
+
+  @override
+  String get scaleMajor => 'Maior';
+
+  @override
+  String get scaleNaturalMinor => 'Menor Natural';
+
+  @override
+  String get scaleDorian => 'Dórico';
+
+  @override
+  String get scaleMixolydian => 'Mixolídio';
+
+  @override
+  String get scaleLydian => 'Lídio';
+
+  @override
+  String get scalePhrygian => 'Frígio';
+
+  @override
+  String get scaleLocrian => 'Lócrio';
+
+  @override
+  String get scaleHarmonicMinor => 'Menor Harmónica';
+
+  @override
+  String get scaleMelodicMinor => 'Menor Melódica';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -459,22 +502,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get menuChordTraining => 'Treino de Acordes';
 
   @override
-  String get menuDonate => 'Doar';
-
-  @override
-  String get donateIntro =>
-      'O Diatona é gratuito, sem anúncios e sem contas. Se ele for útil para você, uma doação ajuda a mantê-lo crescendo.';
-
-  @override
-  String get donatePixCopied => 'Chave PIX copiada';
-
-  @override
-  String get donateLinkError => 'Não foi possível abrir o link';
-
-  @override
-  String get donateThanks => 'Obrigado pelo apoio.';
-
-  @override
   String get menuAbout => 'Sobre';
 
   @override
@@ -672,4 +699,63 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get intervalOctave => 'Oitava';
+
+  @override
+  String get menuScaleTrainer => 'Treino de Escalas';
+
+  @override
+  String get scaleDirection => 'Direção';
+
+  @override
+  String get scaleAscending => 'Ascendente';
+
+  @override
+  String get scaleDescending => 'Descendente';
+
+  @override
+  String get scaleUpAndDown => 'Subindo e descendo';
+
+  @override
+  String get scaleKeys => 'Tonalidades';
+
+  @override
+  String get scaleKeysNaturals => 'Naturais';
+
+  @override
+  String get scaleKeysAll => 'Todas';
+
+  @override
+  String get scalePlayInOrder => 'Toque as notas em ordem';
+
+  @override
+  String scaleNameLabel(String root, String scale) {
+    return '$root $scale';
+  }
+
+  @override
+  String get scaleMajor => 'Maior';
+
+  @override
+  String get scaleNaturalMinor => 'Menor Natural';
+
+  @override
+  String get scaleDorian => 'Dórico';
+
+  @override
+  String get scaleMixolydian => 'Mixolídio';
+
+  @override
+  String get scaleLydian => 'Lídio';
+
+  @override
+  String get scalePhrygian => 'Frígio';
+
+  @override
+  String get scaleLocrian => 'Lócrio';
+
+  @override
+  String get scaleHarmonicMinor => 'Menor Harmônica';
+
+  @override
+  String get scaleMelodicMinor => 'Menor Melódica';
 }

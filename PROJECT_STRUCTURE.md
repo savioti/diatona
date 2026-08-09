@@ -19,7 +19,7 @@ there is no backend. Chord data and reference material live as JSON files under
 
 ```text
 lib/
-  main.dart                 Loads SharedPreferences and chord data, then runs App
+  main.dart                 Loads SharedPreferences, chord and scale data, then runs App
   app.dart                  MaterialApp: theme, locale, localization delegates, SplashScreen
   core/
     theme/app_theme.dart    Theme variants built from a shared palette
@@ -32,11 +32,11 @@ lib/
     trainer/                Chord trainer: domain, chord data, settings repository, providers
     note_trainer/           Staff note reading trainer
     ear_trainer/            Interval ear training with piano playback
+    scale_trainer/          Scale playing trainer, scale spelling and pools
     references/             Circle of fifths, CAGED, modes, scales and other charts
     home/                   Chord trainer setup screen (level, interval, display mode)
     settings/               Theme, language and training preferences
     about/                  About and credits
-    donate/                 Donation links and PIX key
     audio/                  pitch_detection_service.dart
 database/
   trainer/                  chords, chord qualities, notes, intervals, scales, voicings
@@ -55,7 +55,7 @@ override of `sharedPreferencesProvider`. Providers never call
 `SharedPreferences.getInstance()` themselves.
 
 `SettingsRepository` (`lib/features/trainer/data/settings_repository.dart`) is the only
-place that touches preference keys. It holds settings for all three trainers plus theme
+place that touches preference keys. It holds settings for all four trainers plus theme
 and locale, all prefixed with `pref_`.
 
 The notifiers in `lib/features/trainer/data/providers.dart` expose the selected level,
@@ -92,6 +92,37 @@ returns a single level pool.
 | 11 | Minor-major 7th | `mMaj7` |
 | 12 | Augmented-major 7th | `augMaj7` |
 
+## Scale trainer behaviour
+
+- The screen shows a scale, for example `Bb Dorian`, with its notes listed below.
+- The user plays the notes in order on their instrument. Each note that matches fills
+  in, the next one is outlined, notes that do not match are ignored.
+- Octaves are ignored, only the pitch class is compared, so the scale can be played
+  anywhere on the instrument.
+- Completing the last note shows the success overlay and the next scale follows after
+  900 ms, with the same 500 ms silence window the chord trainer uses.
+- Direction is ascending, descending or up and down. Every direction closes the octave,
+  so a seven note scale is eight notes to play, or fifteen going up and down.
+- Keys are either the seven naturals or all twelve, and the sharp or flat spelling of a
+  key is picked per scale, whichever needs fewer accidentals: `Db Major`, `C# Locrian`.
+- Scales are spelled with one letter per degree, so `Bb Dorian` reads
+  `Bb C Db Eb F G Ab Bb` rather than mixing sharps and flats.
+
+Semitone patterns come from `database/trainer/scales.json`, loaded by `initScaleData()`.
+Levels are cumulative by default, like the chord trainer.
+
+| Level | Scale | `ScaleType` |
+| ----- | ----- | ----------- |
+| 1 | Major | `major` |
+| 2 | Natural Minor | `naturalMinor` |
+| 3 | Dorian | `dorian` |
+| 4 | Mixolydian | `mixolydian` |
+| 5 | Lydian | `lydian` |
+| 6 | Phrygian | `phrygian` |
+| 7 | Locrian | `locrian` |
+| 8 | Harmonic Minor | `harmonicMinor` |
+| 9 | Melodic Minor | `melodicMinor` |
+
 ## Translations
 
 1. Add the key to `lib/core/l10n/arb/app_en.arb`, which is the template.
@@ -114,3 +145,7 @@ flutter analyze       # static analysis, should stay at zero issues
 flutter run           # run on a connected device or emulator
 flutter pub upgrade   # upgrade within the current constraints
 ```
+
+Donations are handled in the README only, not in the app. Google Play and the App
+Store both restrict donation links for developers who are not registered charities,
+so there is no donate screen and no link out to PayPal, Buy Me a Coffee or PIX.

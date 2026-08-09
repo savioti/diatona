@@ -52,11 +52,6 @@
   "menuTraining": "Entrenamiento",
   "menuNoteTrainer": "Entrenador de Notas",
   "menuChordTraining": "Entrenamiento de Acordes",
-  "menuDonate": "Donar",
-  "donateIntro": "Diatona es gratuita, sin anuncios y sin cuentas. Si te resulta útil, una donación ayuda a que siga creciendo.",
-  "donatePixCopied": "Clave PIX copiada",
-  "donateLinkError": "No se pudo abrir el enlace",
-  "donateThanks": "Gracias por tu apoyo.",
   "menuAbout": "Acerca de",
   "menuCredits": "Créditos",
   "creditsOpenSourceLicenses": "Licencias de código abierto",
@@ -139,5 +134,30 @@
   "intervalMajSixth": "6ª mayor",
   "intervalMinSeventh": "7ª menor",
   "intervalMajSeventh": "7ª mayor",
-  "intervalOctave": "Octava"
+  "intervalOctave": "Octava",
+  "menuScaleTrainer": "Entrenador de Escalas",
+  "scaleDirection": "Dirección",
+  "scaleAscending": "Ascendente",
+  "scaleDescending": "Descendente",
+  "scaleUpAndDown": "Subiendo y bajando",
+  "scaleKeys": "Tonalidades",
+  "scaleKeysNaturals": "Naturales",
+  "scaleKeysAll": "Todas",
+  "scalePlayInOrder": "Toca las notas en orden",
+  "scaleNameLabel": "{root} {scale}",
+  "@scaleNameLabel": {
+    "placeholders": {
+      "root": { "type": "String" },
+      "scale": { "type": "String" }
+    }
+  },
+  "scaleMajor": "Mayor",
+  "scaleNaturalMinor": "Menor Natural",
+  "scaleDorian": "Dórico",
+  "scaleMixolydian": "Mixolidio",
+  "scaleLydian": "Lidio",
+  "scalePhrygian": "Frigio",
+  "scaleLocrian": "Locrio",
+  "scaleHarmonicMinor": "Menor Armónica",
+  "scaleMelodicMinor": "Menor Melódica"
 }

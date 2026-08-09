@@ -124,22 +124,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuChordTraining => 'Chord Training';
 
   @override
-  String get menuDonate => 'Donate';
-
-  @override
-  String get donateIntro =>
-      'Diatona is free, has no ads and no accounts. If it is useful to you, a donation helps to keep it growing.';
-
-  @override
-  String get donatePixCopied => 'PIX key copied';
-
-  @override
-  String get donateLinkError => 'Could not open the link';
-
-  @override
-  String get donateThanks => 'Thank you for the support.';
-
-  @override
   String get menuAbout => 'About';
 
   @override
@@ -337,4 +321,63 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get intervalOctave => 'Octave';
+
+  @override
+  String get menuScaleTrainer => 'Scale Trainer';
+
+  @override
+  String get scaleDirection => 'Direction';
+
+  @override
+  String get scaleAscending => 'Ascending';
+
+  @override
+  String get scaleDescending => 'Descending';
+
+  @override
+  String get scaleUpAndDown => 'Up and down';
+
+  @override
+  String get scaleKeys => 'Keys';
+
+  @override
+  String get scaleKeysNaturals => 'Naturals';
+
+  @override
+  String get scaleKeysAll => 'All keys';
+
+  @override
+  String get scalePlayInOrder => 'Play the notes in order';
+
+  @override
+  String scaleNameLabel(String root, String scale) {
+    return '$root $scale';
+  }
+
+  @override
+  String get scaleMajor => 'Major';
+
+  @override
+  String get scaleNaturalMinor => 'Natural Minor';
+
+  @override
+  String get scaleDorian => 'Dorian';
+
+  @override
+  String get scaleMixolydian => 'Mixolydian';
+
+  @override
+  String get scaleLydian => 'Lydian';
+
+  @override
+  String get scalePhrygian => 'Phrygian';
+
+  @override
+  String get scaleLocrian => 'Locrian';
+
+  @override
+  String get scaleHarmonicMinor => 'Harmonic Minor';
+
+  @override
+  String get scaleMelodicMinor => 'Melodic Minor';
 }
