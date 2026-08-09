@@ -323,6 +323,30 @@ abstract class AppLocalizations {
   /// **'Donate'**
   String get menuDonate;
 
+  /// No description provided for @donateIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Diatona is free, has no ads and no accounts. If it is useful to you, a donation helps to keep it growing.'**
+  String get donateIntro;
+
+  /// No description provided for @donatePixCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'PIX key copied'**
+  String get donatePixCopied;
+
+  /// No description provided for @donateLinkError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link'**
+  String get donateLinkError;
+
+  /// No description provided for @donateThanks.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for the support.'**
+  String get donateThanks;
+
   /// No description provided for @menuAbout.
   ///
   /// In en, this message translates to:

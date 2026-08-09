@@ -127,6 +127,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuDonate => 'Donate';
 
   @override
+  String get donateIntro =>
+      'Diatona is free, has no ads and no accounts. If it is useful to you, a donation helps to keep it growing.';
+
+  @override
+  String get donatePixCopied => 'PIX key copied';
+
+  @override
+  String get donateLinkError => 'Could not open the link';
+
+  @override
+  String get donateThanks => 'Thank you for the support.';
+
+  @override
   String get menuAbout => 'About';
 
   @override

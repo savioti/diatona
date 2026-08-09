@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../about/presentation/about_screen.dart';
+import '../../donate/presentation/donate_screen.dart';
 import '../../references/presentation/references_screen.dart';
 import '../../settings/presentation/settings_screen.dart';
 import '../../trainer/presentation/training_menu_screen.dart';
@@ -75,7 +76,11 @@ class MainMenuScreen extends ConsumerWidget {
                     FeatureCard(
                       icon: Icons.favorite_rounded,
                       label: l10n.menuDonate,
-                      comingSoon: true,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const DonateScreen(),
+                        ),
+                      ),
                     ),
                     FeatureCard(
                       icon: Icons.info_outline_rounded,

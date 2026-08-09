@@ -36,6 +36,7 @@ lib/
     home/                   Chord trainer setup screen (level, interval, display mode)
     settings/               Theme, language and training preferences
     about/                  About and credits
+    donate/                 Donation links and PIX key
     audio/                  pitch_detection_service.dart
 database/
   trainer/                  chords, chord qualities, notes, intervals, scales, voicings

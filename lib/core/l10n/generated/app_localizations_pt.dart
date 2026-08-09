@@ -127,6 +127,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get menuDonate => 'Doar';
 
   @override
+  String get donateIntro =>
+      'O Diatona é gratuito, sem anúncios e sem contas. Se ele for útil para si, um donativo ajuda a mantê-lo a crescer.';
+
+  @override
+  String get donatePixCopied => 'Chave PIX copiada';
+
+  @override
+  String get donateLinkError => 'Não foi possível abrir a ligação';
+
+  @override
+  String get donateThanks => 'Obrigado pelo apoio.';
+
+  @override
   String get menuAbout => 'Sobre';
 
   @override
@@ -447,6 +460,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get menuDonate => 'Doar';
+
+  @override
+  String get donateIntro =>
+      'O Diatona é gratuito, sem anúncios e sem contas. Se ele for útil para você, uma doação ajuda a mantê-lo crescendo.';
+
+  @override
+  String get donatePixCopied => 'Chave PIX copiada';
+
+  @override
+  String get donateLinkError => 'Não foi possível abrir o link';
+
+  @override
+  String get donateThanks => 'Obrigado pelo apoio.';
 
   @override
   String get menuAbout => 'Sobre';
