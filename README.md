@@ -20,7 +20,3 @@ Everything authored for this project is [MIT licensed](LICENSE). The piano
 samples under `assets/instrument_sounds/piano/` come from the University of
 Iowa Electronic Music Studios, released for use in any project without
 restrictions (see [CREDITS.md](CREDITS.md)).
-
-## Planned
-
-- harmonic analysis
