@@ -436,6 +436,178 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get intervalPlayRootHelpBody =>
       'Quando ativado, o exercício tem duas notas: aquela de onde o intervalo parte e aquela onde chega. Quando desativado, apenas a nota de chegada é pedida, o que é mais rápido mas nunca faz soar o intervalo.';
+
+  @override
+  String get playbackPlaying => 'A tocar…';
+
+  @override
+  String get playbackReplay => 'Repetir';
+
+  @override
+  String get refProgressionsArpeggiate => 'Arpejar';
+
+  @override
+  String get refProgressionsSlow => 'Lento';
+
+  @override
+  String get refProgressionsMedium => 'Médio';
+
+  @override
+  String get refProgressionsFast => 'Rápido';
+
+  @override
+  String get refModulationFrom => 'De';
+
+  @override
+  String get refModulationTo => 'Para';
+
+  @override
+  String refModulationDistance(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count passos no ciclo das quintas',
+      one: '1 passo no ciclo das quintas',
+      zero: 'A mesma tónica',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String refModulationSharedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acordes em comum',
+      one: '1 acorde em comum',
+      zero: 'Nenhum acorde em comum',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get refModulationNoPivots =>
+      'Estas duas tonalidades não têm nenhum acorde em comum, por isso não há pivô onde girar. Passar de uma para a outra exige um acorde que não pertence a nenhuma delas.';
+
+  @override
+  String get refModulationTapPivot =>
+      'Toque num acorde em comum para o ouvir girar: o pivô, depois a dominante e a tónica da tonalidade de chegada.';
+
+  @override
+  String get menuRomanTrainer => 'Graus Romanos';
+
+  @override
+  String get menuProgressionTrainer => 'Treino de Progressões';
+
+  @override
+  String get menuProgressionEarTrainer => 'Progressões de Ouvido';
+
+  @override
+  String get menuCadenceTrainer => 'Cadências';
+
+  @override
+  String get progressionPool => 'Progressões';
+
+  @override
+  String get progressionTempo => 'Andamento';
+
+  @override
+  String get progressionTrainerHint =>
+      'Os graus são mostrados, os acordes não. Descobrir que acordes são nesta tonalidade é o exercício.';
+
+  @override
+  String get progressionArpeggiate => 'Arpejar os acordes';
+
+  @override
+  String get progressionArpeggiateHelpTitle => 'Arpejar os Acordes';
+
+  @override
+  String get progressionArpeggiateHelpBody =>
+      'Quando ativado, o exercício pede todas as notas de cada acorde e não só as fundamentais, por isso uma progressão de quatro acordes são doze notas. Quando desativado, só a fundamental de cada acorde é pedida, que é a progressão como linha de baixo.';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpTitle => 'Arpejar';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpBody =>
+      'Quando ativado, as notas de cada acorde chegam uma a seguir à outra em vez de juntas. Assim é mais fácil separar o acorde, e mais difícil ouvir a progressão como um todo.';
+
+  @override
+  String get progressionEarWhich => 'Que progressão?';
+
+  @override
+  String get progressionEarHint =>
+      'Escolha pelo menos duas. Cada exercício toca uma delas numa tonalidade ao acaso.';
+
+  @override
+  String get cadencePool => 'Cadências';
+
+  @override
+  String get cadenceWhich => 'Que cadência?';
+
+  @override
+  String get cadenceHint =>
+      'Todos os exercícios começam na tónica, para que a tonalidade se ouça antes de a cadência chegar.';
+
+  @override
+  String get cadenceAuthentic => 'Autêntica';
+
+  @override
+  String get cadencePlagal => 'Plagal';
+
+  @override
+  String get cadenceHalf => 'Suspensiva';
+
+  @override
+  String get cadenceDeceptive => 'Interrompida';
+
+  @override
+  String get cadenceIncludeMinor => 'Incluir tonalidades menores';
+
+  @override
+  String get cadenceIncludeMinorHelpTitle => 'Incluir Tonalidades Menores';
+
+  @override
+  String get cadenceIncludeMinorHelpBody =>
+      'Quando ativado, metade dos exercícios está numa tonalidade menor. O menor usa a escala menor harmónica, que é a que dá à cadência o quinto grau maior de que precisa.';
+
+  @override
+  String get romanDirection => 'Sentido';
+
+  @override
+  String get romanScales => 'Escalas';
+
+  @override
+  String get romanModeNumeralToChord => 'Grau → Acorde';
+
+  @override
+  String get romanModeChordToNumeral => 'Acorde → Grau';
+
+  @override
+  String get romanWhichChord => 'Que acorde é este grau?';
+
+  @override
+  String get romanWhichDegree => 'Que grau é este acorde?';
+
+  @override
+  String get romanSevenths => 'Acordes de sétima';
+
+  @override
+  String get romanSeventhsHelpTitle => 'Acordes de Sétima';
+
+  @override
+  String get romanSeventhsHelpBody =>
+      'Quando ativado, os graus levam mais uma terceira empilhada, por isso o quinto grau de uma tonalidade maior é V7 e não V. São os mesmos sete graus, nomeados com mais rigor.';
+
+  @override
+  String get romanHearChord => 'Ouvir o acorde';
+
+  @override
+  String get romanHearChordHelpTitle => 'Ouvir o Acorde';
+
+  @override
+  String get romanHearChordHelpBody =>
+      'Quando ativado, o acorde toca assim que a resposta é revelada. Nomear um grau é um exercício escrito enquanto não se ouvir como ele soa.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -870,4 +1042,176 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get intervalPlayRootHelpBody =>
       'Quando ativado, o exercício tem duas notas: a nota de onde o intervalo parte e a nota onde ele chega. Quando desativado, apenas a nota de chegada é pedida, o que é mais rápido mas nunca faz o intervalo soar.';
+
+  @override
+  String get playbackPlaying => 'Tocando…';
+
+  @override
+  String get playbackReplay => 'Repetir';
+
+  @override
+  String get refProgressionsArpeggiate => 'Arpejar';
+
+  @override
+  String get refProgressionsSlow => 'Lento';
+
+  @override
+  String get refProgressionsMedium => 'Médio';
+
+  @override
+  String get refProgressionsFast => 'Rápido';
+
+  @override
+  String get refModulationFrom => 'De';
+
+  @override
+  String get refModulationTo => 'Para';
+
+  @override
+  String refModulationDistance(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count passos no ciclo das quintas',
+      one: '1 passo no ciclo das quintas',
+      zero: 'A mesma tônica',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String refModulationSharedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acordes em comum',
+      one: '1 acorde em comum',
+      zero: 'Nenhum acorde em comum',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get refModulationNoPivots =>
+      'Estes dois tons não têm nenhum acorde em comum, então não existe pivô para girar. Ir de um para o outro exige um acorde que não pertence a nenhum dos dois.';
+
+  @override
+  String get refModulationTapPivot =>
+      'Toque em um acorde em comum para ouvi-lo girar: o pivô, depois a dominante e a tônica do tom de chegada.';
+
+  @override
+  String get menuRomanTrainer => 'Graus Romanos';
+
+  @override
+  String get menuProgressionTrainer => 'Treino de Progressões';
+
+  @override
+  String get menuProgressionEarTrainer => 'Progressões de Ouvido';
+
+  @override
+  String get menuCadenceTrainer => 'Cadências';
+
+  @override
+  String get progressionPool => 'Progressões';
+
+  @override
+  String get progressionTempo => 'Andamento';
+
+  @override
+  String get progressionTrainerHint =>
+      'Os graus aparecem, os acordes não. Descobrir que acordes são neste tom é o exercício.';
+
+  @override
+  String get progressionArpeggiate => 'Arpejar os acordes';
+
+  @override
+  String get progressionArpeggiateHelpTitle => 'Arpejar os Acordes';
+
+  @override
+  String get progressionArpeggiateHelpBody =>
+      'Quando ativado, o exercício pede todas as notas de cada acorde e não só as fundamentais, então uma progressão de quatro acordes vira doze notas. Quando desativado, só a fundamental de cada acorde é pedida, que é a progressão como linha de baixo.';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpTitle => 'Arpejar';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpBody =>
+      'Quando ativado, as notas de cada acorde chegam uma depois da outra em vez de juntas. Assim fica mais fácil separar o acorde, e mais difícil ouvir a progressão como um todo.';
+
+  @override
+  String get progressionEarWhich => 'Qual progressão?';
+
+  @override
+  String get progressionEarHint =>
+      'Escolha pelo menos duas. Cada exercício toca uma delas em um tom sorteado.';
+
+  @override
+  String get cadencePool => 'Cadências';
+
+  @override
+  String get cadenceWhich => 'Qual cadência?';
+
+  @override
+  String get cadenceHint =>
+      'Todo exercício começa na tônica, para o tom ser ouvido antes de a cadência chegar.';
+
+  @override
+  String get cadenceAuthentic => 'Autêntica';
+
+  @override
+  String get cadencePlagal => 'Plagal';
+
+  @override
+  String get cadenceHalf => 'Suspensiva';
+
+  @override
+  String get cadenceDeceptive => 'Interrompida';
+
+  @override
+  String get cadenceIncludeMinor => 'Incluir tons menores';
+
+  @override
+  String get cadenceIncludeMinorHelpTitle => 'Incluir Tons Menores';
+
+  @override
+  String get cadenceIncludeMinorHelpBody =>
+      'Quando ativado, metade dos exercícios fica em um tom menor. O menor usa a escala menor harmônica, que é a que dá à cadência o quinto grau maior de que ela precisa.';
+
+  @override
+  String get romanDirection => 'Sentido';
+
+  @override
+  String get romanScales => 'Escalas';
+
+  @override
+  String get romanModeNumeralToChord => 'Grau → Acorde';
+
+  @override
+  String get romanModeChordToNumeral => 'Acorde → Grau';
+
+  @override
+  String get romanWhichChord => 'Que acorde é este grau?';
+
+  @override
+  String get romanWhichDegree => 'Que grau é este acorde?';
+
+  @override
+  String get romanSevenths => 'Acordes de sétima';
+
+  @override
+  String get romanSeventhsHelpTitle => 'Acordes de Sétima';
+
+  @override
+  String get romanSeventhsHelpBody =>
+      'Quando ativado, os graus ganham mais uma terça empilhada, então o quinto grau de um tom maior é V7 e não V. São os mesmos sete graus, nomeados com mais precisão.';
+
+  @override
+  String get romanHearChord => 'Ouvir o acorde';
+
+  @override
+  String get romanHearChordHelpTitle => 'Ouvir o Acorde';
+
+  @override
+  String get romanHearChordHelpBody =>
+      'Quando ativado, o acorde toca assim que a resposta é revelada. Nomear um grau é exercício de papel enquanto você não ouve como ele soa.';
 }

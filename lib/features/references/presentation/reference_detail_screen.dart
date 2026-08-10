@@ -8,7 +8,9 @@ import 'widgets/circle_of_fifths_widget.dart';
 import 'widgets/harmony_map_widget.dart';
 import 'widgets/minor_keys_widget.dart';
 import 'widgets/modes_chart_widget.dart';
+import 'widgets/modulation_widget.dart';
 import 'widgets/pentatonic_boxes_widget.dart';
+import 'widgets/progressions_widget.dart';
 import 'widgets/rhythm_tree_widget.dart';
 import 'widgets/scale_formula_widget.dart';
 
@@ -113,6 +115,8 @@ class ReferenceDetailScreen extends StatelessWidget {
         'chord_qualities' => const ChordQualitiesWidget(),
         'rhythm_tree' => const RhythmTreeWidget(),
         'pentatonic_boxes' => const PentatonicBoxesWidget(),
+        'progressions' => const ProgressionsWidget(),
+        'modulation' => const ModulationWidget(),
         _ => const SizedBox.shrink(),
       };
 }

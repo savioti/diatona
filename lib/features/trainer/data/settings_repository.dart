@@ -41,6 +41,38 @@ class SettingsRepository {
   static const _keyIntInterval = 'pref_int_interval';
   static const _keyIntShowNotes = 'pref_int_show_notes';
   static const _keyIntPlayRoot = 'pref_int_play_root';
+  static const _keyProgPool = 'pref_prog_pool';
+  static const _keyProgNaturalRoots = 'pref_prog_natural_roots';
+  static const _keyProgInterval = 'pref_prog_interval';
+  static const _keyProgShowNotes = 'pref_prog_show_notes';
+  static const _keyProgArpeggiate = 'pref_prog_arpeggiate';
+  static const _keyRnScales = 'pref_rn_scales';
+  static const _keyRnMode = 'pref_rn_mode';
+  static const _keyRnSevenths = 'pref_rn_sevenths';
+  static const _keyRnNaturalRoots = 'pref_rn_natural_roots';
+  static const _keyRnHearChord = 'pref_rn_hear_chord';
+  static const _keyPearPool = 'pref_pear_pool';
+  static const _keyPearTempo = 'pref_pear_tempo';
+  static const _keyPearArpeggiate = 'pref_pear_arpeggiate';
+  static const _keyPearNaturalRoots = 'pref_pear_natural_roots';
+  static const _keyCadPool = 'pref_cad_pool';
+  static const _keyCadMinor = 'pref_cad_minor';
+  static const _keyCadTempo = 'pref_cad_tempo';
+  static const _keyCadNaturalRoots = 'pref_cad_natural_roots';
+
+  /// Pools are stored as a comma separated list, which is all
+  /// [SharedPreferences] takes without a list of its own.
+  List<int> _intList(String key) => (_prefs.getString(key) ?? '')
+      .split(',')
+      .where((s) => s.isNotEmpty)
+      .map(int.tryParse)
+      .whereType<int>()
+      .toList();
+
+  List<String> _stringList(String key) => (_prefs.getString(key) ?? '')
+      .split(',')
+      .where((s) => s.isNotEmpty)
+      .toList();
 
   int loadLevel() => _prefs.getInt(_keyLevel) ?? 1;
   int loadInterval() => _prefs.getInt(_keyInterval) ?? 5;
@@ -67,13 +99,7 @@ class SettingsRepository {
   int loadEarLevel() => _prefs.getInt(_keyEarLevel) ?? 1;
   int loadEarDirection() => _prefs.getInt(_keyEarDirection) ?? 0;
   bool loadEarCustomMode() => _prefs.getBool(_keyEarCustomMode) ?? false;
-  List<int> loadEarCustomPool() =>
-      (_prefs.getString(_keyEarCustomPool) ?? '')
-          .split(',')
-          .where((s) => s.isNotEmpty)
-          .map(int.tryParse)
-          .whereType<int>()
-          .toList();
+  List<int> loadEarCustomPool() => _intList(_keyEarCustomPool);
 
   Future<void> saveEarLevel(int level) => _prefs.setInt(_keyEarLevel, level);
   Future<void> saveEarDirection(int index) => _prefs.setInt(_keyEarDirection, index);
@@ -115,12 +141,7 @@ class SettingsRepository {
 
   int loadIntLevel() => _prefs.getInt(_keyIntLevel) ?? 1;
   bool loadIntCustomMode() => _prefs.getBool(_keyIntCustomMode) ?? false;
-  List<int> loadIntCustomPool() => (_prefs.getString(_keyIntCustomPool) ?? '')
-      .split(',')
-      .where((s) => s.isNotEmpty)
-      .map(int.tryParse)
-      .whereType<int>()
-      .toList();
+  List<int> loadIntCustomPool() => _intList(_keyIntCustomPool);
   int loadIntDirection() => _prefs.getInt(_keyIntDirection) ?? 0;
   bool loadIntNaturalRoots() => _prefs.getBool(_keyIntNaturalRoots) ?? true;
   int loadIntInterval() => _prefs.getInt(_keyIntInterval) ?? 0;
@@ -136,4 +157,60 @@ class SettingsRepository {
   Future<void> saveIntInterval(int interval) => _prefs.setInt(_keyIntInterval, interval);
   Future<void> saveIntShowNotes(bool v) => _prefs.setBool(_keyIntShowNotes, v);
   Future<void> saveIntPlayRoot(bool v) => _prefs.setBool(_keyIntPlayRoot, v);
+
+  List<String> loadProgPool() => _stringList(_keyProgPool);
+  bool loadProgNaturalRoots() => _prefs.getBool(_keyProgNaturalRoots) ?? true;
+  int loadProgInterval() => _prefs.getInt(_keyProgInterval) ?? 0;
+  bool loadProgShowNotes() => _prefs.getBool(_keyProgShowNotes) ?? false;
+  bool loadProgArpeggiate() => _prefs.getBool(_keyProgArpeggiate) ?? false;
+
+  Future<void> saveProgPool(List<String> ids) =>
+      _prefs.setString(_keyProgPool, ids.join(','));
+  Future<void> saveProgNaturalRoots(bool v) =>
+      _prefs.setBool(_keyProgNaturalRoots, v);
+  Future<void> saveProgInterval(int interval) =>
+      _prefs.setInt(_keyProgInterval, interval);
+  Future<void> saveProgShowNotes(bool v) =>
+      _prefs.setBool(_keyProgShowNotes, v);
+  Future<void> saveProgArpeggiate(bool v) =>
+      _prefs.setBool(_keyProgArpeggiate, v);
+
+  List<int> loadRnScales() => _intList(_keyRnScales);
+  int loadRnMode() => _prefs.getInt(_keyRnMode) ?? 0;
+  bool loadRnSevenths() => _prefs.getBool(_keyRnSevenths) ?? false;
+  bool loadRnNaturalRoots() => _prefs.getBool(_keyRnNaturalRoots) ?? true;
+  bool loadRnHearChord() => _prefs.getBool(_keyRnHearChord) ?? true;
+
+  Future<void> saveRnScales(List<int> indices) =>
+      _prefs.setString(_keyRnScales, indices.join(','));
+  Future<void> saveRnMode(int index) => _prefs.setInt(_keyRnMode, index);
+  Future<void> saveRnSevenths(bool v) => _prefs.setBool(_keyRnSevenths, v);
+  Future<void> saveRnNaturalRoots(bool v) =>
+      _prefs.setBool(_keyRnNaturalRoots, v);
+  Future<void> saveRnHearChord(bool v) => _prefs.setBool(_keyRnHearChord, v);
+
+  List<String> loadPearPool() => _stringList(_keyPearPool);
+  int loadPearTempo() => _prefs.getInt(_keyPearTempo) ?? 1;
+  bool loadPearArpeggiate() => _prefs.getBool(_keyPearArpeggiate) ?? false;
+  bool loadPearNaturalRoots() => _prefs.getBool(_keyPearNaturalRoots) ?? true;
+
+  Future<void> savePearPool(List<String> ids) =>
+      _prefs.setString(_keyPearPool, ids.join(','));
+  Future<void> savePearTempo(int index) => _prefs.setInt(_keyPearTempo, index);
+  Future<void> savePearArpeggiate(bool v) =>
+      _prefs.setBool(_keyPearArpeggiate, v);
+  Future<void> savePearNaturalRoots(bool v) =>
+      _prefs.setBool(_keyPearNaturalRoots, v);
+
+  List<int> loadCadPool() => _intList(_keyCadPool);
+  bool loadCadMinor() => _prefs.getBool(_keyCadMinor) ?? false;
+  int loadCadTempo() => _prefs.getInt(_keyCadTempo) ?? 1;
+  bool loadCadNaturalRoots() => _prefs.getBool(_keyCadNaturalRoots) ?? true;
+
+  Future<void> saveCadPool(List<int> indices) =>
+      _prefs.setString(_keyCadPool, indices.join(','));
+  Future<void> saveCadMinor(bool v) => _prefs.setBool(_keyCadMinor, v);
+  Future<void> saveCadTempo(int index) => _prefs.setInt(_keyCadTempo, index);
+  Future<void> saveCadNaturalRoots(bool v) =>
+      _prefs.setBool(_keyCadNaturalRoots, v);
 }

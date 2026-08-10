@@ -83,6 +83,8 @@ class _ReferenceCard extends StatelessWidget {
     'chord_qualities': Icons.music_note_rounded,
     'rhythm_tree': Icons.timeline_rounded,
     'pentatonic_boxes': Icons.grid_view_rounded,
+    'progressions': Icons.queue_music_rounded,
+    'modulation': Icons.compare_arrows_rounded,
   };
 
   @override

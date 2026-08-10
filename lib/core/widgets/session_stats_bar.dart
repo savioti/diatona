@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Streak and accuracy, the running score of a tap-to-answer session.
 class SessionStatsBar extends StatelessWidget {
   const SessionStatsBar({
     super.key,
@@ -32,9 +33,7 @@ class SessionStatsBar extends StatelessWidget {
             color: theme.colorScheme.primary, size: 20),
         const SizedBox(width: 4),
         Text(
-          totalCount == 0
-              ? '--'
-              : '${(accuracy * 100).round()}%',
+          totalCount == 0 ? '--' : '${(accuracy * 100).round()}%',
           style: textStyle,
         ),
       ],

@@ -1,0 +1,145 @@
+{
+  "progressions": [
+    {
+      "id": "prog_axis",
+      "name": "Axis",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 1 }, { "degree": 5 }, { "degree": 6 }, { "degree": 4 }],
+      "tags": ["pop", "major"]
+    },
+    {
+      "id": "prog_axis_rotation",
+      "name": "Sensitive Female",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 6 }, { "degree": 4 }, { "degree": 1 }, { "degree": 5 }],
+      "tags": ["pop", "major"]
+    },
+    {
+      "id": "prog_fifties",
+      "name": "Fifties",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 1 }, { "degree": 6 }, { "degree": 4 }, { "degree": 5 }],
+      "tags": ["doo-wop", "major"]
+    },
+    {
+      "id": "prog_turnaround",
+      "name": "Turnaround",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 1 }, { "degree": 6 }, { "degree": 2 }, { "degree": 5 }],
+      "tags": ["jazz", "major"]
+    },
+    {
+      "id": "prog_two_five_one",
+      "name": "Two Five One",
+      "scaleId": "scale_major",
+      "steps": [
+        { "degree": 2, "qualityId": "quality_m7" },
+        { "degree": 5, "qualityId": "quality_seventh" },
+        { "degree": 1, "qualityId": "quality_maj7" }
+      ],
+      "tags": ["jazz", "major"]
+    },
+    {
+      "id": "prog_authentic",
+      "name": "Classic Cadence",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 1 }, { "degree": 4 }, { "degree": 5 }, { "degree": 1 }],
+      "tags": ["classical", "major"]
+    },
+    {
+      "id": "prog_ascending",
+      "name": "Stepwise Climb",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 1 }, { "degree": 3 }, { "degree": 4 }, { "degree": 5 }],
+      "tags": ["pop", "major"]
+    },
+    {
+      "id": "prog_royal_road",
+      "name": "Royal Road",
+      "scaleId": "scale_major",
+      "steps": [{ "degree": 4 }, { "degree": 5 }, { "degree": 3 }, { "degree": 6 }],
+      "tags": ["pop", "major"]
+    },
+    {
+      "id": "prog_canon",
+      "name": "Canon",
+      "scaleId": "scale_major",
+      "steps": [
+        { "degree": 1 },
+        { "degree": 5 },
+        { "degree": 6 },
+        { "degree": 3 },
+        { "degree": 4 },
+        { "degree": 1 },
+        { "degree": 4 },
+        { "degree": 5 }
+      ],
+      "tags": ["classical", "major"]
+    },
+    {
+      "id": "prog_blues_twelve_bar",
+      "name": "Twelve Bar Blues",
+      "scaleId": "scale_major",
+      "steps": [
+        { "degree": 1, "qualityId": "quality_seventh" },
+        { "degree": 4, "qualityId": "quality_seventh" },
+        { "degree": 1, "qualityId": "quality_seventh" },
+        { "degree": 5, "qualityId": "quality_seventh" },
+        { "degree": 4, "qualityId": "quality_seventh" },
+        { "degree": 1, "qualityId": "quality_seventh" }
+      ],
+      "tags": ["blues", "major"]
+    },
+    {
+      "id": "prog_minor_axis",
+      "name": "Minor Axis",
+      "scaleId": "scale_natural_minor",
+      "steps": [{ "degree": 1 }, { "degree": 6 }, { "degree": 3 }, { "degree": 7 }],
+      "tags": ["rock", "minor"]
+    },
+    {
+      "id": "prog_aeolian_vamp",
+      "name": "Aeolian Vamp",
+      "scaleId": "scale_natural_minor",
+      "steps": [{ "degree": 1 }, { "degree": 6 }, { "degree": 7 }, { "degree": 1 }],
+      "tags": ["rock", "minor"]
+    },
+    {
+      "id": "prog_andalusian",
+      "name": "Andalusian Cadence",
+      "scaleId": "scale_natural_minor",
+      "steps": [
+        { "degree": 1 },
+        { "degree": 7 },
+        { "degree": 6 },
+        { "degree": 5, "qualityId": "quality_major" }
+      ],
+      "tags": ["flamenco", "minor"]
+    },
+    {
+      "id": "prog_minor_cadence",
+      "name": "Minor Cadence",
+      "scaleId": "scale_harmonic_minor",
+      "steps": [{ "degree": 1 }, { "degree": 4 }, { "degree": 5 }, { "degree": 1 }],
+      "tags": ["classical", "minor"]
+    },
+    {
+      "id": "prog_minor_two_five_one",
+      "name": "Minor Two Five One",
+      "scaleId": "scale_harmonic_minor",
+      "steps": [
+        { "degree": 2, "qualityId": "quality_halfdim7" },
+        { "degree": 5, "qualityId": "quality_seventh" },
+        { "degree": 1, "qualityId": "quality_minor" }
+      ],
+      "tags": ["jazz", "minor"]
+    },
+    {
+      "id": "prog_lament",
+      "name": "Lament",
+      "scaleId": "scale_natural_minor",
+      "steps": [{ "degree": 1 }, { "degree": 7 }, { "degree": 6 }, { "degree": 7 }],
+      "tags": ["rock", "minor"]
+    }
+  ]
+}

@@ -5,6 +5,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 
 import 'app.dart';
+import 'core/harmony/data/harmony_data.dart';
+import 'core/harmony/data/progression_data.dart';
 import 'features/trainer/data/chord_data.dart';
 import 'features/trainer/data/chord_database.dart';
 import 'features/arpeggio_trainer/data/arpeggio_data.dart';
@@ -17,6 +19,9 @@ void main() async {
   await initChordData();
   await initScaleData();
   await initArpeggioData();
+  // Harmony reads the scale degrees, so it follows initScaleData.
+  await initHarmonyData();
+  await initProgressionData();
   unawaited(ChordDatabase.instance.ensureLoaded());
   runApp(
     ProviderScope(

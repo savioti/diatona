@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../arpeggio_trainer/presentation/arpeggio_home_screen.dart';
+import '../../cadence_trainer/presentation/cadence_home_screen.dart';
 import '../../ear_trainer/presentation/ear_trainer_home_screen.dart';
 import '../../interval_trainer/presentation/interval_home_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../main_menu/presentation/widgets/feature_card.dart';
 import '../../note_trainer/presentation/note_home_screen.dart';
+import '../../progression_ear_trainer/presentation/progression_ear_home_screen.dart';
+import '../../progression_trainer/presentation/progression_home_screen.dart';
+import '../../roman_trainer/presentation/roman_home_screen.dart';
 import '../../scale_trainer/presentation/scale_home_screen.dart';
 
 class TrainingMenuScreen extends StatelessWidget {
@@ -97,6 +101,42 @@ class TrainingMenuScreen extends StatelessWidget {
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (_) => const ScaleHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.tag_rounded,
+                      label: l10n.menuRomanTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const RomanHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.queue_music_rounded,
+                      label: l10n.menuProgressionTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ProgressionHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.spatial_audio_off_rounded,
+                      label: l10n.menuProgressionEarTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ProgressionEarHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.done_all_rounded,
+                      label: l10n.menuCadenceTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const CadenceHomeScreen(),
                         ),
                       ),
                     ),

@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/ear_training_session_state.dart';
+import '../l10n/generated/app_localizations.dart';
 
-class PlaybackControl extends StatelessWidget {
-  const PlaybackControl({
+/// Plays the question again. Disabled while it is already sounding, so that a
+/// second tap cannot start the audio over the top of itself.
+class ReplayControl extends StatelessWidget {
+  const ReplayControl({
     super.key,
-    required this.phase,
+    required this.isPlaying,
     required this.onPlay,
   });
 
-  final EarTrainingPhase phase;
+  final bool isPlaying;
   final VoidCallback onPlay;
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
-    final isPlaying = phase == EarTrainingPhase.playing;
-    final label = isPlaying ? 'Playing...' : 'Replay';
-    final icon = isPlaying ? Icons.music_note_rounded : Icons.replay_rounded;
 
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 200),
@@ -27,8 +27,10 @@ class PlaybackControl extends StatelessWidget {
         height: 52,
         child: OutlinedButton.icon(
           onPressed: isPlaying ? null : onPlay,
-          icon: Icon(icon),
-          label: Text(label),
+          icon: Icon(
+            isPlaying ? Icons.music_note_rounded : Icons.replay_rounded,
+          ),
+          label: Text(isPlaying ? l10n.playbackPlaying : l10n.playbackReplay),
           style: OutlinedButton.styleFrom(
             foregroundColor: theme.colorScheme.primary,
             side: BorderSide(color: theme.colorScheme.primary.withAlpha(120)),

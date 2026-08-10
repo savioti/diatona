@@ -2,18 +2,14 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 
+import '../../../core/audio/piano_sample.dart';
 import '../domain/ear_training_question.dart';
 import '../domain/interval_direction.dart';
 
 class PianoPlaybackService {
-  // Flat-notation names matching the asset filenames.
-  static const _noteNames = [
-    'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B',
-  ];
-
   // MIDI range covered by the piano samples.
-  static const int midiMin = 48; // C3
-  static const int midiMax = 83; // B5
+  static const int midiMin = kPianoMidiMin;
+  static const int midiMax = kPianoMidiMax;
 
   AudioPlayer? _player1;
   AudioPlayer? _player2;
@@ -23,6 +19,10 @@ class PianoPlaybackService {
   Future<void> init() async {
     if (_initialized) return;
     _initialized = true;
+
+    // Started before the players so the copying runs alongside their setup.
+    final warmed = warmPianoSamples();
+
     _player1 = AudioPlayer();
     _player2 = AudioPlayer();
     for (final p in [_player1!, _player2!]) {
@@ -31,6 +31,8 @@ class PianoPlaybackService {
       await p.setReleaseMode(ReleaseMode.stop);
       await p.setVolume(1.0);
     }
+
+    await warmed;
   }
 
   /// Plays [question] and calls [onComplete] once the listener should answer.
@@ -91,17 +93,8 @@ class PianoPlaybackService {
   }
 
   /// Returns the human-readable note name for a MIDI number, e.g. "C4", "Db5".
-  static String midiToNoteName(int midi) {
-    final semitone = midi % 12;
-    final octave = midi ~/ 12 - 1;
-    return '${_noteNames[semitone]}$octave';
-  }
+  static String midiToNoteName(int midi) => pianoNoteName(midi);
 
   /// Converts a MIDI number (48-83) to the asset path used by audioplayers.
-  static String _assetPath(int midi) {
-    final semitone = midi % 12;
-    final octave = midi ~/ 12 - 1;
-    final name = _noteNames[semitone];
-    return 'instrument_sounds/piano/piano_mf_$name$octave.mp3';
-  }
+  static String _assetPath(int midi) => pianoAssetPath(midi);
 }

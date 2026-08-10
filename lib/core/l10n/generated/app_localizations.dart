@@ -922,6 +922,294 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'When enabled, a round is two notes: the one the interval starts from, then the one it lands on. When disabled, only the note it lands on is asked for, which is quicker but never sounds the interval.'**
   String get intervalPlayRootHelpBody;
+
+  /// No description provided for @playbackPlaying.
+  ///
+  /// In en, this message translates to:
+  /// **'Playing…'**
+  String get playbackPlaying;
+
+  /// No description provided for @playbackReplay.
+  ///
+  /// In en, this message translates to:
+  /// **'Replay'**
+  String get playbackReplay;
+
+  /// No description provided for @refProgressionsArpeggiate.
+  ///
+  /// In en, this message translates to:
+  /// **'Arpeggiate'**
+  String get refProgressionsArpeggiate;
+
+  /// No description provided for @refProgressionsSlow.
+  ///
+  /// In en, this message translates to:
+  /// **'Slow'**
+  String get refProgressionsSlow;
+
+  /// No description provided for @refProgressionsMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get refProgressionsMedium;
+
+  /// No description provided for @refProgressionsFast.
+  ///
+  /// In en, this message translates to:
+  /// **'Fast'**
+  String get refProgressionsFast;
+
+  /// No description provided for @refModulationFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'From'**
+  String get refModulationFrom;
+
+  /// No description provided for @refModulationTo.
+  ///
+  /// In en, this message translates to:
+  /// **'To'**
+  String get refModulationTo;
+
+  /// No description provided for @refModulationDistance.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{The same tonic} =1{1 step apart on the circle of fifths} other{{count} steps apart on the circle of fifths}}'**
+  String refModulationDistance(int count);
+
+  /// No description provided for @refModulationSharedCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No shared chords} =1{1 shared chord} other{{count} shared chords}}'**
+  String refModulationSharedCount(int count);
+
+  /// No description provided for @refModulationNoPivots.
+  ///
+  /// In en, this message translates to:
+  /// **'These two keys have no chord in common, so there is no pivot to turn on. Getting from one to the other takes a chord that belongs to neither.'**
+  String get refModulationNoPivots;
+
+  /// No description provided for @refModulationTapPivot.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a shared chord to hear it turn: the pivot, then the dominant and tonic of the key you are arriving at.'**
+  String get refModulationTapPivot;
+
+  /// No description provided for @menuRomanTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Roman Numerals'**
+  String get menuRomanTrainer;
+
+  /// No description provided for @menuProgressionTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Progression Trainer'**
+  String get menuProgressionTrainer;
+
+  /// No description provided for @menuProgressionEarTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Progression Ear'**
+  String get menuProgressionEarTrainer;
+
+  /// No description provided for @menuCadenceTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Cadences'**
+  String get menuCadenceTrainer;
+
+  /// No description provided for @progressionPool.
+  ///
+  /// In en, this message translates to:
+  /// **'Progressions'**
+  String get progressionPool;
+
+  /// No description provided for @progressionTempo.
+  ///
+  /// In en, this message translates to:
+  /// **'Tempo'**
+  String get progressionTempo;
+
+  /// No description provided for @progressionTrainerHint.
+  ///
+  /// In en, this message translates to:
+  /// **'The numerals are shown and the chords are not. Working out which chords they are in the key is the exercise.'**
+  String get progressionTrainerHint;
+
+  /// No description provided for @progressionArpeggiate.
+  ///
+  /// In en, this message translates to:
+  /// **'Arpeggiate the chords'**
+  String get progressionArpeggiate;
+
+  /// No description provided for @progressionArpeggiateHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Arpeggiate the Chords'**
+  String get progressionArpeggiateHelpTitle;
+
+  /// No description provided for @progressionArpeggiateHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, a round asks for every tone of every chord rather than the roots alone, so a four chord progression is twelve notes. When disabled, only the root of each chord is asked for, which is the progression as a bass line.'**
+  String get progressionArpeggiateHelpBody;
+
+  /// No description provided for @progressionArpeggiatePlaybackHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Arpeggiate'**
+  String get progressionArpeggiatePlaybackHelpTitle;
+
+  /// No description provided for @progressionArpeggiatePlaybackHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, the notes of each chord arrive one after another rather than together. It is easier to pick the chord apart that way, and harder to hear the progression as a whole.'**
+  String get progressionArpeggiatePlaybackHelpBody;
+
+  /// No description provided for @progressionEarWhich.
+  ///
+  /// In en, this message translates to:
+  /// **'Which progression?'**
+  String get progressionEarWhich;
+
+  /// No description provided for @progressionEarHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick at least two. Each round plays one of them in a key drawn at random.'**
+  String get progressionEarHint;
+
+  /// No description provided for @cadencePool.
+  ///
+  /// In en, this message translates to:
+  /// **'Cadences'**
+  String get cadencePool;
+
+  /// No description provided for @cadenceWhich.
+  ///
+  /// In en, this message translates to:
+  /// **'Which cadence?'**
+  String get cadenceWhich;
+
+  /// No description provided for @cadenceHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Every round opens on the tonic, so that the key is heard before the cadence lands on it.'**
+  String get cadenceHint;
+
+  /// No description provided for @cadenceAuthentic.
+  ///
+  /// In en, this message translates to:
+  /// **'Authentic'**
+  String get cadenceAuthentic;
+
+  /// No description provided for @cadencePlagal.
+  ///
+  /// In en, this message translates to:
+  /// **'Plagal'**
+  String get cadencePlagal;
+
+  /// No description provided for @cadenceHalf.
+  ///
+  /// In en, this message translates to:
+  /// **'Half'**
+  String get cadenceHalf;
+
+  /// No description provided for @cadenceDeceptive.
+  ///
+  /// In en, this message translates to:
+  /// **'Deceptive'**
+  String get cadenceDeceptive;
+
+  /// No description provided for @cadenceIncludeMinor.
+  ///
+  /// In en, this message translates to:
+  /// **'Include minor keys'**
+  String get cadenceIncludeMinor;
+
+  /// No description provided for @cadenceIncludeMinorHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Include Minor Keys'**
+  String get cadenceIncludeMinorHelpTitle;
+
+  /// No description provided for @cadenceIncludeMinorHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, half the rounds are in a minor key. Minor uses the harmonic minor scale, which is the one that gives a cadence the major fifth degree it needs.'**
+  String get cadenceIncludeMinorHelpBody;
+
+  /// No description provided for @romanDirection.
+  ///
+  /// In en, this message translates to:
+  /// **'Direction'**
+  String get romanDirection;
+
+  /// No description provided for @romanScales.
+  ///
+  /// In en, this message translates to:
+  /// **'Scales'**
+  String get romanScales;
+
+  /// No description provided for @romanModeNumeralToChord.
+  ///
+  /// In en, this message translates to:
+  /// **'Numeral → Chord'**
+  String get romanModeNumeralToChord;
+
+  /// No description provided for @romanModeChordToNumeral.
+  ///
+  /// In en, this message translates to:
+  /// **'Chord → Numeral'**
+  String get romanModeChordToNumeral;
+
+  /// No description provided for @romanWhichChord.
+  ///
+  /// In en, this message translates to:
+  /// **'Which chord is this degree?'**
+  String get romanWhichChord;
+
+  /// No description provided for @romanWhichDegree.
+  ///
+  /// In en, this message translates to:
+  /// **'Which degree is this chord?'**
+  String get romanWhichDegree;
+
+  /// No description provided for @romanSevenths.
+  ///
+  /// In en, this message translates to:
+  /// **'Seventh chords'**
+  String get romanSevenths;
+
+  /// No description provided for @romanSeventhsHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Seventh Chords'**
+  String get romanSeventhsHelpTitle;
+
+  /// No description provided for @romanSeventhsHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, the degrees are stacked one third further, so the fifth degree of a major key is V7 rather than V. It is the same seven degrees, named more precisely.'**
+  String get romanSeventhsHelpBody;
+
+  /// No description provided for @romanHearChord.
+  ///
+  /// In en, this message translates to:
+  /// **'Hear the chord'**
+  String get romanHearChord;
+
+  /// No description provided for @romanHearChordHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hear the Chord'**
+  String get romanHearChordHelpTitle;
+
+  /// No description provided for @romanHearChordHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, the chord is played once the answer is revealed. Naming a degree is a written skill until you have heard what it sounds like.'**
+  String get romanHearChordHelpBody;
 }
 
 class _AppLocalizationsDelegate

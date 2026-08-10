@@ -23,5 +23,4 @@ restrictions (see [CREDITS.md](CREDITS.md)).
 
 ## Planned
 
-- progressions
 - harmonic analysis

@@ -79,6 +79,22 @@
       "shortDescription": "Five interlocking fretboard shapes for minor and major pentatonic.",
       "howItWorks": "The pentatonic scale (5 notes) maps onto 5 'box' shapes or positions that interlock and cover the entire guitar neck. The ultimate shortcut is realizing the same 5 shapes work for both the minor pentatonic scale and its relative major pentatonic. The only thing that changes is which note you treat as the tonal center. So by learning 5 shapes once, you have access to pentatonic soloing in all 12 keys, in both major and minor contexts.",
       "tags": ["guitar", "pentatonic", "scales", "improvisation", "fretboard"]
+    },
+    {
+      "id": "ref-progressions",
+      "type": "progressions",
+      "title": "Chord Progressions",
+      "shortDescription": "The progressions most songs are built from, in any key, and playable.",
+      "howItWorks": "A progression is an order of scale degrees, not an order of chords, which is why the same handful of them turns up in thousands of songs in every key. Pick a key at the top and every progression rewrites itself into it: I V vi IV becomes C G Am F in C and Eb Bb Cm Ab in Eb. Tap play to hear one. Learn them as roman numerals rather than as chord names and you learn each one once instead of twelve times.",
+      "tags": ["harmony", "chord-progressions", "roman-numerals", "songwriting"]
+    },
+    {
+      "id": "ref-modulation",
+      "type": "modulation",
+      "title": "Modulation & Pivot Chords",
+      "shortDescription": "Chords two keys share, and the doors they open between them.",
+      "howItWorks": "Two keys next to each other on the circle of fifths share six of their seven notes, which comes out as four of their seven chords; keys further apart share fewer. A chord that belongs to both is a pivot: it can be heard as a degree of the key you are leaving and as a degree of the key you are arriving in, so the music can turn on it without anything sounding wrong. Pick a key to leave and a key to arrive at, and the shared chords are listed with the numeral they take in each. The usual move is to reach a pivot, then follow it with the new key's V to make the arrival stick.",
+      "tags": ["harmony", "modulation", "pivot-chords", "key-changes", "theory"]
     }
   ]
 }

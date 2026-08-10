@@ -19,14 +19,18 @@ there is no backend. Chord data and reference material live as JSON files under
 
 ```text
 lib/
-  main.dart                 Loads SharedPreferences, chord, scale and arpeggio data
+  main.dart                 Loads SharedPreferences, chord, scale, arpeggio and harmony data
   app.dart                  MaterialApp: theme, locale, localization delegates, SplashScreen
   core/
     theme/app_theme.dart    Theme variants built from a shared palette
     l10n/arb/               Source strings: app_en, app_pt, app_pt_BR, app_es
     l10n/generated/         Output of flutter gen-l10n, not edited by hand
-    widgets/                Widgets shared between features (training overlay)
-    sequence_trainer/       Engine behind the scale and arpeggio trainers
+    audio/                  Piano sample paths and the chord playback service
+    widgets/                Widgets shared between features (overlay, answer buttons,
+                            replay control, session stats)
+    sequence_trainer/       Engine behind the scale, arpeggio and progression trainers
+    harmony/                Diatonic chords, progressions, cadences and voicings
+    harmony_ear/            Engine behind the progression and cadence ear trainers
   features/
     splash/                 First screen, routes into the main menu
     main_menu/              Grid of the top level sections
@@ -36,13 +40,18 @@ lib/
     scale_trainer/          Scale pools for the sequence engine
     arpeggio_trainer/       Arpeggio pools for the sequence engine
     interval_trainer/       Interval pools for the sequence engine
-    references/             Circle of fifths, CAGED, modes, scales and other charts
+    progression_trainer/    Progression pools for the sequence engine
+    roman_trainer/          Roman numeral drill, tap answered
+    progression_ear_trainer/  Progression pools for the harmony ear engine
+    cadence_trainer/        Cadences for the harmony ear engine
+    references/             Circle of fifths, CAGED, modes, progressions and other charts
     home/                   Chord trainer setup screen (level, interval, display mode)
     settings/               Theme, language and training preferences
     about/                  About and credits
     audio/                  pitch_detection_service.dart
 database/
-  trainer/                  chords, chord qualities, notes, intervals, scales, voicings
+  trainer/                  chords, chord qualities, notes, intervals, scales, voicings,
+                            progressions
   references/               Reference cards shown in the references section
 assets/
   logo/, instrument_sounds/piano/
@@ -58,7 +67,7 @@ override of `sharedPreferencesProvider`. Providers never call
 `SharedPreferences.getInstance()` themselves.
 
 `SettingsRepository` (`lib/features/trainer/data/settings_repository.dart`) is the only
-place that touches preference keys. It holds settings for all six trainers plus theme
+place that touches preference keys. It holds settings for all ten trainers plus theme
 and locale, all prefixed with `pref_`.
 
 The notifiers in `lib/features/trainer/data/providers.dart` expose the selected level,
@@ -97,9 +106,9 @@ returns a single level pool.
 
 ## Sequence trainer engine
 
-The scale and arpeggio trainers are the same exercise over different notes, so they run
-on one engine in `lib/core/sequence_trainer/`. A feature only builds the pool and names
-the rounds, everything below is shared.
+The scale, arpeggio, interval and progression trainers are the same exercise over
+different notes, so they run on one engine in `lib/core/sequence_trainer/`. A feature
+only builds the pool and names the rounds, everything below is shared.
 
 - A `NoteSequence` is what to call the round, the note names to show, and the pitch
   classes to listen for, already in the order they are expected.
@@ -187,6 +196,61 @@ swaps the level stepper for chips, one per interval.
 - Mixed puts both directions in the pool and each round names its own under the title.
 - The octave is left out. Pitch detection reports a pitch class and nothing else, so C
   up to C reads as one note held rather than two notes played.
+
+## Harmony
+
+`lib/core/harmony/` turns a key and a degree into a chord, which is what the four
+harmony features all need and none of them owns.
+
+- `scales.json` already gave every degree of every scale a roman numeral, a quality and
+  a function. Only the function is read from it: the numeral and the quality are worked
+  out by stacking thirds out of the scale, which is what gives seventh chords a numeral
+  too. A test checks the derived triad numerals against the ones the file writes down.
+- `chordAt(key, degree)` returns a `DiatonicChord`: the numeral, the chord symbol, the
+  function and the notes, spelled from the key rather than from the pitch class, so the
+  seventh degree of Eb major is Ddim and its notes are D F Ab.
+- `keyAt(pitchClass, scale)` spells a key the way that scale needs it. Pitch class 1 is
+  Db in major and C# in minor, both being the same key.
+- `progressions.json` stores a progression as a scale and a run of degrees over it, with
+  an optional `qualityId` per step. Degrees rather than chords is what lets one entry
+  transpose to twelve keys; the override is what makes the blues dominant sevenths and
+  gives the Andalusian cadence its major `V`.
+- `voicing.dart` puts a chord on the keyboard: the root in the bass and the rest folded
+  into the octave above middle C. Folding is what gives the voice leading, C major
+  coming out C E G and F major C F A rather than an octave apart. Seventh chords drop
+  the root from the upper voices, so a chord is never more than four notes and the
+  playback service never needs more than four players.
+
+## Progression trainer
+
+The numerals are the headline, the key is the line under it, and the chord symbols are
+never shown: working out which chords `I V vi IV` means in Db is the exercise. The user
+plays the root of each chord in order, or every chord tone with `Arpeggiate the chords`
+on, which turns a four chord progression into twelve notes.
+
+## Roman numeral trainer
+
+The only trainer that is answered by tapping rather than by playing. A round names a key
+and asks one way or the other: `vi` in Eb, or `Cm` in Eb. The three distractors are
+always other degrees of the same key, so a wrong answer is a chord that belonged.
+`Seventh chords` stacks one degree further, `Hear the chord` plays the answer when it is
+revealed.
+
+## Harmony ear engine
+
+The progression and cadence ear trainers are the same round over different questions, so
+they run on one engine in `lib/core/harmony_ear/`. A feature supplies the answers on
+offer and a function that draws the next question, and gets the phases, the score and
+the answer buttons from the engine.
+
+- The key changes every round. Recognising `I V vi IV` only counts if it survives being
+  moved, so the answers are roman numerals and never chord names.
+- Cadences open on the tonic. Two chords do not say what key they are in, and without a
+  key a cadence is only an interval between two roots.
+- The minor side of the cadence trainer uses harmonic minor, the scale that gives a
+  cadence the major `V` it needs.
+- Once the answer is in, the result shows the key and every chord with its numeral,
+  which is the part that teaches.
 
 ## Translations
 

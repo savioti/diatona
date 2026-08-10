@@ -437,4 +437,176 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get intervalPlayRootHelpBody =>
       'When enabled, a round is two notes: the one the interval starts from, then the one it lands on. When disabled, only the note it lands on is asked for, which is quicker but never sounds the interval.';
+
+  @override
+  String get playbackPlaying => 'Playing…';
+
+  @override
+  String get playbackReplay => 'Replay';
+
+  @override
+  String get refProgressionsArpeggiate => 'Arpeggiate';
+
+  @override
+  String get refProgressionsSlow => 'Slow';
+
+  @override
+  String get refProgressionsMedium => 'Medium';
+
+  @override
+  String get refProgressionsFast => 'Fast';
+
+  @override
+  String get refModulationFrom => 'From';
+
+  @override
+  String get refModulationTo => 'To';
+
+  @override
+  String refModulationDistance(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count steps apart on the circle of fifths',
+      one: '1 step apart on the circle of fifths',
+      zero: 'The same tonic',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String refModulationSharedCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count shared chords',
+      one: '1 shared chord',
+      zero: 'No shared chords',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get refModulationNoPivots =>
+      'These two keys have no chord in common, so there is no pivot to turn on. Getting from one to the other takes a chord that belongs to neither.';
+
+  @override
+  String get refModulationTapPivot =>
+      'Tap a shared chord to hear it turn: the pivot, then the dominant and tonic of the key you are arriving at.';
+
+  @override
+  String get menuRomanTrainer => 'Roman Numerals';
+
+  @override
+  String get menuProgressionTrainer => 'Progression Trainer';
+
+  @override
+  String get menuProgressionEarTrainer => 'Progression Ear';
+
+  @override
+  String get menuCadenceTrainer => 'Cadences';
+
+  @override
+  String get progressionPool => 'Progressions';
+
+  @override
+  String get progressionTempo => 'Tempo';
+
+  @override
+  String get progressionTrainerHint =>
+      'The numerals are shown and the chords are not. Working out which chords they are in the key is the exercise.';
+
+  @override
+  String get progressionArpeggiate => 'Arpeggiate the chords';
+
+  @override
+  String get progressionArpeggiateHelpTitle => 'Arpeggiate the Chords';
+
+  @override
+  String get progressionArpeggiateHelpBody =>
+      'When enabled, a round asks for every tone of every chord rather than the roots alone, so a four chord progression is twelve notes. When disabled, only the root of each chord is asked for, which is the progression as a bass line.';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpTitle => 'Arpeggiate';
+
+  @override
+  String get progressionArpeggiatePlaybackHelpBody =>
+      'When enabled, the notes of each chord arrive one after another rather than together. It is easier to pick the chord apart that way, and harder to hear the progression as a whole.';
+
+  @override
+  String get progressionEarWhich => 'Which progression?';
+
+  @override
+  String get progressionEarHint =>
+      'Pick at least two. Each round plays one of them in a key drawn at random.';
+
+  @override
+  String get cadencePool => 'Cadences';
+
+  @override
+  String get cadenceWhich => 'Which cadence?';
+
+  @override
+  String get cadenceHint =>
+      'Every round opens on the tonic, so that the key is heard before the cadence lands on it.';
+
+  @override
+  String get cadenceAuthentic => 'Authentic';
+
+  @override
+  String get cadencePlagal => 'Plagal';
+
+  @override
+  String get cadenceHalf => 'Half';
+
+  @override
+  String get cadenceDeceptive => 'Deceptive';
+
+  @override
+  String get cadenceIncludeMinor => 'Include minor keys';
+
+  @override
+  String get cadenceIncludeMinorHelpTitle => 'Include Minor Keys';
+
+  @override
+  String get cadenceIncludeMinorHelpBody =>
+      'When enabled, half the rounds are in a minor key. Minor uses the harmonic minor scale, which is the one that gives a cadence the major fifth degree it needs.';
+
+  @override
+  String get romanDirection => 'Direction';
+
+  @override
+  String get romanScales => 'Scales';
+
+  @override
+  String get romanModeNumeralToChord => 'Numeral → Chord';
+
+  @override
+  String get romanModeChordToNumeral => 'Chord → Numeral';
+
+  @override
+  String get romanWhichChord => 'Which chord is this degree?';
+
+  @override
+  String get romanWhichDegree => 'Which degree is this chord?';
+
+  @override
+  String get romanSevenths => 'Seventh chords';
+
+  @override
+  String get romanSeventhsHelpTitle => 'Seventh Chords';
+
+  @override
+  String get romanSeventhsHelpBody =>
+      'When enabled, the degrees are stacked one third further, so the fifth degree of a major key is V7 rather than V. It is the same seven degrees, named more precisely.';
+
+  @override
+  String get romanHearChord => 'Hear the chord';
+
+  @override
+  String get romanHearChordHelpTitle => 'Hear the Chord';
+
+  @override
+  String get romanHearChordHelpBody =>
+      'When enabled, the chord is played once the answer is revealed. Naming a degree is a written skill until you have heard what it sounds like.';
 }

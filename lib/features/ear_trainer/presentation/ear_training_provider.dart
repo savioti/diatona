@@ -22,14 +22,21 @@ class EarTrainingNotifier extends Notifier<EarTrainingSessionState> {
   final _rng = Random();
   IntervalType? _lastInterval;
 
+  /// Cleared by [stop]. A start waiting on the samples to load checks this
+  /// before it plays, so leaving the screen during the load does not open a
+  /// round no one is on.
+  bool _running = false;
+
   @override
   EarTrainingSessionState build() => const EarTrainingSessionState();
 
   PianoPlaybackService get _piano => ref.read(_pianoServiceProvider);
 
   Future<void> start(List<IntervalType> pool, IntervalDirection direction) async {
+    _running = true;
     state = EarTrainingSessionState(pool: pool, direction: direction);
     await _piano.init();
+    if (!_running) return;
     _generateAndPlay();
   }
 
@@ -75,6 +82,7 @@ class EarTrainingNotifier extends Notifier<EarTrainingSessionState> {
   }
 
   Future<void> stop() async {
+    _running = false;
     await _piano.stop();
     state = const EarTrainingSessionState();
   }

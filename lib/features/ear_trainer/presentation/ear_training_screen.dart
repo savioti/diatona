@@ -1,8 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/widgets/replay_control.dart';
+import '../../../core/widgets/session_stats_bar.dart';
 import '../audio/piano_playback_service.dart';
 import '../domain/ear_training_session_state.dart';
 import '../domain/interval_direction.dart';
@@ -10,8 +14,6 @@ import '../domain/interval_type.dart';
 import 'ear_training_provider.dart';
 import 'interval_labels.dart';
 import 'widgets/interval_answer_buttons.dart';
-import 'widgets/playback_control.dart';
-import 'widgets/session_stats_bar.dart';
 
 class EarTrainingScreen extends ConsumerStatefulWidget {
   const EarTrainingScreen({
@@ -28,26 +30,29 @@ class EarTrainingScreen extends ConsumerStatefulWidget {
 }
 
 class _EarTrainingScreenState extends ConsumerState<EarTrainingScreen> {
+  /// Held from [initState]: `ref` is off limits once the widget is on its way
+  /// out, and reaching for it there throws before the notes are silenced.
+  late final EarTrainingNotifier _session;
+
   @override
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+    _session = ref.read(earTrainingProvider.notifier);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref
-          .read(earTrainingProvider.notifier)
-          .start(widget.pool, widget.direction);
+      _session.start(widget.pool, widget.direction);
     });
   }
 
   @override
   void dispose() {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
-    ref.read(earTrainingProvider.notifier).stop();
+    unawaited(_session.stop());
     super.dispose();
   }
 
   Future<bool> _onWillPop() async {
-    await ref.read(earTrainingProvider.notifier).stop();
+    await _session.stop();
     return true;
   }
 
@@ -110,8 +115,9 @@ class _EarTrainingScreenState extends ConsumerState<EarTrainingScreen> {
                       ),
 
                       // Playback control
-                      PlaybackControl(
-                        phase: session.phase,
+                      ReplayControl(
+                        isPlaying:
+                            session.phase == EarTrainingPhase.playing,
                         onPlay: () =>
                             ref.read(earTrainingProvider.notifier).replay(),
                       ),

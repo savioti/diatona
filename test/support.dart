@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:diatona/core/harmony/data/harmony_data.dart';
+import 'package:diatona/core/harmony/data/progression_data.dart';
 import 'package:diatona/core/sequence_trainer/domain/note_degree.dart';
 import 'package:diatona/core/sequence_trainer/domain/note_sequence.dart';
 import 'package:diatona/features/arpeggio_trainer/data/arpeggio_data.dart';
@@ -59,6 +61,22 @@ void loadArpeggioDataFromDisk() {
     ];
   }
   arpeggioData = loaded;
+}
+
+/// The harmony maps read the scale degrees, so [loadScaleDataFromDisk] has to
+/// have run before this does.
+void loadHarmonyDataFromDisk() {
+  loadHarmonyData(
+    scales: _read('database/trainer/scales.json'),
+    qualities: _read('database/trainer/chord_qualities.json'),
+  );
+}
+
+void loadProgressionDataFromDisk() {
+  loadProgressionData(
+    jsonDecode(File('database/trainer/progressions.json').readAsStringSync())
+        as Map<String, dynamic>,
+  );
 }
 
 NoteSequence byTitle(List<NoteSequence> pool, String title) =>
