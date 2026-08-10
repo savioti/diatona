@@ -136,6 +136,56 @@ class ChoiceChipRow<T> extends StatelessWidget {
   }
 }
 
+/// A row of chips where any number of options can be selected, down to a
+/// minimum the caller sets.
+class MultiChoiceChipRow<T> extends StatelessWidget {
+  const MultiChoiceChipRow({
+    super.key,
+    required this.values,
+    required this.selected,
+    required this.labelOf,
+    required this.onChanged,
+    this.minSelected = 1,
+  });
+
+  final List<T> values;
+  final Set<T> selected;
+  final String Function(T) labelOf;
+  final ValueChanged<Set<T>> onChanged;
+  final int minSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: values.map((value) {
+        final isSelected = selected.contains(value);
+        return FilterChip(
+          label: Text(
+            labelOf(value),
+            style: TextStyle(
+              color: isSelected ? colorScheme.onPrimary : colorScheme.onSurface,
+            ),
+          ),
+          selected: isSelected,
+          onSelected: (wanted) {
+            final next = Set<T>.from(selected);
+            if (wanted) {
+              next.add(value);
+            } else if (next.length > minSelected) {
+              next.remove(value);
+            }
+            onChanged(next);
+          },
+        );
+      }).toList(),
+    );
+  }
+}
+
 /// Section title used above each group of controls.
 class SetupLabel extends StatelessWidget {
   const SetupLabel(this.text, {super.key});

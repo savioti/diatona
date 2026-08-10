@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../arpeggio_trainer/presentation/arpeggio_home_screen.dart';
 import '../../ear_trainer/presentation/ear_trainer_home_screen.dart';
+import '../../interval_trainer/presentation/interval_home_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../main_menu/presentation/widgets/feature_card.dart';
 import '../../note_trainer/presentation/note_home_screen.dart';
@@ -73,11 +74,11 @@ class TrainingMenuScreen extends StatelessWidget {
                       ),
                     ),
                     FeatureCard(
-                      icon: Icons.stairs_rounded,
-                      label: l10n.menuScaleTrainer,
+                      icon: Icons.straighten_rounded,
+                      label: l10n.menuIntervalTrainer,
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
-                          builder: (_) => const ScaleHomeScreen(),
+                          builder: (_) => const IntervalHomeScreen(),
                         ),
                       ),
                     ),
@@ -87,6 +88,15 @@ class TrainingMenuScreen extends StatelessWidget {
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (_) => const ArpeggioHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.stairs_rounded,
+                      label: l10n.menuScaleTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ScaleHomeScreen(),
                         ),
                       ),
                     ),

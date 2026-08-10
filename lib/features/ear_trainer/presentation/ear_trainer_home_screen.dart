@@ -207,7 +207,7 @@ class _ModeToggle extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(l10n.earTrainerCustom,
+        Text(l10n.trainingCustom,
             style: Theme.of(context).textTheme.bodyMedium),
         const SizedBox(width: 8),
         Switch(value: customMode, onChanged: onToggle),

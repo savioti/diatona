@@ -33,6 +33,14 @@ class SettingsRepository {
   static const _keyArpShowNotes = 'pref_arp_show_notes';
   static const _keyArpInversion = 'pref_arp_inversion';
   static const _keyArpOctaves = 'pref_arp_octaves';
+  static const _keyIntLevel = 'pref_int_level';
+  static const _keyIntCustomMode = 'pref_int_custom_mode';
+  static const _keyIntCustomPool = 'pref_int_custom_pool';
+  static const _keyIntDirection = 'pref_int_direction';
+  static const _keyIntNaturalRoots = 'pref_int_natural_roots';
+  static const _keyIntInterval = 'pref_int_interval';
+  static const _keyIntShowNotes = 'pref_int_show_notes';
+  static const _keyIntPlayRoot = 'pref_int_play_root';
 
   int loadLevel() => _prefs.getInt(_keyLevel) ?? 1;
   int loadInterval() => _prefs.getInt(_keyInterval) ?? 5;
@@ -104,4 +112,28 @@ class SettingsRepository {
   Future<void> saveArpShowNotes(bool v) => _prefs.setBool(_keyArpShowNotes, v);
   Future<void> saveArpInversion(int index) => _prefs.setInt(_keyArpInversion, index);
   Future<void> saveArpOctaves(int octaves) => _prefs.setInt(_keyArpOctaves, octaves);
+
+  int loadIntLevel() => _prefs.getInt(_keyIntLevel) ?? 1;
+  bool loadIntCustomMode() => _prefs.getBool(_keyIntCustomMode) ?? false;
+  List<int> loadIntCustomPool() => (_prefs.getString(_keyIntCustomPool) ?? '')
+      .split(',')
+      .where((s) => s.isNotEmpty)
+      .map(int.tryParse)
+      .whereType<int>()
+      .toList();
+  int loadIntDirection() => _prefs.getInt(_keyIntDirection) ?? 0;
+  bool loadIntNaturalRoots() => _prefs.getBool(_keyIntNaturalRoots) ?? true;
+  int loadIntInterval() => _prefs.getInt(_keyIntInterval) ?? 0;
+  bool loadIntShowNotes() => _prefs.getBool(_keyIntShowNotes) ?? false;
+  bool loadIntPlayRoot() => _prefs.getBool(_keyIntPlayRoot) ?? true;
+
+  Future<void> saveIntLevel(int level) => _prefs.setInt(_keyIntLevel, level);
+  Future<void> saveIntCustomMode(bool v) => _prefs.setBool(_keyIntCustomMode, v);
+  Future<void> saveIntCustomPool(List<int> indices) =>
+      _prefs.setString(_keyIntCustomPool, indices.join(','));
+  Future<void> saveIntDirection(int index) => _prefs.setInt(_keyIntDirection, index);
+  Future<void> saveIntNaturalRoots(bool v) => _prefs.setBool(_keyIntNaturalRoots, v);
+  Future<void> saveIntInterval(int interval) => _prefs.setInt(_keyIntInterval, interval);
+  Future<void> saveIntShowNotes(bool v) => _prefs.setBool(_keyIntShowNotes, v);
+  Future<void> saveIntPlayRoot(bool v) => _prefs.setBool(_keyIntPlayRoot, v);
 }

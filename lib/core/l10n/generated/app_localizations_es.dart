@@ -275,7 +275,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get earTrainerRandom => 'Aleatorio';
 
   @override
-  String get earTrainerCustom => 'Personalizado';
+  String get trainingCustom => 'Personalizado';
 
   @override
   String get earTrainerSelectAtLeastTwo => 'Selecciona al menos 2 intervalos';
@@ -366,8 +366,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trainingMissed => 'Fallaste';
 
   @override
-  String scaleNameLabel(String root, String scale) {
-    return '$root $scale';
+  String trainingRootLabel(String root, String name) {
+    return '$root $name';
   }
 
   @override
@@ -420,4 +420,20 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get arpeggioOctaves => 'Octavas';
+
+  @override
+  String get menuIntervalTrainer => 'Entrenador de Intervalos';
+
+  @override
+  String get trainingMixed => 'Mixto';
+
+  @override
+  String get intervalPlayRoot => 'Tocar la fundamental';
+
+  @override
+  String get intervalPlayRootHelpTitle => 'Tocar la Fundamental';
+
+  @override
+  String get intervalPlayRootHelpBody =>
+      'Cuando está activado, el ejercicio son dos notas: la nota desde la que parte el intervalo y la nota a la que llega. Cuando está desactivado, solo se pide la nota de llegada, lo que es más rápido pero nunca hace sonar el intervalo.';
 }

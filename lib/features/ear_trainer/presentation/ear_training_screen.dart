@@ -8,6 +8,7 @@ import '../domain/ear_training_session_state.dart';
 import '../domain/interval_direction.dart';
 import '../domain/interval_type.dart';
 import 'ear_training_provider.dart';
+import 'interval_labels.dart';
 import 'widgets/interval_answer_buttons.dart';
 import 'widgets/playback_control.dart';
 import 'widgets/session_stats_bar.dart';
@@ -254,7 +255,7 @@ class _PhaseDisplay extends StatelessWidget {
             if (!isCorrect && correctInterval != null) ...[
               const SizedBox(height: 4),
               Text(
-                _intervalFullName(correctInterval, l10n),
+                intervalTypeName(correctInterval, l10n),
                 style: theme.textTheme.bodyLarge?.copyWith(
                   color: theme.colorScheme.onSurface.withAlpha(200),
                 ),
@@ -276,23 +277,3 @@ class _PhaseDisplay extends StatelessWidget {
     }
   }
 }
-
-// ---------------------------------------------------------------------------
-// Full interval name from l10n
-// ---------------------------------------------------------------------------
-
-String _intervalFullName(IntervalType t, AppLocalizations l10n) =>
-    switch (t) {
-      IntervalType.minSecond => l10n.intervalMinSecond,
-      IntervalType.majSecond => l10n.intervalMajSecond,
-      IntervalType.minThird => l10n.intervalMinThird,
-      IntervalType.majThird => l10n.intervalMajThird,
-      IntervalType.perfectFourth => l10n.intervalPerfectFourth,
-      IntervalType.tritone => l10n.intervalTritone,
-      IntervalType.perfectFifth => l10n.intervalPerfectFifth,
-      IntervalType.minSixth => l10n.intervalMinSixth,
-      IntervalType.majSixth => l10n.intervalMajSixth,
-      IntervalType.minSeventh => l10n.intervalMinSeventh,
-      IntervalType.majSeventh => l10n.intervalMajSeventh,
-      IntervalType.octave => l10n.intervalOctave,
-    };

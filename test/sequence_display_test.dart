@@ -48,6 +48,60 @@ Future<void> pumpDisplay(
 }
 
 void main() {
+  testWidgets('a double flat fits in its chip', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SequenceDisplay(
+            sequence: const NoteSequence(
+              id: 'dim7_C',
+              title: 'Cdim7',
+              noteNames: ['C', 'Eb', 'Gb', 'Bbb', 'C'],
+              pitchClasses: [0, 3, 6, 9, 0],
+            ),
+            noteIndex: 4,
+            misses: 0,
+            showNames: true,
+            isGetReady: false,
+            getReadyText: 'Get Ready',
+            hintText: 'Play the notes in order',
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('Bbb'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('a named starting note stays visible while the rest hide',
+      (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SequenceDisplay(
+            sequence: const NoteSequence(
+              id: 'majThird_C_false',
+              title: 'C Major 3rd',
+              noteNames: ['C', 'E'],
+              pitchClasses: [0, 4],
+              hiddenFrom: 1,
+            ),
+            noteIndex: 0,
+            misses: 0,
+            showNames: false,
+            isGetReady: false,
+            getReadyText: 'Get Ready',
+            hintText: 'Work out the notes',
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('C'), findsOneWidget);
+    expect(find.text('?'), findsOneWidget);
+  });
+
   testWidgets('fifteen note run fits on a small screen', (tester) async {
     tester.view.physicalSize = const Size(360, 640);
     tester.view.devicePixelRatio = 1.0;

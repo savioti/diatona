@@ -35,6 +35,7 @@ lib/
     ear_trainer/            Interval ear training with piano playback
     scale_trainer/          Scale pools for the sequence engine
     arpeggio_trainer/       Arpeggio pools for the sequence engine
+    interval_trainer/       Interval pools for the sequence engine
     references/             Circle of fifths, CAGED, modes, scales and other charts
     home/                   Chord trainer setup screen (level, interval, display mode)
     settings/               Theme, language and training preferences
@@ -57,7 +58,7 @@ override of `sharedPreferencesProvider`. Providers never call
 `SharedPreferences.getInstance()` themselves.
 
 `SettingsRepository` (`lib/features/trainer/data/settings_repository.dart`) is the only
-place that touches preference keys. It holds settings for all five trainers plus theme
+place that touches preference keys. It holds settings for all six trainers plus theme
 and locale, all prefixed with `pref_`.
 
 The notifiers in `lib/features/trainer/data/providers.dart` expose the selected level,
@@ -112,14 +113,19 @@ the rounds, everything below is shared.
   anywhere on the instrument.
 - A wrong note costs one of three tries, shown as crosses under the name. The third one
   reveals the right notes and moves on after 1200 ms.
+- Slots the round hands over cost nothing, `NoteSequence.isGiven`. Fumbling the root of
+  an interval, which the title names, is a fumble rather than a wrong answer.
 - A wrong note only counts once it has been detected twice in a row, so a single bad
   reading from the detector is not charged to the user.
 - A pitch class that has just been answered is ignored until a different one arrives,
   so a note still ringing is not read as a wrong answer to the slot after it.
 - Completing the last note shows the success overlay and the next round follows after
   900 ms, with the same 500 ms silence window the chord trainer uses.
-- Direction is ascending, descending or up and down, and every round closes its octave.
+- Direction is ascending, descending or up and down. Scales and arpeggios close their
+  octave, the interval trainer reads the third option as mixed instead.
 - Keys are either the seven naturals or all twelve.
+- `NoteSequence.hiddenFrom` keeps the first slots named while the rest stay blank, which
+  is how an interval round shows the note it starts from.
 - `note_spelling.dart` names each note from a `NoteDegree`, which carries how many
   letters above the root the note sits and how many semitones. That is what keeps
   `Bb Dorian` spelled Bb C Db Eb F G Ab and `Cdim7` spelled C Eb Gb Bbb.
@@ -159,6 +165,28 @@ keeps `Csus4` spelled C F G.
 - `Random` draws every inversion of every chord, including the third inversion of
   seventh chords, which has no chip of its own.
 - Two octaves repeat the run an octave up before closing, so `C` becomes C E G C E G C.
+
+## Interval trainer
+
+A round is two notes: the root, then the note an interval away from it. The screen shows
+`C Major 3rd` with the first slot named and the second blank. Playing both is what makes
+it an interval rather than a spelling drill, since that is when the interval sounds.
+
+`Play the root`, on by default, is what puts the first note there. Turning it off leaves
+a round of one note, the one the interval lands on, which is quicker to get through.
+
+Intervals and levels come from the ear trainer, `IntervalType` and
+`getIntervalsForLevel()`, so a level means the same set of intervals in both. `Custom`
+swaps the level stepper for chips, one per interval.
+
+- `IntervalType.letterStep` says how many letter names the interval spans, which is what
+  separates a minor third from an augmented second and spells the tritone as an
+  augmented fourth: C to F#, Db to G.
+- Descending counts the interval backwards from the root rather than reversing the two
+  notes, so a major third below C is Ab.
+- Mixed puts both directions in the pool and each round names its own under the title.
+- The octave is left out. Pitch detection reports a pitch class and nothing else, so C
+  up to C reads as one note held rather than two notes played.
 
 ## Translations
 

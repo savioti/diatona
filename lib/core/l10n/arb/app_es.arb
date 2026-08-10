@@ -119,7 +119,7 @@
   "earTrainerDescending": "Descendente",
   "earTrainerHarmonic": "Armónico",
   "earTrainerRandom": "Aleatorio",
-  "earTrainerCustom": "Personalizado",
+  "trainingCustom": "Personalizado",
   "earTrainerSelectAtLeastTwo": "Selecciona al menos 2 intervalos",
   "earTrainerWhatInterval": "¿Qué intervalo es este?",
   "earTrainerWrong": "¡Incorrecto!",
@@ -149,11 +149,11 @@
   "trainingShowNotesHelpTitle": "Mostrar las Notas",
   "trainingShowNotesHelpBody": "Cuando está activado, las notas se muestran antes de tocarlas. Cuando está desactivado, solo aparece el nombre y las notas corren por tu cuenta. En ambos casos, tres notas erradas pasan al siguiente ejercicio.",
   "trainingMissed": "Fallaste",
-  "scaleNameLabel": "{root} {scale}",
-  "@scaleNameLabel": {
+  "trainingRootLabel": "{root} {name}",
+  "@trainingRootLabel": {
     "placeholders": {
       "root": { "type": "String" },
-      "scale": { "type": "String" }
+      "name": { "type": "String" }
     }
   },
   "scaleMajor": "Mayor",
@@ -172,5 +172,10 @@
   "arpeggioSecondInversion": "2ª inversión",
   "arpeggioThirdInversion": "3ª inversión",
   "arpeggioRandomInversion": "Aleatoria",
-  "arpeggioOctaves": "Octavas"
+  "arpeggioOctaves": "Octavas",
+  "menuIntervalTrainer": "Entrenador de Intervalos",
+  "trainingMixed": "Mixto",
+  "intervalPlayRoot": "Tocar la fundamental",
+  "intervalPlayRootHelpTitle": "Tocar la Fundamental",
+  "intervalPlayRootHelpBody": "Cuando está activado, el ejercicio son dos notas: la nota desde la que parte el intervalo y la nota a la que llega. Cuando está desactivado, solo se pide la nota de llegada, lo que es más rápido pero nunca hace sonar el intervalo."
 }

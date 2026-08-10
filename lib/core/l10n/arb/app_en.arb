@@ -188,8 +188,8 @@
   "@earTrainerHarmonic": {},
   "earTrainerRandom": "Random",
   "@earTrainerRandom": {},
-  "earTrainerCustom": "Custom",
-  "@earTrainerCustom": {},
+  "trainingCustom": "Custom",
+  "@trainingCustom": {},
   "earTrainerSelectAtLeastTwo": "Select at least 2 intervals",
   "@earTrainerSelectAtLeastTwo": {},
   "earTrainerWhatInterval": "What interval is this?",
@@ -248,11 +248,11 @@
   "@trainingShowNotesHelpBody": {},
   "trainingMissed": "Missed",
   "@trainingMissed": {},
-  "scaleNameLabel": "{root} {scale}",
-  "@scaleNameLabel": {
+  "trainingRootLabel": "{root} {name}",
+  "@trainingRootLabel": {
     "placeholders": {
       "root": { "type": "String" },
-      "scale": { "type": "String" }
+      "name": { "type": "String" }
     }
   },
   "scaleMajor": "Major",
@@ -288,5 +288,15 @@
   "arpeggioRandomInversion": "Random",
   "@arpeggioRandomInversion": {},
   "arpeggioOctaves": "Octaves",
-  "@arpeggioOctaves": {}
+  "@arpeggioOctaves": {},
+  "menuIntervalTrainer": "Interval Trainer",
+  "@menuIntervalTrainer": {},
+  "trainingMixed": "Mixed",
+  "@trainingMixed": {},
+  "intervalPlayRoot": "Play the root",
+  "@intervalPlayRoot": {},
+  "intervalPlayRootHelpTitle": "Play the Root",
+  "@intervalPlayRootHelpTitle": {},
+  "intervalPlayRootHelpBody": "When enabled, a round is two notes: the one the interval starts from, then the one it lands on. When disabled, only the note it lands on is asked for, which is quicker but never sounds the interval.",
+  "@intervalPlayRootHelpBody": {}
 }

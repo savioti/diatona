@@ -119,7 +119,8 @@ class SequenceDisplay extends StatelessWidget {
                   name: sequence.noteNames[i],
                   played: i < noteIndex,
                   isNext: i == noteIndex,
-                  hidden: !showNames && i >= noteIndex,
+                  hidden:
+                      !showNames && i >= noteIndex && i >= sequence.hiddenFrom,
                 ),
             ],
           ),
@@ -193,8 +194,9 @@ class _NoteChip extends StatelessWidget {
           width: 2,
         ),
       ),
-      child: SizedBox(
-        width: 30,
+      // A minimum rather than a width, so that Bbb still fits.
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minWidth: 30),
         child: Text(
           hidden ? '?' : name,
           textAlign: TextAlign.center,

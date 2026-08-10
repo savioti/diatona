@@ -31,7 +31,7 @@ class ScaleHomeScreen extends ConsumerWidget {
 
     void start() {
       String title(ScaleType type, String root) =>
-          l10n.scaleNameLabel(root, scaleTypeName(type, l10n));
+          l10n.trainingRootLabel(root, scaleTypeName(type, l10n));
 
       final pool = cumulative
           ? buildScalePool(level, direction,

@@ -605,11 +605,11 @@ abstract class AppLocalizations {
   /// **'Random'**
   String get earTrainerRandom;
 
-  /// No description provided for @earTrainerCustom.
+  /// No description provided for @trainingCustom.
   ///
   /// In en, this message translates to:
   /// **'Custom'**
-  String get earTrainerCustom;
+  String get trainingCustom;
 
   /// No description provided for @earTrainerSelectAtLeastTwo.
   ///
@@ -785,11 +785,11 @@ abstract class AppLocalizations {
   /// **'Missed'**
   String get trainingMissed;
 
-  /// No description provided for @scaleNameLabel.
+  /// No description provided for @trainingRootLabel.
   ///
   /// In en, this message translates to:
-  /// **'{root} {scale}'**
-  String scaleNameLabel(String root, String scale);
+  /// **'{root} {name}'**
+  String trainingRootLabel(String root, String name);
 
   /// No description provided for @scaleMajor.
   ///
@@ -892,6 +892,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Octaves'**
   String get arpeggioOctaves;
+
+  /// No description provided for @menuIntervalTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Interval Trainer'**
+  String get menuIntervalTrainer;
+
+  /// No description provided for @trainingMixed.
+  ///
+  /// In en, this message translates to:
+  /// **'Mixed'**
+  String get trainingMixed;
+
+  /// No description provided for @intervalPlayRoot.
+  ///
+  /// In en, this message translates to:
+  /// **'Play the root'**
+  String get intervalPlayRoot;
+
+  /// No description provided for @intervalPlayRootHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Play the Root'**
+  String get intervalPlayRootHelpTitle;
+
+  /// No description provided for @intervalPlayRootHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When enabled, a round is two notes: the one the interval starts from, then the one it lands on. When disabled, only the note it lands on is asked for, which is quicker but never sounds the interval.'**
+  String get intervalPlayRootHelpBody;
 }
 
 class _AppLocalizationsDelegate

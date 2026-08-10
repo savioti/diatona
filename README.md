@@ -23,7 +23,5 @@ restrictions (see [CREDITS.md](CREDITS.md)).
 
 ## Planned
 
-- chord dict
 - progressions
-- intervals
 - harmonic analysis

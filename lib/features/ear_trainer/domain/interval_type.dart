@@ -27,6 +27,19 @@ enum IntervalType {
         IntervalType.octave => 12,
       };
 
+  /// How many letter names the interval spans, so 2 for any third and 4 for a
+  /// fifth. It is what tells a minor third from an augmented second, and it
+  /// spells the tritone as an augmented fourth: C to F#, Db to G.
+  int get letterStep => switch (this) {
+        IntervalType.minSecond || IntervalType.majSecond => 1,
+        IntervalType.minThird || IntervalType.majThird => 2,
+        IntervalType.perfectFourth || IntervalType.tritone => 3,
+        IntervalType.perfectFifth => 4,
+        IntervalType.minSixth || IntervalType.majSixth => 5,
+        IntervalType.minSeventh || IntervalType.majSeventh => 6,
+        IntervalType.octave => 7,
+      };
+
   /// Short label used on answer buttons (e.g. "m2", "P5").
   String get shortLabel => switch (this) {
         IntervalType.minSecond => 'm2',

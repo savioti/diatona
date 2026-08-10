@@ -128,6 +128,11 @@ class SequenceTrainingNotifier extends Notifier<SequenceSessionState> {
     _wrongPitchClass = null;
     _wrongStreak = 0;
 
+    // Notes the round hands over are free. Missing one is a fumble, not an
+    // answer, since the screen names it.
+    final sequence = state.current;
+    if (sequence == null || sequence.isGiven(state.noteIndex)) return;
+
     final misses = state.misses + 1;
     state = state.copyWith(misses: misses);
     if (misses >= kSequenceMaxMisses) _onMissedOut();

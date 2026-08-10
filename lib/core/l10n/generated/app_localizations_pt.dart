@@ -275,7 +275,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get earTrainerRandom => 'Aleatório';
 
   @override
-  String get earTrainerCustom => 'Personalizado';
+  String get trainingCustom => 'Personalizado';
 
   @override
   String get earTrainerSelectAtLeastTwo => 'Selecione ao menos 2 intervalos';
@@ -366,8 +366,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trainingMissed => 'Falhou';
 
   @override
-  String scaleNameLabel(String root, String scale) {
-    return '$root $scale';
+  String trainingRootLabel(String root, String name) {
+    return '$root $name';
   }
 
   @override
@@ -420,6 +420,22 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get arpeggioOctaves => 'Oitavas';
+
+  @override
+  String get menuIntervalTrainer => 'Treino de Intervalos';
+
+  @override
+  String get trainingMixed => 'Misto';
+
+  @override
+  String get intervalPlayRoot => 'Tocar a fundamental';
+
+  @override
+  String get intervalPlayRootHelpTitle => 'Tocar a Fundamental';
+
+  @override
+  String get intervalPlayRootHelpBody =>
+      'Quando ativado, o exercício tem duas notas: aquela de onde o intervalo parte e aquela onde chega. Quando desativado, apenas a nota de chegada é pedida, o que é mais rápido mas nunca faz soar o intervalo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -693,7 +709,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get earTrainerRandom => 'Aleatório';
 
   @override
-  String get earTrainerCustom => 'Personalizado';
+  String get trainingCustom => 'Personalizado';
 
   @override
   String get earTrainerSelectAtLeastTwo => 'Selecione ao menos 2 intervalos';
@@ -784,8 +800,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get trainingMissed => 'Falhou';
 
   @override
-  String scaleNameLabel(String root, String scale) {
-    return '$root $scale';
+  String trainingRootLabel(String root, String name) {
+    return '$root $name';
   }
 
   @override
@@ -838,4 +854,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get arpeggioOctaves => 'Oitavas';
+
+  @override
+  String get menuIntervalTrainer => 'Treino de Intervalos';
+
+  @override
+  String get trainingMixed => 'Misto';
+
+  @override
+  String get intervalPlayRoot => 'Tocar a fundamental';
+
+  @override
+  String get intervalPlayRootHelpTitle => 'Tocar a Fundamental';
+
+  @override
+  String get intervalPlayRootHelpBody =>
+      'Quando ativado, o exercício tem duas notas: a nota de onde o intervalo parte e a nota onde ele chega. Quando desativado, apenas a nota de chegada é pedida, o que é mais rápido mas nunca faz o intervalo soar.';
 }

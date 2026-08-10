@@ -275,7 +275,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get earTrainerRandom => 'Random';
 
   @override
-  String get earTrainerCustom => 'Custom';
+  String get trainingCustom => 'Custom';
 
   @override
   String get earTrainerSelectAtLeastTwo => 'Select at least 2 intervals';
@@ -367,8 +367,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get trainingMissed => 'Missed';
 
   @override
-  String scaleNameLabel(String root, String scale) {
-    return '$root $scale';
+  String trainingRootLabel(String root, String name) {
+    return '$root $name';
   }
 
   @override
@@ -421,4 +421,20 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get arpeggioOctaves => 'Octaves';
+
+  @override
+  String get menuIntervalTrainer => 'Interval Trainer';
+
+  @override
+  String get trainingMixed => 'Mixed';
+
+  @override
+  String get intervalPlayRoot => 'Play the root';
+
+  @override
+  String get intervalPlayRootHelpTitle => 'Play the Root';
+
+  @override
+  String get intervalPlayRootHelpBody =>
+      'When enabled, a round is two notes: the one the interval starts from, then the one it lands on. When disabled, only the note it lands on is asked for, which is quicker but never sounds the interval.';
 }
