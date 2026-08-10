@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/scale_item.dart';
-import '../../domain/scale_session_state.dart';
+import '../../domain/note_sequence.dart';
+import '../../domain/sequence_session_state.dart';
 
-/// Shows the scale name and its notes, filling them in as they are played.
+/// Shows what to play and fills the notes in as they are played.
 ///
 /// With [showNames] off the notes stay hidden until the user plays them, so the
-/// scale name is all there is to go on.
-class ScaleDisplay extends StatelessWidget {
-  const ScaleDisplay({
+/// title is all there is to go on.
+class SequenceDisplay extends StatelessWidget {
+  const SequenceDisplay({
     super.key,
-    required this.scale,
-    required this.title,
+    required this.sequence,
     required this.noteIndex,
     required this.misses,
     required this.showNames,
@@ -20,13 +19,12 @@ class ScaleDisplay extends StatelessWidget {
     required this.hintText,
   });
 
-  final ScaleItem? scale;
-  final String title;
+  final NoteSequence? sequence;
 
   /// How many notes have been played, so [noteIndex] is the one to play next.
   final int noteIndex;
 
-  /// Wrong notes played on this scale so far.
+  /// Wrong notes played on this round so far.
   final int misses;
 
   final bool showNames;
@@ -45,7 +43,7 @@ class ScaleDisplay extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
       ),
       alignment: Alignment.center,
-      // Up and down scales run to fifteen notes, more than a short screen fits.
+      // Up and down runs reach fifteen notes, more than a short screen fits.
       child: SingleChildScrollView(
         child: AnimatedSwitcher(
           duration: const Duration(milliseconds: 200),
@@ -53,7 +51,7 @@ class ScaleDisplay extends StatelessWidget {
             opacity: animation,
             child: ScaleTransition(scale: animation, child: child),
           ),
-          child: isGetReady || scale == null
+          child: isGetReady || sequence == null
               ? Text(
                   key: const ValueKey('ready'),
                   getReadyText,
@@ -65,25 +63,21 @@ class ScaleDisplay extends StatelessWidget {
                     letterSpacing: 2,
                   ),
                 )
-              : _buildScale(context, scale!, colorScheme),
+              : _buildSequence(sequence!, colorScheme),
         ),
       ),
     );
   }
 
-  Widget _buildScale(
-    BuildContext context,
-    ScaleItem scale,
-    ColorScheme colorScheme,
-  ) {
+  Widget _buildSequence(NoteSequence sequence, ColorScheme colorScheme) {
     return Padding(
-      key: ValueKey(scale.id),
+      key: ValueKey(sequence.id),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            title,
+            sequence.title,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 40,
@@ -91,6 +85,18 @@ class ScaleDisplay extends StatelessWidget {
               color: colorScheme.onPrimaryContainer,
             ),
           ),
+          if (sequence.subtitle != null) ...[
+            const SizedBox(height: 2),
+            Text(
+              sequence.subtitle!,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w500,
+                color: colorScheme.onPrimaryContainer.withValues(alpha: 0.85),
+              ),
+            ),
+          ],
           const SizedBox(height: 8),
           Text(
             hintText,
@@ -108,9 +114,9 @@ class ScaleDisplay extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              for (var i = 0; i < scale.noteNames.length; i++)
+              for (var i = 0; i < sequence.noteNames.length; i++)
                 _NoteChip(
-                  name: scale.noteNames[i],
+                  name: sequence.noteNames[i],
                   played: i < noteIndex,
                   isNext: i == noteIndex,
                   hidden: !showNames && i >= noteIndex,
@@ -134,7 +140,7 @@ class _MissTracker extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        for (var i = 0; i < kScaleMaxMisses; i++)
+        for (var i = 0; i < kSequenceMaxMisses; i++)
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 3),
             child: Icon(
@@ -188,7 +194,7 @@ class _NoteChip extends StatelessWidget {
         ),
       ),
       child: SizedBox(
-        width: 26,
+        width: 30,
         child: Text(
           hidden ? '?' : name,
           textAlign: TextAlign.center,

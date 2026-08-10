@@ -1,20 +1,17 @@
 import 'package:flutter/foundation.dart';
 
-import 'scale_direction.dart';
-import 'scale_item.dart';
+import 'note_sequence.dart';
 
-/// Wrong notes allowed per scale before the trainer moves on.
-const int kScaleMaxMisses = 3;
+/// Wrong notes allowed per round before the trainer moves on.
+const int kSequenceMaxMisses = 3;
 
 @immutable
-class ScaleSessionState {
-  const ScaleSessionState({
+class SequenceSessionState {
+  const SequenceSessionState({
     required this.isActive,
     required this.isGetReady,
-    required this.level,
     required this.timeLimitSeconds,
-    required this.direction,
-    this.currentScale,
+    this.current,
     this.noteIndex = 0,
     this.misses = 0,
     this.showSuccess = false,
@@ -22,13 +19,11 @@ class ScaleSessionState {
     this.showMissed = false,
   });
 
-  const ScaleSessionState.idle()
+  const SequenceSessionState.idle()
       : isActive = false,
         isGetReady = false,
-        level = 1,
         timeLimitSeconds = 0,
-        direction = ScaleDirection.ascending,
-        currentScale = null,
+        current = null,
         noteIndex = 0,
         misses = 0,
         showSuccess = false,
@@ -37,45 +32,39 @@ class ScaleSessionState {
 
   final bool isActive;
   final bool isGetReady;
-  final int level;
   final int timeLimitSeconds;
-  final ScaleDirection direction;
-  final ScaleItem? currentScale;
+  final NoteSequence? current;
 
-  /// How many notes of [currentScale] have been played so far.
+  /// How many notes of [current] have been played so far.
   final int noteIndex;
 
-  /// Wrong notes played on [currentScale], reset with every new scale.
+  /// Wrong notes played on [current], reset with every new round.
   final int misses;
 
   final bool showSuccess;
 
-  /// True for ~600 ms after the user skips a scale, triggering the skip overlay.
+  /// True for ~600 ms after the user skips a round, triggering the skip overlay.
   final bool showSkip;
 
   /// True for ~1200 ms after the third wrong note, revealing the right answer.
   final bool showMissed;
 
-  ScaleSessionState copyWith({
+  SequenceSessionState copyWith({
     bool? isActive,
     bool? isGetReady,
-    int? level,
     int? timeLimitSeconds,
-    ScaleDirection? direction,
-    ScaleItem? currentScale,
+    NoteSequence? current,
     int? noteIndex,
     int? misses,
     bool? showSuccess,
     bool? showSkip,
     bool? showMissed,
   }) {
-    return ScaleSessionState(
+    return SequenceSessionState(
       isActive: isActive ?? this.isActive,
       isGetReady: isGetReady ?? this.isGetReady,
-      level: level ?? this.level,
       timeLimitSeconds: timeLimitSeconds ?? this.timeLimitSeconds,
-      direction: direction ?? this.direction,
-      currentScale: currentScale ?? this.currentScale,
+      current: current ?? this.current,
       noteIndex: noteIndex ?? this.noteIndex,
       misses: misses ?? this.misses,
       showSuccess: showSuccess ?? this.showSuccess,

@@ -19,20 +19,22 @@ there is no backend. Chord data and reference material live as JSON files under
 
 ```text
 lib/
-  main.dart                 Loads SharedPreferences, chord and scale data, then runs App
+  main.dart                 Loads SharedPreferences, chord, scale and arpeggio data
   app.dart                  MaterialApp: theme, locale, localization delegates, SplashScreen
   core/
     theme/app_theme.dart    Theme variants built from a shared palette
     l10n/arb/               Source strings: app_en, app_pt, app_pt_BR, app_es
     l10n/generated/         Output of flutter gen-l10n, not edited by hand
     widgets/                Widgets shared between features (training overlay)
+    sequence_trainer/       Engine behind the scale and arpeggio trainers
   features/
     splash/                 First screen, routes into the main menu
     main_menu/              Grid of the top level sections
     trainer/                Chord trainer: domain, chord data, settings repository, providers
     note_trainer/           Staff note reading trainer
     ear_trainer/            Interval ear training with piano playback
-    scale_trainer/          Scale playing trainer, scale spelling and pools
+    scale_trainer/          Scale pools for the sequence engine
+    arpeggio_trainer/       Arpeggio pools for the sequence engine
     references/             Circle of fifths, CAGED, modes, scales and other charts
     home/                   Chord trainer setup screen (level, interval, display mode)
     settings/               Theme, language and training preferences
@@ -55,7 +57,7 @@ override of `sharedPreferencesProvider`. Providers never call
 `SharedPreferences.getInstance()` themselves.
 
 `SettingsRepository` (`lib/features/trainer/data/settings_repository.dart`) is the only
-place that touches preference keys. It holds settings for all four trainers plus theme
+place that touches preference keys. It holds settings for all five trainers plus theme
 and locale, all prefixed with `pref_`.
 
 The notifiers in `lib/features/trainer/data/providers.dart` expose the selected level,
@@ -92,31 +94,42 @@ returns a single level pool.
 | 11 | Minor-major 7th | `mMaj7` |
 | 12 | Augmented-major 7th | `augMaj7` |
 
-## Scale trainer behaviour
+## Sequence trainer engine
 
-- The screen shows a scale name, for example `Bb Dorian`, and one blank slot per note.
-  Working out which notes those are is the exercise.
+The scale and arpeggio trainers are the same exercise over different notes, so they run
+on one engine in `lib/core/sequence_trainer/`. A feature only builds the pool and names
+the rounds, everything below is shared.
+
+- A `NoteSequence` is what to call the round, the note names to show, and the pitch
+  classes to listen for, already in the order they are expected.
+- The screen shows the name and one blank slot per note. Working out which notes those
+  are is the exercise.
 - The user plays the notes in order on their instrument. A correct note fills its slot
   with the note name and the next slot is outlined.
 - The `Show the notes` option, off by default, lists the notes up front instead. The
   rest of the round works the same way.
-- Octaves are ignored, only the pitch class is compared, so the scale can be played
+- Octaves are ignored, only the pitch class is compared, so a round can be played
   anywhere on the instrument.
-- A wrong note costs one of three tries, shown as crosses under the scale name. The
-  third one reveals the right notes and moves on to the next scale after 1200 ms.
+- A wrong note costs one of three tries, shown as crosses under the name. The third one
+  reveals the right notes and moves on after 1200 ms.
 - A wrong note only counts once it has been detected twice in a row, so a single bad
   reading from the detector is not charged to the user.
-- Completing the last note shows the success overlay and the next scale follows after
+- A pitch class that has just been answered is ignored until a different one arrives,
+  so a note still ringing is not read as a wrong answer to the slot after it.
+- Completing the last note shows the success overlay and the next round follows after
   900 ms, with the same 500 ms silence window the chord trainer uses.
-- Direction is ascending, descending or up and down. Every direction closes the octave,
-  so a seven note scale is eight notes to play, or fifteen going up and down.
-- Keys are either the seven naturals or all twelve, and the sharp or flat spelling of a
-  key is picked per scale, whichever needs fewer accidentals: `Db Major`, `C# Locrian`.
-- Scales are spelled with one letter per degree, so `Bb Dorian` reads
-  `Bb C Db Eb F G Ab Bb` rather than mixing sharps and flats.
+- Direction is ascending, descending or up and down, and every round closes its octave.
+- Keys are either the seven naturals or all twelve.
+- `note_spelling.dart` names each note from a `NoteDegree`, which carries how many
+  letters above the root the note sits and how many semitones. That is what keeps
+  `Bb Dorian` spelled Bb C Db Eb F G Ab and `Cdim7` spelled C Eb Gb Bbb.
+
+## Scale trainer
 
 Semitone patterns come from `database/trainer/scales.json`, loaded by `initScaleData()`.
-Levels are cumulative by default, like the chord trainer.
+One letter per degree, plus the closing octave, so a seven note scale is eight notes to
+play and fifteen going up and down. The sharp or flat spelling of a key is picked per
+scale, whichever needs fewer accidentals: `Db Major`, `C# Locrian`.
 
 | Level | Scale | `ScaleType` |
 | ----- | ----- | ----------- |
@@ -129,6 +142,23 @@ Levels are cumulative by default, like the chord trainer.
 | 7 | Locrian | `locrian` |
 | 8 | Harmonic Minor | `harmonicMinor` |
 | 9 | Melodic Minor | `melodicMinor` |
+
+## Arpeggio trainer
+
+Chord tones come from `database/trainer/chord_qualities.json`, loaded by
+`initArpeggioData()`. The pool is the chord trainer's own pool, so the levels are the
+same twelve qualities in the same order: level 6 is seventh chords in both trainers.
+
+The `formula` field of a quality gives the letter each tone takes, `b3` being a third
+and `bb7` a seventh. Reading it from the formula rather than counting in thirds is what
+keeps `Csus4` spelled C F G.
+
+- Inversions rotate the tones and close on the one the round started from, so `Cmaj7`
+  in first inversion is E G B C E. The inversion is named under the chord symbol, which
+  says where to start without giving away the note.
+- `Random` draws every inversion of every chord, including the third inversion of
+  seventh chords, which has no chip of its own.
+- Two octaves repeat the run an octave up before closing, so `C` becomes C E G C E G C.
 
 ## Translations
 

@@ -5,7 +5,8 @@ import 'package:flutter/services.dart';
 import '../domain/chord.dart';
 import '../domain/chord_type.dart';
 
-const _qualityToType = <String, ChordType>{
+/// Quality ids as they appear in `chords.json` and `chord_qualities.json`.
+const qualityToChordType = <String, ChordType>{
   'quality_major':    ChordType.major,
   'quality_minor':    ChordType.minor,
   'quality_aug':      ChordType.aug,
@@ -31,7 +32,7 @@ Future<void> initChordData() async {
   };
 
   for (final entry in list) {
-    final type = _qualityToType[entry['qualityId'] as String];
+    final type = qualityToChordType[entry['qualityId'] as String];
     if (type == null) continue;
     final names = (entry['displayNames'] as List<dynamic>).cast<String>();
     grouped[type]!.add(Chord(

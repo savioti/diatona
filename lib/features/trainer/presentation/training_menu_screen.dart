@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../arpeggio_trainer/presentation/arpeggio_home_screen.dart';
 import '../../ear_trainer/presentation/ear_trainer_home_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../main_menu/presentation/widgets/feature_card.dart';
@@ -77,6 +78,15 @@ class TrainingMenuScreen extends StatelessWidget {
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (_) => const ScaleHomeScreen(),
+                        ),
+                      ),
+                    ),
+                    FeatureCard(
+                      icon: Icons.graphic_eq_rounded,
+                      label: l10n.menuArpeggioTrainer,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const ArpeggioHomeScreen(),
                         ),
                       ),
                     ),

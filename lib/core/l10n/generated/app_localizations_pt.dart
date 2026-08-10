@@ -326,44 +326,44 @@ class AppLocalizationsPt extends AppLocalizations {
   String get menuScaleTrainer => 'Treino de Escalas';
 
   @override
-  String get scaleDirection => 'Direção';
+  String get trainingDirection => 'Direção';
 
   @override
-  String get scaleAscending => 'Ascendente';
+  String get trainingAscending => 'Ascendente';
 
   @override
-  String get scaleDescending => 'Descendente';
+  String get trainingDescending => 'Descendente';
 
   @override
-  String get scaleUpAndDown => 'Subir e descer';
+  String get trainingUpAndDown => 'Subir e descer';
 
   @override
-  String get scaleKeys => 'Tonalidades';
+  String get trainingKeys => 'Tonalidades';
 
   @override
-  String get scaleKeysNaturals => 'Naturais';
+  String get trainingKeysNaturals => 'Naturais';
 
   @override
-  String get scaleKeysAll => 'Todas';
+  String get trainingKeysAll => 'Todas';
 
   @override
-  String get scalePlayInOrder => 'Toque as notas por ordem';
+  String get trainingPlayInOrder => 'Toque as notas por ordem';
 
   @override
-  String get scaleFindTheNotes => 'Descubra as notas e toque-as por ordem';
+  String get trainingFindTheNotes => 'Descubra as notas e toque-as por ordem';
 
   @override
-  String get scaleShowNotes => 'Mostrar as notas';
+  String get trainingShowNotes => 'Mostrar as notas';
 
   @override
-  String get scaleShowNotesHelpTitle => 'Mostrar as Notas';
+  String get trainingShowNotesHelpTitle => 'Mostrar as Notas';
 
   @override
-  String get scaleShowNotesHelpBody =>
-      'Quando ativado, as notas da escala são listadas antes de as tocar. Quando desativado, apenas o nome da escala é mostrado e as notas ficam por sua conta. Em qualquer dos casos, três notas erradas avançam para a escala seguinte.';
+  String get trainingShowNotesHelpBody =>
+      'Quando ativado, as notas são listadas antes de as tocar. Quando desativado, apenas o nome é mostrado e as notas ficam por sua conta. Em qualquer dos casos, três notas erradas avançam para o exercício seguinte.';
 
   @override
-  String get scaleMissed => 'Falhou';
+  String get trainingMissed => 'Falhou';
 
   @override
   String scaleNameLabel(String root, String scale) {
@@ -396,6 +396,30 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get scaleMelodicMinor => 'Menor Melódica';
+
+  @override
+  String get menuArpeggioTrainer => 'Treino de Arpejos';
+
+  @override
+  String get arpeggioInversion => 'Inversão';
+
+  @override
+  String get arpeggioRootPosition => 'Posição fundamental';
+
+  @override
+  String get arpeggioFirstInversion => '1ª inversão';
+
+  @override
+  String get arpeggioSecondInversion => '2ª inversão';
+
+  @override
+  String get arpeggioThirdInversion => '3ª inversão';
+
+  @override
+  String get arpeggioRandomInversion => 'Aleatória';
+
+  @override
+  String get arpeggioOctaves => 'Oitavas';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -720,44 +744,44 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get menuScaleTrainer => 'Treino de Escalas';
 
   @override
-  String get scaleDirection => 'Direção';
+  String get trainingDirection => 'Direção';
 
   @override
-  String get scaleAscending => 'Ascendente';
+  String get trainingAscending => 'Ascendente';
 
   @override
-  String get scaleDescending => 'Descendente';
+  String get trainingDescending => 'Descendente';
 
   @override
-  String get scaleUpAndDown => 'Subindo e descendo';
+  String get trainingUpAndDown => 'Subindo e descendo';
 
   @override
-  String get scaleKeys => 'Tonalidades';
+  String get trainingKeys => 'Tonalidades';
 
   @override
-  String get scaleKeysNaturals => 'Naturais';
+  String get trainingKeysNaturals => 'Naturais';
 
   @override
-  String get scaleKeysAll => 'Todas';
+  String get trainingKeysAll => 'Todas';
 
   @override
-  String get scalePlayInOrder => 'Toque as notas em ordem';
+  String get trainingPlayInOrder => 'Toque as notas em ordem';
 
   @override
-  String get scaleFindTheNotes => 'Descubra as notas e toque em ordem';
+  String get trainingFindTheNotes => 'Descubra as notas e toque em ordem';
 
   @override
-  String get scaleShowNotes => 'Mostrar as notas';
+  String get trainingShowNotes => 'Mostrar as notas';
 
   @override
-  String get scaleShowNotesHelpTitle => 'Mostrar as Notas';
+  String get trainingShowNotesHelpTitle => 'Mostrar as Notas';
 
   @override
-  String get scaleShowNotesHelpBody =>
-      'Quando ativado, as notas da escala são listadas antes de você tocá-las. Quando desativado, apenas o nome da escala aparece e as notas ficam por sua conta. Nos dois casos, três notas erradas passam para a próxima escala.';
+  String get trainingShowNotesHelpBody =>
+      'Quando ativado, as notas são listadas antes de você tocá-las. Quando desativado, apenas o nome aparece e as notas ficam por sua conta. Nos dois casos, três notas erradas passam para o próximo exercício.';
 
   @override
-  String get scaleMissed => 'Falhou';
+  String get trainingMissed => 'Falhou';
 
   @override
   String scaleNameLabel(String root, String scale) {
@@ -790,4 +814,28 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get scaleMelodicMinor => 'Menor Melódica';
+
+  @override
+  String get menuArpeggioTrainer => 'Treino de Arpejos';
+
+  @override
+  String get arpeggioInversion => 'Inversão';
+
+  @override
+  String get arpeggioRootPosition => 'Posição fundamental';
+
+  @override
+  String get arpeggioFirstInversion => '1ª inversão';
+
+  @override
+  String get arpeggioSecondInversion => '2ª inversão';
+
+  @override
+  String get arpeggioThirdInversion => '3ª inversão';
+
+  @override
+  String get arpeggioRandomInversion => 'Aleatória';
+
+  @override
+  String get arpeggioOctaves => 'Oitavas';
 }

@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../trainer/data/providers.dart';
-import '../../trainer/domain/chord_type.dart';
+import '../../trainer/presentation/chord_labels.dart';
 import '../../trainer/presentation/training_screen.dart';
 import 'widgets/display_mode_selector.dart';
 import 'widgets/interval_selector.dart';
@@ -47,7 +47,7 @@ class HomeScreen extends ConsumerWidget {
               Text(l10n.level, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 8),
               Text(
-                l10n.levelLabel(level, _levelName(level, l10n)),
+                l10n.levelLabel(level, chordTypeNameForLevel(level, l10n)),
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 12),
@@ -143,24 +143,5 @@ class HomeScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
-
-  String _levelName(int level, AppLocalizations l10n) {
-    final type =
-        ChordType.values[(level - 1).clamp(0, ChordType.values.length - 1)];
-    return switch (type) {
-      ChordType.major => l10n.levelMajor,
-      ChordType.minor => l10n.levelMinor,
-      ChordType.aug => l10n.levelAug,
-      ChordType.dim => l10n.levelDim,
-      ChordType.sus => l10n.levelSus,
-      ChordType.seventh => l10n.levelSeventh,
-      ChordType.maj7 => l10n.levelMaj7,
-      ChordType.m7 => l10n.levelM7,
-      ChordType.dim7 => l10n.levelDim7,
-      ChordType.halfDim7 => l10n.levelHalfDim7,
-      ChordType.mMaj7 => l10n.levelMMaj7,
-      ChordType.augMaj7 => l10n.levelAugMaj7,
-    };
   }
 }

@@ -707,83 +707,83 @@ abstract class AppLocalizations {
   /// **'Scale Trainer'**
   String get menuScaleTrainer;
 
-  /// No description provided for @scaleDirection.
+  /// No description provided for @trainingDirection.
   ///
   /// In en, this message translates to:
   /// **'Direction'**
-  String get scaleDirection;
+  String get trainingDirection;
 
-  /// No description provided for @scaleAscending.
+  /// No description provided for @trainingAscending.
   ///
   /// In en, this message translates to:
   /// **'Ascending'**
-  String get scaleAscending;
+  String get trainingAscending;
 
-  /// No description provided for @scaleDescending.
+  /// No description provided for @trainingDescending.
   ///
   /// In en, this message translates to:
   /// **'Descending'**
-  String get scaleDescending;
+  String get trainingDescending;
 
-  /// No description provided for @scaleUpAndDown.
+  /// No description provided for @trainingUpAndDown.
   ///
   /// In en, this message translates to:
   /// **'Up and down'**
-  String get scaleUpAndDown;
+  String get trainingUpAndDown;
 
-  /// No description provided for @scaleKeys.
+  /// No description provided for @trainingKeys.
   ///
   /// In en, this message translates to:
   /// **'Keys'**
-  String get scaleKeys;
+  String get trainingKeys;
 
-  /// No description provided for @scaleKeysNaturals.
+  /// No description provided for @trainingKeysNaturals.
   ///
   /// In en, this message translates to:
   /// **'Naturals'**
-  String get scaleKeysNaturals;
+  String get trainingKeysNaturals;
 
-  /// No description provided for @scaleKeysAll.
+  /// No description provided for @trainingKeysAll.
   ///
   /// In en, this message translates to:
   /// **'All keys'**
-  String get scaleKeysAll;
+  String get trainingKeysAll;
 
-  /// No description provided for @scalePlayInOrder.
+  /// No description provided for @trainingPlayInOrder.
   ///
   /// In en, this message translates to:
   /// **'Play the notes in order'**
-  String get scalePlayInOrder;
+  String get trainingPlayInOrder;
 
-  /// No description provided for @scaleFindTheNotes.
+  /// No description provided for @trainingFindTheNotes.
   ///
   /// In en, this message translates to:
   /// **'Work out the notes and play them in order'**
-  String get scaleFindTheNotes;
+  String get trainingFindTheNotes;
 
-  /// No description provided for @scaleShowNotes.
+  /// No description provided for @trainingShowNotes.
   ///
   /// In en, this message translates to:
   /// **'Show the notes'**
-  String get scaleShowNotes;
+  String get trainingShowNotes;
 
-  /// No description provided for @scaleShowNotesHelpTitle.
+  /// No description provided for @trainingShowNotesHelpTitle.
   ///
   /// In en, this message translates to:
   /// **'Show the Notes'**
-  String get scaleShowNotesHelpTitle;
+  String get trainingShowNotesHelpTitle;
 
-  /// No description provided for @scaleShowNotesHelpBody.
+  /// No description provided for @trainingShowNotesHelpBody.
   ///
   /// In en, this message translates to:
-  /// **'When enabled, the notes of the scale are listed before you play them. When disabled, only the scale name is shown and the notes are up to you. Either way, three wrong notes move you on to the next scale.'**
-  String get scaleShowNotesHelpBody;
+  /// **'When enabled, the notes are listed before you play them. When disabled, only the name is shown and the notes are up to you. Either way, three wrong notes move you on to the next round.'**
+  String get trainingShowNotesHelpBody;
 
-  /// No description provided for @scaleMissed.
+  /// No description provided for @trainingMissed.
   ///
   /// In en, this message translates to:
   /// **'Missed'**
-  String get scaleMissed;
+  String get trainingMissed;
 
   /// No description provided for @scaleNameLabel.
   ///
@@ -844,6 +844,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Melodic Minor'**
   String get scaleMelodicMinor;
+
+  /// No description provided for @menuArpeggioTrainer.
+  ///
+  /// In en, this message translates to:
+  /// **'Arpeggio Trainer'**
+  String get menuArpeggioTrainer;
+
+  /// No description provided for @arpeggioInversion.
+  ///
+  /// In en, this message translates to:
+  /// **'Inversion'**
+  String get arpeggioInversion;
+
+  /// No description provided for @arpeggioRootPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Root position'**
+  String get arpeggioRootPosition;
+
+  /// No description provided for @arpeggioFirstInversion.
+  ///
+  /// In en, this message translates to:
+  /// **'1st inversion'**
+  String get arpeggioFirstInversion;
+
+  /// No description provided for @arpeggioSecondInversion.
+  ///
+  /// In en, this message translates to:
+  /// **'2nd inversion'**
+  String get arpeggioSecondInversion;
+
+  /// No description provided for @arpeggioThirdInversion.
+  ///
+  /// In en, this message translates to:
+  /// **'3rd inversion'**
+  String get arpeggioThirdInversion;
+
+  /// No description provided for @arpeggioRandomInversion.
+  ///
+  /// In en, this message translates to:
+  /// **'Random'**
+  String get arpeggioRandomInversion;
+
+  /// No description provided for @arpeggioOctaves.
+  ///
+  /// In en, this message translates to:
+  /// **'Octaves'**
+  String get arpeggioOctaves;
 }
 
 class _AppLocalizationsDelegate

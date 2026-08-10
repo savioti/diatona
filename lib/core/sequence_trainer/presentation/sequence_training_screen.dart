@@ -3,41 +3,47 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
-import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../core/widgets/training_overlay.dart';
-import '../domain/scale_direction.dart';
-import '../domain/scale_item.dart';
-import '../domain/scale_session_state.dart';
-import 'scale_labels.dart';
-import 'scale_training_provider.dart';
-import 'widgets/scale_display.dart';
+import '../../l10n/generated/app_localizations.dart';
+import '../../widgets/training_overlay.dart';
+import '../domain/note_sequence.dart';
+import '../domain/sequence_session_state.dart';
+import 'sequence_training_provider.dart';
+import 'widgets/sequence_display.dart';
 
-class ScaleTrainingScreen extends ConsumerStatefulWidget {
-  const ScaleTrainingScreen({
+/// The training screen shared by the scale and arpeggio trainers.
+///
+/// Everything specific to a trainer arrives through the constructor: the pool
+/// to draw from, what to call the round, and whether the notes are given away.
+class SequenceTrainingScreen extends ConsumerStatefulWidget {
+  const SequenceTrainingScreen({
     super.key,
-    required this.level,
+    required this.pool,
+    required this.headline,
+    required this.subtitle,
     required this.timeLimitSeconds,
-    required this.direction,
-    required this.cumulative,
-    required this.naturalRootsOnly,
-    required this.showNotes,
+    required this.showNames,
   });
 
-  final int level;
-  final int timeLimitSeconds;
-  final ScaleDirection direction;
-  final bool cumulative;
-  final bool naturalRootsOnly;
+  final List<NoteSequence> pool;
 
-  /// Lists the notes of the scale up front instead of hiding them.
-  final bool showNotes;
+  /// Top left label, usually the level.
+  final String headline;
+
+  /// Second line under [headline], the options the round runs with.
+  final String subtitle;
+
+  final int timeLimitSeconds;
+
+  /// Lists the notes up front instead of hiding them.
+  final bool showNames;
 
   @override
-  ConsumerState<ScaleTrainingScreen> createState() =>
-      _ScaleTrainingScreenState();
+  ConsumerState<SequenceTrainingScreen> createState() =>
+      _SequenceTrainingScreenState();
 }
 
-class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
+class _SequenceTrainingScreenState
+    extends ConsumerState<SequenceTrainingScreen>
     with SingleTickerProviderStateMixin {
   AnimationController? _progressController;
 
@@ -55,13 +61,9 @@ class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
     }
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(scaleTrainingProvider.notifier).start(
-            widget.level,
-            widget.timeLimitSeconds,
-            widget.direction,
-            cumulative: widget.cumulative,
-            naturalRootsOnly: widget.naturalRootsOnly,
-          );
+      ref
+          .read(sequenceTrainingProvider.notifier)
+          .start(widget.pool, widget.timeLimitSeconds);
     });
   }
 
@@ -74,39 +76,32 @@ class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
   }
 
   void _stop() {
-    ref.read(scaleTrainingProvider.notifier).stop();
+    ref.read(sequenceTrainingProvider.notifier).stop();
     Navigator.of(context).pop();
   }
 
   void _advance() {
-    ref.read(scaleTrainingProvider.notifier).advance();
+    ref.read(sequenceTrainingProvider.notifier).advance();
   }
-
-  String _scaleTitle(ScaleItem? scale, AppLocalizations l10n) => scale == null
-      ? ''
-      : l10n.scaleNameLabel(scale.rootName, scaleTypeName(scale.type, l10n));
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final session = ref.watch(scaleTrainingProvider);
+    final session = ref.watch(sequenceTrainingProvider);
     final colorScheme = Theme.of(context).colorScheme;
 
-    ref.listen<ScaleSessionState>(scaleTrainingProvider, (prev, next) {
-      if (next.showSuccess || next.showSkip || !next.isActive) {
+    ref.listen<SequenceSessionState>(sequenceTrainingProvider, (prev, next) {
+      if (next.showSuccess || next.showSkip || next.showMissed ||
+          !next.isActive) {
         _progressController?.stop();
         return;
       }
-      if (!next.isGetReady && next.currentScale != prev?.currentScale) {
+      if (!next.isGetReady && next.current != prev?.current) {
         _progressController?.forward(from: 0.0);
       }
     });
 
-    final timeLimitLabel = session.timeLimitSeconds == 0
-        ? l10n.noTimeLimit
-        : l10n.seconds(session.timeLimitSeconds);
-    final directionLabel = scaleDirectionName(session.direction, l10n);
-    final title = _scaleTitle(session.currentScale, l10n);
+    final title = session.current?.title ?? '';
 
     return PopScope(
       onPopInvokedWithResult: (didPop, _) {
@@ -121,21 +116,23 @@ class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          scaleTypeNameForLevel(session.level, l10n),
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleLarge
-                              ?.copyWith(color: colorScheme.primary),
-                        ),
-                        Text(
-                          '$directionLabel · $timeLimitLabel',
-                          style: Theme.of(context).textTheme.bodyMedium,
-                        ),
-                      ],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            widget.headline,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge
+                                ?.copyWith(color: colorScheme.primary),
+                          ),
+                          Text(
+                            widget.subtitle,
+                            style: Theme.of(context).textTheme.bodyMedium,
+                          ),
+                        ],
+                      ),
                     ),
                     IconButton.filled(
                       style: IconButton.styleFrom(
@@ -153,17 +150,16 @@ class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
                 Expanded(
                   child: Stack(
                     children: [
-                      ScaleDisplay(
-                        scale: session.currentScale,
-                        title: title,
+                      SequenceDisplay(
+                        sequence: session.current,
                         noteIndex: session.noteIndex,
                         misses: session.misses,
-                        showNames: widget.showNotes,
+                        showNames: widget.showNames,
                         isGetReady: session.isGetReady || !session.isActive,
                         getReadyText: l10n.getReady,
-                        hintText: widget.showNotes
-                            ? l10n.scalePlayInOrder
-                            : l10n.scaleFindTheNotes,
+                        hintText: widget.showNames
+                            ? l10n.trainingPlayInOrder
+                            : l10n.trainingFindTheNotes,
                       ),
                       TrainingOverlay(
                         show: session.showSuccess,
@@ -183,8 +179,8 @@ class _ScaleTrainingScreenState extends ConsumerState<ScaleTrainingScreen>
                         show: session.showMissed,
                         color: Colors.red.withValues(alpha: 0.92),
                         icon: Icons.close_rounded,
-                        title: l10n.scaleMissed,
-                        label: session.currentScale?.noteNames.join(' '),
+                        title: l10n.trainingMissed,
+                        label: session.current?.noteNames.join(' '),
                       ),
                     ],
                   ),

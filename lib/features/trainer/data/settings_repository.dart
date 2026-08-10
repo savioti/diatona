@@ -25,6 +25,14 @@ class SettingsRepository {
   static const _keyScaleNaturalRoots = 'pref_scale_natural_roots';
   static const _keyScaleInterval = 'pref_scale_interval';
   static const _keyScaleShowNotes = 'pref_scale_show_notes';
+  static const _keyArpLevel = 'pref_arp_level';
+  static const _keyArpCumulative = 'pref_arp_cumulative';
+  static const _keyArpDirection = 'pref_arp_direction';
+  static const _keyArpNaturalRoots = 'pref_arp_natural_roots';
+  static const _keyArpInterval = 'pref_arp_interval';
+  static const _keyArpShowNotes = 'pref_arp_show_notes';
+  static const _keyArpInversion = 'pref_arp_inversion';
+  static const _keyArpOctaves = 'pref_arp_octaves';
 
   int loadLevel() => _prefs.getInt(_keyLevel) ?? 1;
   int loadInterval() => _prefs.getInt(_keyInterval) ?? 5;
@@ -78,4 +86,22 @@ class SettingsRepository {
   Future<void> saveScaleNaturalRoots(bool v) => _prefs.setBool(_keyScaleNaturalRoots, v);
   Future<void> saveScaleInterval(int interval) => _prefs.setInt(_keyScaleInterval, interval);
   Future<void> saveScaleShowNotes(bool v) => _prefs.setBool(_keyScaleShowNotes, v);
+
+  int loadArpLevel() => _prefs.getInt(_keyArpLevel) ?? 1;
+  bool loadArpCumulative() => _prefs.getBool(_keyArpCumulative) ?? true;
+  int loadArpDirection() => _prefs.getInt(_keyArpDirection) ?? 0;
+  bool loadArpNaturalRoots() => _prefs.getBool(_keyArpNaturalRoots) ?? true;
+  int loadArpInterval() => _prefs.getInt(_keyArpInterval) ?? 0;
+  bool loadArpShowNotes() => _prefs.getBool(_keyArpShowNotes) ?? false;
+  int loadArpInversion() => _prefs.getInt(_keyArpInversion) ?? 0;
+  int loadArpOctaves() => _prefs.getInt(_keyArpOctaves) ?? 1;
+
+  Future<void> saveArpLevel(int level) => _prefs.setInt(_keyArpLevel, level);
+  Future<void> saveArpCumulative(bool v) => _prefs.setBool(_keyArpCumulative, v);
+  Future<void> saveArpDirection(int index) => _prefs.setInt(_keyArpDirection, index);
+  Future<void> saveArpNaturalRoots(bool v) => _prefs.setBool(_keyArpNaturalRoots, v);
+  Future<void> saveArpInterval(int interval) => _prefs.setInt(_keyArpInterval, interval);
+  Future<void> saveArpShowNotes(bool v) => _prefs.setBool(_keyArpShowNotes, v);
+  Future<void> saveArpInversion(int index) => _prefs.setInt(_keyArpInversion, index);
+  Future<void> saveArpOctaves(int octaves) => _prefs.setInt(_keyArpOctaves, octaves);
 }

@@ -326,44 +326,44 @@ class AppLocalizationsEs extends AppLocalizations {
   String get menuScaleTrainer => 'Entrenador de Escalas';
 
   @override
-  String get scaleDirection => 'Dirección';
+  String get trainingDirection => 'Dirección';
 
   @override
-  String get scaleAscending => 'Ascendente';
+  String get trainingAscending => 'Ascendente';
 
   @override
-  String get scaleDescending => 'Descendente';
+  String get trainingDescending => 'Descendente';
 
   @override
-  String get scaleUpAndDown => 'Subiendo y bajando';
+  String get trainingUpAndDown => 'Subiendo y bajando';
 
   @override
-  String get scaleKeys => 'Tonalidades';
+  String get trainingKeys => 'Tonalidades';
 
   @override
-  String get scaleKeysNaturals => 'Naturales';
+  String get trainingKeysNaturals => 'Naturales';
 
   @override
-  String get scaleKeysAll => 'Todas';
+  String get trainingKeysAll => 'Todas';
 
   @override
-  String get scalePlayInOrder => 'Toca las notas en orden';
+  String get trainingPlayInOrder => 'Toca las notas en orden';
 
   @override
-  String get scaleFindTheNotes => 'Deduce las notas y tócalas en orden';
+  String get trainingFindTheNotes => 'Deduce las notas y tócalas en orden';
 
   @override
-  String get scaleShowNotes => 'Mostrar las notas';
+  String get trainingShowNotes => 'Mostrar las notas';
 
   @override
-  String get scaleShowNotesHelpTitle => 'Mostrar las Notas';
+  String get trainingShowNotesHelpTitle => 'Mostrar las Notas';
 
   @override
-  String get scaleShowNotesHelpBody =>
-      'Cuando está activado, las notas de la escala se muestran antes de tocarlas. Cuando está desactivado, solo aparece el nombre de la escala y las notas corren por tu cuenta. En ambos casos, tres notas erradas pasan a la siguiente escala.';
+  String get trainingShowNotesHelpBody =>
+      'Cuando está activado, las notas se muestran antes de tocarlas. Cuando está desactivado, solo aparece el nombre y las notas corren por tu cuenta. En ambos casos, tres notas erradas pasan al siguiente ejercicio.';
 
   @override
-  String get scaleMissed => 'Fallaste';
+  String get trainingMissed => 'Fallaste';
 
   @override
   String scaleNameLabel(String root, String scale) {
@@ -396,4 +396,28 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get scaleMelodicMinor => 'Menor Melódica';
+
+  @override
+  String get menuArpeggioTrainer => 'Entrenador de Arpegios';
+
+  @override
+  String get arpeggioInversion => 'Inversión';
+
+  @override
+  String get arpeggioRootPosition => 'Estado fundamental';
+
+  @override
+  String get arpeggioFirstInversion => '1ª inversión';
+
+  @override
+  String get arpeggioSecondInversion => '2ª inversión';
+
+  @override
+  String get arpeggioThirdInversion => '3ª inversión';
+
+  @override
+  String get arpeggioRandomInversion => 'Aleatoria';
+
+  @override
+  String get arpeggioOctaves => 'Octavas';
 }

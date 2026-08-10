@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/sequence_trainer/domain/sequence_direction.dart';
 import '../../trainer/data/providers.dart';
-import '../domain/scale_direction.dart';
 
 class SelectedScaleLevelNotifier extends Notifier<int> {
   @override
@@ -25,19 +25,19 @@ final selectedScaleCumulativeProvider =
     NotifierProvider<SelectedScaleCumulativeNotifier, bool>(
         SelectedScaleCumulativeNotifier.new);
 
-class SelectedScaleDirectionNotifier extends Notifier<ScaleDirection> {
+class SelectedScaleDirectionNotifier extends Notifier<SequenceDirection> {
   @override
-  ScaleDirection build() {
+  SequenceDirection build() {
     final index = ref.read(settingsRepositoryProvider).loadScaleDirection();
-    return ScaleDirection
-        .values[index.clamp(0, ScaleDirection.values.length - 1)];
+    return SequenceDirection
+        .values[index.clamp(0, SequenceDirection.values.length - 1)];
   }
 
-  void update(ScaleDirection direction) => state = direction;
+  void update(SequenceDirection direction) => state = direction;
 }
 
 final selectedScaleDirectionProvider =
-    NotifierProvider<SelectedScaleDirectionNotifier, ScaleDirection>(
+    NotifierProvider<SelectedScaleDirectionNotifier, SequenceDirection>(
         SelectedScaleDirectionNotifier.new);
 
 class SelectedScaleNaturalRootsNotifier extends Notifier<bool> {

@@ -8,44 +8,53 @@ import '../../../core/sequence_trainer/presentation/sequence_training_screen.dar
 import '../../../core/sequence_trainer/presentation/widgets/training_options.dart';
 import '../../home/presentation/widgets/interval_selector.dart';
 import '../../trainer/data/providers.dart' show settingsRepositoryProvider;
+import '../../trainer/domain/chord_type.dart';
+import '../../trainer/presentation/chord_labels.dart';
+import '../data/arpeggio_data.dart';
 import '../data/providers.dart';
-import '../data/scale_data.dart';
-import '../domain/scale_type.dart';
-import 'scale_labels.dart';
+import '../domain/arpeggio_inversion.dart';
+import 'arpeggio_labels.dart';
 
-class ScaleHomeScreen extends ConsumerWidget {
-  const ScaleHomeScreen({super.key});
+class ArpeggioHomeScreen extends ConsumerWidget {
+  const ArpeggioHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
 
-    final level = ref.watch(selectedScaleLevelProvider);
-    final cumulative = ref.watch(selectedScaleCumulativeProvider);
-    final direction = ref.watch(selectedScaleDirectionProvider);
-    final naturalRoots = ref.watch(selectedScaleNaturalRootsProvider);
-    final interval = ref.watch(selectedScaleIntervalProvider);
-    final showNotes = ref.watch(selectedScaleShowNotesProvider);
+    final level = ref.watch(selectedArpLevelProvider);
+    final cumulative = ref.watch(selectedArpCumulativeProvider);
+    final direction = ref.watch(selectedArpDirectionProvider);
+    final naturalRoots = ref.watch(selectedArpNaturalRootsProvider);
+    final inversion = ref.watch(selectedArpInversionProvider);
+    final octaves = ref.watch(selectedArpOctavesProvider);
+    final interval = ref.watch(selectedArpIntervalProvider);
+    final showNotes = ref.watch(selectedArpShowNotesProvider);
     final repo = ref.read(settingsRepositoryProvider);
 
     void start() {
-      String title(ScaleType type, String root) =>
-          l10n.scaleNameLabel(root, scaleTypeName(type, l10n));
+      String label(int index) => arpeggioInversionLabel(index, l10n);
 
       final pool = cumulative
-          ? buildScalePool(level, direction,
-              title: title, naturalRootsOnly: naturalRoots)
-          : buildScalePoolSingle(level, direction,
-              title: title, naturalRootsOnly: naturalRoots);
+          ? buildArpeggioPool(level, direction,
+              inversion: inversion,
+              octaves: octaves,
+              inversionLabel: label,
+              naturalRootsOnly: naturalRoots)
+          : buildArpeggioPoolSingle(level, direction,
+              inversion: inversion,
+              octaves: octaves,
+              inversionLabel: label,
+              naturalRootsOnly: naturalRoots);
 
       Navigator.of(context).push(
         MaterialPageRoute<void>(
           builder: (_) => SequenceTrainingScreen(
             pool: pool,
-            headline: scaleTypeNameForLevel(level, l10n),
+            headline: chordTypeNameForLevel(level, l10n),
             subtitle: '${sequenceDirectionName(direction, l10n)} · '
-                '${trainingKeysName(naturalRoots, l10n)}',
+                '${arpeggioInversionName(inversion, l10n)}',
             timeLimitSeconds: interval,
             showNames: showNotes,
           ),
@@ -72,7 +81,7 @@ class ScaleHomeScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    l10n.menuScaleTrainer,
+                    l10n.menuArpeggioTrainer,
                     style: theme.textTheme.displayLarge?.copyWith(
                       fontSize: 32,
                       color: theme.colorScheme.primary,
@@ -88,16 +97,16 @@ class ScaleHomeScreen extends ConsumerWidget {
                   SetupLabel(l10n.level),
                   const SizedBox(height: 8),
                   Text(
-                    l10n.levelLabel(level, scaleTypeNameForLevel(level, l10n)),
+                    l10n.levelLabel(level, chordTypeNameForLevel(level, l10n)),
                     style: theme.textTheme.bodyMedium,
                   ),
                   const SizedBox(height: 12),
                   LevelStepper(
                     level: level,
-                    maxLevel: ScaleType.values.length,
+                    maxLevel: ChordType.values.length,
                     onChanged: (v) {
-                      ref.read(selectedScaleLevelProvider.notifier).update(v);
-                      repo.saveScaleLevel(v);
+                      ref.read(selectedArpLevelProvider.notifier).update(v);
+                      repo.saveArpLevel(v);
                     },
                   ),
                   const SizedBox(height: 8),
@@ -108,9 +117,35 @@ class ScaleHomeScreen extends ConsumerWidget {
                     helpBody: l10n.cumulativePoolHelpBody,
                     onChanged: (v) {
                       ref
-                          .read(selectedScaleCumulativeProvider.notifier)
+                          .read(selectedArpCumulativeProvider.notifier)
                           .update(v);
-                      repo.saveScaleCumulative(v);
+                      repo.saveArpCumulative(v);
+                    },
+                  ),
+                  const SizedBox(height: 24),
+                  SetupLabel(l10n.arpeggioInversion),
+                  const SizedBox(height: 12),
+                  ChoiceChipRow<ArpeggioInversion>(
+                    values: ArpeggioInversion.values,
+                    selected: inversion,
+                    labelOf: (i) => arpeggioInversionName(i, l10n),
+                    onChanged: (i) {
+                      ref
+                          .read(selectedArpInversionProvider.notifier)
+                          .update(i);
+                      repo.saveArpInversion(i.index);
+                    },
+                  ),
+                  const SizedBox(height: 24),
+                  SetupLabel(l10n.arpeggioOctaves),
+                  const SizedBox(height: 12),
+                  ChoiceChipRow<int>(
+                    values: const [1, 2],
+                    selected: octaves,
+                    labelOf: (v) => '$v',
+                    onChanged: (v) {
+                      ref.read(selectedArpOctavesProvider.notifier).update(v);
+                      repo.saveArpOctaves(v);
                     },
                   ),
                   const SizedBox(height: 24),
@@ -122,9 +157,9 @@ class ScaleHomeScreen extends ConsumerWidget {
                     labelOf: (d) => sequenceDirectionName(d, l10n),
                     onChanged: (d) {
                       ref
-                          .read(selectedScaleDirectionProvider.notifier)
+                          .read(selectedArpDirectionProvider.notifier)
                           .update(d);
-                      repo.saveScaleDirection(d.index);
+                      repo.saveArpDirection(d.index);
                     },
                   ),
                   const SizedBox(height: 24),
@@ -136,9 +171,9 @@ class ScaleHomeScreen extends ConsumerWidget {
                     labelOf: (v) => trainingKeysName(v, l10n),
                     onChanged: (v) {
                       ref
-                          .read(selectedScaleNaturalRootsProvider.notifier)
+                          .read(selectedArpNaturalRootsProvider.notifier)
                           .update(v);
-                      repo.saveScaleNaturalRoots(v);
+                      repo.saveArpNaturalRoots(v);
                     },
                   ),
                   const SizedBox(height: 20),
@@ -149,9 +184,9 @@ class ScaleHomeScreen extends ConsumerWidget {
                     helpBody: l10n.trainingShowNotesHelpBody,
                     onChanged: (v) {
                       ref
-                          .read(selectedScaleShowNotesProvider.notifier)
+                          .read(selectedArpShowNotesProvider.notifier)
                           .update(v);
-                      repo.saveScaleShowNotes(v);
+                      repo.saveArpShowNotes(v);
                     },
                   ),
                   const SizedBox(height: 24),
@@ -160,10 +195,8 @@ class ScaleHomeScreen extends ConsumerWidget {
                   IntervalSelector(
                     selectedInterval: interval,
                     onIntervalChanged: (v) {
-                      ref
-                          .read(selectedScaleIntervalProvider.notifier)
-                          .update(v);
-                      repo.saveScaleInterval(v);
+                      ref.read(selectedArpIntervalProvider.notifier).update(v);
+                      repo.saveArpInterval(v);
                     },
                   ),
                   const SizedBox(height: 40),

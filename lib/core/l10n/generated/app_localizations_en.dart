@@ -326,44 +326,45 @@ class AppLocalizationsEn extends AppLocalizations {
   String get menuScaleTrainer => 'Scale Trainer';
 
   @override
-  String get scaleDirection => 'Direction';
+  String get trainingDirection => 'Direction';
 
   @override
-  String get scaleAscending => 'Ascending';
+  String get trainingAscending => 'Ascending';
 
   @override
-  String get scaleDescending => 'Descending';
+  String get trainingDescending => 'Descending';
 
   @override
-  String get scaleUpAndDown => 'Up and down';
+  String get trainingUpAndDown => 'Up and down';
 
   @override
-  String get scaleKeys => 'Keys';
+  String get trainingKeys => 'Keys';
 
   @override
-  String get scaleKeysNaturals => 'Naturals';
+  String get trainingKeysNaturals => 'Naturals';
 
   @override
-  String get scaleKeysAll => 'All keys';
+  String get trainingKeysAll => 'All keys';
 
   @override
-  String get scalePlayInOrder => 'Play the notes in order';
+  String get trainingPlayInOrder => 'Play the notes in order';
 
   @override
-  String get scaleFindTheNotes => 'Work out the notes and play them in order';
+  String get trainingFindTheNotes =>
+      'Work out the notes and play them in order';
 
   @override
-  String get scaleShowNotes => 'Show the notes';
+  String get trainingShowNotes => 'Show the notes';
 
   @override
-  String get scaleShowNotesHelpTitle => 'Show the Notes';
+  String get trainingShowNotesHelpTitle => 'Show the Notes';
 
   @override
-  String get scaleShowNotesHelpBody =>
-      'When enabled, the notes of the scale are listed before you play them. When disabled, only the scale name is shown and the notes are up to you. Either way, three wrong notes move you on to the next scale.';
+  String get trainingShowNotesHelpBody =>
+      'When enabled, the notes are listed before you play them. When disabled, only the name is shown and the notes are up to you. Either way, three wrong notes move you on to the next round.';
 
   @override
-  String get scaleMissed => 'Missed';
+  String get trainingMissed => 'Missed';
 
   @override
   String scaleNameLabel(String root, String scale) {
@@ -396,4 +397,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get scaleMelodicMinor => 'Melodic Minor';
+
+  @override
+  String get menuArpeggioTrainer => 'Arpeggio Trainer';
+
+  @override
+  String get arpeggioInversion => 'Inversion';
+
+  @override
+  String get arpeggioRootPosition => 'Root position';
+
+  @override
+  String get arpeggioFirstInversion => '1st inversion';
+
+  @override
+  String get arpeggioSecondInversion => '2nd inversion';
+
+  @override
+  String get arpeggioThirdInversion => '3rd inversion';
+
+  @override
+  String get arpeggioRandomInversion => 'Random';
+
+  @override
+  String get arpeggioOctaves => 'Octaves';
 }

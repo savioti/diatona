@@ -7,6 +7,7 @@ import 'dart:async';
 import 'app.dart';
 import 'features/trainer/data/chord_data.dart';
 import 'features/trainer/data/chord_database.dart';
+import 'features/arpeggio_trainer/data/arpeggio_data.dart';
 import 'features/scale_trainer/data/scale_data.dart';
 import 'features/trainer/data/providers.dart';
 
@@ -15,6 +16,7 @@ void main() async {
   final prefs = await SharedPreferences.getInstance();
   await initChordData();
   await initScaleData();
+  await initArpeggioData();
   unawaited(ChordDatabase.instance.ensureLoaded());
   runApp(
     ProviderScope(

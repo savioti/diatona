@@ -1,18 +1,15 @@
-import 'package:diatona/features/scale_trainer/domain/scale_item.dart';
-import 'package:diatona/features/scale_trainer/domain/scale_type.dart';
-import 'package:diatona/features/scale_trainer/presentation/widgets/scale_display.dart';
+import 'package:diatona/core/sequence_trainer/domain/note_sequence.dart';
+import 'package:diatona/core/sequence_trainer/presentation/widgets/sequence_display.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-const _names = [
-  'Bb', 'C', 'Db', 'Eb', 'F', 'G', 'Ab', 'Bb',
-  'Ab', 'G', 'F', 'Eb', 'Db', 'C', 'Bb',
-];
-
-const _bbDorian = ScaleItem(
-  type: ScaleType.dorian,
-  rootName: 'Bb',
-  noteNames: _names,
+const _bbDorian = NoteSequence(
+  id: 'dorian_Bb',
+  title: 'Bb Dorian',
+  noteNames: [
+    'Bb', 'C', 'Db', 'Eb', 'F', 'G', 'Ab', 'Bb',
+    'Ab', 'G', 'F', 'Eb', 'Db', 'C', 'Bb',
+  ],
   pitchClasses: [10, 0, 1, 3, 5, 7, 8, 10, 8, 7, 5, 3, 1, 0, 10],
 );
 
@@ -31,9 +28,8 @@ Future<void> pumpDisplay(
             children: [
               const SizedBox(height: 80),
               Expanded(
-                child: ScaleDisplay(
-                  scale: _bbDorian,
-                  title: 'Bb Dorian',
+                child: SequenceDisplay(
+                  sequence: _bbDorian,
                   noteIndex: noteIndex,
                   misses: misses,
                   showNames: showNames,
@@ -52,9 +48,7 @@ Future<void> pumpDisplay(
 }
 
 void main() {
-  setUp(() => TestWidgetsFlutterBinding.ensureInitialized());
-
-  testWidgets('fifteen note scale fits on a small screen', (tester) async {
+  testWidgets('fifteen note run fits on a small screen', (tester) async {
     tester.view.physicalSize = const Size(360, 640);
     tester.view.devicePixelRatio = 1.0;
     addTearDown(tester.view.reset);

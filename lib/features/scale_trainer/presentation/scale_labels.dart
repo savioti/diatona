@@ -1,5 +1,4 @@
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../domain/scale_direction.dart';
 import '../domain/scale_type.dart';
 
 String scaleTypeName(ScaleType type, AppLocalizations l10n) => switch (type) {
@@ -18,10 +17,3 @@ String scaleTypeNameForLevel(int level, AppLocalizations l10n) => scaleTypeName(
       ScaleType.values[(level - 1).clamp(0, ScaleType.values.length - 1)],
       l10n,
     );
-
-String scaleDirectionName(ScaleDirection direction, AppLocalizations l10n) =>
-    switch (direction) {
-      ScaleDirection.ascending => l10n.scaleAscending,
-      ScaleDirection.descending => l10n.scaleDescending,
-      ScaleDirection.upAndDown => l10n.scaleUpAndDown,
-    };

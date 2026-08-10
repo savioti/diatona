@@ -3,13 +3,12 @@ import 'dart:math';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../audio/pitch_detection_service.dart';
-import '../data/scale_data.dart';
-import '../domain/scale_direction.dart';
-import '../domain/scale_item.dart';
-import '../domain/scale_session_state.dart';
+import '../../../features/audio/pitch_detection_service.dart';
+import '../data/note_spelling.dart';
+import '../domain/note_sequence.dart';
+import '../domain/sequence_session_state.dart';
 
-final _scalePitchProvider = Provider<PitchDetectionService>((ref) {
+final _sequencePitchProvider = Provider<PitchDetectionService>((ref) {
   final service = PitchDetectionService();
   ref.onDispose(service.dispose);
   return service;
@@ -19,15 +18,20 @@ final _scalePitchProvider = Provider<PitchDetectionService>((ref) {
 /// a miss. One reading is often just a glitch of the detector.
 const _detectionsPerMiss = 2;
 
-class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
+/// Drives a round of playing note sequences, whatever built them.
+///
+/// The screen listens for the notes of [SequenceSessionState.current] in order,
+/// fills them in as they land, and moves on after the last one, after three
+/// wrong notes, or when the time limit runs out.
+class SequenceTrainingNotifier extends Notifier<SequenceSessionState> {
   final _random = Random();
   Timer? _getReadyTimer;
   Timer? _timeLimitTimer;
-  Timer? _successTimer;
+  Timer? _advanceTimer;
   Timer? _silenceTimer;
   StreamSubscription<String>? _pitchSub;
-  List<ScaleItem> _pool = [];
-  Map<ScaleItem, int> _successCounts = {};
+  List<NoteSequence> _pool = [];
+  Map<NoteSequence, int> _successCounts = {};
   bool _advancing = false;
   bool _waitingForNoteOff = false;
   int? _handledPitchClass;
@@ -35,45 +39,34 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
   int _wrongStreak = 0;
 
   @override
-  ScaleSessionState build() {
+  SequenceSessionState build() {
     ref.onDispose(_cleanup);
-    return const ScaleSessionState.idle();
+    return const SequenceSessionState.idle();
   }
 
-  Future<void> start(
-    int level,
-    int timeLimitSeconds,
-    ScaleDirection direction, {
-    bool cumulative = true,
-    bool naturalRootsOnly = true,
-  }) async {
+  Future<void> start(List<NoteSequence> pool, int timeLimitSeconds) async {
     _cleanup();
-    _pool = cumulative
-        ? buildScalePool(level, direction, naturalRootsOnly: naturalRootsOnly)
-        : buildScalePoolSingle(level, direction,
-            naturalRootsOnly: naturalRootsOnly);
-    if (_pool.isEmpty) return;
+    if (pool.isEmpty) return;
+    _pool = pool;
     _successCounts = {for (final s in _pool) s: 0};
     _advancing = false;
 
-    state = ScaleSessionState(
+    state = SequenceSessionState(
       isActive: true,
       isGetReady: true,
-      level: level,
       timeLimitSeconds: timeLimitSeconds,
-      direction: direction,
     );
-    _getReadyTimer = Timer(const Duration(seconds: 2), _showFirstScale);
+    _getReadyTimer = Timer(const Duration(seconds: 2), _showFirst);
 
-    final pitchService = ref.read(_scalePitchProvider);
+    final pitchService = ref.read(_sequencePitchProvider);
     await pitchService.start();
     _pitchSub = pitchService.notes.listen(_onPitch);
   }
 
-  void _showFirstScale() {
+  void _showFirst() {
     state = state.copyWith(
       isGetReady: false,
-      currentScale: _pickNextScale(null),
+      current: _pickNext(null),
       noteIndex: 0,
     );
     _startTimeLimitTimer();
@@ -82,7 +75,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
   void _onPitch(String detected) {
     if (state.isGetReady || !state.isActive) return;
 
-    // The last note of a scale is usually still ringing when the next one
+    // The last note of a round is usually still ringing when the next one
     // appears, so wait for a short silence before listening again.
     if (_waitingForNoteOff) {
       _silenceTimer?.cancel();
@@ -94,11 +87,11 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     }
 
     if (_advancing) return;
-    final scale = state.currentScale;
-    if (scale == null) return;
+    final sequence = state.current;
+    if (sequence == null) return;
 
     final index = state.noteIndex;
-    if (index >= scale.length) return;
+    if (index >= sequence.length) return;
 
     final pitchClass = pitchClassOfDetectedNote(detected);
     if (pitchClass == null) return;
@@ -107,7 +100,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     // the slot that follows it.
     if (pitchClass == _handledPitchClass) return;
 
-    if (pitchClass != scale.pitchClasses[index]) {
+    if (pitchClass != sequence.pitchClasses[index]) {
       _onWrongNote(pitchClass);
       return;
     }
@@ -115,7 +108,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     _handledPitchClass = pitchClass;
     _wrongPitchClass = null;
     _wrongStreak = 0;
-    if (index + 1 == scale.length) {
+    if (index + 1 == sequence.length) {
       _onSuccess();
     } else {
       state = state.copyWith(noteIndex: index + 1);
@@ -137,7 +130,25 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
 
     final misses = state.misses + 1;
     state = state.copyWith(misses: misses);
-    if (misses >= kScaleMaxMisses) _onMissedOut();
+    if (misses >= kSequenceMaxMisses) _onMissedOut();
+  }
+
+  void _onSuccess() {
+    _advancing = true;
+    _waitingForNoteOff = true;
+    final sequence = state.current;
+    if (sequence != null) {
+      _successCounts[sequence] = (_successCounts[sequence] ?? 0) + 1;
+    }
+    _silenceTimer?.cancel();
+    _timeLimitTimer?.cancel();
+    _advanceTimer?.cancel();
+
+    state = state.copyWith(
+      noteIndex: sequence?.length ?? 0,
+      showSuccess: true,
+    );
+    _scheduleAdvance(const Duration(milliseconds: 900), restartPitch: true);
   }
 
   void _onMissedOut() {
@@ -145,37 +156,27 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     _waitingForNoteOff = true;
     _silenceTimer?.cancel();
     _timeLimitTimer?.cancel();
-    _successTimer?.cancel();
+    _advanceTimer?.cancel();
 
     state = state.copyWith(showMissed: true);
-
-    _successTimer = Timer(const Duration(milliseconds: 1200), () {
-      _advanceScale();
-      unawaited(_restartPitchService());
-      _successTimer = Timer(
-        const Duration(milliseconds: 300),
-        () => _advancing = false,
-      );
-    });
+    _scheduleAdvance(const Duration(milliseconds: 1200), restartPitch: true);
   }
 
-  void _onSuccess() {
+  void advance() {
+    if (!state.isActive || state.isGetReady || _advancing) return;
     _advancing = true;
-    _waitingForNoteOff = true;
-    final scale = state.currentScale;
-    if (scale != null) {
-      _successCounts[scale] = (_successCounts[scale] ?? 0) + 1;
-    }
-    _silenceTimer?.cancel();
     _timeLimitTimer?.cancel();
-    _successTimer?.cancel();
+    _advanceTimer?.cancel();
 
-    state = state.copyWith(noteIndex: scale?.length ?? 0, showSuccess: true);
+    state = state.copyWith(showSkip: true);
+    _scheduleAdvance(const Duration(milliseconds: 600), restartPitch: false);
+  }
 
-    _successTimer = Timer(const Duration(milliseconds: 900), () {
-      _advanceScale();
-      unawaited(_restartPitchService());
-      _successTimer = Timer(
+  void _scheduleAdvance(Duration delay, {required bool restartPitch}) {
+    _advanceTimer = Timer(delay, () {
+      _advanceSequence();
+      if (restartPitch) unawaited(_restartPitchService());
+      _advanceTimer = Timer(
         const Duration(milliseconds: 300),
         () => _advancing = false,
       );
@@ -183,33 +184,18 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
   }
 
   Future<void> _restartPitchService() async {
-    final pitchService = ref.read(_scalePitchProvider);
+    final pitchService = ref.read(_sequencePitchProvider);
     await pitchService.stop();
     if (!state.isActive) return;
     await pitchService.start();
   }
 
-  void advance() {
-    if (!state.isActive || state.isGetReady || _advancing) return;
-    _advancing = true;
-    _timeLimitTimer?.cancel();
-    _successTimer?.cancel();
-    state = state.copyWith(showSkip: true);
-    _successTimer = Timer(const Duration(milliseconds: 600), () {
-      _advanceScale();
-      _successTimer = Timer(
-        const Duration(milliseconds: 300),
-        () => _advancing = false,
-      );
-    });
-  }
-
-  void _advanceScale() {
+  void _advanceSequence() {
     _handledPitchClass = null;
     _wrongPitchClass = null;
     _wrongStreak = 0;
     state = state.copyWith(
-      currentScale: _pickNextScale(state.currentScale),
+      current: _pickNext(state.current),
       noteIndex: 0,
       misses: 0,
       showSuccess: false,
@@ -221,7 +207,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
 
   void stop() {
     _cleanup();
-    state = const ScaleSessionState.idle();
+    state = const SequenceSessionState.idle();
   }
 
   void _startTimeLimitTimer() {
@@ -232,7 +218,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     }
   }
 
-  ScaleItem _pickNextScale(ScaleItem? excluded) {
+  NoteSequence _pickNext(NoteSequence? excluded) {
     if (_pool.length == 1) return _pool.first;
     final candidates = excluded != null
         ? _pool.where((s) => s != excluded).toList()
@@ -246,7 +232,7 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
   void _cleanup() {
     _getReadyTimer?.cancel();
     _timeLimitTimer?.cancel();
-    _successTimer?.cancel();
+    _advanceTimer?.cancel();
     _silenceTimer?.cancel();
     _pitchSub?.cancel();
     _pitchSub = null;
@@ -254,11 +240,11 @@ class ScaleTrainingNotifier extends Notifier<ScaleSessionState> {
     _handledPitchClass = null;
     _wrongPitchClass = null;
     _wrongStreak = 0;
-    unawaited(ref.read(_scalePitchProvider).stop());
+    unawaited(ref.read(_sequencePitchProvider).stop());
   }
 }
 
-final scaleTrainingProvider =
-    NotifierProvider<ScaleTrainingNotifier, ScaleSessionState>(
-  ScaleTrainingNotifier.new,
+final sequenceTrainingProvider =
+    NotifierProvider<SequenceTrainingNotifier, SequenceSessionState>(
+  SequenceTrainingNotifier.new,
 );
